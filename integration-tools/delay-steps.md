@@ -2,6 +2,8 @@
 title: Delay Steps
 ---
 
+# Delay Steps #
+
 Steps added to a cycle, will execute without any scheduled delays.
 
 Connecting a Delay between two steps will allow you to set a fixed time that Cyclr should wait before it executes the next step.

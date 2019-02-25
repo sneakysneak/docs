@@ -2,6 +2,8 @@
 title: Custom Connector Examples
 ---
 
+# Examples #
+
 Example 1: standard connector
 -----------------------------
 

@@ -2,6 +2,8 @@
 title: Google Authentication
 ---
 
+# Google #
+
 Partner Setup
 -------------
 

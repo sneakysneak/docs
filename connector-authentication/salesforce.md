@@ -2,8 +2,10 @@
 title: Salesforce Authentication
 ---
 
-**Salesforce Partner Setup**
-============================
+# Salesforce #
+
+Partner Setup
+-------------
 
 Salesforce uses OAuth 2 for remote API access. You must register Cyclr within Salesforce as your own Connected App to receive OAuth Client ID and Client Secret values to enable Cyclr to authenticate with Salesforce.
 

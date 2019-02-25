@@ -2,6 +2,8 @@
 title: Clover Authentication
 ---
 
+# Clover #
+
 This guide is for setting up and installing the [Clover](https://cyclr.com/integrate/clover) connector.
 
 #### Setup in Clover

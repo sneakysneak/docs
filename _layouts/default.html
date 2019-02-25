@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <section style="float:left; width: 280px;">
+          <h2 id="getting-started">Getting Started</h2>
+          <ol>
+            <li><a href="/docs/getting-started/build-a-cycle">Build a Cycle</a></li>
+            <li><a href="/docs/getting-started/minimum-requirements">Minimum Requirements</a></li>
+            <li><a href="/docs/getting-started/installing-connectors">Installing Connectors</a></li>
+            <li><a href="/docs/getting-started/building-a-cycle">Building a Cycle</a></li>
+            <li><a href="/docs/getting-started/field-mapping">Field Mapping</a></li>
+            <li><a href="/docs/getting-started/testing-cycles">Testing Cycles</a></li>
+            <li><a href="/docs/getting-started/run-a-cycle">Run a Cycle</a></li>
+            <li><a href="/docs/getting-started/adding-connector-fields">Adding Custom Fields</a></li>
+          </ol>
+          
+          <h2 id="launch">LAUNCH</h2>
+          <ol>
+            <li><a href="/docs/launch/launch-overview">Overview</a></li>
+            <li><a href="/docs/launch/user-experience">User Experience</a></li>
+            <li><a href="/docs/launch/building-integration-templates-launch">Building Templates for LAUNCH</a></li>
+            <li><a href="/docs/launch/launch-deployment">Deploying LAUNCH in your app</a></li>
+            <li><a href="/docs/launch/handling-callback">Handling Callback</a></li>
+            <li><a href="/docs/launch/customising-the-appearance-of-launch">Customising The Appearance of LAUNCH</a></li>
+            <li><a href="/docs/launch/orbit">ORBIT</a></li>
+          </ol>
+          
+          <h2 id="connector-authentication-guides">Connector Authentication Guides</h2>
+          <ol>
+            <li><a href="/docs/connector-authentication/clover">Clover</a></li>
+            <li><a href="/docs/connector-authentication/google">Google</a></li>
+            <li><a href="/docs/connector-authentication/facebook-marketing">Facebook Marketing API</a></li>
+            <li><a href="/docs/connector-authentication/salesforce">Salesforce</a></li>
+            <li><a href="/docs/connector-authentication/capsule-v2">Capsule v2</a></li>
+            <li><a href="/docs/connector-authentication/sugarcrm">SugarCRM</a></li>
+            <li><a href="/docs/connector-authentication/dynamics-crm-online">Dynamics CRM</a></li>
+          </ol>
+          
+          <h2 id="integration-tools">Integration Tools</h2>
+          <ol>
+            <li><a href="/docs/integration-tools/decision-steps">Decision Steps</a></li>
+            <li><a href="/docs/integration-tools/wait-until">Wait Until Steps</a></li>
+            <li><a href="/docs/integration-tools/delay-steps">Delay Steps</a></li>
+          </ol>
+          
+          <h2 id="custom-connectors">Custom Connectors</h2>
+          <ol>
+            <li><a href="/docs/custom-connectors/introduction">Introduction</a></li>
+            <li><a href="/docs/custom-connectors/methods">Methods</a></li>
+            <li><a href="/docs/custom-connectors/examples">Examples</a></li>
+            <li><a href="/docs/custom-connectors/fields">Fields</a></li>
+            <li><a href="/docs/custom-connectors/reference">Reference</a></li>
+            <li><a href="/docs/custom-connectors/properties">Properties</a></li>
+            <li><a href="/docs/custom-connectors/parameters-and-triggers">Parameters and Triggers</a></li>
+            <li><a href="/docs/custom-connectors/paging">Paging</a></li>
+            <li><a href="/docs/custom-connectors/scripting">Scripting</a></li>
+            <li><a href="/docs/custom-connectors/openapi">Create Connectors from OpenAPI</a></li>
+          </ol>
+          
+          <h2 id="integration-plugin-guides">Integration Plugin Guides</h2>
+          <ol>
+            <li><a href="/docs/integration-plugin/contact-form-7">Contact Form 7</a></li>
+            <li><a href="/docs/integration-plugin/gravity-forms">Gravity Forms</a></li>
+            <li><a href="/docs/integration-plugin/salesforce">Salesforce</a></li>
+          </ol>
+      </section>
+      <section>
+
+      {{ content }}
+
+      </section>
+      <footer>
+      </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    {% if site.google_analytics %}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', '{{ site.google_analytics }}', 'auto');
+      ga('send', 'pageview');
+    </script>
+    {% endif %}
+  </body>
+</html>

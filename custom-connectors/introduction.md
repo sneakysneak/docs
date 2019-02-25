@@ -2,6 +2,8 @@
 title: Custom Connector Introduction
 ---
 
+# Introduction #
+
 What is a custom connector?
 ---------------------------
 

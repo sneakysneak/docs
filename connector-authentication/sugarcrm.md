@@ -2,6 +2,8 @@
 title: SugarCRM Authentication
 ---
 
+# SugarCRM #
+
 API Integration Guide
 ---------------------
 

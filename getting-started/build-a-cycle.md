@@ -2,6 +2,8 @@
 title: Build a Cycle
 ---
 
+# Build a Cycle #
+
 Once you have [installed connectors](./installing-connectors) for your apps, you can begin to connect and automate your apps.
 
 ### Add a trigger

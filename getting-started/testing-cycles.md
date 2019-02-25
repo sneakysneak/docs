@@ -2,6 +2,8 @@
 title: Testing Cycles
 ---
 
+# Testing Cycles #
+
 You can test the steps in your cycle, by clicking their “play” button.
 
 Test an Action Step

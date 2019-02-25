@@ -2,6 +2,8 @@
 title: Custom Connectors Parameters and Triggers
 ---
 
+# Parameters and Triggers #
+
 Overview
 --------
 

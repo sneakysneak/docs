@@ -2,6 +2,8 @@
 title: Microsoft Dynamics Authentication
 ---
 
+# Dynamics CRM #
+
 Partner Setup
 -------------
 

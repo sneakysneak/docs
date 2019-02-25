@@ -1,6 +1,8 @@
 ---
-title: Wait Steps
+title: Wait Until Steps
 ---
+
+# Wait Until Steps #
 
 You can use a Wait Until step in two ways.
 

@@ -2,6 +2,8 @@
 title: Custom Connector Properties
 ---
 
+# Properties #
+
 Name
 ----
 

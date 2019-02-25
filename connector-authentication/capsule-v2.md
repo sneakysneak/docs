@@ -2,6 +2,8 @@
 title: Capsule Authentication
 ---
 
+# Capsule v2 #
+
 Partner Setup
 -------------
 

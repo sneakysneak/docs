@@ -2,6 +2,8 @@
 title: Minimum Requirements
 ---
 
+# Minimum Requirements #
+
 #### Supported browsers
 
 Cyclr’s workflow builder is very powerful and as such we do suggest that you run the latest versions of our supported browsers:
