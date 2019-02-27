@@ -48,8 +48,13 @@ You should use a Cyclr Partner OAuth token as the Bearer token in this request.
         <td>sdkjgnjg35d</td>
     </tr>
     <tr>
+        <td>AccountName</td>
+        <td>If your user doesn't already have an account within Cyclr, specify the name of the account to create here.</td>
+        <td>New Cyclr Account Name</td>
+    </tr>
+    <tr>
         <td>AccountId</td>
-        <td>If your user already has an account within Cyclr, specify the Id of that account to have the new integration installed there rather than a new Cyclr account.</td>
+        <td>If your user already has an account within Cyclr, specify the Id of that account to have the new integration installed there.  If this is not provided, a new Cyclr account will be created.</td>
         <td>0000000-0000-0000-0000-000000000000</td>
     </tr>
     <tr>
