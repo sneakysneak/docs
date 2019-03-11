@@ -1,0 +1,291 @@
+# This is Cyclr sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+  - title: sidebar
+    product: Cyclr Docs
+    version: 1.0
+    folders:
+      - title: Getting Started
+        output: web, pdf
+        folderitems:
+          - title: Build a Cycle
+            url: /build-a-cycle.html
+            output: web, pdf
+
+          - title: Minimum Requirements
+            url: /minimum-requirements.html
+            output: web, pdf
+
+          - title: Installing Connectors
+            url: /installing-connectors.html
+            output: web, pdf
+
+          - title: Building a Cycle
+            url: /building-a-cycle.html
+            output: web, pdf
+
+          - title: Field Mapping
+            url: /field-mapping.html
+            output: web, pdf
+
+          - title: Testing Cycles
+            url: /testing-cycles.html
+            output: web, pdf
+
+          - title: Run a Cycle
+            url: /run-a-cycle.html
+            output: web, pdf
+
+          - title: Adding Connector Fields
+            url: /adding-connector-fields.html
+            output: web, pdf
+
+      - title: Embedding Cyclr
+        output: web, pdf
+        folderitems:
+          - title: Cyclr Concepts
+            url: /cyclr-concepts.html
+            output: web, pdf
+
+          - title: Quick Overview
+            url: /embedding-overview.html
+            output: web, pdf
+
+          - title: Install a Connector
+            url: /install-a-connector.html
+            output: web, pdf
+
+          - title: Install a Template
+            url: /install-a-template.html
+            output: web, pdf
+
+          - title: Create Custom Connectors
+            url: /create-custom-connectors.html
+            output: web, pdf
+
+          - title: Notifications
+            url: /notifications.html
+            output: web, pdf
+
+          - title: API Authentication
+            url: /cyclr-api-authentication.html
+            output: web, pdf
+
+          - title: API Endpoints
+            url: /cyclr-api-endpoints.html
+            output: web, pdf
+
+      - title: Installing Template Integrations
+        output: web, pdf
+        folderitems:
+          - title: Obtain Partner Authorisation Token
+            url: /obtain-partner-authorization-token.html
+            output: web, pdf
+
+          - title: Create an Account
+            url: /create-account.html
+            output: web, pdf
+
+          - title: Create Account User
+            url: /create-account-user.html
+            output: web, pdf
+
+          - title: Obtain Account Authorization Token
+            url: /obtain-account-authorisation-token.html
+            output: web, pdf
+
+          - title: Get List Available Templates
+            url: /list-available-templates.html
+            output: web, pdf
+
+          - title: Install Cycle from Template
+            url: /install-from-template.html
+            output: web, pdf
+
+          - title: Get Cycle Prerequisites
+            url: /get-cyclr-prerequisites.html
+            output: web, pdf
+
+          - title: Account Connector Authentication
+            url: /authenticate-account-connector.html
+            output: web, pdf
+
+          - title: API Key Authentication
+            url: /api-key-authentication.html
+            output: web, pdf
+
+          - title: HTTP Basic Authentication
+            url: /http-basic-authentication.html
+            output: web, pdf
+
+          - title: OAuth Authentication
+            url: /oauth-authentication.html
+            output: web, pdf
+
+          - title: Step Set Up
+            url: /step-set-up.html
+            output: web, pdf
+
+          - title: Set Parameter Mappings
+            url: /set-step-parameters.html
+            output: web, pdf
+
+          - title: Set Field Mappings
+            url: /set-step-field-mapping.html
+            output: web, pdf
+
+          - title: Static Value Field Mapping
+            url: /static-value-mapping.html
+            output: web, pdf
+
+          - title: Field Mapping with Step Data
+            url: /field-mapping-with-step-data.html
+            output: web, pdf
+
+          - title: Value List Mapping
+            url: /value-list-mapping.html
+            output: web, pdf
+
+          - title: Cycle Activation
+            url: /cycle-activation.html
+            output: web, pdf
+
+      - title: Integration Builder Tools
+        output: web, pdf
+
+        folderitems:
+          - title: Decision Steps
+            url: /decision-steps.html
+            output: web, pdf
+
+          - title: Delay Steps
+            url: /delay-steps.html
+            output: web, pdf
+
+          - title: Wait Until Steps
+            url: /wait-until.html
+            output: web, pdf
+
+      - title: Custom Connector Creation
+        output: web, pdf
+
+        folderitems:
+          - title: Introduction
+            url: /custom-connector-introduction.html
+            output: web, pdf
+
+          - title: Methods
+            url: /custom-connector-methods.html
+            output: web, pdf
+
+          - title: Examples
+            url: /custom-connector-examples.html
+            output: web, pdf
+
+          - title: Fields
+            url: /custom-connector-fields.html
+            output: web, pdf
+
+          - title: Reference
+            url: /custom-connector-reference.html
+            output: web, pdf
+
+          - title: Properties
+            url: /custom-connector-properties.html
+            output: web, pdf
+
+          - title: Parameters and Triggers
+            url: /custom-connectors-parameters-triggers.html
+            output: web, pdf
+
+          - title: Paging
+            url: /custom-connectors-paging.html
+            output: web, pdf
+
+          - title: Scripting
+            url: /custom-connector-scripting.html
+            output: web, pdf
+
+          - title: OpenAPI Importer
+            url: /openapi.html
+            output: web, pdf
+
+      - title: LAUNCH
+        output: web, pdf
+
+        folderitems:
+          - title: Overview
+            url: /launch-overview.html
+            output: web, pdf
+
+          - title: User Experience
+            url: /launch-user-experience.html
+            output: web, pdf
+
+          - title: Building Integration Templates for LAUNCH
+            url: /building-integration-templates-launch.html
+            output: web, pdf
+
+          - title: Deploying LAUNCH
+            url: /launch-deployment.html
+            output: web, pdf
+
+          - title: Handling Callback
+            url: /handling-callback.html
+            output: web, pdf
+
+          - title: Customising the appearence of LAUNCH
+            url: /customising-launch.html
+            output: web, pdf
+
+          - title: ORBIT
+            url: /orbit.html
+            output: web, pdf
+
+      - title: Plugins
+        output: web, pdf
+
+        folderitems:
+          - title: Contact Form 7 Plugin
+            url: /contact-form-7-plugin.html
+            output: web, pdf
+
+          - title: Gravity Forms Plugin
+            url: /gravity-forms-plugin.html
+            output: web, pdf
+
+          - title: Salesforce Plugin
+            url: /salesforce-plugin.html
+            output: web, pdf
+
+      - title: Connector Guides
+        output: web, pdf
+
+        folderitems:
+          - title: Capsule
+            url: /capsule-connector.html
+            output: web, pdf
+
+          - title: Clover
+            url: /clover-connector.html
+            output: web, pdf
+
+          - title: Microsoft Dynamics
+            url: /dynamics-connector.html
+            output: web, pdf
+
+          - title: Facebook
+            url: /facebook-connector.html
+            output: web, pdf
+
+          - title: Google
+            url: /google-connector.html
+            output: web, pdf
+
+          - title: Salesforce
+            url: /salesforce-connector.html
+            output: web, pdf
+
+          - title: Sugar CRM
+            url: /sugarcrm-connector.html
+            output: web, pdf
