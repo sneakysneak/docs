@@ -5,8 +5,6 @@ permalink: salesforce-plugin.html
 tags: [plugins]
 ---
 
-# Salesforce #
-
 ![Salesforce Integration Plugin](https://cyclr.com/wp-content/uploads/2017/10/Salesforce.png)
 
 The Cyclr Salesforce plugin allows you to synchronise contacts and campaigns with a number of email marketing platforms, including [Sentori](http://sentoriapp.com/), [Campaign Monitor](http://campaignmonitor.com/), and [MailChimp](http://mailchimp.com/).

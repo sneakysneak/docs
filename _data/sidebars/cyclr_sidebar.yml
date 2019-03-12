@@ -36,8 +36,8 @@ entries:
             url: /run-a-cycle.html
             output: web, pdf
 
-          - title: Adding Connector Fields
-            url: /adding-connector-fields.html
+          - title: Adding Custom Fields
+            url: /adding-custom-fields.html
             output: web, pdf
 
       - title: Embedding Cyclr

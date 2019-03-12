@@ -5,8 +5,6 @@ permalink: installing-connectors.html
 tags: [getting_started]
 ---
 
-# Installing Connectors #
-
 In order to use Cyclr, you need to install connectors for your apps.
 
 To do this, make sure you are in the builder (click to create a cycle) and then click the Add Connector button in the right sidebar of the builder.

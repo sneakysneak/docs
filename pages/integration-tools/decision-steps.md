@@ -5,8 +5,6 @@ permalink: decision-steps.html
 tags: [builder-tools]
 ---
 
-# Decision Steps #
-
 Decision steps can split the data in your cycle down a true or false branch.
 
 ![](./images/decision-example.png)

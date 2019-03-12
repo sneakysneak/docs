@@ -5,8 +5,6 @@ permalink: custom-connector-fields.html
 tags: [connector-creation]
 ---
 
-# Fields #
-
 Field Properties
 ----------------
 

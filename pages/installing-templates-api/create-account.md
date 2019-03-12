@@ -5,8 +5,6 @@ permalink: create-account.html
 tags: [installing]
 ---
 
-# Create Account #
-
 _**A Cyclr account contains Account Connectors and Integrations and will typically have a one to one relationship with an account in your application.**_
 
 If an Account does not already exist, one should be created.

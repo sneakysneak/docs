@@ -5,8 +5,6 @@ permalink: obtain-account-authorisation-token.html
 tags: [installing]
 ---
 
-# Obtain Account Authorization Token #
-
 **_In order to perform operations against your end user accounts in Cyclr, a User Account OAuth token is required._**
 
 User Account OAuth tokens are used to perform operations within the scope of an Account.

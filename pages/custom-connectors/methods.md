@@ -5,8 +5,6 @@ permalink: custom-connector-methods.html
 tags: [connector-creation]
 ---
 
-# Methods #
-
 *   **Name **– the name of the method to appear in the Cyclr UI for the user to see. Should be short and snappy and have initial caps for nouns/verbs, lowercase for minor words (like “a” or “to”), e.g. “Delete Emails”, “Get All Contacts”, “Send to List”.
 *   **Description **– this is the description of the method to appear in the Cyclr UI for the user to understand what the method does and be informed of any special/interesting values to pass. Can be quite lengthy if appropriate. Can also include links to helpful API documentation if useful.
 *   **Hide **– this will hide the method in the Cyclr UI if set to true. Leave out if not hiding.

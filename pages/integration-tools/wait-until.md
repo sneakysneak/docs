@@ -5,8 +5,6 @@ permalink: wait-until.html
 tags: [builder-tools]
 ---
 
-# Wait Until Steps #
-
 You can use a Wait Until step in two ways.
 
 #### Wait for a specific date

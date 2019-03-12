@@ -1,11 +1,9 @@
 ---
-title: Adding Connector Fields
+title: Adding Custom Fields
 sidebar: cyclr_sidebar
-permalink: adding-connector-fields.html
+permalink: adding-custom-fields.html
 tags: [getting_started]
 ---
-
-# Adding Custom Fields #
 
 By default, connectors will only include the standard fields used by an app. It is therefore common to add new fields to work with fields have added in the app you are connecting.
 

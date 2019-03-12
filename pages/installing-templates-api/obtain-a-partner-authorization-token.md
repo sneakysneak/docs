@@ -5,8 +5,6 @@ permalink: obtain-partner-authorization-token.html
 tags: [installing]
 ---
 
-# Obtain a Partner Authorization Token #
-
 _**Before a new user and account can be created on Cyclr, a Console admin user OAuth token must be obtained.**_
 
 The token request should be POSTed in a application/x-www-form-urlencoded content type.

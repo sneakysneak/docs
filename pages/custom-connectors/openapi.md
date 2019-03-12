@@ -5,8 +5,6 @@ permalink: openapi.html
 tags: [connector-creation]
 ---
 
-# Create Connectors from OpenAPI #
-
 ## Introduction ##
 
 In this guide, you will learn how to create your own custom connectors in Cyclr.

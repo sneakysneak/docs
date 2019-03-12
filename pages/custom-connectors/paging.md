@@ -5,8 +5,6 @@ permalink: custom-connectors-paging.html
 tags: [connector-creation]
 ---
 
-# Paging #
-
 Inbound and Outbound Paging
 ---------------------------
 

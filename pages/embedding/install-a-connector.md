@@ -5,8 +5,6 @@ permalink: install-a-connector.html
 tags: [embedding]
 ---
 
-# Install a Connector #
-
 This article will guide you through installing a connector into an account. You must have already have an access token to  
 an account.
 

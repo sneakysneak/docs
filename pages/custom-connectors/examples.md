@@ -5,8 +5,6 @@ permalink: custom-connector-examples.html
 tags: [connector-creation]
 ---
 
-# Examples #
-
 Example 1: standard connector
 -----------------------------
 

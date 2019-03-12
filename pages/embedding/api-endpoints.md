@@ -5,8 +5,6 @@ permalink: cyclr-api-endpoints.html
 tags: [embedding]
 ---
 
-# API Endpoints #
-
 Note: You need to have authenticated with the Cyclr API before you can use these methods.
 
 List Accounts

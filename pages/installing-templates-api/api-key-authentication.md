@@ -5,8 +5,6 @@ permalink: api-key-authentication.html
 tags: [installing]
 ---
 
-# API Key Authentication #
-
 _**For connectors that are authenticated using an API key provided by the 3rd party app.**_
 
 Your user’s API Key will need to be collected in your application and sent to Cyclr like below, this can be done for both unauthenticated and authenticated connectors.

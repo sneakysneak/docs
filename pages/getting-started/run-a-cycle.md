@@ -5,8 +5,6 @@ permalink: run-a-cycle.html
 tags: [getting_started]
 ---
 
-# Run a Cycle #
-
 Complete cycle setup
 --------------------
 

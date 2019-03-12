@@ -5,8 +5,6 @@ permalink: custom-connector-reference.html
 tags: [connector-creation]
 ---
 
-# Reference #
-
 A connector is a JSON formatted text file made up of the following parts.
 
 *   **Authentication **– how the connector should connect to the target API (e.g. OAuth, API key, login, etc).

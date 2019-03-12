@@ -5,8 +5,6 @@ permalink: get-cyclr-prerequisites.html
 tags: [installing]
 ---
 
-# Get Cycle Prerequisites #
-
 **_A Cycle installed in an Account from a Template may have prerequisites that need to be fulfilled before the Cycle can be activated._**
 
 The Cyclr API can provide information on the prerequisites for a Cycle to run.

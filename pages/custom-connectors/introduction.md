@@ -5,8 +5,6 @@ permalink: custom-connector-introduction.html
 tags: [connector-creation]
 ---
 
-# Introduction #
-
 What is a custom connector?
 ---------------------------
 

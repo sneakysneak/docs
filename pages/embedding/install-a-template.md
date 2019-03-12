@@ -5,8 +5,6 @@ permalink: install-a-template.html
 tags: [embedding]
 ---
 
-# Install a Template #
-
 Introduction
 ------------
 

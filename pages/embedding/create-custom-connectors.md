@@ -5,8 +5,6 @@ permalink: create-custom-connectors.html
 tags: [embedding]
 ---
 
-# Create Custom Connectors #
-
 Introduction
 ------------
 

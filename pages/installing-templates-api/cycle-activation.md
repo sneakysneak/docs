@@ -5,8 +5,6 @@ permalink: cycle-activation.html
 tags: [installing]
 ---
 
-# Cycle Activation #
-
 _**When a cycle is installed in an account they are in a Paused state and must be activated to before any step requests will be processed.**_
 
 When a Cycle has been installed and all of it’s prerequisites have been provided, the cycle can be activated like below:

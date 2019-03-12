@@ -5,8 +5,6 @@ permalink: list-available-templates.html
 tags: [installing]
 ---
 
-# List Available Templates #
-
 _**Templates are integrations built by you in the Console’s drag-and-drop builder, they can be installed in our end user’s account. Your app would present a list or library of available templates to your end users.**_
 
 Retrieve a list of templates available to the Account you wish to install one for.

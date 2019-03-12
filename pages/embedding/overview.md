@@ -5,8 +5,6 @@ permalink: embedding-overview.html
 tags: [embedding]
 ---
 
-# Quick Overview
-
 This article provides a broad overview of how Cyclr works with your app:
 
 1.  Connect your API

@@ -5,8 +5,6 @@ permalink: authenticate-account-connector.html
 tags: [installing]
 ---
 
-# Authenticate Account Connector #
-
 _**You users will be required to provide authentication information before Cycles can be run.**_
 
 Cyclr supports three types of connector authentication:

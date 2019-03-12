@@ -5,8 +5,6 @@ permalink: value-list-mapping.html
 tags: [installing]
 ---
 
-# Value List Mapping #
-
 **_Fields within a step may contain a set of pre-defined values that can be selected from, returned in the “Values” array below:_**
 
     GET /v1.0/steps/{Step ID}/fieldmappings/{Field ID}

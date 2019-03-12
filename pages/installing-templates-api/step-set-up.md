@@ -5,8 +5,6 @@ permalink: step-set-up.html
 tags: [installing]
 ---
 
-# Step Setup #
-
 _**Templates in Cyclr may include steps that require mapping or parameter values that are specific to your end user’s use of those templates.**_
 
 If the Cycle prerequisites method returned Steps that required mapping, you need to loop through them to determine what is required.

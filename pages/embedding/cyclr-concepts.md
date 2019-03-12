@@ -5,8 +5,6 @@ permalink: cyclr-concepts.html
 tags: [embedding]
 ---
 
-# Cyclr Concepts #
-
 ### Connectors
 
 A Connector is a Cyclr implementaion of a third party API that when installed into an Account will provide connectivity with the third party application.

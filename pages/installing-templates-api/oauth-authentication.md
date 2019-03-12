@@ -5,8 +5,6 @@ permalink: oauth-authentication.html
 tags: [installing]
 ---
 
-# OAuth Authentication #
-
 **_For connectors that require your user to be taken through an OAuth flow._**
 
 Connectors using OAuth require that the user goes through a webflow where they are sent to the third party application to sign in and grant access to Cyclr.

@@ -5,8 +5,6 @@ permalink: custom-connector-scripting.html
 tags: [connector-creation]
 ---
 
-# Scripting #
-
 Events
 ------
 

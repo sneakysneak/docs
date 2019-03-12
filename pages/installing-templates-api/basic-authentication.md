@@ -5,8 +5,6 @@ permalink: http-basic-authentication.html
 tags: [installing]
 ---
 
-# HTTP Basic Authentication #
-
 _**For connectors that are authenticated HTTP basic authentication.**_
 
 Your user’s username and password will need to be collected in your application and sent to Cyclr like below

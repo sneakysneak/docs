@@ -5,8 +5,6 @@ permalink: install-from-template.html
 tags: [installing]
 ---
 
-# Install a Template #
-
 _**A Cycle is an instance of an Template installed within an Account.**_
 
 Install a new Cycle into the Account, based on one of the available templates.

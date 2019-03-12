@@ -5,8 +5,6 @@ permalink: custom-connectors-parameters-triggers.html
 tags: [connector-creation]
 ---
 
-# Parameters and Triggers #
-
 Overview
 --------
 

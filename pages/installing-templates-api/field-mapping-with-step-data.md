@@ -5,8 +5,6 @@ permalink: field-mapping-with-step-data.html
 tags: [installing]
 ---
 
-# Field Mapping with Step Data #
-
 #### **_A Step Data mapping uses a value from a previous step response as the value for this steps request._**
 
 Cyclr provides an endpoint to discover valid field mapping options for a given step.

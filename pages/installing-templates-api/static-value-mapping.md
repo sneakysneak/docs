@@ -5,8 +5,6 @@ permalink: static-value-mapping.html
 tags: [installing]
 ---
 
-# Static Value Field Mapping #
-
 #### _**A static value can be set as the field mapping, a static value is a value that will never change.**_
 
 This value should be obtained from your user, or automatically assigned by your application, then provided to Cyclr like below:

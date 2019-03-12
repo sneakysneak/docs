@@ -5,8 +5,6 @@ permalink: gravity-forms-plugin.html
 tags: [plugins]
 ---
 
-# Gravity Forms #
-
 ![Gravity Forms](https://cyclr.com/wp-content/uploads/2017/10/Gravity-Forms-259x300.png)
 
 #### Prequisites

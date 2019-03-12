@@ -5,8 +5,6 @@ permalink: create-account-user.html
 tags: [installing]
 ---
 
-# Create Account User #
-
 **_Users exist in Cyclr either to enable your end users to access our user interface directly, or for your app to access a Cyclr account on their behalf via our REST API._**
 
 A user should be created and given access to the new Account, so that we can generate an authorization token to work on objects, Connectors and Cycles, within the Account.

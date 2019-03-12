@@ -5,8 +5,6 @@ permalink: set-step-field-mapping.html
 tags: [installing]
 ---
 
-# Set Step Field Mapping #
-
 _**Field Mappings are passed to the third party API as the request body.**_
 
 For each Missing field mapping returned in the Step prerequisites request in step 7:

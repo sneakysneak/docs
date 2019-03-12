@@ -5,8 +5,6 @@ permalink: cyclr-api-authentication.html
 tags: [embedding]
 ---
 
-# API Authentication #
-
 The Cyclr API authentication is provided using [OAuth2](https://oauth.net/2/). OAuth tokens are granted to either manage the partner or access and modify a partner account.
 
 Get access token

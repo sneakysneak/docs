@@ -5,8 +5,6 @@ permalink: custom-connector-properties.html
 tags: [connector-creation]
 ---
 
-# Properties #
-
 Name
 ----
 

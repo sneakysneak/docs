@@ -5,8 +5,6 @@ permalink: field-mapping.html
 tags: [getting_started]
 ---
 
-# Field Mapping #
-
 When using a (blue) Action step, you will need to map its fields.
 
 #### Field mapping example

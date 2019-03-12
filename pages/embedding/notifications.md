@@ -5,8 +5,6 @@ permalink: notifications.html
 tags: [embedding]
 ---
 
-# Notifications #
-
 Cyclr sends notification emails to account administrators when there is an issue with an accounts cycles. You can instead get notifications posted to a webhook.
 
 **Example Notification**
