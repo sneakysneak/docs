@@ -24,4 +24,4 @@ Once correctly setup and test, click the run button for your cycle to make it li
 
 You can monitor the data and health of your cycles from the dashboard shown on the home screen.
 
-[How to Add your own Connector Fields](./adding-connector-fields)
+[How to Add your own Connector Fields](./adding-custom-fields)
