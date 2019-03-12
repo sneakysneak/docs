@@ -1,6 +1,6 @@
 ---
 title: Pipedrive Connector Guide
-sidebar: mydoc_sidebar
+sidebar: cyclr_sidebar
 permalink: pipedrive-connector.html
 tags: [connector]
 ---

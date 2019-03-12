@@ -1,6 +1,6 @@
 ---
 title: Wordpress Authentication
-sidebar: mydoc_sidebar
+sidebar: cyclr_sidebar
 permalink: wordpress-connector.html
 tags: [connector]
 ---

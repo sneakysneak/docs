@@ -1,6 +1,6 @@
 ---
 title: Twilio Connector Gudie
-sidebar: mydoc_sidebar
+sidebar: cyclr_sidebar
 permalink: twilio-connector.html
 tags: [connector]
 ---
