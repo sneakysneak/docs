@@ -1,7 +1,7 @@
 ---
 title: FullContact Connector Guide
 sidebar: cyclr_sidebar
-permalink: fullcontact-connector.html
+permalink: fullcontact-connector
 tags: [connector]
 ---
 

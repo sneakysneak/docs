@@ -278,6 +278,10 @@ entries:
             url: /facebook-connector
             output: web, pdf
 
+          - title: FullContact
+            url: /fullcontact-connector
+            output: web, pdf
+
           - title: Google
             url: /google-connector
             output: web, pdf
