@@ -2,7 +2,7 @@
 title: Testing Cycles
 sidebar: cyclr_sidebar
 permalink: testing-cycles
-tags: [getting_started]
+tags: [getting-started]
 ---
 
 You can test the steps in your cycle, by clicking their “play” button.

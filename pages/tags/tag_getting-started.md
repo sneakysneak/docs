@@ -1,8 +1,8 @@
 ---
 title: "Getting started pages"
-tagName: getting_started
+tagName: getting-started
 search: exclude
-permalink: tag_getting_started
+permalink: tag_getting-started
 sidebar: cyclr_sidebar
 folder: tags
 ---

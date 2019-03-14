@@ -2,7 +2,7 @@
 title: Building a Cycle
 sidebar: cyclr_sidebar
 permalink: building-a-cycle
-tags: [getting_started]
+tags: [getting-started]
 ---
 
 Once you have [installed connectors](./installing-connectors) for your apps, you can begin to connect and automate your apps.

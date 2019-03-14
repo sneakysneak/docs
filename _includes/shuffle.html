@@ -10,7 +10,7 @@ see the problems this layout poses if you're including it in PDF. {{site.data.al
 <div class="row">
   <div class="filter-options">
     <button class="btn btn-primary" data-group="all">All</button>
-    <button class="btn btn-primary" data-group="getting_started">Getting Started</button>
+    <button class="btn btn-primary" data-group="getting-started">Getting Started</button>
     <button class="btn btn-primary" data-group="embedding">Embedding Cyclr</button>
     <button class="btn btn-primary" data-group="installing">Installing Template Integrations</button>
     <button class="btn btn-primary" data-group="builder-tools">Integration Builder Tools</button>
@@ -23,7 +23,7 @@ see the problems this layout poses if you're including it in PDF. {{site.data.al
 <div id="grid" class="row">
 
 
-  <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["getting_started"]'>
+  <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["getting-started"]'>
 
     <div class="panel panel-default">
       <div class="panel-heading">Getting started</div>
@@ -32,7 +32,7 @@ see the problems this layout poses if you're including it in PDF. {{site.data.al
         <ul>
           {% for page in site.pages %}
           {% for tag in page.tags %}
-          {% if tag == "getting_started" %}
+          {% if tag == "getting-started" %}
           <li><a href="{{page.url | remove: '/'}}">{{page.title}}</a></li>
           {% endif %}
           {% endfor %}
