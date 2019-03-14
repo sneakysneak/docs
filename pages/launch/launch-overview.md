@@ -1,7 +1,7 @@
 ---
 title: Launch Overview
 sidebar: cyclr_sidebar
-permalink: launch-overview.html
+permalink: launch-overview
 tags: [launch]
 ---
 

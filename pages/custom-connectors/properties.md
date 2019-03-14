@@ -1,7 +1,7 @@
 ---
 title: Custom Connector Properties
 sidebar: cyclr_sidebar
-permalink: custom-connector-properties.html
+permalink: custom-connector-properties
 tags: [connector-creation]
 ---
 

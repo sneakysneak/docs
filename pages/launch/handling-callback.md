@@ -1,7 +1,7 @@
 ---
 title: Handling Launch Callback
 sidebar: cyclr_sidebar
-permalink: handling-callback.html
+permalink: handling-callback
 tags: [launch]
 ---
 

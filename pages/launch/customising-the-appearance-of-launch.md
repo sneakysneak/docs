@@ -1,7 +1,7 @@
 ---
 title: Customising The Appearance of Launch
 sidebar: cyclr_sidebar
-permalink: customising-launch.html
+permalink: customising-launch
 tags: [launch]
 ---
 

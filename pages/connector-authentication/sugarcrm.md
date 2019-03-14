@@ -1,7 +1,7 @@
 ---
 title: SugarCRM Authentication
 sidebar: cyclr_sidebar
-permalink: sugarcrm-connector.html
+permalink: sugarcrm-connector
 tags: [connector]
 ---
 

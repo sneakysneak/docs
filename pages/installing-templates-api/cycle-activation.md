@@ -1,7 +1,7 @@
 ---
 title: Cycle Activation
 sidebar: cyclr_sidebar
-permalink: cycle-activation.html
+permalink: cycle-activation
 tags: [installing]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Facebook Marketing Authenticaiton
 sidebar: cyclr_sidebar
-permalink: facebook-connector.html
+permalink: facebook-connector
 tags: [connector]
 ---
 

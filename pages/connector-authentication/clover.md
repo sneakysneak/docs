@@ -1,7 +1,7 @@
 ---
 title: Clover Authentication
 sidebar: cyclr_sidebar
-permalink: clover-connector.html
+permalink: clover-connector
 tags: [connector]
 ---
 

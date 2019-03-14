@@ -1,7 +1,7 @@
 ---
 title: Embedding Cyclr Overview
 sidebar: cyclr_sidebar
-permalink: embedding-overview.html
+permalink: embedding-overview
 tags: [embedding]
 ---
 

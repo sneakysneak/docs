@@ -1,7 +1,7 @@
 ---
 title: Custom Connector Reference
 sidebar: cyclr_sidebar
-permalink: custom-connector-reference.html
+permalink: custom-connector-reference
 tags: [connector-creation]
 ---
 

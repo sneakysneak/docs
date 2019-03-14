@@ -1,7 +1,7 @@
 ---
 title: Capsule Authentication
 sidebar: cyclr_sidebar
-permalink: capsule-connector.html
+permalink: capsule-connector
 tags: [connector]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Set Step Parameter
 sidebar: cyclr_sidebar
-permalink: set-step-parameters.html
+permalink: set-step-parameters
 tags: [installing]
 ---
 

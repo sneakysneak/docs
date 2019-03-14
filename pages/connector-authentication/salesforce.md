@@ -1,7 +1,7 @@
 ---
 title: Salesforce Authentication
 sidebar: cyclr_sidebar
-permalink: salesforce-connector.html
+permalink: salesforce-connector
 tags: [connector]
 ---
 

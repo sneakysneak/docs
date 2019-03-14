@@ -1,7 +1,7 @@
 ---
 title: Field Mapping
 sidebar: cyclr_sidebar
-permalink: field-mapping.html
+permalink: field-mapping
 tags: [getting_started]
 ---
 

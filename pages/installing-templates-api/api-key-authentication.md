@@ -1,7 +1,7 @@
 ---
 title: API Key Authentication
 sidebar: cyclr_sidebar
-permalink: api-key-authentication.html
+permalink: api-key-authentication
 tags: [installing]
 ---
 

@@ -2,7 +2,7 @@
 title: "Plugins pages"
 tagName: plugins
 search: exclude
-permalink: tag_plugins.html
+permalink: tag_plugins
 sidebar: cyclr_sidebar
 folder: tags
 ---

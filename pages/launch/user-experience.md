@@ -1,7 +1,7 @@
 ---
 title: Launch User Experience
 sidebar: cyclr_sidebar
-permalink: launch-user-experience.html
+permalink: launch-user-experience
 tags: [launch]
 ---
 

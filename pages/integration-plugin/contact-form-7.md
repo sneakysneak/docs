@@ -1,7 +1,7 @@
 ---
 title: Contact Form 7 Plugin
 sidebar: cyclr_sidebar
-permalink: contact-form-7-plugin.html
+permalink: contact-form-7-plugin
 tags: [plugins]
 ---
 

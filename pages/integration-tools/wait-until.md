@@ -1,7 +1,7 @@
 ---
 title: Wait Until Steps
 sidebar: cyclr_sidebar
-permalink: wait-until.html
+permalink: wait-until
 tags: [builder-tools]
 ---
 

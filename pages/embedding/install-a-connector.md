@@ -1,7 +1,7 @@
 ---
 title: Install a Connector
 sidebar: cyclr_sidebar
-permalink: install-a-connector.html
+permalink: install-a-connector
 tags: [embedding]
 ---
 

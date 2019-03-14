@@ -1,7 +1,7 @@
 ---
 title: Notifications
 sidebar: cyclr_sidebar
-permalink: notifications.html
+permalink: notifications
 tags: [embedding]
 ---
 

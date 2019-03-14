@@ -1,7 +1,7 @@
 ---
 title: Create Account User
 sidebar: cyclr_sidebar
-permalink: create-account-user.html
+permalink: create-account-user
 tags: [installing]
 ---
 

@@ -2,7 +2,7 @@
 title: "LAUNCH pages"
 tagName: launch
 search: exclude
-permalink: tag_launch.html
+permalink: tag_launch
 sidebar: cyclr_sidebar
 folder: tags
 ---

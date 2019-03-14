@@ -1,7 +1,7 @@
 ---
 title: API Authentication
 sidebar: cyclr_sidebar
-permalink: cyclr-api-authentication.html
+permalink: cyclr-api-authentication
 tags: [embedding]
 ---
 

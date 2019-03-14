@@ -1,7 +1,7 @@
 ---
 title: Obtain a Partner Authorization Token
 sidebar: cyclr_sidebar
-permalink: obtain-partner-authorization-token.html
+permalink: obtain-partner-authorization-token
 tags: [installing]
 ---
 

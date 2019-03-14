@@ -1,7 +1,7 @@
 ---
 title: Value List Mapping
 sidebar: cyclr_sidebar
-permalink: value-list-mapping.html
+permalink: value-list-mapping
 tags: [installing]
 ---
 

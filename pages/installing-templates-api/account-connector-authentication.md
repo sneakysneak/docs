@@ -1,7 +1,7 @@
 ---
 title: Authenticate Account Connector
 sidebar: cyclr_sidebar
-permalink: authenticate-account-connector.html
+permalink: authenticate-account-connector
 tags: [installing]
 ---
 

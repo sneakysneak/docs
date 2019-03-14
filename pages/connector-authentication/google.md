@@ -1,7 +1,7 @@
 ---
 title: Google Authentication
 sidebar: cyclr_sidebar
-permalink: google-connector.html
+permalink: google-connector
 tags: [connector]
 ---
 

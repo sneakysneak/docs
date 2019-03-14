@@ -1,7 +1,7 @@
 ---
 title: List Available Templates
 sidebar: cyclr_sidebar
-permalink: list-available-templates.html
+permalink: list-available-templates
 tags: [installing]
 ---
 

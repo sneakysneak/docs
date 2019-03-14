@@ -1,7 +1,7 @@
 ---
 title: Minimum Requirements
 sidebar: cyclr_sidebar
-permalink: minimum-requirements.html
+permalink: minimum-requirements
 tags: [getting_started]
 ---
 

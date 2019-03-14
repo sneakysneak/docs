@@ -1,7 +1,7 @@
 ---
 title: Run a Cycle
 sidebar: cyclr_sidebar
-permalink: run-a-cycle.html
+permalink: run-a-cycle
 tags: [getting_started]
 ---
 

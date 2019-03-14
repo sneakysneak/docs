@@ -1,7 +1,7 @@
 ---
 title: Installing Connectors
 sidebar: cyclr_sidebar
-permalink: installing-connectors.html
+permalink: installing-connectors
 tags: [getting_started]
 ---
 

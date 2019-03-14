@@ -1,7 +1,7 @@
 ---
 title: Cyclr Concepts
 sidebar: cyclr_sidebar
-permalink: cyclr-concepts.html
+permalink: cyclr-concepts
 tags: [embedding]
 ---
 

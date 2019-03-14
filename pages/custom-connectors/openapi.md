@@ -1,7 +1,7 @@
 ---
 title: OpenAPI
 sidebar: cyclr_sidebar
-permalink: openapi.html
+permalink: openapi
 tags: [connector-creation]
 ---
 

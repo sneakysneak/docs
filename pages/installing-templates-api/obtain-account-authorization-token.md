@@ -1,7 +1,7 @@
 ---
 title: Obtain Account Authorization Token
 sidebar: cyclr_sidebar
-permalink: obtain-account-authorisation-token.html
+permalink: obtain-account-authorisation-token
 tags: [installing]
 ---
 

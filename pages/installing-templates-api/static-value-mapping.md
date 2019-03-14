@@ -1,7 +1,7 @@
 ---
 title: Static Value Field Mapping
 sidebar: cyclr_sidebar
-permalink: static-value-mapping.html
+permalink: static-value-mapping
 tags: [installing]
 ---
 

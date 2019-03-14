@@ -1,7 +1,7 @@
 ---
 title: Launch Deployment
 sidebar: cyclr_sidebar
-permalink: launch-deployment.html
+permalink: launch-deployment
 tags: [launch]
 ---
 

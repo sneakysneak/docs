@@ -1,7 +1,7 @@
 ---
 title: Adding Custom Fields
 sidebar: cyclr_sidebar
-permalink: adding-custom-fields.html
+permalink: adding-custom-fields
 tags: [getting_started]
 ---
 

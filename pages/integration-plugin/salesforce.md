@@ -1,7 +1,7 @@
 ---
 title: Saleforce Plugin
 sidebar: cyclr_sidebar
-permalink: salesforce-plugin.html
+permalink: salesforce-plugin
 tags: [plugins]
 ---
 

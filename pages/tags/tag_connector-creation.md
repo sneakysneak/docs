@@ -2,7 +2,7 @@
 title: "Connector creation pages"
 tagName: connector-creation
 search: exclude
-permalink: tag_connector-creation.html
+permalink: tag_connector-creation
 sidebar: cyclr_sidebar
 folder: tags
 ---

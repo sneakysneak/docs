@@ -1,7 +1,7 @@
 ---
 title: Testing Cycles
 sidebar: cyclr_sidebar
-permalink: testing-cycles.html
+permalink: testing-cycles
 tags: [getting_started]
 ---
 

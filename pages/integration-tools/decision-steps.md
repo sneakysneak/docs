@@ -1,7 +1,7 @@
 ---
 title: Decision Steps
 sidebar: cyclr_sidebar
-permalink: decision-steps.html
+permalink: decision-steps
 tags: [builder-tools]
 ---
 

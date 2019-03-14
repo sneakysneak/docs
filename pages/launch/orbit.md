@@ -1,7 +1,7 @@
 ---
 title: Launch Orbit
 sidebar: cyclr_sidebar
-permalink: orbit.html
+permalink: orbit
 tags: [launch]
 ---
 

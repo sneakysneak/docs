@@ -1,7 +1,7 @@
 ---
 title: OAuth Authentication
 sidebar: cyclr_sidebar
-permalink: oauth-authentication.html
+permalink: oauth-authentication
 tags: [installing]
 ---
 

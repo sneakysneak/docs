@@ -36,8 +36,13 @@ entries:
             url: /run-a-cycle
             output: web, pdf
 
+<<<<<<< HEAD
           - title: Adding Custom Fields
-            url: /adding-custom-fields
+            url: /adding-custom-fields.html
+=======
+          - title: Adding Connector Fields
+            url: /adding-connector-fields
+>>>>>>> 3f1ae30... Remove .html for doc links
             output: web, pdf
 
       - title: Embedding Cyclr

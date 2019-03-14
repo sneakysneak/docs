@@ -1,7 +1,7 @@
 ---
 title: Delay Steps
 sidebar: cyclr_sidebar
-permalink: delay-steps.html
+permalink: delay-steps
 tags: [builder-tools]
 ---
 

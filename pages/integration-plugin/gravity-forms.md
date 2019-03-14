@@ -1,7 +1,7 @@
 ---
 title: Gravity Forms Plugin
 sidebar: cyclr_sidebar
-permalink: gravity-forms-plugin.html
+permalink: gravity-forms-plugin
 tags: [plugins]
 ---
 

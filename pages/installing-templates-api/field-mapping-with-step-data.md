@@ -1,7 +1,7 @@
 ---
 title: Field Mapping with Step Data
 sidebar: cyclr_sidebar
-permalink: field-mapping-with-step-data.html
+permalink: field-mapping-with-step-data
 tags: [installing]
 ---
 

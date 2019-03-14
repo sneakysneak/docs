@@ -2,7 +2,7 @@
 title: "Builder tools pages"
 tagName: builder-tools
 search: exclude
-permalink: tag_builder-tools.html
+permalink: tag_builder-tools
 sidebar: cyclr_sidebar
 folder: tags
 ---

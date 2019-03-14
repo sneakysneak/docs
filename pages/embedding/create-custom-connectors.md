@@ -1,7 +1,7 @@
 ---
 title: Create Custom Connectors
 sidebar: cyclr_sidebar
-permalink: create-custom-connectors.html
+permalink: create-custom-connectors
 tags: [embedding]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Step Setup
 sidebar: cyclr_sidebar
-permalink: step-set-up.html
+permalink: step-set-up
 tags: [installing]
 ---
 

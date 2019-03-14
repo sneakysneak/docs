@@ -1,7 +1,7 @@
 ---
 title: Get Cycle Prerequisites
 sidebar: cyclr_sidebar
-permalink: get-cyclr-prerequisites.html
+permalink: get-cyclr-prerequisites
 tags: [installing]
 ---
 

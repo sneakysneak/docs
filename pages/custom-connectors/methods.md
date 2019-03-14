@@ -1,7 +1,7 @@
 ---
 title: Custom Connector Methods
 sidebar: cyclr_sidebar
-permalink: custom-connector-methods.html
+permalink: custom-connector-methods
 tags: [connector-creation]
 ---
 

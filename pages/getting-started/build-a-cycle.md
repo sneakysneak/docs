@@ -1,7 +1,7 @@
 ---
 title: Build a Cycle
 sidebar: cyclr_sidebar
-permalink: build-a-cycle.html
+permalink: build-a-cycle
 tags: [getting_started]
 ---
 

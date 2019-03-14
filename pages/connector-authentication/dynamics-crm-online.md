@@ -1,7 +1,7 @@
 ---
 title: Microsoft Dynamics Authentication
 sidebar: cyclr_sidebar
-permalink: dynamics-connector.html
+permalink: dynamics-connector
 tags: [connector]
 ---
 

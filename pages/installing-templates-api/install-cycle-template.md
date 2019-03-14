@@ -1,7 +1,7 @@
 ---
 title: Install a Template
 sidebar: cyclr_sidebar
-permalink: install-from-template.html
+permalink: install-from-template
 tags: [installing]
 ---
 
