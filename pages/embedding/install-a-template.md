@@ -5,13 +5,11 @@ permalink: install-a-template
 tags: [embedding]
 ---
 
-Introduction
-------------
+### Introduction
 
 In this guide, you will use Cyclr API to install a template. Before you start, make sure you have published your template in the Console.
 
-Getting Templates
------------------
+### Getting Templates
 
 You can quickly get all the published templates using the following request:
 
@@ -55,8 +53,7 @@ To filter your templates by a specific connector, simply add some parameters to 
      -H "Authrorization: Bearer ${ACCESS_TOKEN}" \
      "https://api.cyclr.com/v1.0/templates?pageSize=10&page=1&orderBy=Name&sortOrderAsc=true&connectorName=MailChimp&connectorVersion=3.0&includeIcons=true"
 
-Displaying Templates
---------------------
+### Displaying Templates
 
     <div class='container' data-bind="foreach: templates">
     <div class="card">
@@ -76,8 +73,7 @@ Displaying Templates
 
 You can see here we just listed all the templates in rows with their connector icons.
 
-Installing a Template
----------------------
+### Installing a Template
 
 Now that all the templates have been displayed, let’s start the installation. Before beginning, be sure you have the following information:
 
