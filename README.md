@@ -14,7 +14,7 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 1. If you don't have Docker installed, install [Docker](https://docs.docker.com/install/).
 2. Open the terminal.
-3. On your local computer, clone the Git repository for the Jekyll site:
+3. On your local computer, clone the Git repository for Cyclr Documentation:
 ```Shell
 $ git clone https://github.com/cyclr/docs.git
 ```
