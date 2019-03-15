@@ -1,7 +1,7 @@
 ---
 title: Intercom Authentication
 sidebar: cyclr_sidebar
-permalink: 
+permalink: intercom-connector
 tags: [connector]
 ---
 
