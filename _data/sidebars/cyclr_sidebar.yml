@@ -293,3 +293,7 @@ entries:
           - title: Sugar CRM
             url: /sugarcrm-connector
             output: web, pdf
+
+          - title: Cyclr IP Whitelisting
+            url: /cyclr-ip-whitelisting
+            output: web, pdf

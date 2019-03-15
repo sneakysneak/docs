@@ -10,3 +10,6 @@ _site/
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# Diff Backup
+.bak
