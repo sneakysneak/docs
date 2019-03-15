@@ -5,7 +5,7 @@ permalink: adding-custom-fields
 tags: [getting-started]
 ---
 
-By default, connectors will only include the standard fields used by an app. It is therefore common to add new fields to work with fields have added in the app you are connecting.
+By default, connectors will only include the standard fields used by an application. Where you need to work with additional fields in the application you are connecting to, it is possible to add these using custom fields.
 
 ![](./images/connector-custom-field.gif)
 
