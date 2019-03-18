@@ -5,7 +5,7 @@ permalink: authenticate-account-connector
 tags: [installing]
 ---
 
-_**You users will be required to provide authentication information before Cycles can be run.**_
+_**Your users will be required to provide authentication information before Cycles can be run.**_
 
 Cyclr supports three types of connector authentication:
 
@@ -20,7 +20,7 @@ Cyclr supports three types of connector authentication:
     </tr>
     <tr>
         <th>OAuth</th>
-        <td>Your user will be taken through an OAuth flow which will generate a token that can be used to generate the third party API</td>
+        <td>Your user will be taken through an OAuth flow which will generate a token that can be used to access the third party API</td>
     </tr>
 </table>
 
@@ -58,7 +58,7 @@ Response:
 
 In this example, the AuthType for this Account Connector is ApiKey.
 
-The response also confirms that the Account Connector is not yet authenticated (“Authentication”: false).
+The response also confirms that the Account Connector is not yet authenticated (“Authenticated”: false).
 
 [API Key Authentication](./api-key-authentication)  
 [HTTP Basic Authentication](./basic-authentication)  
