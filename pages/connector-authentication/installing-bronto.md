@@ -8,6 +8,7 @@ tags: [connector]
 # Bronto #
 
 When installing the Bronto Connector, the following documentation describes how to create an API Key and set appropriate permissions within your Bronto account:
+
 https://help.bronto.com/bmp/concept/c_api_soap_intro.html
 
 Here are the key points from that documentation:
