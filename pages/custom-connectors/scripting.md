@@ -8,7 +8,7 @@ tags: [connector-creation]
 Events
 ------
 
-Events are trigger at certain points allowing you to modify data. Script can be added at both the Connector & Method levels; Connector level event handlers will be called for all methods where as method level will only be called for that method. To add an event handler simply add a javascript function with the event name.
+Events are triggered at certain points allowing you to modify data. Script can be added at both the Connector & Method levels; Connector level event handlers will be called for all methods where as method level will only be called for that method. To add an event handler simply add a javascript function with the event name.
 
     function eventName() { /* Handle event here */ }
 
