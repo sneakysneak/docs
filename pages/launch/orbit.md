@@ -62,11 +62,12 @@ JSON response from API, using the OrbitUrl will signin the user to the account a
 
 Note: URL is only valid for 5 minutes.
 
-```
+```json
 {
-    ExpiresAtUtc = "2018-01-01T00:00:00+00:00",
-    OrbitUrl = $"https://{{Partner.Domain}}/account/signinwithtoken?token=abc123&returnUrl=%2Forbit",
-    Token = "abc123"
+    "AccountId": "0000000-0000-0000-0000-000000000000",
+    "ExpiresAtUtc": "2018-01-01T00:00:00+00:00",
+    "OrbitUrl": "https://hostapp.cyclr.com/account/signinwithtoken?token=abc123&returnUrl=%2Forbit",
+    "Token": "abc123"
 }
 ```
 

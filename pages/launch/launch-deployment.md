@@ -113,12 +113,14 @@ NJ88GGgv79V79VvYFBBTHUIGYBGY3434345545UYu</td>
 
 ***Response:***
 
-    {
-        "AccountId": "0000000-0000-0000-0000-000000000000",
-        "ExpiresAtUtc": "17/01/2018 12:11:22",
-        "LaunchUrl": "https://hostapp.cyclr.com/account/signinwithtoken?token=lld3UjpZKkuh0I7ObHR0EtxRsPo0No1GqNSyAi8pqXQ%3D&returnUrl=%2Flaunch",
-        "Token": "lld3UjpZKkuh0I7ObHR0EtxRsPo0No1GqNSyAi8pqXQ="
-    }
+```json
+{
+    "AccountId": "0000000-0000-0000-0000-000000000000",
+    "ExpiresAtUtc": "17/01/2018 12:11:22",
+    "LaunchUrl": "https://hostapp.cyclr.com/account/signinwithtoken?token=lld3UjpZKkuh0I7ObHR0EtxRsPo0No1GqNSyAi8pqXQ%3D&returnUrl=%2Flaunch",
+    "Token": "lld3UjpZKkuh0I7ObHR0EtxRsPo0No1GqNSyAi8pqXQ="
+}
+```
 
 <table>
     <tr>

@@ -12,7 +12,7 @@ The final window of the LAUNCH flow is completely customizable and influenced by
 JavaScript is also supported.
 
 Example:
-```
+```html
     <h1>Congrats - you're connected!</h1>
     <button onclick="closeWindow();">OK</button>
     <script type="text/javascript"> 
