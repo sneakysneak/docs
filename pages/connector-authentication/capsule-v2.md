@@ -23,13 +23,18 @@ Below are the details you should provide:
 
 **Name**: Your Application Name
 
-**URL**: Your Cyclr Domain e.g. https://app-h.cyclr.com/
+**URL**: Your Cyclr service domain, e.g. https://app-h.cyclr.com/. This can be found in your Cyclr Console under Settings > Integration Settings > Service Domain.
 
-**Redirect URL**: [https://my.cyclr.com/connector/callback](https://my.cyclr.com/connector/callback), {% raw %}https://{{Your Cyclr Domain e.g. app-h.cyclr.com}}/connector/callback{% endraw %}
+**Redirect URL**: you must add 2 callback URLs to allow Capsule to be used in your Cyclr Console templates as well as your Cyclr accounts.
+
+These URLs are:
+
+*   https://{{Your Cyclr console domain: my.cyclr.com or my.cyclr.uk}}/connector/callback
+*   https://{{Your Cyclr service domain e.g. app-h.cyclr.com}}/connector/callback
 
 **Application Type**: Web Application
 
-3.  Go to Cyclr Console (https://my.cyclr.com/console) > Connectors > Connector Library > Capsule v2 > Setup
+3.  Go to Cyclr Console (https://yourCyclrInstance/console) > Connectors > Connector Library > Capsule v2 > Setup
 
 **Client ID**: This is the Client ID displayed after you create the Capsule app
 

@@ -14,7 +14,7 @@ Importing an API
 ----------------
 
 Our powerful OpenAPI discovery tool lets you import your existing API specification into Cyclr.  
-After signing into the [Console](https://my.cyclr.com/console/), select Connectors > My Connectors > Generate From OpenAPI Specification.
+After signing into the Console (https://yourCyclrInstance/console/), select Connectors > My Connectors > Generate From OpenAPI Specification.
 
 ![](./images/import-api-1.gif)
 

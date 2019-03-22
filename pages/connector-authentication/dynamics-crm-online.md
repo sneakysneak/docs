@@ -27,15 +27,20 @@ Below are the details you should provide:
 
 **Application type**: Web app / API
 
-**Sign-on URL**: https://{% raw %}{YourCyclrDomain}{% endraw %}
+**Sign-on URL**: Your Cyclr service domain, e.g. https://app-h.cyclr.com/. This can be found in your Cyclr Console under Settings > Integration Settings > Service Domain.
 
-**Reply URLs**: https://{% raw %}{YourCyclrDomain}{% endraw %}/connector/callback
+**Reply URLs**: you must add 2 callback URLs to allow Dynamics CRM to be used in your Cyclr Console templates as well as your Cyclr accounts.
+
+These URLs are:
+
+*   https://{{Your Cyclr Console domain: my.cyclr.com or my.cyclr.uk}}/connector/callback
+*   https://{{Your Cyclr service domain e.g. app-h.cyclr.com}}/connector/callback
 
 **Multi-tenanted**: Yes
 
 **Required Permissions**: Dynamics CRM Online and Windows Azure Active Directory
 
-3.  Go to [Cyclr Console](https://my.cyclr.com/console) > Connectors > Connector Library > Dynamics CRM Online > Setup
+3.  Go to Cyclr Console (https://yourCyclrInstance/console) > Connectors > Connector Library > Dynamics CRM Online > Setup
 
 **Client ID**: This is the Application ID displayed in the portal
 

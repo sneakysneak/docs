@@ -28,7 +28,7 @@ Below are the details you should provide:
 
 **App Domain**: (two domains required) my.cyclr.com and your Cyclr partner domain e.g. app-h.cyclr.com
 
-**Website**: your Cyclr partner domain e.g. https://app-h.cyclr.com
+**Website**: Your Cyclr service domain, e.g. https://app-h.cyclr.com/. This can be found in your Cyclr Console under Settings > Integration Settings > Service Domain.
 
 **Application Type**: Web Application
 

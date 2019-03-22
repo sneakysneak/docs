@@ -49,8 +49,8 @@ Tick the **Enable OAuth Settings** box to display further options.
 
 These URLs are:
 
-*   https://my.cyclr.com/connector/callback
-*   https://\[Your Cyclr Domain e.g. app-h.cyclr.com\]/connector/callback
+*   https://{{Your Cyclr console domain: my.cyclr.com or my.cyclr.uk}}/connector/callback
+*   https://{{Your Cyclr service domain e.g. app-h.cyclr.com}}/connector/callback
 
 **Selected OAuth Scopes**: you must add the following 2 Scopes to enable Cyclr to use your App:
 

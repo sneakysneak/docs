@@ -20,7 +20,7 @@ In the new application go to Settings and
 
 #### Setup in Cyclr
 
-If you don’t need to use webhooks login to your Cyclr partner console and in the top menu go to Connectors > Connector Library. Find the Clover connector in the list & go into it’s Setup.
+If you don't need to use webhooks login to your Cyclr partner console and in the top menu go to Connectors > Connector Library. Find the Clover connector in the list & go into it’s Setup.
 
 *   Set the Client ID with the App ID
 *   Set the Client Secret with the App Secret

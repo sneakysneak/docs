@@ -1,5 +1,5 @@
 ---
-title: Launch Orbit
+title: ORBIT
 sidebar: cyclr_sidebar
 permalink: orbit
 tags: [launch]
