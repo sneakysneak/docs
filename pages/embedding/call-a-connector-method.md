@@ -24,7 +24,7 @@ Let's get a list of installed account connectors from your account so Cyclr know
 #### Request:
 
 ```http
-GET https://api.cyclr.com/v1.0/account/connectors
+GET https://yourCyclrInstance/v1.0/account/connectors
 Authorization: Bearer ****************************************************************
 ```
 
@@ -59,12 +59,12 @@ In the response, **123** is an account connector ID. **1** is the ID for the und
 
 You can now call a connector method and get the raw response from the third-party application.
 
-Each method in Cyclr has a *unique external ID*. You can get a list of methods with their unique identifiers using ```https://api.cyclr.com/v1.0/connectors/{Connector ID}/methods```. *Connector ID* here is not the ID for your account connector instance (*123* in the sample response above), but the ID for the underlying connector (*1* in the sample response above).
+Each method in Cyclr has a *unique external ID*. You can get a list of methods with their unique identifiers using ```https://yourCyclrInstance/v1.0/connectors/{Connector ID}/methods```. *Connector ID* here is not the ID for your account connector instance (*123* in the sample response above), but the ID for the underlying connector (*1* in the sample response above).
 
 #### Request
 
 ```http
-GET https://api.cyclr.com/v1.0/account/connectors/{account connector ID}/methods/{method ID}
+GET https://yourCyclrInstance/v1.0/account/connectors/{account connector ID}/methods/{method ID}
 Authorization: Bearer ****************************************************************
 ```
 

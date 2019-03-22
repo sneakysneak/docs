@@ -17,7 +17,7 @@ You can quickly get all the published templates using the following request:
 
     curl -X GET \
     -H "Authrorization: Bearer ${ACCESS_TOKEN}" \
-    "https://api.cyclr.com/v1.0/templates"
+    "https://yourCyclrInstance/v1.0/templates"
 
 #### Response
 
@@ -51,7 +51,7 @@ To filter your templates by a specific connector, simply add some parameters to 
 
     curl -X GET \
      -H "Authrorization: Bearer ${ACCESS_TOKEN}" \
-     "https://api.cyclr.com/v1.0/templates?pageSize=10&page=1&orderBy=Name&sortOrderAsc=true&connectorName=MailChimp&connectorVersion=3.0&includeIcons=true"
+     "https://yourCyclrInstance/v1.0/templates?pageSize=10&page=1&orderBy=Name&sortOrderAsc=true&connectorName=MailChimp&connectorVersion=3.0&includeIcons=true"
 
 ### Displaying Templates
 
@@ -89,7 +89,7 @@ Now that all the templates have been displayed, let’s start the installation. 
     -H "Accept: application/json" -d '{ \
         "Name": "My MailChimp Cycle" \ 
     }' \
-    "https://api.cyclr.com/v1.0/templates/885662c2-de28-4760-bec4-2407120ac5f8/install?includeIcons=false"
+    "https://yourCyclrInstance/v1.0/templates/885662c2-de28-4760-bec4-2407120ac5f8/install?includeIcons=false"
 
 #### Response
 

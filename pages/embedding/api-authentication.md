@@ -18,7 +18,7 @@ of an account user to access an account.
 **Partner access token**
 
 ```http
-POST https://api.cyclr.com/oauth/token
+POST https://yourCyclrInstance/oauth/token
 Content-Type: application/x-www-form-urlencoded
 client_id={ClientID}&grant_type=password&username={username}&password={password}
 ```
@@ -26,7 +26,7 @@ client_id={ClientID}&grant_type=password&username={username}&password={password}
 **Account access token**
 
 ```http
-POST https://api.cyclr.com/oauth/token
+POST https://yourCyclrInstance/oauth/token
 Content-Type: application/x-www-form-urlencoded
 client_id={ClientID}&client_secret={AccountID}&grant_type=password&username={username}&password={password}
 ```
@@ -63,7 +63,7 @@ client_id={ClientID}&client_secret={AccountID}&grant_type=password&username={use
 To refresh an access token, before or after expiry, you need to call the oauth token endpoint with a **grant_type** of **refresh_token** and pass the refresh token that was included with the current access token. Once refreshed the old token will be no longer work.
 
 ```http
-POST https://api.cyclr.com/oauth/token
+POST https://yourCyclrInstance/oauth/token
 Content-Type: application/x-www-form-urlencoded
 client_id={ClientID}&grant_type=refresh_token&refresh_token={RefreshToken}
 ```

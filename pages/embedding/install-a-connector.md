@@ -20,9 +20,9 @@ You need the ID of a connector before you can install it. You can find a connect
 
 #### Request
 
-    GET https://api.cyclr.com/v1.0/connectors HTTP/1.1
+    GET https://yourCyclrInstance/v1.0/connectors HTTP/1.1
     User-Agent: Fiddler
-    Host: api.cyclr.com
+    Host: yourCyclrInstance
     Authorization: Bearer ****************************************************************
     
 
@@ -77,10 +77,10 @@ have your own OAuth flow implementation. To use Cyclr’s implementation see the
 
 #### Request
 
-    POST https://api.cyclr.com/v1.0/connectors/1/install HTTP/1.1
+    POST https://yourCyclrInstance/v1.0/connectors/1/install HTTP/1.1
     User-Agent: Fiddler
     Authorization: Bearer ****************************************************************
-    Host: api.cyclr.com
+    Host: yourCyclrInstance
     Content-Length: 49
     Content-Type: application/json
     
@@ -107,10 +107,10 @@ If the connector requires an OAuth authentication to work with the third party A
 
 #### Request
 
-    POST https://api.cyclr.com/v1.0/accounts/tokens HTTP/1.1
+    POST https://yourCyclrInstance/v1.0/accounts/tokens HTTP/1.1
     User-Agent: Fiddler
     Authorization: Bearer ****************************************************************
-    Host: api.cyclr.com
+    Host: yourCyclrInstance
     Content-Length: 0
 
 #### Response
@@ -127,7 +127,7 @@ Now you have a sign in token you can build the URL to send the user too to begin
 <table>
     <tr>
         <th>URL</th>
-        <td>https://api.cyclr.com/web/connector/updateaccountconnectoroauth</td>
+        <td>https://yourCyclrInstance/web/connector/updateaccountconnectoroauth</td>
     </tr>
     <tr>
         <th>id</th>
@@ -150,6 +150,6 @@ the callback message is null we will redirect to the targetOrigin.</td>
 
 #### Example built URL
 
-    https://api.cyclr.com/web/connector/updateaccountconnectoroauth?id=1&token=***************************************&targetOrigin=example.com&callbackMessage=done
+    https://yourCyclrInstance/web/connector/updateaccountconnectoroauth?id=1&token=***************************************&targetOrigin=example.com&callbackMessage=done
 
 When the user is sent to the built URL they will be redirected to the third party OAuth flow. On completion they will be either redirected to targetOrigin or a JavaScript message will be posted to the parent window.

@@ -29,7 +29,7 @@ curl -X POST
     "Username": "example@example.com",
     "Password": "password",
     "AccountId": "0000000-0000-0000-0000-000000000000"
-}' "https://api.cyclr.com/v1.0/users/orbit"
+}' "https://yourCyclrInstance/v1.0/users/orbit"
 ```
 
 <table>

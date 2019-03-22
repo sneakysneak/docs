@@ -58,7 +58,7 @@ curl -X POST
             "Name": "Resource",
             "Value": "https://example.crm.dynamics.com"
          }'
-'https://api.cyclr.com/v1.0/account/connectors/DYNAMICS_ACCOUNT_CONNECTOR_ID/properties'
+'https://yourCyclrInstance/v1.0/account/connectors/DYNAMICS_ACCOUNT_CONNECTOR_ID/properties'
 ```
 
 After successfully creating the account connector property, you can get a one-time sign-in token and call _/UpdateAccountConnectorOAuth_ to complete the user challenge.

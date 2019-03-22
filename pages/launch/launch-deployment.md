@@ -11,7 +11,7 @@ For example:
 
 ![Generic Host Application](./images/generic-host-app.png)
 
-When a user clicks the “Connect” button, your application server should make a request towards Cyclr’s REST API’s _/users/launch_ method:
+When a user clicks the **Connect** button, your application server should make a request towards Cyclr REST API's _/users/launch_ method:
 
 ```
 curl -X POST
@@ -29,7 +29,7 @@ curl -X POST
         "AuthValue": "00000000000000000000000000000000000000000",
         "Properties": [{"Name": "Url", "Value": "https://myapp.something.blah"}]
     }
-}' "https://api.cyclr.com/v1.0/users/launch"
+}' "https://yourCyclrInstance/v1.0/users/launch"
 ```
 
 You should use a Cyclr Partner OAuth token as the Bearer token in this request.
