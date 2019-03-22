@@ -7,7 +7,7 @@ tags: [launch]
 
 To view an instance of LAUNCH from within the Cyclr Console, go to:
 
-Click “**Guide**” > Click the “**Show**” button under Integrate with your App > Click the “**Try LAUNCH**” button for an instance to appear as a pop up with any integration templates you’ve published.
+Click **Guide** > Click the **Show** button under Integrate with your App > Click the **Try LAUNCH** button for an instance to appear as a pop up with any integration templates you’ve published.
 
 As standard, the layout and colour scheme are pretty bland, however you can reskin your version of LAUNCH using CSS and HTML.
 
@@ -21,6 +21,7 @@ To restyle the LAUNCH layout add CSS to “**Application Custom CSS**”
 
 Here are some of the available elements within LAUNCH you may want to customise.
 
+```html
 <table>
     <tr>
         <th>Element</th>
@@ -48,9 +49,11 @@ Here are some of the available elements within LAUNCH you may want to customise.
         <td>Update the font format for integration descriptions.</td>
     </tr>
 </table>
+```
 
 **Example**
 
+```css
     .btn-success {
         background-color: #d27;
         border-color: #d27;
@@ -61,9 +64,9 @@ Here are some of the available elements within LAUNCH you may want to customise.
         background-color: #f6f27f;
         padding: 20px 20px 20px 20px;
     }
+```
 
-Adding a Custom Header and Footer to LAUNCH
--------------------------------------------
+### Adding a Custom Header and Footer to LAUNCH
 
 You can further customise your LAUNCH instance by creating your own custom header and footer using HTML.
 
@@ -73,6 +76,7 @@ Use both of these sections to add any custom messages or images you need to disp
 
 **Example**
 
+```html
 <div class="header"> 
 
 <h2>Test Heading</h2>
@@ -80,15 +84,17 @@ Use both of these sections to add any custom messages or images you need to disp
 <p>This is a test message to show your users. You can add instructions for how to set up integrations here.</p>
 
 </div>
+```
 
 By wrapping your message in a custom Div you can add stylings to the “**Application Custom CSS**” code block to further customise your message. In this case, this was added:
 
+```css
     .header {
         padding: 20px 0 20px 0;
     }
+```
 
-LAUNCH Complete HTML
---------------------
+### LAUNCH Complete HTML
 
 This section allows you to display a message to your user once they have successfully installed an integration template.
 
