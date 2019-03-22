@@ -5,9 +5,9 @@ permalink: install-from-template
 tags: [installing]
 ---
 
-_**A Cycle is an instance of an Template installed within an Account.**_
+_**A Cycle is an instance of a Template installed within an Account.**_
 
-Install a new Cycle into the Account, based on one of the available templates.
+Install a new Cycle into an Account, based on one of the available Templates.
 
     POST templates/{Template ID}/install
     Authorization Bearer 0000000000000000000000000000000000000000000000000000000000000000
@@ -48,6 +48,6 @@ Response:
     "TemplateId": "7ad2265e-2ff0-477b-b913-cae1dfde2ea8"
 }
 
-Installing the Template will also install all required Connectors for the Cycle to run.
+Installing the Template will also install all the Connectors required for the Cycle to run.
 
 [How to Get Template Prerequisites](./get-cycle-prerequisites)
