@@ -20,7 +20,7 @@ The official Intercom documentation describing the process can be found here:
 
 These URLs are:
 
-*   {% raw %}https://{{Your Cyclr console domain: my.cyclr.com or my.cyclr.uk}}/connector/callback{% endraw %}
+*   {% raw %}https://{{Your Cyclr console domain e.g. my.cyclr.com or my.cyclr.uk}}/connector/callback{% endraw %}
 *   {% raw %}https://{{Your Cyclr service domain e.g. app-h.cyclr.com}}/connector/callback{% endraw %}
 
 Your Cyclr Partner **Service Domain** can be found in your Cyclr Console under Settings > Integration Settings.

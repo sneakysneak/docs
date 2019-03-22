@@ -49,7 +49,7 @@ Tick the **Enable OAuth Settings** box to display further options.
 
 These URLs are:
 
-*   {% raw %}https://{{Your Cyclr console domain: my.cyclr.com or my.cyclr.uk}}/connector/callback{% endraw %}
+*   {% raw %}https://{{Your Cyclr console domain e.g. my.cyclr.com or my.cyclr.uk}}/connector/callback{% endraw %}
 *   {% raw %}https://{{Your Cyclr service domain e.g. app-h.cyclr.com}}/connector/callback{% endraw %}
 
 **Selected OAuth Scopes**: you must add the following 2 Scopes to enable Cyclr to use your App:

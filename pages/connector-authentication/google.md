@@ -31,7 +31,7 @@ Here is the official documentation for creating authorization credentials:
 
     These URLs are:
 
-    * {% raw %}https://{{Your Cyclr console domain: my.cyclr.com or my.cyclr.uk}}/connector/callback{% endraw %}
+    * {% raw %}https://{{Your Cyclr console domain e.g. my.cyclr.com or my.cyclr.uk}}/connector/callback{% endraw %}
     * {% raw %}https://{{Your Cyclr service domain e.g. app-h.cyclr.com}}/connector/callback{% endraw %}
 
 3. Go to Cyclr Console (https://my.cyclr.com/console) > Connectors > Connector Library > Google Sheets/Drive/etc. > Setup
@@ -40,7 +40,7 @@ Here is the official documentation for creating authorization credentials:
 
     **Client Secret**: This is the Client Secret displayed in Google
 
-    Your Google connector is now set up! You can test it by installing it in one of your user accounts.
+Your Google connector is now set up! You can test it by installing it in one of your user accounts.
 
 API Integration Guide
 ---------------------

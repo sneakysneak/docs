@@ -21,30 +21,30 @@ We will summarise it in a few points:
 1.  Register a free Azure account or Dynamics Online trial account; log into your Azure or Dynamics Online account if you already have one.
 2.  Go to Microsoft Azure portal -> Azure Active Directory -> App Registrations -> New application registration.
 
-Below are the details you should provide:
+   Below are the details you should provide:
 
-**Name**: Your Application Name
+   **Name**: Your Application Name
 
-**Application type**: Web app / API
+   **Application type**: Web app / API
 
-**Sign-on URL**: Your Cyclr service domain, e.g. https://app-h.cyclr.com/. This can be found in your Cyclr Console under Settings > Integration Settings > Service Domain.
+   **Sign-on URL**: Your Cyclr service domain, e.g. https://app-h.cyclr.com/. This can be found in your Cyclr Console under Settings > Integration Settings > Service Domain.
 
-**Reply URLs**: you must add 2 callback URLs to allow Dynamics CRM to be used in your Cyclr Console templates as well as your Cyclr accounts.
+   **Reply URLs**: you must add 2 callback URLs to allow Dynamics CRM to be used in your Cyclr Console templates as well as your Cyclr accounts.
 
-These URLs are:
+   These URLs are:
 
-*   {% raw %}https://{{Your Cyclr Console domain: my.cyclr.com or my.cyclr.uk}}/connector/callback{% endraw %}
-*   {% raw %}https://{{Your Cyclr service domain e.g. app-h.cyclr.com}}/connector/callback{% endraw %}
+   *   {% raw %}https://{{Your Cyclr console domain e.g. my.cyclr.com or my.cyclr.uk}}/connector/callback{% endraw %}
+   *   {% raw %}https://{{Your Cyclr service domain e.g. app-h.cyclr.com}}/connector/callback{% endraw %}
 
-**Multi-tenanted**: Yes
+   **Multi-tenanted**: Yes
 
-**Required Permissions**: Dynamics CRM Online and Windows Azure Active Directory
+   **Required Permissions**: Dynamics CRM Online and Windows Azure Active Directory
 
 3.  Go to Cyclr Console (https://yourCyclrInstance/console) > Connectors > Connector Library > Dynamics CRM Online > Setup
 
-**Client ID**: This is the Application ID displayed in the portal
+   **Client ID**: This is the Application ID displayed in the portal
 
-**Client Secret**: Create a Password under Microsoft Azure portal > Azure Active Directory > App Registrations > Your Application > API Access > Keys. Copy and paste the password as the client secret
+   **Client Secret**: Create a Password under Microsoft Azure portal > Azure Active Directory > App Registrations > Your Application > API Access > Keys. Copy and paste the password as the client secret
 
 Dynamics CRM Online connector is now set up! You can test it by installing it in one of your customer accounts.
 
