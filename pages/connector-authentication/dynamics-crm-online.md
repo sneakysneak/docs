@@ -33,8 +33,8 @@ Below are the details you should provide:
 
 These URLs are:
 
-*   https://{{Your Cyclr Console domain: my.cyclr.com or my.cyclr.uk}}/connector/callback
-*   https://{{Your Cyclr service domain e.g. app-h.cyclr.com}}/connector/callback
+*   {% raw %}https://{{Your Cyclr Console domain: my.cyclr.com or my.cyclr.uk}}/connector/callback{% endraw %}
+*   {% raw %}https://{{Your Cyclr service domain e.g. app-h.cyclr.com}}/connector/callback{% endraw %}
 
 **Multi-tenanted**: Yes
 
