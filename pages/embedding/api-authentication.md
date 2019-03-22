@@ -9,9 +9,7 @@ The Cyclr API authentication is provided using [OAuth2](https://oauth.net/2/). O
 
 ### Get access token
 
-You need to get an access token from Cyclr by calling the token endpoint with either your email address &  
-password that you use to login to Cyclr for access the partner API endpoints, or the username & password  
-of an account user to access an account.
+You need to get an access token from Cyclr by calling the token endpoint with either your email address & password that you use to login to Cyclr for access the partner API endpoints, or the username & password of an account user to access an account.
 
 #### Request
 
@@ -31,12 +29,13 @@ Content-Type: application/x-www-form-urlencoded
 client_id={ClientID}&client_secret={AccountID}&grant_type=password&username={username}&password={password}
 ```
 
-*   **client_id** – the client ID of the Partner. This can be found in the Cyclr Console.
-*   **client_secret** –  
+- **yourCyclrInstance** – your Cyclr instance URL. This could be one of the followings: *api.cyclr.com* if your Cyclr account is hosted on our US instance; *api.cyclr.uk* if it's on the UK instance; your own domain if your Cyclr instance is self-hosted.
+- **client_id** – the client ID of the Partner. This can be found in the Cyclr Console.
+- **client_secret** –  
     _(Optional)_ the ID of the account this token is for
-*   **grant_type** – the Cyclr Partner API only supports the password grant\_type
-*   **username** – the username of the authenticating user
-*   **password **– the password for the user
+- **grant_type** – the Cyclr Partner API only supports the password grant\_type
+- **username** – the username of the authenticating user
+- **password **– the password for the user
 
 #### Response
 
@@ -53,9 +52,9 @@ client_id={ClientID}&client_secret={AccountID}&grant_type=password&username={use
 }
 ```
 
-*   **access_token** – the token used when making requests to the API
-*   **expires_in** – the amount of time in seconds until access_token will expire
-*   **refresh_token** – the token that can be used to generate a new access token without the username and  
+- **access_token** – the token used when making requests to the API
+- **expires_in** – the amount of time in seconds until access_token will expire
+- **refresh_token** – the token that can be used to generate a new access token without the username and  
     password
 
 ### Refresh access token

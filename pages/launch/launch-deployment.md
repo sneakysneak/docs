@@ -32,6 +32,8 @@ curl -X POST
 }' "https://yourCyclrInstance/v1.0/users/launch"
 ```
 
+Replace *yourCyclrInstance* with *api.cyclr.com*, *api.cyclr.uk*, or your own domain if your Cyclr instance is self-hosted.
+
 You should use a Cyclr Partner OAuth token as the Bearer token in this request.
 
 <table>
