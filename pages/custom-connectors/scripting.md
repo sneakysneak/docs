@@ -5,12 +5,15 @@ permalink: custom-connector-scripting
 tags: [connector-creation]
 ---
 
-Events
-------
+### Events
 
 Events are triggered at certain points allowing you to modify data. Script can be added at both the Connector & Method levels; Connector level event handlers will be called for all methods where as method level will only be called for that method. To add an event handler simply add a javascript function with the event name.
 
-    function eventName() { /* Handle event here */ }
+```javascript
+function eventName() {
+    /* Handle event here */
+}
+```
 
 #### before_webhook
 
@@ -112,8 +115,7 @@ Called after Cyclr makes an OAuth 2 refresh token request.
 *   **method_response**: response object that was received from the OAuth 2 refresh token request.
 *   **return**: true
 
-Functions
----------
+### Functions
 
 #### http_request
 
@@ -127,8 +129,7 @@ Function to convert a Base64 encoded string to a string.
 
 Function to convert a string to a Base64 string.
 
-Libraries
----------
+### Libraries
 
 Before calling any function from a library, please use `require("Library Name");`.
 
@@ -152,8 +153,7 @@ Description: JavaScript library of crypto standards.
 
 External Documentation: https://github.com/brix/crypto-js
 
-Connector scripting examples
-----------------------------
+### Connector scripting examples
 
 #### Make External Requests
 
@@ -161,26 +161,30 @@ You can write a script to call external API endpoints. This is especially useful
 
 For example, a webhook returns the following object to Cyclr:
 
-    {
-       "event":"object.updated",
-       "api_url":"http://httpbin.org/get"
-    }
+```json
+{
+   "event":"object.updated",
+   "api_url":"http://httpbin.org/get"
+}
+```
 
 Use `http_request` to call `api_url` and replace the webhook response with the updated object:
 
-    function after_webhook() {
-      var request = {
-        'method': 'GET',
-        'url': method_response.api_url,
-        'headers': {
-          'Accept': 'application/json'
-        }
-      };
-    
-      var content = http_request(request).content;
-      method_response = content;
-      return true;
-    }
+```javascript
+function after_webhook() {
+  var request = {
+    'method': 'GET',
+    'url': method_response.api_url,
+    'headers': {
+      'Accept': 'application/json'
+    }
+  };
+
+  var content = http_request(request).content;
+  method_response = content;
+  return true;
+}
+```
     
 
 After calling `api_url`, Cyclr will then replace `method_response` with the content of the HTTP call.
@@ -199,76 +203,83 @@ When calling the `http_request` function, you can specify the request using:
 
 Making use of key value pair responses requires the use of scripting, consider an API that returns the below representation of a contact.
 
-    {
-       properties: [
-         {  "key": "email",
-            "value": "example@example.com" }
-       ]
-    }
+```json
+{
+   properties: [
+     {  "key": "email",
+        "value": "example@example.com" }
+   ]
+}
+```
 
 To access the email field we would add a field in the method response with a connector location of **properties.email**. However this would not work as the cyclr is looking in the response for a properties object with a property named email to get the value from. To solve the issue we would add the below function into the method scripts, this function will transform the properties array into an object with properties for each key value pair.
 
-    function after_action() {
-      var original = method_response.properties;
-      method_response.properties = {};
-    
-      for(var i = 0; i < original.length; i++) {
-        var item = original[i];
-        if(item['key'] == void(0))
-          continue;
-    
-        var val = item['value'];
-        if (val == void(0))
-          continue;
-    
-        method_response.properties[item['key']] = val;
-      }
-    
-      return true;
-    }
+```javascript
+function after_action() {
+  var original = method_response.properties;
+  method_response.properties = {};
+
+  for(var i = 0; i < original.length; i++) {
+    var item = original[i];
+    if(item['key'] == void(0))
+      continue;
+
+    var val = item['value'];
+    if (val == void(0))
+      continue;
+
+    method_response.properties[item['key']] = val;
+  }
+
+  return true;
+}
+```
     
 
 Now when cyclr runs the method if will get the following result back and the **properties.email** field will work as expected.
 
-    {
-       properties: {
-         "email": "example@example.com"
-       }
-    }
-    
+```json
+{
+   properties: {
+     "email": "example@example.com"
+   }
+}
+```    
 
 For a corresponding request method, e.g. adding a contact, we would need the below function in the method scripts to perform the data transformation in reverse.
 
-    function before_action() {
-        var original = method_request.properties;
-        method_request.properties = [];
-    
-        for(var p in original) {
-                method_request.properties.push({
-                    'key': p,
-                    'value': original[p]
-                });
-        }
-        return true;
-    }
-    
+```javascript
+function before_action() {
+    var original = method_request.properties;
+    method_request.properties = [];
 
+    for(var p in original) {
+            method_request.properties.push({
+                'key': p,
+                'value': original[p]
+            });
+    }
+    return true;
+}
+```
+    
 #### Modify Parameters
 
 Besides the HTTP request body, you can also use scripting to modify HTTP headers (`method_request_headers`) and query string parameters (`method_request_parameters`).
 
-    function before_action(){
-        var xmlData = '<Records><Record>';
-    
-        for (var p in method_request) {
-            xmlData += '<Field val=""' + p + '"">' + method_request[p] + '</Field>';
-        }
-    
-        xmlData += '</Record></Records>';
-        method_request_parameters.xmlData = xmlData;
-        return true;
-    }
-    
+```javascript
+function before_action(){
+    var xmlData = '<Records><Record>';
+
+    for (var p in method_request) {
+        xmlData += '<Field val=""' + p + '"">' + method_request[p] + '</Field>';
+    }
+
+    xmlData += '</Record></Records>';
+    method_request_parameters.xmlData = xmlData;
+    return true;
+}
+```    
 
 In this example, we transformed the method request body to a XML string and saved the string as a new parameter called `xmlData`.
 
@@ -285,16 +296,19 @@ The scripting engine can be used to catch and handle errors returned from third 
 
 Example: change an error to a warning
 
-    function after_error() {
-      if(method_error.statusCode.toString() == 400 && method_error.reasonPhrase == 'Email Address not valid'){
-        method_error.isError = false;
-        method_error.isWarning = true;
-      }
-      return true;
-    }
+```javascript
+function after_error() {
+  if(method_error.statusCode.toString() == 400 && method_error.reasonPhrase == 'Email Address not valid'){
+    method_error.isError = false;
+    method_error.isWarning = true;
+  }
+  return true;
+}
+```
 
 Example: change an error to a success
 
+```javascript
     function after_error() {
       if(method_error.statusCode.toString() == 400 && method_error.reasonPhrase == 'Email Address not valid'){
         method_error.isError = false;
@@ -303,7 +317,7 @@ Example: change an error to a success
       }
       return true;
     }
-    
+```    
 
 #### Limitations
 
