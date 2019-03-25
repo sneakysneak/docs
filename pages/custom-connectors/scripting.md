@@ -163,8 +163,8 @@ For example, a webhook returns the following object to Cyclr:
 
 ```json
 {
-   "event":"object.updated",
-   "api_url":"http://httpbin.org/get"
+    "event": "object.updated",
+    "api_url": "http://httpbin.org/get"
 }
 ```
 
@@ -172,17 +172,17 @@ Use `http_request` to call `api_url` and replace the webhook response with t
 
 ```javascript
 function after_webhook() {
-  var request = {
-    'method': 'GET',
-    'url': method_response.api_url,
-    'headers': {
-      'Accept': 'application/json'
-    }
-  };
+    var request = {
+        'method': 'GET',
+        'url': method_response.api_url,
+        'headers': {
+            'Accept': 'application/json'
+        }
+    };
 
-  var content = http_request(request).content;
-  method_response = content;
-  return true;
+    var content = http_request(request).content;
+    method_response = content;
+    return true;
 }
 ```
     
@@ -205,10 +205,10 @@ Making use of key value pair responses requires the use of scripting, consider a
 
 ```json
 {
-   properties: [
-     {  "key": "email",
-        "value": "example@example.com" }
-   ]
+    properties: [{
+        "key": "email",
+        "value": "example@example.com"
+    }]
 }
 ```
 
@@ -216,22 +216,22 @@ To access the email field we would add a field in the method response with a con
 
 ```javascript
 function after_action() {
-  var original = method_response.properties;
-  method_response.properties = {};
+    var original = method_response.properties;
+    method_response.properties = {};
 
-  for(var i = 0; i < original.length; i++) {
-    var item = original[i];
-    if(item['key'] == void(0))
-      continue;
+    for (var i = 0; i < original.length; i++) {
+        var item = original[i];
+        if (item['key'] == void(0))
+            continue;
 
-    var val = item['value'];
-    if (val == void(0))
-      continue;
+        var val = item['value'];
+        if (val == void(0))
+            continue;
 
-    method_response.properties[item['key']] = val;
-  }
+        method_response.properties[item['key']] = val;
+    }
 
-  return true;
+    return true;
 }
 ```
     
@@ -240,9 +240,9 @@ Now when cyclr runs the method if will get the following result back and the **
 
 ```json
 {
-   properties: {
-     "email": "example@example.com"
-   }
+    properties: {
+        "email": "example@example.com"
+    }
 }
 ```    
 
@@ -250,16 +250,16 @@ For a corresponding request method, e.g. adding a contact, we would need the bel
 
 ```javascript
 function before_action() {
-    var original = method_request.properties;
-    method_request.properties = [];
+    var original = method_request.properties;
+    method_request.properties = [];
 
-    for(var p in original) {
-            method_request.properties.push({
-                'key': p,
-                'value': original[p]
-            });
-    }
-    return true;
+    for (var p in original) {
+        method_request.properties.push({
+            'key': p,
+            'value': original[p]
+        });
+    }
+    return true;
 }
 ```
     
@@ -268,16 +268,16 @@ function before_action() {
 Besides the HTTP request body, you can also use scripting to modify HTTP headers (`method_request_headers`) and query string parameters (`method_request_parameters`).
 
 ```javascript
-function before_action(){
-    var xmlData = '<Records><Record>';
+function before_action() {
+    var xmlData = '<Records><Record>';
 
-    for (var p in method_request) {
-        xmlData += '<Field val=""' + p + '"">' + method_request[p] + '</Field>';
-    }
+    for (var p in method_request) {
+        xmlData += '<Field val=""' + p + '"">' + method_request[p] + '</Field>';
+    }
 
-    xmlData += '</Record></Records>';
-    method_request_parameters.xmlData = xmlData;
-    return true;
+    xmlData += '</Record></Records>';
+    method_request_parameters.xmlData = xmlData;
+    return true;
 }
 ```    
 
@@ -298,25 +298,25 @@ Example: change an error to a warning
 
 ```javascript
 function after_error() {
-  if(method_error.statusCode.toString() == 400 && method_error.reasonPhrase == 'Email Address not valid'){
-    method_error.isError = false;
-    method_error.isWarning = true;
-  }
-  return true;
+    if (method_error.statusCode.toString() == 400 && method_error.reasonPhrase == 'Email Address not valid') {
+        method_error.isError = false;
+        method_error.isWarning = true;
+    }
+    return true;
 }
 ```
 
 Example: change an error to a success
 
 ```javascript
-    function after_error() {
-      if(method_error.statusCode.toString() == 400 && method_error.reasonPhrase == 'Email Address not valid'){
-        method_error.isError = false;
-        method_error.isSuccess = true;
-        method_error.content = '{}';
-      }
-      return true;
+function after_error() {
+    if (method_error.statusCode.toString() == 400 && method_error.reasonPhrase == 'Email Address not valid') {
+        method_error.isError = false;
+        method_error.isSuccess = true;
+        method_error.content = '{}';
     }
+    return true;
+}
 ```    
 
 #### Limitations
