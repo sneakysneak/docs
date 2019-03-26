@@ -5,11 +5,19 @@ permalink: cyclr-api-authentication
 tags: [embedding]
 ---
 
-The Cyclr API authentication is provided using [OAuth2](https://oauth.net/2/). OAuth tokens are granted to either manage the partner or access and modify a partner account.
+Cyclr API authentication is provided using [OAuth2](https://oauth.net/2/).
+
+OAuth access tokens are granted to either manage the partner level, or access and modify a partner account.
 
 ### Get access token
 
-You need to get an access token from Cyclr by calling the token endpoint with either your email address & password that you use to login to Cyclr for access the partner API endpoints, or the username & password of an account user to access an account.
+To get an access token from Cyclr you call the "/token" endpoint with different details, depending on where you wish to work.
+
+**To receive a Partner access token**
+Provide the email address and password you use to access your Cyclr Partner Console.
+
+**To receive an Account access token**
+Provide the username and password of an account user.
 
 #### Request
 
@@ -18,6 +26,7 @@ You need to get an access token from Cyclr by calling the token endpoint with ei
 ```http
 POST https://yourCyclrInstance/oauth/token
 Content-Type: application/x-www-form-urlencoded
+
 client_id={ClientID}&grant_type=password&username={username}&password={password}
 ```
 
@@ -26,16 +35,17 @@ client_id={ClientID}&grant_type=password&username={username}&password={password}
 ```http
 POST https://yourCyclrInstance/oauth/token
 Content-Type: application/x-www-form-urlencoded
+
 client_id={ClientID}&client_secret={AccountID}&grant_type=password&username={username}&password={password}
 ```
 
-- **yourCyclrInstance** – your Cyclr instance URL. This could be one of the followings: *api.cyclr.com* if your Cyclr account is hosted on our US instance; *api.cyclr.uk* if it's on the UK instance; your own domain if your Cyclr instance is self-hosted.
+- **yourCyclrInstance** – your Cyclr instance URL. This could be one of the following: *api.cyclr.com* if your Cyclr account is hosted on our US instance; *api.cyclr.uk* if it's on our UK instance; your own domain if your Cyclr instance is self-hosted.
 - **client_id** – the client ID of the Partner. This can be found in the Cyclr Console.
 - **client_secret** –  
     _(Optional)_ the ID of the account this token is for
-- **grant_type** – the Cyclr Partner API only supports the password grant\_type
+- **grant_type** – the Cyclr Partner API only supports the **password** grant\_type
 - **username** – the username of the authenticating user
-- **password **– the password for the user
+- **password** – the password of the user
 
 #### Response
 
@@ -52,20 +62,23 @@ client_id={ClientID}&client_secret={AccountID}&grant_type=password&username={use
 }
 ```
 
-- **access_token** – the token used when making requests to the API
+- **access_token** – the token to use when making requests to the Cyclr API
 - **expires_in** – the amount of time in seconds until access_token will expire
-- **refresh_token** – the token that can be used to generate a new access token without the username and  
-    password
+- **refresh_token** – the token that can be used to generate a new access token without needing to provide username and  
+    password details.    See *Refresh access token* below.
 
 ### Refresh access token
 
-To refresh an access token, before or after expiry, you need to call the oauth token endpoint with a **grant_type** of **refresh_token** and pass the refresh token that was included with the current access token. Once refreshed the old token will be no longer work.
+To obtain a new access token - before or after it has expired - you call the OAuth "/token" endpoint with a **grant_type** of **refresh_token** and pass the refresh token that was included with the current access token. Once used, the old access and refresh tokens will no longer be valid.
 
 ```http
 POST https://yourCyclrInstance/oauth/token
 Content-Type: application/x-www-form-urlencoded
+
 client_id={ClientID}&grant_type=refresh_token&refresh_token={RefreshToken}
 ```
+
+Refresh tokens from Cyclr's API don't expire so you can keep them until you need to obtain a new access token.
 
 ### Calling an API method
 
