@@ -293,13 +293,17 @@ entries:
           - title: Intercom
             url: /intercom-connector
             output: web, pdf
-            
+
           - title: Salesforce
             url: /salesforce-connector
             output: web, pdf
 
           - title: Sugar CRM
             url: /sugarcrm-connector
+            output: web, pdf
+
+          - title: Bullhorn
+            url: /bullhorn-connector
             output: web, pdf
 
           - title: Cyclr IP Whitelisting
