@@ -29,4 +29,3 @@ Your Cyclr Partner **Service Domain** can be found in your Cyclr Console under S
 * Read one user and one company
 * Write conversations
 * Read admins
-* Manage webhooks
