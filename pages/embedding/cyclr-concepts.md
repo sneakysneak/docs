@@ -17,7 +17,7 @@ Account connectors are installed instances of Connectors that support additional
 
 * * *
 
-###  Accounts
+### Accounts
 
 Accounts allow the grouping of Account Connectors & the Cycles that use them.
 
