@@ -129,6 +129,36 @@ Function to convert a Base64 encoded string to a string.
 
 Function to convert a string to a Base64 string.
 
+### Exceptions
+
+#### AuthSessionException
+
+Exception to force the authentication session to be refreshed.
+
+Upon getting this exception, Cyclr will call the *Post Install Property Value Lookup Method* to start a new session.
+
+For example, an API returns 200 with an error code in the response when the session expires:
+
+```javascript
+function after_action() {
+    if (typeof method_response.error_code !== 'undefined' &&
+        method_response.error_code === 'You are not logged on.') {
+        throw new AuthSessionException();
+    }
+    return true;
+}
+```
+
+You can also throw the exception in *after_error* if the API returns a certain HTTP status code when the auth session expires:
+```javascript
+function after_error() {
+    if (method_error.statusCode.toString() == 403) {
+        throw new AuthSessionException();
+    }
+    return true;
+}
+```
+
 ### Libraries
 
 Before calling any function from a library, please use `require("Library Name");`.
@@ -283,7 +313,7 @@ function before_action() {
 
 In this example, we transformed the method request body to a XML string and saved the string as a new parameter called `xmlData`.
 
-**Handle Errors from Third Party APIs**
+#### Handle Errors from Third Party APIs
 
 The scripting engine can be used to catch and handle errors returned from third party APIs.
 
