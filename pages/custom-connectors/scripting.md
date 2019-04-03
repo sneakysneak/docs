@@ -149,7 +149,7 @@ function after_action() {
 }
 ```
 
-You can also throw the exception in *after_error* if the API returns a certain HTTP status code when the auth session expires:
+If an API returns a non-2xx HTTP status code when the auth session expires, you should throw *AuthSessionException* in *after_error*:
 ```javascript
 function after_error() {
     if (method_error.statusCode.toString() == 403) {
