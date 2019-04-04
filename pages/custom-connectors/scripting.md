@@ -173,7 +173,7 @@ Library Name: moment
 
 Description: Parse, validate, manipulate, and display dates and times in JavaScript.
 
-External Documentation: https://momentjs.com/
+External Documentation: <https://momentjs.com/>
 
 #### CryptoJS
 
@@ -181,7 +181,7 @@ Library Name: crypto-js
 
 Description: JavaScript library of crypto standards.
 
-External Documentation: https://github.com/brix/crypto-js
+External Documentation: <https://github.com/brix/crypto-js>
 
 ### Connector scripting examples
 
