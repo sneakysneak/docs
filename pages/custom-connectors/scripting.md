@@ -129,6 +129,21 @@ Function to convert a Base64 encoded string to a string.
 
 Function to convert a string to a Base64 string.
 
+#### cyclr_sign
+
+Function to sign a string.
+
+For example,
+```javascript
+var algorithm = 'HMAC-SHA1';
+var signingKey = 'This is the signing key.';
+var valueToSign = 'This is the string to sign.';
+
+var signature = cyclr_sign(algorithm, signingKey, valueToSign);
+```
+
+Supported algorithms are: `HMAC-SHA1`, `RSA-SHA1`, `RSA-SHA224`, `RSA-SHA256`, `RSA-SHA384`, `RSA-SHA512`.
+
 ### Exceptions
 
 #### AuthSessionException
