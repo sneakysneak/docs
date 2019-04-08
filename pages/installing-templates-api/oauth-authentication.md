@@ -23,7 +23,7 @@ Response:
         "ExpiresAtUtc": "2017-12-08T11:02:48.7436471Z"
     }
 
-The user should then be sent, in there browser to _/web/connector/updateaccountconnectoroauth?id={Account Connector ID}&token{Account Sign-In Token}_
+The user should then be sent, in their browser, to _/web/connector/updateaccountconnectoroauth?id={Account Connector ID}&token{Account Sign-In Token}_
 
 The following query string parameters can also be included:
 
@@ -34,7 +34,7 @@ The following query string parameters can also be included:
     </tr>
     <tr>
         <th>targetOrigin</th>
-        <td>Either the origin of the other window for the javascript callback event to be dispatched or a URL to redirect the user to after the OAuth authentication is completed.<br/>Example: https://partner.cyclr.com/connectors</td>
+        <td>Either the origin of the other window for the JavaScript callback event to be dispatched or a URL to redirect the user to after the OAuth authentication is completed.<br/>Example: https://partner.cyclr.com/connectors</td>
     </tr>
     <tr>
         <th>callbackMessage</th>
