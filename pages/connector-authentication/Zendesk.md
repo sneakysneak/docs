@@ -1,13 +1,9 @@
 ---
-title: Zendesk Authentication
+title: Zendesk Webhooks
 sidebar: cyclr_sidebar
 permalink: Zendesk-connector
 tags: [connector]
 ---
-
-# Zendesk #
-
-
 
 Webhook Implementation - Closed Tickets
 ---------------------------------------
