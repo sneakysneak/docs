@@ -1,7 +1,7 @@
 ---
 title: Zendesk Webhooks
 sidebar: cyclr_sidebar
-permalink: Zendesk-connector
+permalink: zendesk-connector
 tags: [connector]
 ---
 
