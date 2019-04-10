@@ -7,25 +7,25 @@ tags: [embedding]
 
 ### Connectors
 
-A Connector is a Cyclr implementaion of a third party API that when installed into an Account will provide connectivity with the third party application.
+A Connector is a Cyclr implementaion of a third party API.  When installed into an Account it provides connectivity with the third party application.
 
 * * *
 
 ### Account Connector
 
-Account connectors are installed instances of Connectors that support additional authentication details required for connectivity with the Users third party application account(s).
+Account Connectors are installed instances of Connectors that hold additional authentication details required for connectivity to the third party application.
 
 * * *
 
 ### Accounts
 
-Accounts allow the grouping of Account Connectors & the Cycles that use them.
+Accounts allow the grouping of Account Connectors and the Cycles that use them.
 
 * * *
 
 ### Users
 
-Users can be given access to Accounts, they can then install/modify the Account Connectors & Cycles.
+Users can be given access to Accounts, allowing them to install and modify the Account Connectors and Cycles.
 
 * * *
 
@@ -43,10 +43,10 @@ Cycles are integrations in an Account that when activated will perform the integ
 
 ### Cycle Transaction
 
-A Cycle Transaction is created each time a Cycle is triggered, it segregates the request& response data from each Cycle Step from each other allowing the Cycle to have multiple transactions in progress simultaneously.
+A Cycle Transaction is created each time a Cycle is triggered.  It segregates the request and response data relating to each Cycle Step from other data, allowing the Cycle to have multiple Transactions in progress simultaneously.
 
 * * *
 
 ### Cycle Step
 
-A Cycle is made up of a collection of Cycle Steps, each step either connects with a third party API to send/recivie data or performs a logic action such as delaying the Cycle Transaction or performing diferent actions depending on the data received from the third party API.
+A Cycle is made up of a collection of Cycle Steps.  Each Cycle Step may connect with a third party API to send and/or receive data, perform a logic action such as delaying the Cycle Transaction for a period of time, or perform different actions depending on the data received from the third party API.
