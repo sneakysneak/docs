@@ -12,20 +12,21 @@ Webhook Implementation - Closed Tickets
   - in 'Actions' set 'Notify Target' to required Target 
   - fields below to be added to Trigger in 'JSON Body'  
 
+{% raw %}
 ```json
 
 { 
-  "TicketId":"\{{ticket.id}}", 
-  "ExternalId":"\{\{ticket.external_id}}", 
-  "Title":"{\{ticket.title}}", 
-  "Description":"\{{ticket.description\}}", 
-  "TicketVia":"\{{ticket.via}}", 
-  "Status":"\{{ticket.status}}", 
-  "Priority":"\{{ticket.priority}}", 
-  "Type":"\{{ticket.ticket_type}}" 
+  "TicketId":"{{ticket.id}}", 
+  "ExternalId":"{{ticket.external_id}}", 
+  "Title":"{{ticket.title}}", 
+  "Description":"{{ticket.description}}", 
+  "TicketVia":"{{ticket.via}}", 
+  "Status":"{{ticket.status}}", 
+  "Priority":"{{ticket.priority}}", 
+  "Type":"{{ticket.ticket_type}}" 
 }
 ```
-
+{% endraw %}
 
 For further information please check the official Zendesk documentation:
 
