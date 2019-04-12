@@ -15,18 +15,18 @@ Webhook Implementation - Closed Tickets
 ```json
 
 { 
-  "TicketId":"{{ticket.id}}", 
-  "ExternalId":"{{ticket.external_id}}", 
-  "Title":"{{ticket.title}}", 
-  "Description":"{{ticket.description}}", 
-  "TicketVia":"{{ticket.via}}", 
-  "Status":"{{ticket.status}}", 
-  "Priority":"{{ticket.priority}}", 
-  "Type":"{{ticket.ticket_type}}" 
+  "TicketId":"\{\{ticket.id}}", 
+  "ExternalId":"\{\{ticket.external_id}}", 
+  "Title":"\{\{ticket.title}}", 
+  "Description":"\{\{ticket.description}}", 
+  "TicketVia":"\{\{ticket.via}}", 
+  "Status":"\{\{ticket.status}}", 
+  "Priority":"\{\{ticket.priority}}", 
+  "Type":"\{\{ticket.ticket_type}}" 
 }
 ```
 
 
-For further information please check the official documentation below:
+For further information please check the official Zendesk documentation:
 
-https://support.zendesk.com/hc/en-us/articles/204890268
+(https://support.zendesk.com/hc/en-us/articles/204890268)
