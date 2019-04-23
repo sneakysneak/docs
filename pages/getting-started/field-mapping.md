@@ -34,7 +34,7 @@ You can use Cyclr system mergefields as the **Source **value in Field Mapping.
 *   **{% raw %}{{Cyclr_Auth_Username}}{% endraw %}**: get the username if the connector is using username/password as the authentication type.
 *   **{% raw %}{{Cyclr_Auth_Password}}{% endraw %}**: get the password if the connector is using username/password as the authentication type.
 
-*Note: these mergefields cannot be merged alongside other text and must instead be used as the sole value of a "Type a Value" mapping.*
+*Note: the System mergefields cannot be used alongside other text as a Field Mapping but must instead be used as the entire value.*
 
 
 [How to Test your Cycles](./testing-cycles)
