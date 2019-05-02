@@ -37,7 +37,7 @@ Response:
         "Id": 36328,
         "Name": "Pipedrive",
         "Description": null,
-        "AuthValue": nul ,
+        "AuthValue": null,
         "Authenticated": false,
         "Connector": {
             "Id": 2550,
