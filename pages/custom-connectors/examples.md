@@ -49,7 +49,7 @@ The below JSON is taken from a MailChimp connector.
                 ],
                 "ConnectorField": "[lists].id",
                 "SystemField": "ListId",
-                "DisplayField": "List ID"
+                "DisplayName": "List ID"
               },
               {
                 "Values": [
@@ -57,7 +57,7 @@ The below JSON is taken from a MailChimp connector.
                 ],
                 "ConnectorField": "[lists].name",
                 "SystemField": "ListName",
-                "DisplayField": "List Name"
+                "DisplayName": "List Name"
               }
             ]
           },
@@ -81,7 +81,7 @@ The below JSON is taken from a MailChimp connector.
                 ],
                 "ConnectorField": "name",
                 "SystemField": "ListName",
-                "DisplayField": "List Name",
+                "DisplayName": "List Name",
                 "DisplayOrder": 1
               },
               {
@@ -90,7 +90,7 @@ The below JSON is taken from a MailChimp connector.
                 ],
                 "ConnectorField": "contact.company",
                 "SystemField": "Company",
-                "DisplayField": "Contact Company",
+                "DisplayName": "Contact Company",
                 "DisplayOrder": 2
               },
               {
@@ -104,7 +104,7 @@ The below JSON is taken from a MailChimp connector.
                 ],
                 "ConnectorField": "visibility",
                 "SystemField": "Visibility",
-                "DisplayField": "Visbility",
+                "DisplayName": "Visbility",
                 "Description": "Whether this list is public (pub) or private (prv).",
                 "DisplayOrder": 3
               }
@@ -118,7 +118,7 @@ The below JSON is taken from a MailChimp connector.
                 ],
                 "ConnectorField": "id",
                 "SystemField": "listId",
-                "DisplayField": "List Id",
+                "DisplayName": "List Id",
                 "DisplayOrder": 1
               }
             ]
@@ -177,14 +177,14 @@ The other example is taken from the ZohoCRM connector. You can see how parameter
                 "Values": [],
                 "ConnectorField": "Account Name",
                 "SystemField": "AccountName",
-                "DisplayField": "Account Name",
+                "DisplayName": "Account Name",
                 "Description": "The company name."
               },
               {
                 "Values": [],
                 "ConnectorField": "Account Owner",
                 "SystemField": "AccountOwner",
-                "DisplayField": "Account Owner",
+                "DisplayName": "Account Owner",
                 "IsOptional": true,
                 "Description": "The name of the user to whom the account is assigned."
               },
@@ -192,7 +192,7 @@ The other example is taken from the ZohoCRM connector. You can see how parameter
                 "Values": [],
                 "ConnectorField": "Website",
                 "SystemField": "Website",
-                "DisplayField": "Website",
+                "DisplayName": "Website",
                 "IsOptional": true,
                 "Description": "The URL of the company's website."
               }
