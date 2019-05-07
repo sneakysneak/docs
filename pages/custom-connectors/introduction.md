@@ -36,7 +36,7 @@ Below is a basic example that illustrates a method and a single field. You can f
                         {
                             "ConnectorField": "[records].Salutation",
                             "SystemField": "Salutation",
-                            "DisplayField": "Salutation"
+                            "DisplayName": "Salutation"
                         },
                   ]
     
