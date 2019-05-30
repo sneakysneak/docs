@@ -7,7 +7,7 @@ tags: [plugins]
 
 ![Gravity Forms](https://cyclr.com/wp-content/uploads/2017/10/Gravity-Forms-259x300.png)
 
-#### Prequisites
+#### Prerequisites
 
 Please ensure you have the following things in place before you begin.
 
