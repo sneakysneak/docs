@@ -107,7 +107,7 @@ entries:
             output: web, pdf
 
           - title: Get Cycle Prerequisites
-            url: /get-cyclr-prerequisites
+            url: /get-cycle-prerequisites
             output: web, pdf
 
           - title: Account Connector Authentication
