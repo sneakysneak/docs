@@ -39,4 +39,4 @@ In this example, there are the following pre-requisites:
 *   Two Connectors that are unauthenticated
 *   A Step with a missing field mapping
 
-[How to Authenticate Account Connector](./account-connector-authentication)
+[How to Authenticate Account Connector](./authenticate-account-connector)
