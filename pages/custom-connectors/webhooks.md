@@ -27,9 +27,12 @@ Doing this saves the ID into the `Cyclr_Webhook_Id` parameter, so that we are ab
 
 #### Deleting The Webhook
 This method will be called when the Webhook step is deleted from a cycle, and will delete the webhook from the system in which it was created.
+
 As an example, you have to send a http DELETE request formatted as such: `https://webhookexample.com/webhooks/{Id}` you can format the URL in Cyclr as: `https://webhookexample.com/webhooks/{{Cyclr_Webhook_Id}}`. 
+
 In the *Parameters* tab you must also create Cyclr_Webhook_Id mergefield parameter, which must always be set to hidden:
 ![](./images/delete_webhook_parameter.png)
+
 Using the mergefield: `{{Cyclr_Webhook_Id}}` will pull in the webhook ID that was saved from the create call and populate the URL with the correct value.
 
 ##### *Note On Using Cyclr_Webhook_Id In Script:*
