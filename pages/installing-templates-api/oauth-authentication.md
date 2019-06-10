@@ -19,18 +19,22 @@ First of all an Account Sign-In Token needs to be generated for the User see bel
 Response:
 
     {
-        "Token": "ABCD123400000000000000000000000000000000000=",
+        "Token": "ABCD12340000000000000=",
         "ExpiresAtUtc": "2017-12-08T11:02:48.7436471Z"
     }
 
-The user should then be sent, in their browser, to _[Partner Service Domain]/connectorauth/updateaccountconnectoroauth?id={Account Connector ID}&token={Account Sign-In Token}_
+The user should then be sent, in their browser, to: \
+_https://[Partner Service Domain]/connectorauth/updateaccountconnectoroauth?id={Account Connector ID}&token={Account Sign-In Token}_
+
+e.g.: \
+https://app-h.cyclr.com/connectorauth/updateaccountconnectoroauth?id=1234&token=ABCD12340000000000000=
 
 The following query string parameters can also be included:
 
 <table>
     <tr>
         <th>token</th>
-        <td>The account sign-in token generated above. <br/>Example: ABCD123400000000000000000000000000000000000=</td>
+        <td>The account sign-in token generated above. <br/>Example: ABCD12340000000000000=</td>
     </tr>
     <tr>
         <th>targetOrigin</th>
