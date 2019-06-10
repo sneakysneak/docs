@@ -14,7 +14,7 @@ This process is simpler than it sounds.
 First of all an Account Sign-In Token needs to be generated for the User see below.
 
     POST /v1.0/accounts/tokens
-    Authorization Bearer 0000000000000000000000000000000000000000000000000000000000000000
+    Authorization: Bearer 0000000000000000000000000000000000000000000000000000000000000000
 
 Response:
 
@@ -26,7 +26,8 @@ Response:
 The user should then be sent, in their browser, to: \
 _https://[Partner Service Domain]/connectorauth/updateaccountconnectoroauth?id={Account Connector ID}&token={Account Sign-In Token}_
 
-e.g.: \
+e.g.: 
+
 https://app-h.cyclr.com/connectorauth/updateaccountconnectoroauth?id=1234&token=ABCD12340000000000000=
 
 The following query string parameters can also be included:
