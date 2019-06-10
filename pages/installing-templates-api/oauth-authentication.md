@@ -19,18 +19,18 @@ First of all an Account Sign-In Token needs to be generated for the User see bel
 Response:
 
     {
-        "Token": "+7fCuHJ1LUq1bGasmHGVvnVw/UfsVe1DlYHXDrFuaBo=",
+        "Token": "ABCD123400000000000000000000000000000000000=",
         "ExpiresAtUtc": "2017-12-08T11:02:48.7436471Z"
     }
 
-The user should then be sent, in their browser, to _/web/connector/updateaccountconnectoroauth?id={Account Connector ID}&token{Account Sign-In Token}_
+The user should then be sent, in their browser, to _[Partner Service Domain]/connectorauth/updateaccountconnectoroauth?id={Account Connector ID}&token={Account Sign-In Token}_
 
 The following query string parameters can also be included:
 
 <table>
     <tr>
         <th>token</th>
-        <td>The account sign-in token generated above. <br/>Example: 2890edffcb964e8aab038cf4efc340ab62a4f604bd5a41369654086f5bd25519</td>
+        <td>The account sign-in token generated above. <br/>Example: ABCD123400000000000000000000000000000000000=</td>
     </tr>
     <tr>
         <th>targetOrigin</th>
