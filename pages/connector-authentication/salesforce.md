@@ -88,3 +88,21 @@ Your Salesforce Connector is now set up! You can test it by installing it in one
 ### Expired access/refresh token errors
 
 Salesforce only allows up to five unique access/refresh token pairs to be issued for each user in a Connected App. Older tokens will be automatically revoked by Salesforce.  [More information](https://help.salesforce.com/articleView?id=remoteaccess_request_manage.htm).
+
+
+### Disabling Assignment Rules
+
+When creating Accounts, Cases, or Leads in Salesforce, it may be desirable to prevent Salesforce's "active assignment rules" from being applied.  This very much depends on what assignment rules have been setup within Salesforce so will depend on the enduser's requirements.
+
+To prevent assignment rules from being applied, add this Script to a Salesforce step in the Cycle Builder:
+
+```javascript
+function before_action() {
+    // Don't apply Salesforce's assignment rules.
+    method_request_headers['Sforce-Auto-Assign'] = 'FALSE';
+
+    return true;
+}
+```
+
+[More information](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/headers_autoassign.htm)
