@@ -39,7 +39,7 @@ Request:
   </tr>
 </table>
 
-Example response:
+Response:
 
     200 OK
     {
