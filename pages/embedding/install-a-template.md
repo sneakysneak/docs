@@ -125,4 +125,6 @@ Now that all the templates have been displayed, let’s start the installation. 
         "LogStepDataRequests": true,
         "TemplateId": "885662c2-de28-4760-bec4-2407120ac5f8)"
     }
+    
+    
 Once a template is installed, you can save its cycle ID `aa08a1fe-9a42-4650-88b4-f6f8068cddeb` in your database for future reference.
