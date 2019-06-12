@@ -7,6 +7,8 @@ tags: [installing]
 
 _**Before a new user and account can be created in Cyclr, a Console admin user OAuth token must be obtained.**_
 
+Partner OAuth tokens are used to perform operations within the scope of the Partner Console.
+
 Request:
 
     POST https://yourCyclrInstance/oauth/token
