@@ -19,7 +19,7 @@ Request:
 <table>
   <tr>
     <th>yourCyclrInstance</th>
-    <td>Your Cyclr instance URL.<br />This could be one of the following: api.cyclr.com if your Cyclr account is hosted on our US instance; api.cyclr.uk if it's on our UK instance; your own domain if your Cyclr instance is self-hosted.</td>
+    <td>Your Cyclr instance URL.<br />This could be one of the following: "api.cyclr.com" if your Cyclr account is hosted on our US instance; "api.cyclr.uk" if it's on our UK instance; your own domain if your Cyclr instance is self-hosted.</td>
   </tr>    
   <tr>
     <th>client_id</th>
