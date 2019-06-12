@@ -20,15 +20,15 @@ User Account OAuth tokens are used to perform operations within the scope of an 
     </tr>
     <tr>
         <th>grant_type</th>
-        <td>The string “password“</td>
+        <td>The string "password"</td>
     </tr>
     <tr>
         <th>username</th>
-        <td>An Account User’s username</td>
+        <td>An Account User's username</td>
     </tr>
     <tr>
         <th>password</th>
-        <td>An Account User’s password</td>
+        <td>An Account User's password</td>
     </tr>
 </table>
 
@@ -37,10 +37,10 @@ Response:
         200 OK
 
         {
-            "access\_token": "0000000000000000000000000000000000000000000000000000000000000000",
-            "token\_type": "bearer",
-            "expires\_in": 1209599,
-            "refresh\_token": "0000000000000000000000000000000000000000000000000000000000000000",
+            "access_token": "0000000000000000000000000000000000000000000000000000000000000000",
+            "token_type": "bearer",
+            "expires_in": 1209599,
+            "refresh_token": "0000000000000000000000000000000000000000000000000000000000000000",
             "userName": "newAccountUser",
             "clientId": "jiK5IEHXfr96NFY76MHYlIaLpatGf7gm",
             ".issued": "Wed, 06 Dec 2017 16:06:32 GMT",
