@@ -8,22 +8,22 @@ tags: [connector-creation]
 Name
 ----
 
-Provides a name for the connector to be shown in the Cyclr UI.
+Provides a name for the Connector to be shown in the Cyclr interface.
 
 CreatedOnUtc
 ------------
 
-The date and time when the Connector file was created (in GMT timezone). Will be used to identify when a Connector should be updated in Cyclr. Format: “2015-12-14T11:20:00.000Z”. Leave the seconds and milliseconds as zeros (not that precise).
+The date and time when the Connector file was created (in UTC timezone). Will be used to identify when a Connector should be updated in Cyclr. Format: “2015-12-14T11:20:00.000Z”. Leave the seconds and milliseconds as zeros (not that precise).
 
 Description
 -----------
 
-Provides a description for the connector to be shown in the Cyclr UI. This should describe, in a sentence, what the app does.
+Provides a description for the Connector to be shown in the Cyclr interface. This should describe, in a sentence, what the app does.
 
 Version
 -------
 
-This is the version of the product’s API and doesn’t necessarily match the version of the product itself.
+This is the version of the product's API which doesn’t necessarily match the version of the product itself.
 
 AuthType
 --------
@@ -51,7 +51,7 @@ Icon
 
 Your connector needs an icon.
 
-*   Minimum: square @ 256px / 256px
+*   Minimum: square @ 256px x 256px
 *   24-bit PNG on a transparent background
 
 [Learn About Custom Connector Parameters & Triggers ](./parameters-and-triggers)
