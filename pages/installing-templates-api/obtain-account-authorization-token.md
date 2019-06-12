@@ -43,18 +43,18 @@ Request:
 
 Response:
 
-        200 OK
+    200 OK
 
-        {
-            "access_token": "0000000000000000000000000000000000000000000000000000000000000000",
-            "token_type": "bearer",
-            "expires_in": 1209599,
-            "refresh_token": "0000000000000000000000000000000000000000000000000000000000000000",
-            "userName": "me@example.com",
-            "clientId": "XXXXXXXXXXXXXXXXXXXX",
-            ".issued": "Wed, 06 Dec 2017 16:06:32 GMT",
-            ".expires": "Wed, 20 Dec 2017 16:06:32 GMT"
-        }
+    {
+        "access_token": "0000000000000000000000000000000000000000000000000000000000000000",
+        "token_type": "bearer",
+        "expires_in": 1209599,
+        "refresh_token": "0000000000000000000000000000000000000000000000000000000000000000",
+        "userName": "me@example.com",
+        "clientId": "XXXXXXXXXXXXXXXXXXXX",
+        ".issued": "Wed, 06 Dec 2017 16:06:32 GMT",
+        ".expires": "Wed, 20 Dec 2017 16:06:32 GMT"
+    }
 
 Store the returned access_token and refresh_token for future use.
 
