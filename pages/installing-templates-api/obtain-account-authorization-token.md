@@ -44,7 +44,6 @@ Request:
 Response:
 
     200 OK
-
     {
         "access_token": "0000000000000000000000000000000000000000000000000000000000000000",
         "token_type": "bearer",
