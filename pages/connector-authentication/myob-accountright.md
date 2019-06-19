@@ -32,7 +32,11 @@ For example:
 ```https://my.cyclr.com/connector/callback,https://app-h.cyclr.com/connector/callback```
 
 
-Once you've created your MYOB App, you'll be able to see its **Key** and **Secret** values.  These are used as the OAuth Client ID and client Secret, respectively.  Copy and paste these back into your Cyclr Console's Connector Library on the MYOB AccountRight Live Connector.
+Once you've created your MYOB App, you'll be able to see its **Key** and **Secret** values which are used as the OAuth Client ID and Client Secret, respectively.
+
+![MYOB Account Right App OAuth details](./images/myob-accountright-app-oauth-details.png)
+
+In your Cyclr Partner Console, go to the Connectors menu then Connector Library, click the green Setup button for the MYOB AccountRight Live Connector and paste those details in there.
 
 Your end users will now be able to install the Connector into their Cyclr Accounts.
 
