@@ -113,7 +113,7 @@ dt[id] {
 }
 
 .post-content img {
-    border: black 1px solid;
+    border: 1px solid;
     margin: 12px 0px 3px 0px;
     width: auto;
     height: auto;
