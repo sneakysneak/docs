@@ -10,7 +10,7 @@ _**A Cyclr account contains Account Connectors and Integrations and will typica
 If an Account does not already exist, one should be created.
 
     POST /v1.0/accounts
-    Authorization Bearer 0000000000000000000000000000000000000000000000000000000000000000
+    Authorization: Bearer 0000000000000000000000000000000000000000000000000000000000000000
 
     {
         "Name": "Test Account 001",
