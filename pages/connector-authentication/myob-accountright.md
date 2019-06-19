@@ -5,8 +5,6 @@ permalink: myob-accountright-connector
 tags: [connector]
 ---
 
-# MYOB AccountRight Live #
-
 Partner Setup
 -------------
 
