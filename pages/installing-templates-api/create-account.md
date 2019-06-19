@@ -29,7 +29,7 @@ If an Account does not already exist, one should be created.
     </tr>
     <tr>
         <th>Timezone</th>
-        <td>Timezone: Timezone of the account in <a href='https://en.wikipedia.org/wiki/List\_of\_tz\_database\_time\_zones'>IANA Timezone</a></td>
+        <td>Timezone of the account as found in the "TZ database name" column of this  <a href='https://en.wikipedia.org/wiki/List_of_tz_database_time_zones'>IANA Timezone list</a></td>
     </tr>
 </table>
 
