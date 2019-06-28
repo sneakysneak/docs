@@ -39,7 +39,7 @@ The result object has the following properties:
     <tr>
         <td>cycleId</td>
         <td>The Id of the newly installed integration within your end user’s account</td>
-        <td>user@example.com</td>
+        <td>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</td>
     </tr>
     <tr>
         <td>status</td>
