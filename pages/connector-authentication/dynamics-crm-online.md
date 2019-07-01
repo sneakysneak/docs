@@ -12,9 +12,7 @@ Partner Setup
 
 Dynamics CRM Online uses OAuth 2. Please sign up for an application on Microsoft first and get an OAuth client ID and client secret.
 
-Here is the official documentation for creating an Azure Active Directory application:
-
-[https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications]()
+See here for the [official documentation for creating an Azure Active Directory application](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications).
 
 We will summarise it in a few points:
 
