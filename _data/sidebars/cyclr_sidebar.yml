@@ -39,6 +39,10 @@ entries:
           - title: Adding Custom Fields
             url: /adding-custom-fields
             output: web, pdf
+           
+          - title: Integration Template Versioning
+            url: /integration-template-versioning
+            output: web, pdf
 
       - title: Embedding Cyclr
         output: web, pdf
