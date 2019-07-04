@@ -23,29 +23,18 @@ Template Releases Orientation
 
 ![](./images/Template-Release-Screen.png)
 
-1)  Title of integration template you are working on
-
-2)  Status of the template release
-
-3)  Release notes for template version (click on text to add/edit)
-
-4)  Audit trail (see who created the release and when)
-
-5)  The applications used in the integration template release
-
-6)  Promote draft release to Live button
-
-7)  Edit template release in workflow builder button
-
-8)  Run/test integration workflow release button
-
-9)  Go to workflow release statistics button
-
-10) Copy template release (can be used to create a new draft release, copied to another template or as a new template) 
-
-11) Delete template release button
-
-12) View template release in builder (Live and Deprecated releases are locked for editing) 
+1.  Title of integration template you are working on
+2.  Status of the template release
+3.  Release notes for template version (click on text to add/edit)
+4.  Audit trail (see who created the release and when)
+5.  The applications used in the integration template release
+6.  Promote draft release to Live button
+7.  Edit template release in workflow builder button
+8.  Run/test integration workflow release button
+9.  Go to workflow release statistics button
+10. Copy template release (can be used to create a new draft release, copied to another template or as a new template) 
+11. Delete template release button
+12. View template release in builder (Live and Deprecated releases are locked for editing) 
 
 
 
