@@ -17,23 +17,36 @@ While Live releases can no longer be edited, you can however create a copy of it
 Combining this with our audit trail features, your whole team are able to build and work on integration templates, with their account details being assigned to a release for traceability.  
 
 
+
 Template Releases Orientation 
 -------------------
 
 ![](./images/Template-Release-Screen.png)
 
 1)  Title of integration template you are working on
+
 2)  Status of the template release
+
 3)  Release notes for template version (click on text to add/edit)
+
 4)  Audit trail (see who created the release and when)
+
 5)  The applications used in the integration template release
+
 6)  Promote draft release to Live button
+
 7)  Edit template release in workflow builder button
+
 8)  Run/test integration workflow release button
+
 9)  Go to workflow release statistics button
+
 10) Copy template release (can be used to create a new draft release, copied to another template or as a new template) 
+
 11) Delete template release button
+
 12) View template release in builder (Live and Deprecated releases are locked for editing) 
+
 
 
 Published Integrations
@@ -44,6 +57,7 @@ One of the main advantages of using the versioning feature is for updating your 
 Published integration templates will always provide the “Live” version of the template to your users, so you are able to create a draft version, make any necessary updates and promote to Live to make it accessible to new user installations - without any downtime.
 
 ![](./images/Integration-Template-Releases.png)
+
 
 Copying Integration Templates
 ---------------
