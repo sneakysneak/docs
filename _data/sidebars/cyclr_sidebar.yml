@@ -173,6 +173,10 @@ entries:
           - title: Wait Until Steps
             url: /wait-until
             output: web, pdf
+            
+          - title: Wait All Steps
+            url: /wait-all
+            output: web, pdf
 
       - title: Custom Connector Creation
         output: web, pdf
