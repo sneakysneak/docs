@@ -68,6 +68,15 @@ Function is called when Cyclr received an error from an external API.
 *   **error_response**: Details of the error, see : **Handle Errors from Third Party APIs** further down for more information on handling errors
 *   **return**: true
 
+#### action_condition
+
+Function is used to essentially combine a Method with a Decision Step, allowing a test to be performed that directs a Transaction down either the True or False exit points.  Just by adding this function to a Step, Cyclr will add True and False exit points.
+
+###### Global object
+
+*   **method_response**: object that was received from the third party API.
+*   **return**: true for the Transaction to exit on the "True Route", false to exit on the "False Route"
+
 #### before_oauth2_authorise
 
 Function is called before Cyclr makes an OAuth 2 authorise request.
