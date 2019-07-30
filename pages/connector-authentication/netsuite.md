@@ -15,7 +15,7 @@ The "List" methods, which return multiple items when run, can be filtered to mat
 
 #### Multiple Filter Conditions ####
 
-Sometimes you may need to use more than one filter condition.  To do this you'll need to use some Script to the NetSuite Step to add them in.  In the Builder, click the `Step Setup` button on the NetSuite Step, then choose `Advanced Settings` and enter Script similar to this:
+Sometimes you may need to use more than one filter condition.  To do this you'll need to use some Script in the NetSuite Step to add them in.  In the Builder, click the `Step Setup` button on the NetSuite Step, then choose `Advanced Settings` and enter Script similar to this:
 
 ```javascript
 function before_action() {
@@ -44,8 +44,7 @@ method_request_parameters.filter_val_X
 
 You can add any number of filter conditions using Script as you require.  Just be sure that the numbers on the end of the properties are consecutive, without any breaks.  If you add properties for "..._2", "..._3", skip 4 and add them for "..._5", your fifth condition will be ignored.
 
-
-*NOTE:* If you have added filters as connector parameters and want to add more via script, or are wanting to filter in "Get New/Updated" methods then you will need to start the script parameters from "..._2" e.g. `method_request_parameters.filter_field_2`, as the first set are already defined by the step itself.
+*NOTE:* In the "List" methods you can opt to skip the filters in the connector parameters and simply define all of your filters in script. To do this you will need to start the script parameters from "..._1" e.g. `method_request_parameters.filter_field_1`. However, the "Get New/Updated" methods' script parameters must always be set from "..._2", as the first set are already defined by the step itself.
 
 
 
