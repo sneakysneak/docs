@@ -5,8 +5,7 @@ permalink: netsuite-connector
 tags: [connector]
 ---
 
-Filtering Lists of Objects
----------------
+# Filtering Objects #
 
 The "List" methods, which return multiple items when run, can be filtered to match specified criteria using the following Fields:
 
