@@ -5,8 +5,6 @@ permalink: netsuite-connector
 tags: [connector]
 ---
 
-# NetSuite #
-
 Filtering Lists of Objects
 ---------------
 
