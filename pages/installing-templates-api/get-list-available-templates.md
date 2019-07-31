@@ -38,4 +38,4 @@ Response:
         }
     ]
 
-[How to Install a Template](./list-available-templates)
+[How to Install a Template](./install-from-template)
