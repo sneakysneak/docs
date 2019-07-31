@@ -52,4 +52,4 @@ Response:
         }
     ]
 
-[How to Set Step Parameters](./set-parameter-mappings)
+[How to Set Step Parameters](./set-step-parameters)
