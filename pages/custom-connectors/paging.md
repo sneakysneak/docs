@@ -5,8 +5,7 @@ permalink: custom-connectors-paging
 tags: [connector-creation]
 ---
 
-Inbound and Outbound Paging
----------------------------
+### Inbound and Outbound Paging
 
 So that Cyclr can retrieve more objects than a remote API may allow in one request (some restrict this to 100 objects, for example), it can take advantage of an API’s paging functionality. This is referred to as **Inbound Paging**. Cyclr will repeatedly request pages of objects until it has retrieved them all.
 
