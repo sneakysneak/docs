@@ -44,6 +44,8 @@ Setup Webhook
 4.  Clover will now send a verification message to the webhook cycle, open the step data for the webhook and copy the verification code
 5.  Paste the verification code into the Clover application to authenticate the URL.
 
-![Clover Webhooks](./images/clover-webhooks-1.png)Enable the subscriptions that you wish to receive events for.
+![Clover Webhooks](./images/clover-webhooks-1.png)
+
+Enable the subscriptions that you wish to receive events for.
 
 **Each subscription requires the corresponding read permission. If you change permissions after a merchant installs your app, the permissions won't update for that merchant until the merchant uninstalls and reinstalls the app.**
