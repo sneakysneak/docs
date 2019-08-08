@@ -33,6 +33,7 @@ There are 4 options:
 
 
 **Example Transaction Error Webhook Payload**
+The information in the **Detail** property will contain the Response that was received so will change dependent on the API being called and how it formats its error Responses.  If there are specific errors you wish to handle, you may need to force them to occur so that you can view the Response to see how that appears.
 ```json
 {
     "Timestamp": "2019-08-08T11:25:34.0412055Z",
