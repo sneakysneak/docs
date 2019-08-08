@@ -15,7 +15,7 @@ For Cyclr to connect with the Vincere API you will need to select a suitable use
 3. Select the API Tab
 4. Click "Create new token" button, this will display the API Key
 5. Click "Create new Client ID" button, this will display the Client ID
-6. Enter the callback URL using your Cyclr Partner's **Service Domain** into the "Callback URL" field, e.g. {% raw %}https://app-h.cyclr.com/connector/callback{% endraw %}.  Your Service Domain can be found in your Cyclr Partner Console under Settings > Integration Settings > Service Domain.
+6. Enter the callback URL using your Cyclr Partner's **Service Domain** into the "Callback URL" field, e.g. <br /> {% raw %}https://app-h.cyclr.com/connector/callback{% endraw %}. <br /> Your Service Domain can be found in your Cyclr Partner Console under Settings > Integration Settings > Service Domain.
 
 
 Connector Setup
