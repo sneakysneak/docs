@@ -17,7 +17,7 @@ To create an Entity Cross Reference, the minimum values you should set are the I
 
 We also provide two pairs of additional fields in the Create method: Entity Name and Entity Record Count.
 
-If you have any extra entity property, it can be added as custom fields following this naming convention: `Entity1.ExtraProperty` and `Entity2.ExtraProperty`.
+If you have any extra entity property, it can be added as a custom field following this naming convention: `Entity1.ExtraProperty` and `Entity2.ExtraProperty`.
 
 If you have additional shared information for both entities, it can be added as a custom field in this naming convention: `AdditionalInfo`. Shared fields cannot begin with `[].`, `Entity1.` or `Entity2.`.
 
