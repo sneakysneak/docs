@@ -89,3 +89,22 @@ Authorization: Bearer **********************************************************
     ]
 }
 ```
+
+If the method you are calling requires any field or parameter to be passed to the third-party application, they should be included in your request body.
+
+#### Request
+
+```http
+POST https://yourCyclrInstance/v1.0/account/connectors/{account connector ID}/methods/{method ID}
+Authorization: Bearer ****************************************************************
+Content-Type: application/json
+
+{
+    "Parameters": {
+        "400123": "true"
+    },
+    "Fields": {
+        "500123": "test@example.com"
+    }
+}
+```
