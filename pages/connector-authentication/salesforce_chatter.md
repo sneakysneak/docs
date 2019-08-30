@@ -92,6 +92,3 @@ Your Salesforce Chatter Connector is now set up! You can test it by installing i
 ### Expired access/refresh token errors
 
 Salesforce only allows up to five unique access/refresh token pairs to be issued for each user in a Connected App. Older tokens will be automatically revoked by Salesforce. [More information](https://help.salesforce.com/articleView?id=remoteaccess_request_manage.htm).
-
-
-
