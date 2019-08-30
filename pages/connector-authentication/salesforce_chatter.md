@@ -1,11 +1,11 @@
 ---
 title: Salesforce Chatter Authentication
 sidebar: cyclr_sidebar
-permalink: salesforce_chatter-connector
+permalink: salesforce-chatter-connector
 tags: [connector]
 ---
 
-# Salesforce #
+# Salesforce Chatter #
 
 Partner Setup
 -------------
