@@ -14,12 +14,12 @@ Salesforce uses OAuth 2 for remote API access. You must register Cyclr within Sa
 
 The official Salesforce documentation for creating a **Connected App** can be found [here](https://help.salesforce.com/articleView?id=connected_app_create.htm).
 
-**Salesforce set up – Register Your Application**
+**Salesforce set up - Register Your Application**
 -------------------------------------------------
 
 ### **Introduction**
 
-You can register for a free Salesforce developer account or log into your existing Salesforce account if you have one.  You can use any Salesforce account to create a Connected App. It doesn’t have to be a developer account.
+You can register for a free Salesforce developer account or log into your existing Salesforce account if you have one. You can use any Salesforce account to create a Connected App. It doesn't have to be a developer account.
 
 ### **Create your App within Salesforce:**
 
@@ -61,7 +61,7 @@ The OAuth settings should look like this:
 
 ![Salesforce OAuth Partner Setup](./images/salesforce-partner-setup-oauth.png)
 
-After saving your App, make a note of your **Consumer Key** and **Consumer Secret** values as you’ll need to enter these into Cyclr.
+After saving your App, make a note of your **Consumer Key** and **Consumer Secret** values as you'll need to enter these into Cyclr.
 
 **Cyclr Salesforce Chatter Connector Set up**
 ----------------
@@ -76,7 +76,7 @@ Set up Salesforce Chatter within Cyclr:
 
 Enter the following values:
 
-**Client ID**:  the _Consumer Key_ of your Salesforce Connected App
+**Client ID**: the _Consumer Key_ of your Salesforce Connected App
 
 **Client Secret**: the _Consumer Secret_ of your Salesforce Connected App
 
@@ -91,7 +91,7 @@ Your Salesforce Chatter Connector is now set up! You can test it by installing i
 
 ### Expired access/refresh token errors
 
-Salesforce only allows up to five unique access/refresh token pairs to be issued for each user in a Connected App. Older tokens will be automatically revoked by Salesforce.  [More information](https://help.salesforce.com/articleView?id=remoteaccess_request_manage.htm).
+Salesforce only allows up to five unique access/refresh token pairs to be issued for each user in a Connected App. Older tokens will be automatically revoked by Salesforce. [More information](https://help.salesforce.com/articleView?id=remoteaccess_request_manage.htm).
 
 
 
