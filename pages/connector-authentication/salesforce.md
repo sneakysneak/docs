@@ -27,6 +27,7 @@ The steps below are for Salesforce Classic. Settings are similar for Lightning E
 *   choose **Apps**
 *   from the **Connected Apps** table click the **New** button
 
+
 When the **New Connected App** screen is shown, complete the form as follows:
 
 #### Basic Information
@@ -61,7 +62,6 @@ After saving your App, make a note of your **Consumer Key** and **Consumer Secre
 
 ## Cyclr Setup
 
-
 Setup your Salesforce App within Cyclr:
 
 *   go to your **Cyclr Console**
@@ -78,15 +78,29 @@ Enter the following values:
 
 Your Salesforce Connector is now setup! You can test it by installing it in one of your Cyclr accounts and executing one of the methods to confirm it can return some data.
 
-## FAQ
+
+# Enduser Salesforce Account Setup
+
+For the best experience when using the Salesforce Connector, and to reduce the frequency that Cyclr must obtain a new Access Token and avoid some connection issues, ensure the following Session Settings have been set:
+
+Log in to the Salesforce organization, go to Setup, then use the Search to find "Session Settings".
+
+Under **Session Timeout**
+*  Timeout Value: set this for as long as possible, e.g. 24 hours.
+*  Force logout on session timeout: disable this.
+
+Under **Session Settings**
+*  Lock sessions to the IP address from which they originated: disable this.
 
 
-### Expired access/refresh token errors
+
+# FAQ
+
+## Expired access/refresh token errors
 
 Salesforce only allows up to five unique access/refresh token pairs to be issued for each user in a Connected App. Older tokens will be automatically revoked by Salesforce.  [More information](https://help.salesforce.com/articleView?id=remoteaccess_request_manage.htm).
 
-
-### Disabling Assignment Rules
+## Disabling Assignment Rules
 
 When creating Accounts, Cases, or Leads in Salesforce, it may be desirable to prevent Salesforce's "active assignment rules" from being applied.  This very much depends on what assignment rules have been setup within Salesforce so will depend on the enduser's requirements.
 
