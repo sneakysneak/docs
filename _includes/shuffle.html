@@ -171,13 +171,13 @@ see the problems this layout poses if you're including it in PDF. {{site.data.al
     <div class="panel panel-default">
       <div class="panel-heading">Connector Guides</div>
       <div class="panel-body">
-        Find out more about our connectors, including how to setup OAuth with your credentials..
+        Find out more about our connectors, including how to setup OAuth with your credentials.
           <ul>
               {% assign sorted_pages = site.pages | sort:"title" %}
-              {% for sorted_pages in site.pages %}
-              {% for tag in sorted_pages.tags %}
+              {% for page in sorted_pages.pages %}
+              {% for tag in page.tags %}
               {% if tag == "connector" %}
-              <li><a href="{{sorted_pages.url | remove: '/'}}">{{sorted_pages.title}}</a></li>
+              <li><a href="{{page.url | remove: '/'}}">{{page.title}}</a></li>
               {% endif %}
               {% endfor %}
               {% endfor %}
