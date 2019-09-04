@@ -18,3 +18,5 @@ _site/
 /pages/connector-authentication/.vs/VSWorkspaceState.json
 /.vs/slnx.sqlite
 /.vs/docs/v16/.suo
+/.vs/docs/config/applicationhost.config
+/.vs/VSWorkspaceState.json
