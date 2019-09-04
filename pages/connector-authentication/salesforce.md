@@ -5,23 +5,19 @@ permalink: salesforce-connector
 tags: [connector]
 ---
 
-# Salesforce #
-
-Partner Setup
--------------
+# Partner Setup
 
 Salesforce uses OAuth 2 for remote API access. You must register Cyclr within Salesforce as your own Connected App to receive OAuth Client ID and Client Secret values to enable Cyclr to authenticate with Salesforce.
 
 The official Salesforce documentation for creating a **Connected App** can be found [here](https://help.salesforce.com/articleView?id=connected_app_create.htm).
 
-**Salesforce set up – Register Your Application**
--------------------------------------------------
+## Salesforce Setup – Register Your Application
 
-### **Introduction**
+### Introduction
 
 You can register for a free Salesforce developer account or log into your existing Salesforce account if you have one.  You can use any Salesforce account to create a Connected App. It doesn’t have to be a developer account.
 
-### **Create your App within Salesforce:**
+### Create your App within Salesforce
 
 The steps below are for Salesforce Classic. Settings are similar for Lightning Experience.
 
@@ -33,7 +29,7 @@ The steps below are for Salesforce Classic. Settings are similar for Lightning E
 
 When the **New Connected App** screen is shown, complete the form as follows:
 
-#### **Basic Information**
+#### Basic Information
 
 **Connected App Name:** enter a name for your application
 
@@ -41,7 +37,7 @@ When the **New Connected App** screen is shown, complete the form as follows:
 
 **Contact Email:** your email address
 
-#### **API (Enable OAuth Settings)**
+#### API (Enable OAuth Settings)
 
 Tick the **Enable OAuth Settings** box to display further options.
 
@@ -63,10 +59,10 @@ The OAuth settings should look like this:
 
 After saving your App, make a note of your **Consumer Key** and **Consumer Secret** values as you’ll need to enter these into Cyclr.
 
-**Cyclr Set up**
-----------------
+## Cyclr Setup
 
-Set up your Salesforce App within Cyclr:
+
+Setup your Salesforce App within Cyclr:
 
 *   go to your **Cyclr Console**
 *   click the **Connectors** menu along the top
@@ -80,10 +76,10 @@ Enter the following values:
 
 **Client Secret**: the _Consumer Secret_ of your Salesforce Connected App
 
-Your Salesforce Connector is now set up! You can test it by installing it in one of your Cyclr accounts and executing one of the methods to confirm it can return some data.
+Your Salesforce Connector is now setup! You can test it by installing it in one of your Cyclr accounts and executing one of the methods to confirm it can return some data.
 
-**FAQ**
--------
+## FAQ
+
 
 ### Expired access/refresh token errors
 
