@@ -5,19 +5,19 @@ permalink: salesforce-connector
 tags: [connector]
 ---
 
-# Partner Setup
+## Partner Setup
 
 Salesforce uses OAuth 2 for remote API access. You must register Cyclr within Salesforce as your own Connected App to receive OAuth Client ID and Client Secret values to enable Cyclr to authenticate with Salesforce.
 
 The official Salesforce documentation for creating a **Connected App** can be found [here](https://help.salesforce.com/articleView?id=connected_app_create.htm).
 
-## Salesforce Setup – Register Your Application
+### Salesforce Setup – Register Your Application
 
-### Introduction
+#### Introduction
 
 You can register for a free Salesforce developer account or log into your existing Salesforce account if you have one.  You can use any Salesforce account to create a Connected App. It doesn’t have to be a developer account.
 
-### Create your App within Salesforce
+#### Create your App within Salesforce
 
 The steps below are for Salesforce Classic. Settings are similar for Lightning Experience.
 
@@ -60,7 +60,7 @@ The OAuth settings should look like this:
 
 After saving your App, make a note of your **Consumer Key** and **Consumer Secret** values as you’ll need to enter these into Cyclr.
 
-## Cyclr Setup
+### Cyclr Setup
 
 Setup your Salesforce App within Cyclr:
 
@@ -79,7 +79,7 @@ Enter the following values:
 Your Salesforce Connector is now setup! You can test it by installing it in one of your Cyclr accounts and executing one of the methods to confirm it can return some data.
 
 
-# Enduser Salesforce Account Setup
+## Enduser Salesforce Account Setup
 
 For the best experience when using the Salesforce Connector, and to reduce the frequency that Cyclr must obtain a new Access Token and avoid some connection issues, ensure the following Session Settings have been set:
 
@@ -94,13 +94,13 @@ Under **Session Settings**
 
 
 
-# FAQ
+## FAQ
 
-## Expired access/refresh token errors
+### Expired access/refresh token errors
 
 Salesforce only allows up to five unique access/refresh token pairs to be issued for each user in a Connected App. Older tokens will be automatically revoked by Salesforce.  [More information](https://help.salesforce.com/articleView?id=remoteaccess_request_manage.htm).
 
-## Disabling Assignment Rules
+### Disabling Assignment Rules
 
 When creating Accounts, Cases, or Leads in Salesforce, it may be desirable to prevent Salesforce's "active assignment rules" from being applied.  This very much depends on what assignment rules have been setup within Salesforce so will depend on the enduser's requirements.
 
