@@ -1,5 +1,5 @@
 ---
-title: Club Ready Connector Guide
+title: Club Ready Connector
 sidebar: cyclr_sidebar
 permalink: clubready-connector
 tags: [connector]
