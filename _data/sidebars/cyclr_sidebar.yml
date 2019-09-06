@@ -274,122 +274,125 @@ entries:
         output: web, pdf
 
         folderitems:
-        - title: Bronto
-            url: /bronto-installation
-            output: web, pdf
+			- title: Bronto
+				url: /bronto-installation
+				output: web, pdf
 
-		- title: Bullhorn
-            url: /bullhorn-connector
-            output: web, pdf
+			- title: Bullhorn
+				url: /bullhorn-connector
+				output: web, pdf
 
-		- title: Capsule
-            url: /capsule-connector
-            output: web, pdf
+			- title: Capsule
+				url: /capsule-connector
+				output: web, pdf
 
-        - title: Clover
-            url: /clover-connector
-            output: web, pdf
+			- title: Clover
+				url: /clover-connector
+				output: web, pdf
+				
+			- title: Club Ready Connector
+				url: /clubready-connector
+				output: web, pdf
 			
-		- title: Club Ready Connector
-            url: /clubready-connector
-            output: web, pdf
-		
-		- title: Cyclr IP Whitelisting
-            url: /cyclr-ip-whitelisting
-            output: web, pdf
+			- title: Cyclr IP Whitelisting
+				url: /cyclr-ip-whitelisting
+				output: web, pdf
+				
+			- title: Entity Cross Reference
+				url: /entity-cross-reference-connector
+				output: web, pdf
 			
-		- title: Entity Cross Reference
-            url: /entity-cross-reference-connector
-            output: web, pdf
-		
-        - title: Facebook Marketing Authentication
-            url: /facebook-connector
-            output: web, pdf
-			
-		- title: Facebook Offline Conversions Authentication
-            url: /facebook-offline-conversions-connector
-            output: web, pdf
+			- title: Facebook Marketing Authentication
+				url: /facebook-connector
+				output: web, pdf
+				
+			- title: Facebook Offline Conversions Authentication
+				url: /facebook-offline-conversions-connector
+				output: web, pdf
 
-        - title: FullContact
-            url: /fullcontact-connector
-            output: web, pdf
+			- title: FullContact
+				url: /fullcontact-connector
+				output: web, pdf
 
-        - title: Google
-            url: /google-connector
-            output: web, pdf
+			- title: Google
+				url: /google-connector
+				output: web, pdf
 
-		- title: Hubspot Connector Guide
-            url: /hubspot-connector
-            output: web, pdf
-		
-        - title: Intercom Authentication
-            url: /intercom-connector
-            output: web, pdf
+			- title: Hubspot Connector Guide
+				url: /hubspot-connector
+				output: web, pdf
 			
-		- title: MYOB AccountRight Connector
-            url: /myob-accountright-connector
-            output: web, pdf
-		
-		- title: Microsoft Dynamics
-            url: /dynamics-connector
-            output: web, pdf
+			- title: Intercom Authentication
+				url: /intercom-connector
+				output: web, pdf
+				
+			- title: MYOB AccountRight Connector
+				url: /myob-accountright-connector
+				output: web, pdf
 			
-		- title: Mindbody Connector Guide
-            url: /mindbody-connector
-            output: web, pdf
-			
-		- title: Netsuite Connector Guide
-            url: /netsuite-connector
-            output: web, pdf
-			
-		- title: Optimail Connector Guide
-            url: /optimail-connector
-            output: web, pdf
-			
-		- title: Pipedrive Connector Guide
-            url: /pipedrive-connector.html
-            output: web, pdf
+			- title: Microsoft Dynamics
+				url: /dynamics-connector
+				output: web, pdf
+				
+			- title: Mindbody Connector Guide
+				url: /mindbody-connector
+				output: web, pdf
+				
+			- title: Netsuite Connector Guide
+				url: /netsuite-connector
+				output: web, pdf
+				
+			- title: Optimail Connector Guide
+				url: /optimail-connector
+				output: web, pdf
+				
+			- title: Pipedrive Connector Guide
+				url: /pipedrive-connector.html
+				output: web, pdf
 
-        - title: Salesforce Authentication
-            url: /salesforce-connector
-            output: web, pdf
+			- title: Salesforce Authentication
+				url: /salesforce-connector
+				output: web, pdf
+				
+			- title: Saleforce Chatter Authentication
+				url: /salesforce-chatter-connector
+				output: web, pdf
 			
-		- title: Saleforce Chatter Authentication
-            url: /salesforce-chatter-connector
-            output: web, pdf
-		
-		- title: Salesforce Upsert Setup
-            url: /salesforce-upsert-setup
-            output: web, pdf
+			- title: Salesforce Upsert Setup
+				url: /salesforce-upsert-setup
+				output: web, pdf
+				
+			- title: Slack Authentication
+				url: /slack
+				output: web, pdf
 			
-		- title: Slack Authentication
-            url: /slack
-            output: web, pdf
-		
-		- title: Squareup Authentication
-            url: /squareup-connector
-            output: web, pdf
-		
-        - title: Sugar CRM
-            url: /sugarcrm-connector
-            output: web, pdf
+			- title: Squareup Authentication
+				url: /squareup-connector
+				output: web, pdf
 			
-		- title: Twilio Connector Guide
-            url: /twilio-connector.html
-            output: web, pdf
-			
-		- title: Vincere Connector Guide
-            url: /vincere-connector
-            output: web, pdf
-			
-		- title: Wordpress Authentication
-            url: /wordpress-connector.html
-            output: web, pdf
+			- title: Sugar CRM
+				url: /sugarcrm-connector
+				output: web, pdf
+				
+			- title: Twilio Connector Guide
+				url: /twilio-connector.html
+				output: web, pdf
+				
+			- title: Vincere Connector Guide
+				url: /vincere-connector
+				output: web, pdf
+				
+			- title: Wordpress Authentication
+				url: /wordpress-connector.html
+				output: web, pdf
 
-		- title: Xero Private Instance Authentication
-            url: /xero-private-connector
-            output: web, pdf	
+			- title: Xero Private Instance Authentication
+				url: /xero-private-connector
+				output: web, pdf	
+			
+			- title: Zendesk Webhooks
+				url: /zendesk-connector
+				output: web, pdf
 		
-		- title: Zendesk Webhooks
-            url: /zendesk-connector
-            output: web, pdf
+
+          
