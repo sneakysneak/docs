@@ -5,8 +5,7 @@ permalink: install-a-connector
 tags: [embedding]
 ---
 
-This article will guide you through installing a connector into an account. You must have already have an access token to  
-an account.
+This article will guide you through installing a connector into an account. You must already have an [Account Access Token](obtain-account-authorization-token).
 
 1.  [Getting the connector ID](#1)
 2.  [Installing the connector](#2)
@@ -120,7 +119,7 @@ If the connector requires an OAuth authentication to work with the third party A
       "ExpiresAtUtc":"2017-11-29T16:22:36.7257196Z"
     }
 
-Now you have a sign in token you can build the URL to send the user too to begin the OAuth flow.
+Now you have a sign in token, you can "build" the URL to send the user to where they will begin the OAuth flow.
 
 #### URL & Querystring
 
