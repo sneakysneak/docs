@@ -1,7 +1,7 @@
 ---
 title: HTTP Basic Authentication
 sidebar: cyclr_sidebar
-permalink: basic-authentication
+permalink: http-basic-authentication
 tags: [installing]
 ---
 
