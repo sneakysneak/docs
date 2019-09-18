@@ -123,7 +123,7 @@ entries:
             output: web, pdf
 
           - title: HTTP Basic Authentication
-            url: /http-basic-authentication
+            url: /basic-authentication
             output: web, pdf
 
           - title: OAuth Authentication
