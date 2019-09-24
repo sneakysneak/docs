@@ -7,14 +7,17 @@ tags: [connector]
 
 # Google #
 
-Partner Setup
--------------
+Introduction
+------------
 
 Google apps, such as Google Sheets, Google Drive, etc., use OAuth 2. You need a Google account to create authorization credentials and get an **OAuth client ID** and **client secret**.  These are then added to the appropriate Google connector in the Commectors tab of your Cyclr Console.
 
 Here is the official documentation for creating authorization credentials:
 
 [https://developers.google.com/identity/protocols/OAuth2WebServer#creatingcred](https://developers.google.com/identity/protocols/OAuth2WebServer#creatingcred)
+
+OAuth2 Setup
+------------
 
 Here are the steps that you need to take.
 
