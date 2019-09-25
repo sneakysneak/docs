@@ -10,6 +10,8 @@ Vincere Setup
 
 For Cyclr to connect with the Vincere API you will need to select a suitable user account within Vincere. This account will require setting up, the steps to complete this are below.
 
+_NOTE: We have experienced issues when using the Safari web browser so would recommend using another browser._
+
 1. Login to the Vincere Application using the account specific URL, e.g. {%raw%}https://{{yourdomain}}.vincere.io/loginForm.do{%endraw%}
 2. Select Settings > Marketplace
 3. Select the API Tab
