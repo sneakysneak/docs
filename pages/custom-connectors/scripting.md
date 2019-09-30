@@ -205,6 +205,8 @@ Library Name: crypto-js
 
 Description: JavaScript library of crypto standards.
 
+Warning: The output of encrypted data is always in a hex string. Formatting options `CryptoJS.enc` are not supported when calling `toString`.
+
 External Documentation: <https://github.com/brix/crypto-js>
 
 ### Connector scripting examples
