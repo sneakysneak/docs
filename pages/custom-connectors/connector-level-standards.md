@@ -56,7 +56,7 @@ Access Token URL|
 Request TOken URL|
 # Rate Limits
 # Methods
-[Method Level Settings.](MethodLevel.md)<br><br> 
+[Method Level Settings.](method-level-standards.md)<br><br> 
 *Note:* Any settings at the method level will override those set at the connector level.
 # Parameters
 Parameters are used to define a range of HTTP fields. You can define parameters at the connector level or method level. If a parameter is defined at the connector level, it will be global for all methods in the connector.
