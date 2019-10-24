@@ -8,8 +8,8 @@ Cyclr Method Level Standards Guide
 ---------------------------
 
 # Settings
-Setting|Description
---- | ---
+|Setting|Description|
+|--- | ---|
 |Name|  |
 |Description|  |
 |Warning|  |
