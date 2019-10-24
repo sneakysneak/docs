@@ -8,6 +8,7 @@ Cyclr Method Level Standards Guide
 ---------------------------
 
 # Settings
+
 |Setting|Description|
 |--- | ---|
 |Name|  |
@@ -45,6 +46,7 @@ Cyclr Method Level Standards Guide
 |Custom Fields Lookup Method|  |
 
 ## Fields
+
 |Setting|Description|
 |--- | ---|
 |Connector Field|  |
@@ -71,6 +73,7 @@ Cyclr Method Level Standards Guide
 |Custom Fields Lookup Method|  |
 
 ## Fields
+
 |Setting|Description|
 |--- | ---|
 |Connector Field|  |
@@ -99,6 +102,7 @@ Cyclr Method Level Standards Guide
 |Parameter Values|  |
 
 ## Target Types
+
 |Target Type|Description|
 |--- | ---|
 |Http Header|  |
