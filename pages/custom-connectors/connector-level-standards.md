@@ -7,6 +7,17 @@ tags: [connector-creation]
 Cyclr Connector Level Standards Guide
 ---------------------------
 
+# Connector Details
+
+|Setting|Description|
+|--- | --- |
+|Name|Should not include any version information |
+|Version|Should left blank |
+|Description|Should be from the product, google search result will likely give appropriate text|
+|Logo|Should be 400x400 and scale down nicely |
+|Authentication|Use oauth where available  |
+
+
 # Settings
 
 |Setting|Description|
@@ -73,6 +84,20 @@ Click [here](https://oauth.net/2/) for further information on OAuth2.
 
 # Rate Limits
 # Methods
+
+|Setting|Description|
+|--- | --- |
+|Name|Should indicate what the method does  |
+|Description|Should be provided and end with a "."  |
+|Fields & Parameters|ID should be uppercase in display fields but Id in system fields |
+
+System Field should be in PascalCase
+
+Descriptions should end in "."
+
+All entities should have Get, Get All, Create, Update, Delete unless not supported by API
+
+Should provide lookup/triggers for ID's where possible
 
 [Method Level Settings.](method-level-standards.md)<br><br> 
 *Note:* Any settings at the method level will override those set at the connector level.
