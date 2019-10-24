@@ -182,6 +182,18 @@ entries:
         output: web, pdf
 
         folderitems:
+          - title: Connector Standards
+            url: /connector-standards
+            output: web, pdf
+
+          - title: Connector Level Standards
+            url: /connector-level-standards
+            output: web, pdf
+
+          - title: Method Level Standards
+            url: /method-level-standards
+            output: web, pdf
+        
           - title: Introduction
             url: /custom-connector-introduction
             output: web, pdf
