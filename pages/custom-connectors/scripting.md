@@ -56,13 +56,18 @@ Function is called when Cyclr has a response from an external API.
 
 If a Method uses Paging, this function is called after each page is retrieved.
 
+###### Global object
+
+*   **method_response**: object that was received from the third party API.  If the Method uses paging, this contains only the current page's Response.
+*   **return**: true
+
 #### after_action_paging
 
-If this function is provided, it is called after all pages of data have been retrieved.
+If this function is provided, it is called once after all pages of data have been retrieved, whether Paging has been implemented or not.
 
 ###### Global object
 
-*   **method_response**: object that was received from the third party API.
+*   **method_response**: object that contains all of the Response data.
 *   **return**: true
 
 #### after_error
