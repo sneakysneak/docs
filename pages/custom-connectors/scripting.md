@@ -52,7 +52,13 @@ Called before Cyclr makes a request to an external API.
 
 #### after_action
 
-Function is called when Cyclr has got a response from an external API
+Function is called when Cyclr has a response from an external API.
+
+If a Method uses Paging, this function is called after each page is retrieved.
+
+#### after_action_paging
+
+If this function is provided, it is called after all pages of data have been retrieved.
 
 ###### Global object
 
