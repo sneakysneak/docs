@@ -5,9 +5,29 @@ permalink: custom-connector-scripting
 tags: [connector-creation]
 ---
 
+### Scripting
+
+Cyclr supports Javascript as its scripting language, allowing you to manipulate data before it's sent as well as after it's been retrieved.  This can be useful when moving data between applications as what's valid in one, may not be valid in another.  Also, sometimes data just doesn't quite "fit".
+
+Script can be used when building a Connector and on Steps in a Template or Cycle.
+
+If you're working on a Cycle in the Builder and need to perform a change to some data, click the Step Setup button on a Step then either use Inline Script in a Mapping for something simple, or expand the Advanced Settings area and enter some Script to tie in to Cyclr's "Events" as described in the next section.
+
+For Inline Script, you must prefix the Javascript code with "=" (an equals sign), e.g.:
+```javascript
+=(100 * 2)
+```
+or
+```javascript
+=`[Mergefield]` === '' ? 'no value' : `[Mergefield]`;
+```
+
+It's best to use ` characters (backticks) around string values being merged in as that will prevent carriage returns and the various quote characters from breaking your Script.
+
+
 ### Events
 
-Events are triggered at certain points allowing you to modify data. Script can be added at both the Connector & Method levels; Connector level event handlers will be called for all methods where as method level will only be called for that method. To add an event handler simply add a javascript function with the event name.
+Events are triggered at certain points allowing you to modify data. Script can be added at both the Connector and Method levels; Connector level event handlers will be called for all methods where as method level will only be called for that method. To add an event handler simply add a javascript function with the event name.
 
 ```javascript
 function eventName() {
@@ -17,7 +37,7 @@ function eventName() {
 
 #### before_webhook
 
-Called when a webook request has been received & before anything else is done. Method is used to decide if the request should be continued or return a custom message to the caller.
+Called when a webook request has been received and before anything else is done. Method is used to decide if the request should be continued or return a custom message to the caller.
 
 ###### Global objects
 
@@ -27,7 +47,7 @@ Called when a webook request has been received & before anything else is done. M
 *   **method_endpoint**: The webhook request URL
 *   **method_response**: The response body for the request
 *   **method_response_headers**: The response headers for the request
-*   **return**: true for the webhook to continue normal execution, false to stop execution of the request & send the response body/headers to the caller
+*   **return**: true for the webhook to continue normal execution, false to stop execution of the request and send the response body/headers to the caller
 
 #### after_webhook
 
