@@ -11,7 +11,7 @@ Cyclr supports Javascript as its scripting language, allowing you to manipulate 
 
 Script can be used when building a Connector and on Steps in a Template or Cycle.
 
-If you're working on a Cycle in the Builder and need to perform a change to some data, click the Step Setup button on a Step then either use Inline Script in a Mapping for something simple, or expand the Advanced Settings area and enter some Script to tie in to Cyclr's "Events" as described in the next section.
+If you're working on a Cycle in the Builder and need to perform a change to some data, click the Step Setup button on a Step then either use Inline Script in a Mapping for something simple, or expand the Advanced Settings area and enter some Script to tie in to Cyclr's [Events](https://docs.cyclr.com/custom-connector-scripting#events) as described below.
 
 For Inline Script, you must prefix the Javascript code with "=" (an equals sign), e.g.:
 ```javascript
@@ -47,6 +47,7 @@ Called when a webook request has been received and before anything else is done.
 *   **method_endpoint**: The webhook request URL
 *   **method_response**: The response body for the request
 *   **method_response_headers**: The response headers for the request
+*   **cycle_variables**: Cycle variables
 *   **return**: true for the webhook to continue normal execution, false to stop execution of the request and send the response body/headers to the caller
 
 #### after_webhook
@@ -56,6 +57,7 @@ Called after the webook has been caught.
 ###### Global object
 
 *   **method_response**: object that was POSTed to the Cyclr webhook
+*   **cycle_variables**: Cycle variables
 *   **return**: true for the webhook to continue normal execution, false to ignore the webhook request
 
 #### before_action
@@ -68,6 +70,7 @@ Called before Cyclr makes a request to an external API.
 *   **method_request_headers**: HTTP headers for the request
 *   **method_request_parameters**: Querystring parameters for the request
 *   **method_request_mergefields**: mergefields for the request
+*   **cycle_variables**: Cycle variables
 *   **return**: true to continue with the request to the third party API, false to abort the request (use throw for a more useful step error message)
 
 #### after_action
@@ -79,6 +82,7 @@ If a Method uses Paging, this function is called after each page is retrieved.
 ###### Global object
 
 *   **method_response**: object that was received from the third party API.  If the Method uses paging, this contains only the current page's Response.
+*   **cycle_variables**: Cycle variables
 *   **return**: true
 
 #### after_action_paging
@@ -88,6 +92,7 @@ If this function is provided, it is called once after all pages of data have bee
 ###### Global object
 
 *   **method_response**: object that contains all of the Response data.
+*   **cycle_variables**: Cycle variables
 *   **return**: true
 
 #### after_error
@@ -97,6 +102,7 @@ Function is called when Cyclr received an error from an external API.
 ###### Global object
 
 *   **error_response**: Details of the error, see : **Handle Errors from Third Party APIs** further down for more information on handling errors
+*   **cycle_variables**: Cycle variables
 *   **return**: true
 
 #### action_condition
@@ -106,6 +112,7 @@ Function is used to essentially combine a Method with a Decision Step, allowing 
 ###### Global object
 
 *   **method_response**: object that was received from the third party API.
+*   **cycle_variables**: Cycle variables
 *   **return**: true for the Transaction to exit on the "True Route", false to exit on the "False Route"
 
 #### before_oauth2_authorise
@@ -115,6 +122,7 @@ Function is called before Cyclr makes an OAuth 2 authorise request.
 ###### Global object
 
 *   **method_endpoint**: URL for the OAuth authorise endpoint
+*   **cycle_variables**: Cycle variables
 *   **return**: true
 
 #### before_oauth2_token
@@ -125,6 +133,7 @@ Called before Cyclr makes an OAuth 2 access token request.
 
 *   **method_request**: Object that is going to be sent to the OAuth 2 access token endpoint
 *   **method_request_headers**: HTTP headers for the request
+*   **cycle_variables**: Cycle variables
 *   **return**: true
 
 #### after_oauth2_token
@@ -134,6 +143,7 @@ Called after Cyclr makes an OAuth 2 access token request.
 ###### Global object
 
 *   **method_response**: response object that was received from the OAuth 2 access token request
+*   **cycle_variables**: Cycle variables
 *   **return**: true
 
 #### before_oauth2_refresh
@@ -144,6 +154,7 @@ Called before Cyclr makes an OAuth 2 refresh token request.
 
 *   **method_request**: request object that is going to be sent to the OAuth 2 refresh token request
 *   **method_request_headers**: HTTP headers for the request
+*   **cycle_variables**: Cycle variables
 *   **return**: true
 
 #### after_oauth2_refresh
@@ -153,6 +164,7 @@ Called after Cyclr makes an OAuth 2 refresh token request.
 ###### Global object
 
 *   **method_response**: response object that was received from the OAuth 2 refresh token request.
+*   **cycle_variables**: Cycle variables
 *   **return**: true
 
 ### Functions
