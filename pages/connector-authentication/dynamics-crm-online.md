@@ -27,7 +27,7 @@ We will summarise it in a few points:
 
    **Sign-on URL**: Your Cyclr service domain, e.g. https://app-h.cyclr.com/. This can be found in your Cyclr Console under Settings > Integration Settings > Service Domain.
 
-   **Reply URLs**: you must add a callback URL to allow Dynamics CRM to be used in your Cyclr Console and it's accounts.
+   **Reply URLs**: you must add a callback URL to allow Dynamics CRM to be used in your Cyclr Console and its accounts.
 
    The URL is:
 

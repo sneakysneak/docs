@@ -21,7 +21,7 @@ After you've created your App, set the **Redirect URLs** under the **Add feature
 ![Slack - Permissions](./images/slack-permissions.png)
 
 
-**Redirect URL**: you must add a callback URL to allow Intercom to be used in your Cyclr Console and it's accounts.
+**Redirect URL**: you must add a callback URL to allow Intercom to be used in your Cyclr Console and its accounts.
 
 The URL is:
 

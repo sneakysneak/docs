@@ -42,7 +42,7 @@ When the **New Connected App** screen is shown, complete the form as follows:
 
 Tick the **Enable OAuth Settings** box to display further options.
 
-**Callback URL**: you must add a callback URL to allow Salesforce to be used in your Cyclr Console and it's accounts.
+**Callback URL**: you must add a callback URL to allow Salesforce to be used in your Cyclr Console and its accounts.
 
 The URLs is:
 

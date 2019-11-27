@@ -32,7 +32,7 @@ Here are the steps that you need to take.
 
     **URL**: Your Cyclr service domain, e.g. https://app-h.cyclr.com/. This can be found in your Cyclr Console under Settings > Integration Settings > Service Domain.
 
-    **Redirect URL**: you must add a callback URL to allow Google to be used in your Cyclr Console and it's accounts.
+    **Redirect URL**: you must add a callback URL to allow Google to be used in your Cyclr Console and its accounts.
 
     The URL is:
     

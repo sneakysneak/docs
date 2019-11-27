@@ -16,7 +16,7 @@ The official Intercom documentation describing the process can be found here:
 * [Creating an App](https://developers.intercom.com/building-apps/docs/get-started-developing-on-intercom)
 * [Setting up OAuth](https://developers.intercom.com/building-apps/docs/setting-up-oauth)
 
-**Redirect URL**: you must add a callback URL to allow Intercom to be used in your Cyclr Console and it's accounts.
+**Redirect URL**: you must add a callback URL to allow Intercom to be used in your Cyclr Console and its accounts.
 
 The URL is:
 
