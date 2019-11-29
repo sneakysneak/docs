@@ -7,14 +7,19 @@ tags: [connector]
 
 # Google #
 
-Partner Setup
--------------
+Introduction
+------------
 
-Google apps, such as Google Sheets, Google Drive, etc., use OAuth 2. You should use your Google account to create authorization credentials first and get an **OAuth client ID** and **client secret**.
+Google apps, such as Google Sheets, Google Drive, etc., use OAuth 2. You need a Google account to create authorization credentials and get an **OAuth client ID** and **client secret**.  These are then added to the appropriate Google connector in the Commectors tab of your Cyclr Console.
 
 Here is the official documentation for creating authorization credentials:
 
 [https://developers.google.com/identity/protocols/OAuth2WebServer#creatingcred](https://developers.google.com/identity/protocols/OAuth2WebServer#creatingcred)
+
+OAuth2 Setup
+------------
+
+Here are the steps that you need to take.
 
 1. Sign up for a Google account; or log into your existing account if you already have one.
 2. Go to [https://console.developers.google.com/apis/credentials](https://console.developers.google.com/apis/credentials)
@@ -27,11 +32,10 @@ Here is the official documentation for creating authorization credentials:
 
     **URL**: Your Cyclr service domain, e.g. https://app-h.cyclr.com/. This can be found in your Cyclr Console under Settings > Integration Settings > Service Domain.
 
-    **Redirect URL**: you must add 2 callback URLs to allow Google to be used in your Cyclr Console templates as well as your Cyclr accounts.
+    **Redirect URL**: you must add a callback URL to allow Google to be used in your Cyclr Console and its accounts.
 
-    These URLs are:
-
-    * {% raw %}https://{{Your Cyclr console domain e.g. my.cyclr.com or my.cyclr.uk}}/connector/callback{% endraw %}
+    The URL is:
+    
     * {% raw %}https://{{Your Cyclr service domain e.g. app-h.cyclr.com}}/connector/callback{% endraw %}
 
 3. Go to Cyclr Console (https://my.cyclr.com/console) > Connectors > Connector Library > Google Sheets/Drive/etc. > Setup
@@ -45,7 +49,7 @@ Your Google connector is now set up! You can test it by installing it in one of 
 API Integration Guide
 ---------------------
 
-Google connectors use OAuth 2 Authorisation Code flow. It requires your end users to sign into Google and grant Cyclr access to their account.
+Google connectors use OAuth 2 Authorisation Code flow. It requires your end users to sign into Google and grant you access to their account.
 
 To do this, call _/UpdateAccountConnectorOAuth_ with a one-time sign-in token.
 

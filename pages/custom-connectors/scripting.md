@@ -5,9 +5,29 @@ permalink: custom-connector-scripting
 tags: [connector-creation]
 ---
 
+### Scripting
+
+Cyclr supports Javascript as its scripting language, allowing you to manipulate data before it's sent as well as after it's been retrieved.  This can be useful when moving data between applications as what's valid in one, may not be valid in another.  Also, sometimes data just doesn't quite "fit".
+
+Script can be used when building a Connector and on Steps in a Template or Cycle.
+
+If you're working on a Cycle in the Builder and need to perform a change to some data, click the Step Setup button on a Step then either use Inline Script in a Mapping for something simple, or expand the Advanced Settings area and enter some Script to tie in to Cyclr's [Events](https://docs.cyclr.com/custom-connector-scripting#events) as described below.
+
+For Inline Script, you must prefix the Javascript code with "=" (an equals sign), e.g.:
+```javascript
+=(100 * 2)
+```
+or
+```javascript
+=`[Mergefield]` === '' ? 'no value' : `[Mergefield]`;
+```
+
+It's best to use ` characters (backticks) around string values being merged in as that will prevent carriage returns and the various quote characters from breaking your Script.
+
+
 ### Events
 
-Events are triggered at certain points allowing you to modify data. Script can be added at both the Connector & Method levels; Connector level event handlers will be called for all methods where as method level will only be called for that method. To add an event handler simply add a javascript function with the event name.
+Events are triggered at certain points allowing you to modify data. Script can be added at both the Connector and Method levels; Connector level event handlers will be called for all methods where as method level will only be called for that method. To add an event handler simply add a javascript function with the event name.
 
 ```javascript
 function eventName() {
@@ -17,7 +37,7 @@ function eventName() {
 
 #### before_webhook
 
-Called when a webook request has been received & before anything else is done. Method is used to decide if the request should be continued or return a custom message to the caller.
+Called when a webook request has been received and before anything else is done. Method is used to decide if the request should be continued or return a custom message to the caller.
 
 ###### Global objects
 
@@ -27,7 +47,8 @@ Called when a webook request has been received & before anything else is done. M
 *   **method_endpoint**: The webhook request URL
 *   **method_response**: The response body for the request
 *   **method_response_headers**: The response headers for the request
-*   **return**: true for the webhook to continue normal execution, false to stop execution of the request & send the response body/headers to the caller
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not preserved.
+*   **return**: true for the webhook to continue normal execution, false to stop execution of the request and send the response body/headers to the caller
 
 #### after_webhook
 
@@ -36,6 +57,7 @@ Called after the webook has been caught.
 ###### Global object
 
 *   **method_response**: object that was POSTed to the Cyclr webhook
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not preserved.
 *   **return**: true for the webhook to continue normal execution, false to ignore the webhook request
 
 #### before_action
@@ -48,15 +70,29 @@ Called before Cyclr makes a request to an external API.
 *   **method_request_headers**: HTTP headers for the request
 *   **method_request_parameters**: Querystring parameters for the request
 *   **method_request_mergefields**: mergefields for the request
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not preserved.
 *   **return**: true to continue with the request to the third party API, false to abort the request (use throw for a more useful step error message)
 
 #### after_action
 
-Function is called when Cyclr has got a response from an external API
+Function is called when Cyclr has a response from an external API.
+
+If a Method uses Paging, this function is called after each page is retrieved.
 
 ###### Global object
 
-*   **method_response**: object that was received from the third party API.
+*   **method_response**: object that was received from the third party API.  If the Method uses paging, this contains only the current page's Response.
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not preserved.
+*   **return**: true
+
+#### after_action_paging
+
+If this function is provided, it is called once after all pages of data have been retrieved, whether Paging has been implemented or not.
+
+###### Global object
+
+*   **method_response**: object that contains all of the Response data.
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not preserved.
 *   **return**: true
 
 #### after_error
@@ -66,6 +102,7 @@ Function is called when Cyclr received an error from an external API.
 ###### Global object
 
 *   **error_response**: Details of the error, see : **Handle Errors from Third Party APIs** further down for more information on handling errors
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not preserved.
 *   **return**: true
 
 #### action_condition
@@ -75,6 +112,7 @@ Function is used to essentially combine a Method with a Decision Step, allowing 
 ###### Global object
 
 *   **method_response**: object that was received from the third party API.
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not preserved.
 *   **return**: true for the Transaction to exit on the "True Route", false to exit on the "False Route"
 
 #### before_oauth2_authorise
@@ -84,6 +122,7 @@ Function is called before Cyclr makes an OAuth 2 authorise request.
 ###### Global object
 
 *   **method_endpoint**: URL for the OAuth authorise endpoint
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not preserved.
 *   **return**: true
 
 #### before_oauth2_token
@@ -94,6 +133,7 @@ Called before Cyclr makes an OAuth 2 access token request.
 
 *   **method_request**: Object that is going to be sent to the OAuth 2 access token endpoint
 *   **method_request_headers**: HTTP headers for the request
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not preserved.
 *   **return**: true
 
 #### after_oauth2_token
@@ -103,6 +143,7 @@ Called after Cyclr makes an OAuth 2 access token request.
 ###### Global object
 
 *   **method_response**: response object that was received from the OAuth 2 access token request
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not preserved.
 *   **return**: true
 
 #### before_oauth2_refresh
@@ -113,6 +154,7 @@ Called before Cyclr makes an OAuth 2 refresh token request.
 
 *   **method_request**: request object that is going to be sent to the OAuth 2 refresh token request
 *   **method_request_headers**: HTTP headers for the request
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not preserved.
 *   **return**: true
 
 #### after_oauth2_refresh
@@ -122,6 +164,7 @@ Called after Cyclr makes an OAuth 2 refresh token request.
 ###### Global object
 
 *   **method_response**: response object that was received from the OAuth 2 refresh token request.
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not preserved.
 *   **return**: true
 
 ### Functions
@@ -204,6 +247,8 @@ External Documentation: <https://momentjs.com/>
 Library Name: crypto-js
 
 Description: JavaScript library of crypto standards.
+
+Warning: The output of encrypted data is always in a hex string. Formatting options `CryptoJS.enc` are not supported when calling `toString`.
 
 External Documentation: <https://github.com/brix/crypto-js>
 
@@ -377,3 +422,4 @@ function after_error() {
 
 *   Execution time: 30 seconds. Script running will time out after 30 seconds.
 *   External HTTP requests: for security reasons, we will use the same authentication method as the connector and the same authentication value when the connector was installed by the user. You cannot use the script to access or modify the authentication value.
+*   The **cycle_variables** object is only available through a Step's Advanced Settings area, and not through Inline Script.  Also, any changes made to it and its properties are not preserved.
