@@ -30,14 +30,14 @@ Vend uses OAuth 2.0 for authentication. The following are the steps needed to gi
 
 * The connector can now be installed. Enter your Client ID, Client Secret and Store Name into the Cyclr interface, click 'Next' and then 'Sign In' on the next page.
 
-![connector setup](./vend_setup_img_2.PNG)
+![connector setup](./images/vend_setup_img_2.PNG)
 
 * You will be redirected to Vend's website where you will be guided through the login process.
 
-![connector setup](./vend_setup_img_3.png)
+![connector setup](./images/vend_setup_img_3.png)
 
 * Allow Access.
 
-![connector setup](./vend_setup_img_5.PNG)
+![connector setup](./images/vend_setup_img_5.PNG)
 
 * If the above steps completed successfully you will be redirected back to Cyclr. The connector is now installed and authenticated.
