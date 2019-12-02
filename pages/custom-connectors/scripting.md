@@ -113,7 +113,7 @@ Function is called when Cyclr received an error from an external API.
 
 ###### Global object
 
-*   **error_response**: Details of the error, see : **Handle Errors from Third Party APIs** further down for more information on handling errors
+*   **method_error**: Details of the error, see: **Handle Errors from Third Party APIs** further down for more information on handling errors
 *   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
 *   **return**: true
 
@@ -428,12 +428,14 @@ In this example, we transformed the method request body to a XML string and save
 
 The scripting engine can be used to catch and handle errors returned from third party APIs.
 
-*   **statusCode **– the HTTP status code returned by the third party API
+Cyclr exposes a received error response in the `after_error` function through the `method_error` object, which has these properties:
+
+*   **statusCode** – the HTTP status code returned by the third party API
 *   **reasonPhrase** – the reason phrase returned by the third party API
-*   **content **– the body content of the response from the third party API
+*   **content** – the body content of the response from the third party API
 *   **isError** – indicates that the error is an error. default: true, set to false if using isWarning or isSuccess
-*   **isWarning **– set to true for Cyclr to log the error as a warning
-*   **isSuccess **– set to true to change the error to success, update content to contain the success step data
+*   **isWarning** – set to true for Cyclr to log the error as a warning
+*   **isSuccess** – set to true to change the error to success, update content to contain the success step data
 
 Example: change an error to a warning
 
