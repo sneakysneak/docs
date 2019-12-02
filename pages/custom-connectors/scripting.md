@@ -47,7 +47,7 @@ Called when a webook request has been received and before anything else is done.
 *   **method_endpoint**: The webhook request URL
 *   **method_response**: The response body for the request
 *   **method_response_headers**: The response headers for the request
-*   **cycle_variables**: Allows access to Cycle variables.  Changes are not preserved.
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
 *   **return**: true for the webhook to continue normal execution, false to stop execution of the request and send the response body/headers to the caller
 
 #### after_webhook
@@ -57,7 +57,7 @@ Called after the webook has been caught.
 ###### Global object
 
 *   **method_response**: object that was POSTed to the Cyclr webhook
-*   **cycle_variables**: Allows access to Cycle variables.  Changes are not preserved.
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
 *   **return**: true for the webhook to continue normal execution, false to ignore the webhook request
 
 #### before_action
@@ -70,7 +70,7 @@ Called before Cyclr makes a request to an external API.
 *   **method_request_headers**: HTTP headers for the request
 *   **method_request_parameters**: Querystring parameters for the request
 *   **method_request_mergefields**: mergefields for the request
-*   **cycle_variables**: Allows access to Cycle variables.  Changes are not preserved.
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
 *   **return**: true to continue with the request to the third party API, false to abort the request (use throw for a more useful step error message)
 
 #### after_action
@@ -82,7 +82,7 @@ If a Method uses Paging, this function is called after each page is retrieved.
 ###### Global object
 
 *   **method_response**: object that was received from the third party API.  If the Method uses paging, this contains only the current page's Response.
-*   **cycle_variables**: Allows access to Cycle variables.  Changes are not preserved.
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
 *   **return**: true
 
 #### after_action_paging
@@ -92,7 +92,7 @@ If this function is provided, it is called once after all pages of data have bee
 ###### Global object
 
 *   **method_response**: object that contains all of the Response data.
-*   **cycle_variables**: Allows access to Cycle variables.  Changes are not preserved.
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
 *   **return**: true
 
 #### after_error
@@ -102,7 +102,7 @@ Function is called when Cyclr received an error from an external API.
 ###### Global object
 
 *   **error_response**: Details of the error, see : **Handle Errors from Third Party APIs** further down for more information on handling errors
-*   **cycle_variables**: Allows access to Cycle variables.  Changes are not preserved.
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
 *   **return**: true
 
 #### action_condition
@@ -112,7 +112,7 @@ Function is used to essentially combine a Method with a Decision Step, allowing 
 ###### Global object
 
 *   **method_response**: object that was received from the third party API.
-*   **cycle_variables**: Allows access to Cycle variables.  Changes are not preserved.
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
 *   **return**: true for the Transaction to exit on the "True Route", false to exit on the "False Route"
 
 #### before_oauth2_authorise
@@ -122,7 +122,7 @@ Function is called before Cyclr makes an OAuth 2 authorise request.
 ###### Global object
 
 *   **method_endpoint**: URL for the OAuth authorise endpoint
-*   **cycle_variables**: Allows access to Cycle variables.  Changes are not preserved.
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
 *   **return**: true
 
 #### before_oauth2_token
@@ -133,7 +133,7 @@ Called before Cyclr makes an OAuth 2 access token request.
 
 *   **method_request**: Object that is going to be sent to the OAuth 2 access token endpoint
 *   **method_request_headers**: HTTP headers for the request
-*   **cycle_variables**: Allows access to Cycle variables.  Changes are not preserved.
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
 *   **return**: true
 
 #### after_oauth2_token
@@ -143,7 +143,7 @@ Called after Cyclr makes an OAuth 2 access token request.
 ###### Global object
 
 *   **method_response**: response object that was received from the OAuth 2 access token request
-*   **cycle_variables**: Allows access to Cycle variables.  Changes are not preserved.
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
 *   **return**: true
 
 #### before_oauth2_refresh
@@ -154,7 +154,7 @@ Called before Cyclr makes an OAuth 2 refresh token request.
 
 *   **method_request**: request object that is going to be sent to the OAuth 2 refresh token request
 *   **method_request_headers**: HTTP headers for the request
-*   **cycle_variables**: Allows access to Cycle variables.  Changes are not preserved.
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
 *   **return**: true
 
 #### after_oauth2_refresh
@@ -164,7 +164,7 @@ Called after Cyclr makes an OAuth 2 refresh token request.
 ###### Global object
 
 *   **method_response**: response object that was received from the OAuth 2 refresh token request.
-*   **cycle_variables**: Allows access to Cycle variables.  Changes are not preserved.
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
 *   **return**: true
 
 ### Functions
@@ -422,4 +422,4 @@ function after_error() {
 
 *   Execution time: 30 seconds. Script running will time out after 30 seconds.
 *   External HTTP requests: for security reasons, we will use the same authentication method as the connector and the same authentication value when the connector was installed by the user. You cannot use the script to access or modify the authentication value.
-*   The **cycle_variables** object is only available through a Step's Advanced Settings area, and not through Inline Script.  Also, any changes made to it and its properties are not preserved.
+*   The **cycle_variables** object is only available through a Step's Advanced Settings area, and not through Inline Script.  Also, any changes made to it and its properties are not persisted.
