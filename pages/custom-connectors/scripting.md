@@ -185,13 +185,51 @@ Called after Cyclr makes an OAuth 2 refresh token request.
 
 Function to make external HTTP requests.
 
-#### atob
+When calling the `http_request` function, you provide a JSON object with the following properties:
 
-Function to convert a Base64 encoded string to a string.
+*   method: HTTP method, e.g. GET, POST, DELETE, PUT
+*   url: URL for the HTTP request
+*   parameters: Querystring parameters
+*   headers: HTTP headers
+*   data: HTTP request data.  If sending JSON, you should use JSON.stringify() to serialize it.
+
+Example:
+
+```javascript
+function after_action() {
+	var response = http_request(
+		{
+			'method': 'POST',
+			'url': 'https://someapi.com/createsomething',
+			'headers':
+			{
+				'Authorization': 'Bearer ' + method_auth_value,
+				'Content-Type': 'application/json',
+				'Accept': 'application/json'
+			},
+			'data': JSON.stringify( { "MyData": "some value" } )
+		}
+	);
+
+	return true;
+}
+```
+
+The Response from an `http_request` call is returned as a JSON object with these properties:
+
+*  status_code: the HTTP Status code returned
+*  headers: any HTTP headers
+*  content: the Response body
+*  request: details of the Request that was made
+
 
 #### btoa
 
-Function to convert a string to a Base64 string.
+Function to encode a string using Base64.
+
+#### atob
+
+Function to decode a Base64 encoded string.
 
 #### cyclr_sign
 
@@ -301,14 +339,6 @@ function after_webhook() {
 After calling `api_url`, Cyclr will then replace `method_response` with the content of the HTTP call.
 
 Return `false` in the `after_webhook` function will stop Cyclr from running the webhook. You can use this trick to filter webhook events.
-
-When calling the `http_request` function, you can specify the request using:
-
-*   method: HTTP method, e.g. GET, POST, DELETE, PUT, etc.
-*   url: URL for the HTTP request
-*   parameters: Query string parameter
-*   headers: HTTP headers
-*   data: HTTP request data
 
 #### Transform Key Value Pairs
 
