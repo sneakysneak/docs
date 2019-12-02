@@ -25,15 +25,25 @@ or
 It's best to use ` characters (backticks) around string values being merged in as that will prevent carriage returns and the various quote characters from breaking your Script.
 
 
-### Events
+### Event Handlers
 
-Events are triggered at certain points allowing you to modify data. Script can be added at both the Connector and Method levels; Connector level event handlers will be called for all methods where as method level will only be called for that method. To add an event handler simply add a javascript function with the event name.
+Events are triggered at certain points when a Cycle runs, allowing you to modify data using "event handlers" which are simply Javascript functions.
+
+To add an event handler, put a Javascript function at the Connector or Method level, or in the Advanced Settings area of a Step in the Cycle Builder, using the event name as the name of the function, e.g.:
 
 ```javascript
-function eventName() {
+function before_action() {
     /* Handle event here */
+    return true;
 }
 ```
+
+Event handlers entered at the Connector level will be called for all of its Methods.  Event handlers entered at the Method level will only be called for that Method.
+
+If you need to pass a value from a **before_action** handler to an **after_action** handler and you're not able to put it in the **method_request** object as it's not considered valid by the API being called, you can use the **method_request_mergefields** object as its values are persisted across those two events.  The **script_parameters** object, for example, is not persisted across any events.
+
+
+### Events
 
 #### before_webhook
 
@@ -81,7 +91,9 @@ If a Method uses Paging, this function is called after each page is retrieved.
 
 ###### Global object
 
+*   **method_endpoint**: The URL of the original request
 *   **method_response**: object that was received from the third party API.  If the Method uses paging, this contains only the current page's Response.
+*   **method_request_mergefields**: mergefields for the request
 *   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
 *   **return**: true
 
