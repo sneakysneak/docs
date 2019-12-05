@@ -93,6 +93,7 @@ If a Method uses Paging, this function is called after each page is retrieved.
 
 *   **method_endpoint**: The URL of the original request
 *   **method_response**: object that was received from the third party API.  If the Method uses paging, this contains only the current page's Response.
+*   **method_response_headers**: The response headers for the request
 *   **method_request_mergefields**: mergefields for the request
 *   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
 *   **return**: true
