@@ -18,7 +18,7 @@ To create your first API Key, click the "Create API Key" button in the top-right
 
 Fill this out as you please, and then click "Create & View". You will then be greeted by another page that will show you your newly created API key. Copy this and keep it somewhere safe, as it states on the page you cannot access the key again.
 
-![SendGrid - Create and View page](./images/sendgrid-create-and-view.png.png)
+![SendGrid - Create and View page](./images/sendgrid-create-and-view.png)
 
 This key lets you integrate SendGrid with Cyclr. You can now navigate to the Connectors menu through the Cyclr Console, and then the Connector Library where you can click the setup button and enter your API key into the input box.
 
