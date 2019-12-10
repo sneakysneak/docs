@@ -43,6 +43,6 @@ Box uses OAuth 2.0 for authentication. The following are the steps needed to giv
 
 ![connector setup](./images/box_setup_7.png)
 
-3. Upon installation of the connector in your account, you will be redirected to Box and prompted to 'Grant access to Box'. Once completed, you will be redirected back to Cyclr where the connector is authenticated and ready to use.
+3. On installation of the connector in your account, you will be redirected to Box and prompted to 'Grant access to Box'. Once completed, you will be redirected back to Cyclr where the connector is authenticated and ready to use.
 
 ![connector setup](./images/box_setup_9.png)
