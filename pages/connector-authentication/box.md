@@ -1,4 +1,3 @@
-
 ---
 title: Box Connector Guide
 sidebar: cyclr_sidebar
