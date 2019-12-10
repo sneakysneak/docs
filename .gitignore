@@ -20,3 +20,4 @@ _site/
 /.vs/docs/v16/.suo
 /.vs/docs/config/applicationhost.config
 /.vs/VSWorkspaceState.json
+/.vs/slnx.sqlite-journal
