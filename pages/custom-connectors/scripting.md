@@ -22,9 +22,9 @@ or
 =`[Mergefield]` === '' ? 'no value' : `[Mergefield]`;
 ```
 
-It's best to use ` characters (backticks) around string values being merged in as that will prevent carriage returns and the various quote characters from breaking your Script.
+It's best to use ` characters (backticks) around string values being merged in as that will prevent carriage returns and any quote characters from breaking your Script.
 
-*Note: [Mergefield] above represents fields inserted by Cyclr in **Step Setup** when choosing the **Type a Value**  and selecting from the dropdowns.*
+*Note: [Mergefield] above represents fields inserted by Cyclr in **Step Setup** when choosing **Type a Value** and selecting from the dropdowns.*
 
 
 ### Event Handlers
@@ -42,7 +42,25 @@ function before_action() {
 
 Event handlers entered at the Connector level will be called for all of its Methods.  Event handlers entered at the Method level will only be called for that Method.
 
-If you need to pass a value from a **before_action** handler to an **after_action** handler and you're not able to put it in the **method_request** object as it's not considered valid by the API being called, you can use the **method_request_mergefields** object as its values are persisted across those two events.  The **script_parameters** object, for example, is not persisted across any events.
+If you need to pass a value from a **before_action** handler to an **after_action** handler and you're not able to put it in the method_request object as it's not considered valid by the API being called, you can use the **method_request_mergefields** object as it's persisted across those two events. The **script_parameters** object, for example, is not persisted across any events.
+
+### Event Handler Order
+
+If an event handler exists at more than one level for the same event, i.e. Connector level as well as Method level, all of those event handlers are called.
+
+This is useful if common processing of the data is required across all Methods using a Connector level **after_action** handler, but some Methods need further processing so an additional Method level **after_action** handler can also be used.
+
+
+The order that Cyclr calls handlers for the same event is as follows:
+
+Events beginning with "before", such as **before_action**:
+
+	Method -> Connector -> Builder Step
+
+All other events:
+
+	Connector -> Method -> Builder Step
+
 
 
 ### Events
