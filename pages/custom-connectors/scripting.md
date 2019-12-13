@@ -24,6 +24,8 @@ or
 
 It's best to use ` characters (backticks) around string values being merged in as that will prevent carriage returns and the various quote characters from breaking your Script.
 
+*Note: [Mergefield] above represents fields inserted by Cyclr in **Step Setup** when choosing the **Type a Value**  and selecting from the dropdowns.*
+
 
 ### Event Handlers
 
