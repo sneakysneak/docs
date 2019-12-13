@@ -50,10 +50,11 @@ If an event handler exists at more than one level for the same event, i.e. Conne
 
 This is useful if common processing of the data is required across all Methods using a Connector level **after_action** handler, but some Methods need further processing so an additional Method level **after_action** handler can also be used.
 
+<br />
 
 The order that Cyclr calls handlers for the same event is as follows:
 
-Events beginning with "before", such as **before_action**:
+Events beginning with "**before**" (such as before_action):
 
 	Method -> Connector -> Builder Step
 
