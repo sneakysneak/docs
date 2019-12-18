@@ -70,7 +70,13 @@ FAQ
 
 ### Error: AADSTS65001
 
-Follow the below step if you are getting the error AADSTS65001: The user or administrator has not consented to use the application with ID ” named ”. Send an interactive authorization request for this user and resource.
+If you encounter the error *AADSTS65001: The resource principal named [Resource URL] was not found in the tenant named [tenant ID]. This can happen if the application has not been installed by the administrator of the tenant or consented to by any user in the tenant. You might have sent your authentication request to the wrong tenant.*
+
+Ensure you're using the correct **Resource URL** in the Connector's Setup.  This is the URL of your Dynamics account and should be similar to "https://mycompany.crmXX.dynamics.com".  If unsure, login to your Dynamics account through your web browser and copy it from the address bar.
+
+### Error: AADSTS65001
+
+Follow the below step if you are getting the error *AADSTS65001: The user or administrator has not consented to use the application with ID ” named ”. Send an interactive authorization request for this user and resource.*
 
 1.  Go to Microsoft Azure portal -> Azure Active Directory -> App Registrations -> Your Application name -> Required Permissions
 2.  Click the Grant permissions button to allow the app to be installed in your own directory.
