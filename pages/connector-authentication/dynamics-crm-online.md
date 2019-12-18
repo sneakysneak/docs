@@ -68,9 +68,9 @@ After successfully creating the account connector property, you can get a one-ti
 FAQ
 ---
 
-### Error: AADSTS65001
+### Error: AADSTS500011
 
-If you encounter the error *AADSTS65001: The resource principal named [Resource URL] was not found in the tenant named [tenant ID]. This can happen if the application has not been installed by the administrator of the tenant or consented to by any user in the tenant. You might have sent your authentication request to the wrong tenant.*
+If you encounter the error *AADSTS500011: The resource principal named [Resource URL] was not found in the tenant named [Tenant ID]. This can happen if the application has not been installed by the administrator of the tenant or consented to by any user in the tenant. You might have sent your authentication request to the wrong tenant.*
 
 Ensure you're using the correct **Resource URL** in the Connector's Setup.  This is the URL of your Dynamics account and should be similar to "https://mycompany.crmXX.dynamics.com".  If unsure, login to your Dynamics account through your web browser and copy it from the address bar.
 
