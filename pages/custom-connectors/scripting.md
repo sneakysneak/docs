@@ -126,6 +126,9 @@ If this function is provided, it is called once after all pages of data have bee
 ###### Global object
 
 *   **method_response**: object that contains all of the Response data.
+*   **method_request_headers**: The response headers for the request
+*   **method_request_mergefields**: mergefields for the request
+*   **method_request_parameters**: parameters for the request
 *   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
 *   **return**: true
 
