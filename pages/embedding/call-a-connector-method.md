@@ -108,3 +108,17 @@ Content-Type: application/json
     }
 }
 ```
+
+### IP Restriction
+
+Access to Cyclr APIs used for passing requests to external applications is restricted by IP. The IP restricted APIs are as follows:
+1. GET /v1.0/account/connectors/{id}/methods/{methodId} Calls a connector method
+2. POST /v1.0/account/connectors/{id}/methods/{methodId} Calls a connector method
+3. GET /v1.0/account/connectors/{id}/test/{methodId} Tests a connector method
+4. POST /v1.0/account/connectors/{id}/test/{methodId} Tests a connector method
+
+If you are using Cyclr APIs to call standard connectors, i.e. third-party connectors that are not native to your application, the Cyclr API request can only be made from a list of IP addresses approved by us.
+
+Native connectors with the **IsPartnerIntegrationConnector** flag set to true can be called from any IP addresses.
+
+If you would like to use Cyclr APIs to call standard connectors, please contact our support team to whitelist your IP.
