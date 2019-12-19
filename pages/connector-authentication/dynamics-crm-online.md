@@ -25,8 +25,6 @@ We will summarise it in a few points:
 
    **Application type**: Web app / API
 
-   **Sign-on URL**: Your Cyclr service domain, e.g. https://app-h.cyclr.com/. This can be found in your Cyclr Console under Settings > Integration Settings > Service Domain.
-
    **Reply URLs**: you must add a callback URL to allow Dynamics CRM to be used in your Cyclr Console and its accounts.
 
    The URL is:
@@ -78,5 +76,5 @@ Ensure you're using the correct **Resource URL** in the Connector's Setup.  This
 
 Follow the below step if you are getting the error *AADSTS65001: The user or administrator has not consented to use the application with ID ” named ”. Send an interactive authorization request for this user and resource.*
 
-1.  Go to Microsoft Azure portal -> Azure Active Directory -> App Registrations -> Your Application name -> Required Permissions
-2.  Click the Grant permissions button to allow the app to be installed in your own directory.
+1.  Go to Microsoft Azure portal -> Azure Active Directory -> App registrations -> Your App name -> API permissions
+2.  Click the "Grant admin consent for ..." button to allow the app to be installed in your own directory.  If the button is greyed out, your user doesn't have the appropriate permission.
