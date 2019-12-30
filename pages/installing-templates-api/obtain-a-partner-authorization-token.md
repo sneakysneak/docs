@@ -35,7 +35,7 @@ Request:
   </tr>
   <tr>
     <th>password</th>
-    <td>The Console Administrator's password</td>
+    <td>A Console Administrator's password</td>
   </tr>
 </table>
 
