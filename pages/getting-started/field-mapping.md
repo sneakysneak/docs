@@ -27,7 +27,9 @@ Depending the app you’re connecting to and the field you are using, only some 
 
 #### System mergefields
 
-You can use Cyclr system mergefields as the **Source** value in Field Mapping.  Previously they could only appear on their own, but since a recent update, they can now be used with other content, e.g.:
+You can use Cyclr system mergefields as the **Source** value in Field Mapping.
+
+Previously they could only appear on their own, but since a recent update, they can now be used with other content, e.g.:
 ```
 The last run was {% raw %}{{LastSuccessfulRunDate}}{% endraw %}.
 ```
