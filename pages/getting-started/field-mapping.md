@@ -29,19 +29,20 @@ Depending the app you’re connecting to and the field you are using, only some 
 
 You can use Cyclr system mergefields as the **Source** value in Field Mapping.
 
-Previously they could only appear on their own, but since a recent update, they can now be used with other content, e.g.:
-```
-The last run was {% raw %}{{LastSuccessfulRunDate}}{% endraw %}.
-```
-or even Inline Script such as:
-```
-=require('moment');moment(`{% raw %}{{LastSuccessfulRunDate}}{% endraw %}`).subtract(1, 'days').toISOString();
-```
-
 *   **{% raw %}{{LastSuccessfulRunDate}}{% endraw %}**: get the last successful run date of the current step. This is particularly useful if you only want to get the latest data.
 *   **{% raw %}{{Cyclr_Auth_ApiKey}}{% endraw %}**: get the API key if the connector is using API key as the authentication type.
 *   **{% raw %}{{Cyclr_Auth_Username}}{% endraw %}**: get the username if the connector is using username/password as the authentication type.
 *   **{% raw %}{{Cyclr_Auth_Password}}{% endraw %}**: get the password if the connector is using username/password as the authentication type.
+
+
+Initially, these Mergefields had to appear as the only content in the **Type a Value** box, but have since been updated to allow them to be used with other text, e.g.:
+```
+The last run was {% raw %}{{LastSuccessfulRunDate}}{% endraw %}.
+```
+and even Inline Script:
+```
+=require('moment');moment(`{% raw %}{{LastSuccessfulRunDate}}{% endraw %}`).subtract(1, 'days').toISOString();
+```
 
 
 [How to Test your Cycles](./testing-cycles)
