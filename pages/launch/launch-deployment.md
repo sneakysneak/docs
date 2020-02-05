@@ -50,7 +50,7 @@ You should use a Cyclr Partner OAuth token as the Bearer token in this request.
     <tr>
         <td>Password</td>
         <td>The password to assign to the new Cyclr user account, if created. If you do not intend your end users to access the Cyclr application directly, this password can be an obscure value known only to your app.</td>
-        <td>sdkjgnjg35d</td>
+        <td>c0mpl3x_P455w0rd</td>
     </tr>
     <tr>
         <td>AccountName</td>
@@ -126,7 +126,7 @@ NJ88GGgv79V79VvYFBBTHUIGYBGY3434345545UYu</td>
 ```json
 {
     "AccountId": "0000000-0000-0000-0000-000000000000",
-    "ExpiresAtUtc": "17/01/2018 12:11:22",
+    "ExpiresAtUtc": "2020-01-01T12:30:00.000Z",
     "LaunchUrl": "https://hostapp.cyclr.com/account/signinwithtoken?token=lld3UjpZKkuh0I7ObHR0EtxRsPo0No1GqNSyAi8pqXQ%3D&returnUrl=%2Flaunch",
     "Token": "lld3UjpZKkuh0I7ObHR0EtxRsPo0No1GqNSyAi8pqXQ="
 }
@@ -146,7 +146,7 @@ NJ88GGgv79V79VvYFBBTHUIGYBGY3434345545UYu</td>
     <tr>
         <td>ExpiresAtUtc</td>
         <td>Token expiry timestamp.</td>
-        <td>17/01/2018 12:11:22</td>
+        <td>2020-01-01T12:30:00.000Z</td>
     </tr>
     <tr>
         <td>LaunchUrl</td>
