@@ -5,13 +5,13 @@ permalink: marketplace-deployment
 tags: [launch]
 ---
 
-To enable your users to view a marketplace, simply present a “Connect” button or link within your application’s UI.
+To enable your users to view a Marketplace, simply present a "Connect" button or link within your application’s UI.
 
 For example:
 
 ![Generic Host Application](./images/generic-host-app.png)
 
-When a user clicks the **Connect** button, your application server should make a request towards Cyclr REST API's _/users/marketplace_ method:
+When a user clicks the **Connect** button, your application server should make a request towards Cyclr's REST API's _/users/marketplace_ method:
 
 ```
 curl -X POST
@@ -56,7 +56,7 @@ You should use a Cyclr Partner OAuth token as the Bearer token in this request.
     <tr>
         <td>Password</td>
         <td>The password to assign to the new Cyclr user account, if created. If you do not intend your end users to access the Cyclr application directly, this password can be an obscure value known only to your app.</td>
-        <td>sdkjgnjg35d</td>
+        <td>c0mpl3x_P455w0rd</td>
     </tr>
     <tr>
         <td>AccountName</td>
@@ -65,12 +65,12 @@ You should use a Cyclr Partner OAuth token as the Bearer token in this request.
     </tr>
     <tr>
         <td>AccountId</td>
-        <td>If your user already has an account within Cyclr, specify the Id of that account to have the new integration installed there.  If this is not provided, a new Cyclr account will be created.</td>
+        <td>If your user already has an account within Cyclr, specify the Id of that account to access the Marketplace through.  If this is not provided, a new Cyclr account will be created.</td>
         <td>0000000-0000-0000-0000-000000000000</td>
     </tr>
     <tr>
         <td>partnerConnector</td>
-        <td>(Optional) Providing the platform connector object here means your user will not be expected to authenticate against your own platform during the Marketplace LAUNCH flow.</td>
+        <td>(Optional) Providing the platform connector object here means your user will not be expected to authenticate against your own platform during the Marketplace flow.</td>
         <td></td>
     </tr>
     <tr>
@@ -86,7 +86,7 @@ You should use a Cyclr Partner OAuth token as the Bearer token in this request.
     <tr>
         <td>partnerConnector.AuthValue</td>
         <td>(Optional) Authentication value for your platform connector.
-        If your platform users a username and password, provide as base64 encoded version of username:password  
+        If your platform uses a username and password, provide as base64 encoded version of username:password  
         Provide API keys as plain text.
         An OAuth token may also be provided here.</td>
         <td>dXNlcm5hbWU6cGFzc3dvcmQ=  
@@ -112,7 +112,7 @@ NJ88GGgv79V79VvYFBBTHUIGYBGY3434345545UYu</td>
 ```json
 {
     "AccountId": "0000000-0000-0000-0000-000000000000",
-    "ExpiresAtUtc": "17/01/2018 12:11:22",
+    "ExpiresAtUtc": "2020-01-01T12:30:00.000Z",
     "MarketplaceUrl": "https://hostapp.cyclr.com/account/signinwithtoken?token=lld3UjpZKkuh0I7ObHR0EtxRsPo0No1GqNSyAi8pqXQ%3D&returnUrl=%2Flaunch/marketplace/1",
     "Token": "lld3UjpZKkuh0I7ObHR0EtxRsPo0No1GqNSyAi8pqXQ="
 }
@@ -132,7 +132,7 @@ NJ88GGgv79V79VvYFBBTHUIGYBGY3434345545UYu</td>
     <tr>
         <td>ExpiresAtUtc</td>
         <td>Token expiry timestamp.</td>
-        <td>17/01/2018 12:11:22</td>
+        <td>2020-01-01T12:30:00.000Z</td>
     </tr>
     <tr>
         <td>MarketplaceUrl</td>
