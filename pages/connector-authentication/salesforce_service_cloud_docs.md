@@ -19,7 +19,7 @@ tags: [connector]
    | Client Secret | Your Salesforce Connected Apps 'Consumer Secret'                                        |
    | Username      | Your Salesforce Username                                                                |
    | Password      | Your Salesforce Password + Security Token (**Important: Must include security token**)  |
-   | Subdomain     | The subdomain of your Salesforce account. (eg. https://{{Subdomain}}.my.salesforce.com) |
+   | Subdomain     | The subdomain of your Salesforce account. (eg. https://{Subdomain}.my.salesforce.com) |
 
 #### Password Format
 
