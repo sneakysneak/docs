@@ -37,7 +37,7 @@ This will pertain to the **Identifier Email** request field in the Cyclr methods
 
 ### Sending Custom Data (Optional)
 
-In order for Insider to accept your custom attribute fields they must first be initialized in the Insider console.
+In order for Insider to accept your custom attribute fields they must first be defined in the Insider console.
 
 1. Go to https://{AccountName}.inone.useinsider.com/crm-attributes
 
