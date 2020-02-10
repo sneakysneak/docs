@@ -39,7 +39,7 @@ This is what will be referenced by **Identifier Type** in the Cyclr methods whic
 
 ### Sending Custom Data (Optional)
 
-In order for Insider to accept your custom attribute fields they must first be defined in the Insider console.
+In order for Insider to accept your custom attribute fields they must first be defined in the InOne console.
 
 1. Go to https://{AccountName}.inone.useinsider.com/crm-attributes
 
@@ -60,13 +60,13 @@ Now from the **Edit Connector** page within the Cyclr console:
 
    - [users].attributes.custom.**AttributeName** (eg. [users].attributes.custom.hair_color)
 
-   > Note: The **Attribute Name** must be exactly as defined in the Insider console. Eg. case sensitive etc.
+   > Note: The **Attribute Name** must be exactly as defined in the InOne console. Eg. case sensitive etc.
 
 4. For a custom **event parameter** the **Field Location** must be:
 
    - [users].[events].event_params.custom.**EventParameterName** (eg. [users].[events].event_params.custom.payment_type)
 
-   > Note: The **Event Parameter Name** does not need to be defined in the Insider console.
+   > Note: The **Event Parameter Name** does not need to be defined in the InOne console.
 
 5. Enter a **Display Name**, **Description** and **Data Type**
 
