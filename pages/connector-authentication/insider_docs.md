@@ -21,7 +21,7 @@ The connector is now authenticated and ready to use.
 
 ### Unifier Field (Required)
 
-In order to send data to Insider, you must initialize a Unifier Field:
+In order to send data to Insider, you must first define a Unifier Field:
 
 1. Go to https://{AccountName}.inone.useinsider.com/crm-attributes
 
