@@ -27,9 +27,11 @@ In order to send data to Insider, you must first define a Unifier Field:
 
 2. Click **Create New CRM Attribute**
 
-3. Set **Data Type** as **String** and **Attribute Name** as one of **email**, **phone_number** or **custom**
+3. Set the **Data Type**
 
-4. Make sure this has been selected as your **Unifier**
+4. When setting the **Attribute Name** for the Unifier Field you have the choice of one of the default Unifier Field names (**email**, **phone_number**), or you can use a custom name of your choice
+
+5. Make sure this has been selected as the **Unifier**
 
 ![unifier field](./images/insider_unifier.png)
 
