@@ -27,13 +27,13 @@ In order to send data to Insider, you must first define a Unifier Field:
 
 2. Click **Create New CRM Attribute**
 
-3. Set **Data Type** as **String** and **Attribute Name** as **email**
+3. Set **Data Type** as **String** and **Attribute Name** as one of **email**, **phone_number** or **custom**
 
 4. Make sure this has been selected as your **Unifier**
 
 ![unifier field](./images/insider_unifier.png)
 
-This will pertain to the **Identifier Email** request field in the Cyclr methods which is a required field.
+This is what will be referenced by **Identifier Type** in the Cyclr methods which is a required field.
 
 ### Sending Custom Data (Optional)
 
