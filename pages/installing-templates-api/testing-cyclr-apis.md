@@ -5,7 +5,7 @@ permalink: testing-cyclr-api
 tags: [api]
 ---
 
-Cyclr has several versions of API references for you to test while creating your own native deployment or working with data on demand.
+Cyclr has several API references for you to test while creating your own native deployment or working with data on demand. 
 
 In order to select the right version of our API reference you need to ensure you select the version that corisponds to your Cyclr Console's hosting location.
 
@@ -18,4 +18,12 @@ EU (eg: eu.cyclr.com | [EU API Reference](https://api.eu.cyclr.com/docs/index)
 
 You can use your Cyclr account details to authenticate access, giving you the ability to test all endpoints, with Cyclr account data, directly within the API reference documentation. 
 
-Use the partner client ID. Use account ID as client secret.
+Click on the "OFF" toggle switch within a method, as shown below, to trigger the authentication pop up.
+
+
+![](./images/API-testing-authentication.png)
+
+
+Select "Request Body" as the authentication type.
+Use the partner client ID. 
+Use account ID as client secret.
