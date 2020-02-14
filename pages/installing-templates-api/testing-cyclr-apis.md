@@ -15,7 +15,7 @@ my.cyclr.com | [US API Reference](https://api.cyclr.com/docs/index)
 my.cyclr.uk | [UK API Reference](https://api.cyclr.uk/docs/index)
 eu.cyclr.com | [EU API Reference](https://api.eu.cyclr.com/docs/index)
 
-\
+<br />
 
 Use your Cyclr account details to authenticate and work with all API endpoints directly within the API reference documentation.
 
@@ -24,7 +24,7 @@ To authenticate, expand any endpoint and click the "OFF" slider, then enter your
 
 ![](./images/testing-cyclrs-apis-auth.png)
 
-\
+<br />
 
 There are 2 main parts to the Cyclr API:
 
