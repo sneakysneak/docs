@@ -5,25 +5,28 @@ permalink: testing-cyclr-api
 tags: [api]
 ---
 
-Cyclr has several API references for you to test while creating your own native deployment or working with data on demand. 
+Cyclr's interactive API references can be used to try things out, and to help you while testing and creating your own native deployment or working with data on demand.
 
-In order to select the right version of our API reference you need to ensure you select the version that corisponds to your Cyclr Console's hosting location.
+Depending on where your Cyclr Console is hosted, you'll need to use the appropriate reference:
 
 Cyclr Console Location | Documentation link
 --- | ---
-US (eg: my.cyclr.com) | [US API Reference](https://api.cyclr.com/docs/index)
-UK (eg: my.cyclr.uk) | [UK API Reference](https://api.cyclr.uk/docs/index)
-EU (eg: eu.cyclr.com | [EU API Reference](https://api.eu.cyclr.com/docs/index)
+my.cyclr.com | [US API Reference](https://api.cyclr.com/docs/index)
+my.cyclr.uk | [UK API Reference](https://api.cyclr.uk/docs/index)
+eu.cyclr.com | [EU API Reference](https://api.eu.cyclr.com/docs/index)
 
 
-You can use your Cyclr account details to authenticate access, giving you the ability to test all endpoints, with Cyclr account data, directly within the API reference documentation. 
-
-Click on the "OFF" toggle switch within a method, as shown below, to trigger the authentication pop up.
+Use your Cyclr account details to authenticate and work with all API endpoints directly within the API reference documentation.
 
 
-![](./images/API-testing-authentication.png)
+To authenticate, expand any endpoint and click the "OFF" slider, then enter your details:
+
+![](./images/testing-cyclrs-apis-auth.png)
 
 
-Select "Request Body" as the authentication type.
-Use the partner client ID. 
-Use account ID as client secret.
+There are 2 main parts to the Cyclr API:
+
+* **Partner level API** - where you provide the details of a **Console Administrator** and your Console's **Client ID**.
+
+* **Account level API** - where you provide the details of an **Account User**, your Console's **Client ID**, and a Cyclr **Account ID** to work in as the Client Secret.
+
