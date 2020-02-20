@@ -20,6 +20,7 @@ When setting up the connector you will also have to enter the names of the custo
 The request or response fields for the specified custom entity will now be auto-mapped for each method (request fields for the CREATE/UPDATE methods, response fields for GET methods). 
 
 Example:
+
 ![](../images/dynamics_custom_objects_updated_2.png)
 
 You can edit the **Display Names** to preference but **do not** edit the **Field Location** or **Data Type**, doing so will cause mapping errors. You can remove any fields you do not wish to retrieve/post using the dustbin button to the right of the field.
