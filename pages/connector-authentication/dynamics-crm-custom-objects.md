@@ -23,6 +23,6 @@ Example:
 
 ![](../images/dynamics_custom_objects_updated_2.png)
 
-You can edit the **Display Name** and **Description** to preference but **do not** edit the **Field Location** or **Data Type**, doing so will cause mapping issues. You can remove any fields you do not wish to display using the dustbin button to the right of the field.
+You can edit the **Display Name** and **Description** to preference but **do not** edit the **Field Location** or **Data Type**, doing so will cause mapping issues. You can remove any fields you do not wish to display using the bin/trash button to the right of the field.
 
 ![](../images/dynamics_custom_objects_updated_3.png)
