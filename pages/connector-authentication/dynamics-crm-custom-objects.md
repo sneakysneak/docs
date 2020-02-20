@@ -13,34 +13,15 @@ This connector is designed to work with a single custom entity. When working wit
 
 For details on how to authenticate this connector click [here](dynamics-crm-online.md). See the image below for an example:
 
-When setting up the connector you will also have to enter the name of the custom entity you wish to interact with. 
+When setting up the connector you will also have to enter the names of the custom entity set and custom entity type you wish to interact with. 
 
-![](../images/dynamics_custom_setup.png)
+![](../images/dynamics_custom_objects_updated_1.png)
 
-*Note: You will have to add an 's' to the end of the name in order for it to function correctly e.g. `custom_item` would become `custom_items`.*
+The request or response fields for the specified custom entity will now be auto-mapped for each method (request fields for the CREATE/UPDATE methods, response fields for GET methods). 
 
-### Adding Request and Response Fields
+Example:
+![](../images/dynamics_custom_objects_updated_2.png)
 
-All methods come without request or response fields. Before using the connector you will have to add them where necessary. To add response fields to `GET` methods, go into the connector settings and expand the method you wish to add fields to.
+You can edit the **Display Names** to preference but **do not** edit the **Field Location** or **Data Type**, doing so will cause mapping errors. You can remove any fields you do not wish to retrieve/post using the dustbin button to the right of the field.
 
-Test the method:
-
-![](../images/dynamics_custom_test_run.png)
-
-If data is returned, copy the body of the response and open the `Generate Fields` box:
-
-![](../images/dynamics_custom_test_generate.png)
-
-Paste the response data into the text box and click generate:
-
-![](../images/dynamics_custom_data_sample.png)
-
-Your fields should now exist, like the example below:
-
-![](../images/dynamics_custom_data_format.png)
-
-Now you can format the display names to make them more descriptive of what they represent. The display name is what you will see in the Cycle itself.
-
-To create request fields for `POST` and `PUT` methods, the method is the same as the above, except that you must know the structure of the entity you are going to create.
-
-Once that is all setup, you should be able to use the connector as you would any other.
+![](../images/dynamics_custom_objects_updated_3.png)
