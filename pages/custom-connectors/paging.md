@@ -84,6 +84,15 @@ If the API requires multiple page tokens, you can use CYCLR_PAGE_TOKEN**_{% raw 
 
 Use this when a Connector-level Parameter exists, but is not valid for a particular Method so should be overridden. You must define the Parameter as normal, but provide the CYCLR_IGNORE_PARAMETER variable as the value to have it ignored.
 
+#### Formatted Inbound Paging Variables
+
+If required, CYCLR_PAGE_NUMBER, CYCLR_PAGE_OFFSET and CYCLR_PAGE_SIZE can be inserted into a string by using them as Mergefields.
+You may need to do this if an API requires the page number to be prefixed by text such as 'pageNumber=', in which case you would use the following for the parameter:
+
+{% raw %}
+    pageNumber={{CYCLR_PAGE_NUMBER}}
+{% endraw %}
+
 #### Examples of inbound paging definitions:
 
 API 1 with page number and page size
