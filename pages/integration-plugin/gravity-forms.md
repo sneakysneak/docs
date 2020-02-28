@@ -18,7 +18,7 @@ Please ensure you have the following things in place before you begin.
 
 #### Download
 
-Once you have confirmed the above, you can then download our Gravity Forms plugin.
+Once you have confirmed the above, you can download our Gravity Forms plugin.
 
 [Download Cyclr Gravity Forms Plugin](http://files.cyclr.com/cyclr-plugins/cyclr-webhooks.zip)
 
@@ -48,10 +48,8 @@ Once those steps are complete, you are ready to setup the plugin.
 
 Cyclr will not know about the fields you’ve added to your form by default. You will need to add these in Cyclr.
 
+The simplest way is to make a dummy submission of your form after having clicked the Field Discovery button on your Form Entry Step in your cycle.  This will cause Cyclr to wait for a submission to arrive which will then be parsed to create new Custom Fields.
+
+To manually add Fields or to change existing ones, follow these steps:
 *   In the builder, open the connector in the sidebar and click the Settings button
 *   Under Methods & Fields, pop open the Entries category and then the Form Entry webhook
-*   On the Fields tab, click the plus button to add a new field
-*   Find the names of your fields in Gravity Forms. This is easy to do: replace any white space in the Field Label to a hyphen “-” and change all uppercase letters to lowercase. If the Field Label is First Name, its field name should be **first-name**. If in doubt, [contact our helpdesk](http://cyclr.com/helpdesk).
-*   Set the Location field to the the name of the field in Gravity Forms but with a “gf.” prefix. For example: **gf.input_1**
-*   Set the Display Name to be anything you like; this is shown in Cyclr when you are mapping fields
-*   The Description field is optional
