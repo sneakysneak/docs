@@ -126,7 +126,7 @@ Now you have a sign in token, you can "build" the URL to send the user to where 
 <table>
     <tr>
         <th>URL</th>
-        <td>https://yourCyclrInstance/web/connector/updateaccountconnectoroauth</td>
+        <td>https://[Partner Service Domain]/connectorauth/updateaccountconnectoroauth</td>
     </tr>
     <tr>
         <th>id</th>
@@ -149,6 +149,6 @@ the callback message is null we will redirect to the targetOrigin.</td>
 
 #### Example built URL
 
-    https://yourCyclrInstance/web/connector/updateaccountconnectoroauth?id=1&token=***************************************&targetOrigin=example.com&callbackMessage=done
+    https://[Partner Service Domain]/connectorauth/updateaccountconnectoroauth?id=1&token=***************************************&targetOrigin=example.com&callbackMessage=done
 
 When the user is sent to the built URL they will be redirected to the third party OAuth flow. On completion they will be either redirected to targetOrigin or a JavaScript message will be posted to the parent window.
