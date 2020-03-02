@@ -134,7 +134,7 @@ Now you have a sign in token, you can "build" the URL to send the user to where 
     </tr>
     <tr>
         <th>token</th>
-        <td>The account sign in token. Remember to URI encode it.</td>
+        <td>The account sign in token.</td>
     </tr>
     <tr>
         <th>targetOrigin</th>
