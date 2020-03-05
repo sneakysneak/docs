@@ -489,6 +489,6 @@ function after_error() {
 
 ### Limitations
 
-*   Execution time: 30 seconds. Script running will time out after 30 seconds.
+*   Execution time: 60 seconds. Script running will time out after 60 seconds.
 *   External HTTP requests: for security reasons, we will use the same authentication method as the connector and the same authentication value when the connector was installed by the user. You cannot use the script to access or modify the authentication value.
 *   The **cycle_variables** object is only available through a Step's Advanced Settings area, and not through Inline Script.  Also, any changes made to it and its properties are not persisted.
