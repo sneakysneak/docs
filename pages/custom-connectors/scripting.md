@@ -72,12 +72,12 @@ Called when a webook request has been received and before anything else is done.
 
 ###### Global objects
 
-*   **method_request**: The webhook request body
-*   **method_request_headers**: The webhook request headers
-*   **method_request_parameters**: The webhook request parameters
 *   **method_endpoint**: The webhook request URL
-*   **method_response**: The response body for the request
+*   **method_request_headers**: The webhook request headers
+*   **method_request**: The webhook request body
+*   **method_request_parameters**: The webhook request parameters
 *   **method_response_headers**: The response headers for the request
+*   **method_response**: The response body for the request
 *   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
 *   **return**: true for the webhook to continue normal execution, false to stop execution of the request and send the response body/headers to the caller
 
@@ -97,9 +97,9 @@ Called before Cyclr makes a request to an external API.
 
 ###### Global objects
 
-*   **method_request**: object the will be posted to the third party API
 *   **method_request_headers**: HTTP headers for the request
 *   **method_request_parameters**: Querystring parameters for the request
+*   **method_request**: object the will be posted to the third party API
 *   **method_request_mergefields**: mergefields for the request
 *   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
 *   **return**: true to continue with the request to the third party API, false to abort the request (use throw for a more useful step error message)
@@ -113,9 +113,10 @@ If a Method uses Paging, this function is called after each page is retrieved.
 ###### Global object
 
 *   **method_endpoint**: The URL of the original request
-*   **method_response**: object that was received from the third party API.  If the Method uses paging, this contains only the current page's Response.
-*   **method_response_headers**: The response headers for the request
+*   **method_request**: object that was posted to the third party API
 *   **method_request_mergefields**: mergefields for the request
+*   **method_response_headers**: The response headers for the request
+*   **method_response**: object that was received from the third party API.  If the Method uses paging, this contains only the current page's Response.
 *   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
 *   **return**: true
 
@@ -125,10 +126,10 @@ If this function is provided, it is called once after all pages of data have bee
 
 ###### Global object
 
-*   **method_response**: object that contains all of the Response data.
 *   **method_request_headers**: The response headers for the request
-*   **method_request_mergefields**: mergefields for the request
 *   **method_request_parameters**: parameters for the request
+*   **method_request_mergefields**: mergefields for the request
+*   **method_response**: object that contains all of the Response data.
 *   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
 *   **return**: true
 
@@ -168,8 +169,8 @@ Called before Cyclr makes an OAuth 2 access token request.
 
 ###### Global object
 
-*   **method_request**: Object that is going to be sent to the OAuth 2 access token endpoint
 *   **method_request_headers**: HTTP headers for the request
+*   **method_request**: Object that is going to be sent to the OAuth 2 access token endpoint
 *   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
 *   **return**: true
 
@@ -189,8 +190,8 @@ Called before Cyclr makes an OAuth 2 refresh token request.
 
 ###### Global object
 
-*   **method_request**: request object that is going to be sent to the OAuth 2 refresh token request
 *   **method_request_headers**: HTTP headers for the request
+*   **method_request**: request object that is going to be sent to the OAuth 2 refresh token request
 *   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
 *   **return**: true
 
