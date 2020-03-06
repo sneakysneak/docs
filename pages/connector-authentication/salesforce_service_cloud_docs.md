@@ -7,7 +7,7 @@ tags: [connector]
 
 ## Connector Setup
 
-1. Locate the Insider connector in the Cyclr console.
+1. Locate the Salesforce Service Cloud connector in the Cyclr console.
 
    > Cyclr Console > Connectors > Connector Library > Salesforce Service Cloud
 
