@@ -59,6 +59,10 @@ The OAuth settings should look like this:
 
 After saving your App, make a note of your **Consumer Key** and **Consumer Secret** values as you’ll need to enter these into Cyclr.
 
+***IMPORTANT** It can take up to 10 minutes for any changes to your Connected App to take effect in Salesforce.*
+
+
+
 ### Cyclr Setup
 
 Setup your Salesforce App within Cyclr:
