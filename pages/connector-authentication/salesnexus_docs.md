@@ -21,7 +21,7 @@ You can use the following methodology to obtain a temporary API Key within the c
 
 3. If you have obtained a permanent API Key go to step 4. If you do not have a permanent API Key go to step 5
 
-4. Enter your API Key and click 'Next'. The connector is now authenticated and ready to use.
+4. Enter your API Key and click 'Next'. The connector is now authenticated and ready to use
 
 5. Enter any random string into the 'API Key' field (eg. abc)
 
@@ -37,6 +37,4 @@ You can use the following methodology to obtain a temporary API Key within the c
 
    ![salesnexus setup](./images/salesnexus_setup_3.png)
 
-9. Paste in your API Key and click 'Next'
-
-The connector is now authenticated and ready to use.
+9. Paste in your API Key and click 'Next'. The connector is now authenticated and ready to use
