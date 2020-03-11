@@ -5,6 +5,8 @@ permalink: salesforce-connector
 tags: [connector]
 ---
 
+*This guide applies to Salesforce, Salesforce Service Cloud, and any other services that use Salesforce authentication.*
+
 ## Partner Setup
 
 Salesforce uses OAuth 2 for remote API access. You must register Cyclr within Salesforce as your own Connected App to receive OAuth Client ID and Client Secret values to enable Cyclr to authenticate with Salesforce.
