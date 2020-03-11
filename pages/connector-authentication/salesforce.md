@@ -5,7 +5,7 @@ permalink: salesforce-connector
 tags: [connector]
 ---
 
-*This guide applies to Salesforce, Salesforce Service Cloud, and any other services that use Salesforce authentication.*
+*This guide applies to Salesforce, Salesforce Service Cloud, and other services that use Salesforce authentication.*
 
 ## Partner Setup
 
