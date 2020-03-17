@@ -81,7 +81,7 @@ You should use a Cyclr Partner OAuth token as the Bearer token in this request.
     <tr>
         <td>partnerConnector.AuthValue</td>
         <td>(Optional) Authentication value for your platform connector.
-        If your platform users a username and password, provide as base64 encoded version of username:password  
+        If your platform requires a username and password, provide a base64 encoded version of "username:password".  
         Provide API keys as plain text.
         An OAuth token may also be provided here.</td>
         <td>dXNlcm5hbWU6cGFzc3dvcmQ=  
