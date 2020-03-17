@@ -64,7 +64,8 @@ You should use a Cyclr Partner OAuth token as the Bearer token in this request.
     </tr>
     <tr>
         <td>partnerConnector</td>
-        <td>(Optional) Providing the platform connector object here means your user will not be expected to authenticate against your own platform during the LAUNCH flow.</td>
+        <td>(Optional) Providing your own platform's Cyclr Connector object here means your users will not be expected to authenticate against your platform during the LAUNCH flow.
+        </td>
         <td></td>
     </tr>
     <tr>
