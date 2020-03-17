@@ -84,10 +84,8 @@ You should use a Cyclr Partner OAuth token as the Bearer token in this request.
         If your platform requires a username and password, provide a base64 encoded version of "username:password".  
         Provide API keys as plain text.
         An OAuth token may also be provided here.</td>
-        <td>dXNlcm5hbWU6cGFzc3dvcmQ=  
-or  
-NJ88GGgv79V79VvYFBBTHUIGYBGY3434345545UYu  
-or  
+        <td>dXNlcm5hbWU6cGFzc3dvcmQ=<br />
+or<br />
 NJ88GGgv79V79VvYFBBTHUIGYBGY3434345545UYu</td>
     </tr>
     <tr>
