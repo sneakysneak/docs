@@ -11,7 +11,7 @@ For example:
 
 ![Generic Host Application](./images/generic-host-app.png)
 
-When a user clicks the **Connect** button, your application server should make a request towards Cyclr REST API's _/users/launch_ method:
+When a user clicks the **Connect** button, your application server should make a request towards the Cyclr REST API's _/v1.0/users/launch_ endpoint:
 
 ```
 curl -X POST
