@@ -11,7 +11,7 @@ For example:
 
 ![Generic Host Application](./images/generic-host-app.png)
 
-When a user clicks the **Connect** button, your application server should make a request towards Cyclr's REST API's _/users/marketplace_ method:
+When a user clicks the **Connect** button, your application server should make a request towards the Cyclr REST API's _/v1.0/users/marketplace_ endpoint:
 
 ```
 curl -X POST
@@ -35,7 +35,7 @@ curl -X POST
 
 Replace *yourCyclrInstance* with *api.cyclr.com*, *api.cyclr.uk*, or your own domain if your Cyclr instance is self-hosted.
 
-You should use a Cyclr Partner OAuth token as the Bearer token in this request.
+You should use a [Cyclr *Partner* OAuth token](./obtain-partner-authorization-token) as the Bearer token in this Request.  
 
 <table>
     <tr>
@@ -50,7 +50,7 @@ You should use a Cyclr Partner OAuth token as the Bearer token in this request.
     </tr>
     <tr>
         <td>Username</td>
-        <td>The name of the Cyclr account (and Cyclr user) to install this integration in, or to create if such an account (and user) does not already exist.</td>
+        <td>The name of the Cyclr account (and Cyclr user) to work against, or to create if such an account (and user) does not already exist.</td>
         <td>user@example.com</td>
     </tr>    
     <tr>
@@ -70,12 +70,12 @@ You should use a Cyclr Partner OAuth token as the Bearer token in this request.
     </tr>
     <tr>
         <td>partnerConnector</td>
-        <td>(Optional) Providing the platform connector object here means your user will not be expected to authenticate against your own platform during the Marketplace flow.</td>
+        <td>(Optional) Providing your own platform's Cyclr Connector object here means your users will not be expected to authenticate against your platform during the Marketplace flow.</td>
         <td></td>
     </tr>
     <tr>
         <td>partnerConnector.Name</td>
-        <td>A name you wish to give this instance of your connector installed within this new or existing account.</td>
+        <td>A name you wish to give this instance of your Connector installed within the new or existing account.</td>
         <td>Connector Name</td>
     </tr>
     <tr>
@@ -86,13 +86,11 @@ You should use a Cyclr Partner OAuth token as the Bearer token in this request.
     <tr>
         <td>partnerConnector.AuthValue</td>
         <td>(Optional) Authentication value for your platform connector.
-        If your platform uses a username and password, provide as base64 encoded version of username:password  
+        If your platform requires a username and password, provide a base64 encoded version of "username:password".  
         Provide API keys as plain text.
         An OAuth token may also be provided here.</td>
-        <td>dXNlcm5hbWU6cGFzc3dvcmQ=  
-or  
-NJ88GGgv79V79VvYFBBTHUIGYBGY3434345545UYu  
-or  
+        <td>dXNlcm5hbWU6cGFzc3dvcmQ=<br />
+or<br />
 NJ88GGgv79V79VvYFBBTHUIGYBGY3434345545UYu</td>
     </tr>
     <tr>
