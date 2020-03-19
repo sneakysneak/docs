@@ -170,5 +170,3 @@ NJ88GGgv79V79VvYFBBTHUIGu</td>
         <td style="word-break: break-all">lld3UjpZKkuh0I7ObHR0EtxRsPo0No1GqNSyAi8pqXQ=</td>
     </tr>
 </table>
-
-[How to Handle Callbacks](./handling-callback)
