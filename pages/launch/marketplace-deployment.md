@@ -13,7 +13,7 @@ For example:
 
 When a user clicks the **Connect** button, your application server should make a request towards the Cyclr REST API's _/v1.0/users/marketplace_ endpoint:
 
-#### Example Request to create a new Cyclr Account and obtain a Marketplace URL
+### Example Request to create a new Cyclr Account and obtain a Marketplace URL
 This would create a new Cyclr Account, a new Cyclr User within that Account, and install a platform's Cyclr Connector into it using the **partnerConnector** object.  You can use the **partnerConnector** object to provide authentication details and other properties, to avoid your user having to set it up themselves.
 ```
 curl -X POST
@@ -35,7 +35,7 @@ curl -X POST
 }' "https://yourCyclrInstance/v1.0/users/marketplace"
 ```
 
-#### Example Request to use an existing Cyclr Acccount and obtain a Marketplace URL
+### Example Request to use an existing Cyclr Acccount and obtain a Marketplace URL
 This tells Cyclr the existing Account to work against and the Cyclr User to impersonate.
 ```
 curl -X POST
@@ -57,7 +57,7 @@ You must use a [Cyclr *Partner* OAuth token](./obtain-partner-authorization-toke
 
 
 
-#### Full Request Parameter Reference
+### Full Request Parameter Reference
 
 <table>
     <tr>
@@ -131,7 +131,7 @@ NJ88GGgv79V79VvYFBBTHUIGu</td>
     </tr>
 </table>
 
-***Response:***
+### Example Response
 
 ```json
 {
