@@ -120,7 +120,7 @@ or<br />
 NJ88GGgv79V79VvYFBBTHUIGu</td>
     </tr>
     <tr>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;partnerConnector.[Properties]</td>
+        <td style="white-space: nowrap">&nbsp;&nbsp;&nbsp;&nbsp;partnerConnector.[Properties]</td>
         <td>An array of properties required by the partner connector for successful installation. This is not relevant to all connectors.</td>
         <td>[ {"Name": "Url", "Value": "http://customDomain.appName.com"} ]</td>
     </tr>
