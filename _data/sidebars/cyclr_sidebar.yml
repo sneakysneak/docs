@@ -354,6 +354,14 @@ entries:
             url: /dynamics-connector
             output: web, pdf
 
+          - title: Magento 2
+            url: /magento-2-connector
+            output: web, pdf
+
+          - title: Magento 2 Webhooks
+            url: /magento-2-webhooks-connector
+            output: web, pdf
+
           - title: Mindbody Connector Guide
             url: /mindbody-connector
             output: web, pdf
