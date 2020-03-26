@@ -193,7 +193,7 @@ entries:
           - title: Method Level Standards
             url: /method-level-standards
             output: web, pdf
-        
+
           - title: Introduction
             url: /custom-connector-introduction
             output: web, pdf
@@ -284,6 +284,10 @@ entries:
 
           - title: Gravity Forms Plugin
             url: /gravity-forms-plugin
+            output: web, pdf
+
+          - title: Magento 2 Webhook Extension
+            url: /magento-2-webhook-extension
             output: web, pdf
 
           - title: Salesforce Plugin
