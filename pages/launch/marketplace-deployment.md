@@ -35,7 +35,7 @@ curl -X POST
 }' "https://yourCyclrInstance/v1.0/users/marketplace"
 ```
 
-### Example Request to use an existing Cyclr Acccount and obtain a Marketplace URL
+### Example Request to use an existing Cyclr Account and obtain a Marketplace URL
 This tells Cyclr the existing Account to work against and the Cyclr User to impersonate.
 ```
 curl -X POST
