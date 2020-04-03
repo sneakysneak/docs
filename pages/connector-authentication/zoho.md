@@ -24,4 +24,4 @@ You can find your **Service Domain** within your Cyclr Console from the **Settin
 
 ### Connector Setup ###
 
-Once you have your Client Id and Client Secret from Zoho, you can go to your Cyclr Console, click set them in your Console's Connector Library entry for Zoho CRM so they're automatically provided whenever you install the Connector in the future.
+Once you have your Client ID and Client Secret from Zoho, you can go to your Cyclr Console, andclick to set them in your Console's Connector Library entry for Zoho CRM, so they're automatically provided whenever you install the Connector in the future.
