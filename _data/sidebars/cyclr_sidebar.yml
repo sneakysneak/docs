@@ -425,3 +425,7 @@ entries:
           - title: Zendesk Webhooks
             url: /zendesk-connector
             output: web, pdf
+
+          - title: Zoho
+            url: /zoho
+            output: web, pdf
