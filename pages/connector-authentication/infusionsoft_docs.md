@@ -1,7 +1,7 @@
 ---
 title: Infusionsoft Connector Guide
 sidebar: cyclr_sidebar
-permalink: infusionsoft-Connector
+permalink: infusionsoft-connector
 tags: [Connector]
 ---
 
