@@ -26,7 +26,7 @@ Here is the official documentation for creating a Facebook app:
 
     **App Domain**: your Cyclr **Service Domain**, e.g. "app-h.cyclr.com". This can be found in your Cyclr Console under Settings > Integration Settings > Service Domain.
 
-    **Facebook Login > Settings > Valid OAuth Redirect URIs**: you may need to add ths Facebook Login as a Product to your App, or Facebook may already have automatically added it for you.
+    **Facebook Login > Settings > Valid OAuth Redirect URIs**: you may need to add Facebook Login as a Product to your App, or Facebook may already have automatically added it for you.
     Set the **Valid OAuth Redirect URIs** option to your Cyclr **Service Domain** plus "/connector/callback", e.g.:
     
     ```https://app-h.cyclr.com/connector/callback```
