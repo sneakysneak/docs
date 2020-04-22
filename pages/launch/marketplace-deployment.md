@@ -112,17 +112,17 @@ You must use a [Cyclr *Partner* OAuth token](./obtain-partner-authorization-toke
         <td></td>
     </tr>
     <tr>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;partnerConnector.Name</td>
+        <td>partnerConnector.Name</td>
         <td>A name you wish to give this instance of your Connector installed within the new or existing account.</td>
         <td>Connector Name</td>
     </tr>
     <tr>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;partnerConnector.Version</td>
+        <td>partnerConnector.Version</td>
         <td>The version of the partner connector to be installed.</td>
         <td>1.0</td>
     </tr>
     <tr>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;partnerConnector.AuthValue</td>
+        <td>partnerConnector.AuthValue</td>
         <td>(Optional) Authentication value for your platform connector.
         If your platform requires a username and password, provide a base64 encoded version of "username:password".  
         Provide API keys as plain text.
@@ -132,7 +132,7 @@ or<br />
 NJ88GGgv79V79VvYFBBTHUIGu</td>
     </tr>
     <tr>
-        <td style="white-space: nowrap">&nbsp;&nbsp;&nbsp;&nbsp;partnerConnector.[Properties]</td>
+        <td style="white-space: nowrap">partnerConnector.[Properties]</td>
         <td>An array of properties required by the partner connector for successful installation. This is not relevant to all connectors.</td>
         <td>[ {"Name": "Url", "Value": "http://customDomain.appName.com"} ]</td>
     </tr>
@@ -161,11 +161,13 @@ NJ88GGgv79V79VvYFBBTHUIGu</td>
 ```
 
 <table>
-    <tr>
-        <th>Response Field</th>
-        <th>Description</th>
-        <th>Example Value</th>
-    </tr>
+    <thead>
+        <tr>
+            <th>Response Field</th>
+            <th>Description</th>
+            <th>Example Value</th>
+        </tr>
+    </thead>
     <tr>
         <td>AccountId</td>
         <td>The ID of the newly created account, or the existing account you provided in your request.</td>
