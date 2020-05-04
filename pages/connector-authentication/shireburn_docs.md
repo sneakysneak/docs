@@ -22,6 +22,17 @@ Once the state of your Payroll Standard subscription changes to 'Active' you wil
 
 > It can take several hours for your subscription to be activated. If necessary contact Shireburn support for assistance.
 
+### How to find your Company Code
+ 1. Log into your Indigo Suite account
+
+ 2. Select Administration in the left navigation menu 
+
+ 3. Select Companies from the list of options
+
+ 4. Highlight and copy the code for your company
+ 
+ 5. Paste in the field below
+
 ## Authenticate The Connector
 
 1. Locate the Shireburn connector
