@@ -47,42 +47,13 @@ Once the state of your Payroll Standard subscription changes to 'Active' you wil
 
 The connector is now authenticated and ready to use.
 
-## User Guide
+### How to find your Company Code
+ 1. Log into your Indigo Suite account
 
-### Company & Employee Codes
+ 2. Select Administration in the left navigation menu 
 
-Company and/or Employee codes are a required field throughout most methods in the Shireburn connector.
+ 3. Select Companies from the list of options
 
-Company codes can be located as follows:
-
-1. Login to Shireburn [here](https://indigo.shireburn.com/)
-
-2. From the menu on the left of the page click 'Administration'
-
-   ![shireburn interface](./images/shireburn_portal_1.png)
-
-3. Click 'Companies'
-
-   ![shireburn interface](./images/shireburn_portal_2.png)
-
-4. Your company code/s will be displayed on the next page
-
-   ![shireburn interface](./images/shireburn_portal_3.png)
-
-Employee codes can be located as follows:
-
-1. Login to Shireburn [here](https://indigo.shireburn.com/)
-
-2. From the menu on the left of the page click 'Payroll'
-
-   ![shireburn interface](./images/shireburn_portal_4.png)
-
-3. Click 'Employees'
-
-   ![shireburn interface](./images/shireburn_portal_5.png)
-
-4. Your employee code/s will be displayed on the next page
-
-   ![shireburn interface](./images/shireburn_portal_6.png)
-
-Alternatively several methods within the connector will retrieve your employees' details, including their codes.
+ 4. Highlight and copy the code for your company
+ 
+ 5. Paste in the field below
