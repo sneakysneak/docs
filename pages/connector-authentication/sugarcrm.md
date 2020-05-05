@@ -50,6 +50,8 @@ curl -X POST
 
 SugarCRM Domain should be in the format of “_myaccount.sugarcrm.eu_“. There’s no “https://” or final forward slash if your URL is “_https://myaccount.sugarcrm.eu/_“.
 
+Platform should be the custom platform value you set earlier.
+
 Set up SugarCRM Username and Password as account connector properties:
 
 ```
