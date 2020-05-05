@@ -10,6 +10,27 @@ tags: [connector]
 API Integration Guide
 ---------------------
 
+### __Before you start__
+
+In order to avoid [login conflicts](https://support.sugarcrm.com/Documentation/Sugar_Developer/Sugar_Developer_Guide_9.0/Integration/Web_Services/REST_API/#Avoiding_Login_Conflicts_), you will need to set up a custom platform name in the portal.  It is best to name it something that describes and identifies your current integration.
+
+### Registering a New SugarCRM Platform Value throught the UI
+
+1. As an admin on your SugarCRM instance, go to the Administration panel.
+
+![Admin Panel](./images/sugarcrm1.png)
+
+2. Select ``Configure API Platforms``.
+
+![Configure API Platforms](./images/sugarcrm2.png)
+
+3. Enter a value of your choosing for the new platform and click ``Add`` and then ``Save``.
+
+![Name Platform](./images/sugarcrm3.png)
+
+
+### __Authentication__
+
 SugarCRM uses OAuth 2 Password Credentials.
 
 When installing the SugarCRM connector in one of your customer accounts using Cyclr API, we won’t redirect your users to the SugarCRM sign-in screen. Instead, it requires three account connector properties to be set up: **Domain**, **Username** and **Password**.
