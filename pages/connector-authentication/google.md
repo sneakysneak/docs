@@ -53,6 +53,23 @@ Google connectors use OAuth 2 Authorisation Code flow. It requires your end user
 
 To do this, call _/UpdateAccountConnectorOAuth_ with a one-time sign-in token.
 
+Google Sheets - Important Note
+-----------------------------------
+
+The Google Sheets connector has a "Get New Row Values" method, which checks for new additions to the sheet every time it's run, and keeps its place with Cyclr Storage.
+
+> :warning: If rows are deleted from the sheet, the method will lose its place, and no longer function correctly.
+
+In this case, the step will need to be deleted and re-added.
+
+https://developers.google.com/adwords/api/docs/guides/signup
+
+1.  Sign in or sign up for a Google AdWords manager account
+2.  Go to SETUP > AdWords API Centre
+3.  Complete the form to create a developer token
+4.  Once you have created a developer token, go to Access level > Apply for Basic Access
+5.  Submit the Adwords API Token Application
+
 Additional Setup for Google AdWords
 -----------------------------------
 
