@@ -2,7 +2,7 @@
 title: Cross Updating Preventor
 sidebar: cyclr_sidebar
 permalink: cross-updating-preventor
-tags: [utility connector]
+tags: [utility-connectors]
 ---
 
 ## Purpose
