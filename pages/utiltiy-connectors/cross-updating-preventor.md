@@ -7,6 +7,6 @@ tags: [utility connector]
 
 ## Purpose
 
-Many integrations are triggered when details of an updated record in one applicaiton is sent to a second application so as to keep the data in synch. There are occacions
+Many integrations are triggered when details of an updated record in one applicaiton is sent to a second application so as to keep the data in synch. There are occacions when this process needs to be bi-directional and this can result in an infinite cross-updating loop where A updates B then B updates A and so on.
 
-A common use case for it is to synchronise entities in e.g. a CRM system and an email marketing system by keeping track of the number of entities in them.
+The Cyclr Cross Updating Preventor is designed to stop this.  It can be used to make sure that an inbournd update to an application does not result in a return outbound update.
