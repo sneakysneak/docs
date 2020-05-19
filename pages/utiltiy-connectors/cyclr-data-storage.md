@@ -11,4 +11,4 @@ If there is the requirement to hold data for the purpose of executing a cycle th
 
 ## Related Topics
 
-[Global Data Storeage](./global-data-storage) 
+[Global Data Storage](./global-data-storage) 
