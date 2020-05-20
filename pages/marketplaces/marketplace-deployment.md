@@ -9,7 +9,7 @@ To enable your users to view a Marketplace and install teplaces, you will need t
 
 For example:
 
-![Generic Host Application](./images/generic-host-app-V2.png)
+![Generic Host Application](./images/generic-host-app-v2.png)
 
 When a user clicks the **Integrations** button, your application server should make a request towards the Cyclr REST API's _/v1.0/users/marketplace_ endpoint:
 
