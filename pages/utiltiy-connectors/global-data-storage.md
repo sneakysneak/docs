@@ -15,24 +15,24 @@ This connector can be installed multiple times, and each instance will have it's
 
 Data is stored as Key/Value pairs.  There are options that operate on single records:-
 
-# Set a Value
+### Set a Value
 This will create a Key/Value pair if the Key does not already exist.  If it does exiss the current Value will be updated to the new Value you provide.
 
-# Append Value
+### Append Value
 If the supplied Key value already exists then the new Value you provide will be appended to the current value.  If the Key does not exist a new entry is created.
 
-# Get a Value
+### Get a Value
 The Value field is returned for the specifed Key.
 
-# Delete Key
+### Delete Key
 Deletes a Key/Value Pair
 
 There are options that operate on the whole data set:-
 
-# Get All Vales
+### Get All Vales
 This is return all the records in the data set.
 
-# Delete All Keys
+### Delete All Keys
 This is remove all the entries in the data set.
 
 ## Related Topics
