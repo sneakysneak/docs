@@ -1,8 +1,8 @@
 ---
-title: Marketplace Deployment
+title: Marketplace Deployment-old
 sidebar: cyclr_sidebar
-permalink: marketplace-deployment
-tags: [marketplaces]
+permalink: marketplace-deployment-old
+tags: [marketplaces-old]
 ---
 
 To enable your users to view a Marketplace, simply present a "Connect" button or link within your application’s UI.
