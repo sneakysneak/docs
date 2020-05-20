@@ -11,7 +11,8 @@ If there is the requirement to hold data for the purpose of executing a cycle th
 
 ## Usage
 
-Information on [How To Use](./data-storage-usage) Cyclr Data Storage can be found here.
+Information on using Cyclr Data Storage can be found here.
+[How To Use](./data-storage-usage) 
 
 ## Related Topics
 
