@@ -5,13 +5,13 @@ permalink: marketplace-deployment
 tags: [marketplaces]
 ---
 
-To enable your users to view a Marketplace, simply present a "Connect" button or link within your application’s UI.
+To enable your users to view a Marketplace and install teplaces, you will need to have an "Integrations" button or link within your application’s UI.
 
 For example:
 
 ![Generic Host Application](./images/generic-host-app.png)
 
-When a user clicks the **Connect** button, your application server should make a request towards the Cyclr REST API's _/v1.0/users/marketplace_ endpoint:
+When a user clicks the **Integrations** button, your application server should make a request towards the Cyclr REST API's _/v1.0/users/marketplace_ endpoint:
 
 ### Example Request to create a new Cyclr Account and obtain a Marketplace URL
 This would create a new Cyclr Account, a new Cyclr User within that Account, and install a platform's Cyclr Connector into it using the **partnerConnector** object.  You can use the **partnerConnector** object to provide authentication details and other properties, to avoid your user having to set it up themselves.
