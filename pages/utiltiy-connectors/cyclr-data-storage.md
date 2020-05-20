@@ -9,6 +9,10 @@ tags: [utility-connector]
 
 If there is the requirement to hold data for the purpose of executing a cycle that this utility can be used.  Data can be written in one part of the Cycle and retrieved at a later stage.  Any data that is written will not be acessible once the Cycle has completed.
 
+## Usage
+
+Information on [How To Use](./data-storage-usage) Cyclr Data Storage can be found here.
+
 ## Related Topics
 
 [Global Data Storage](./global-data-storage) 
