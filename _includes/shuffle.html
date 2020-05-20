@@ -124,6 +124,27 @@ see the problems this layout poses if you're including it in PDF. {{site.data.al
     </div>
 
   </div>
+  
+    <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["marketplaces"]'>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">Marketplaces</div>
+      <div class="panel-body">
+        Learn how to publish your integrations inside your SaaS app using our ready made integration setup tool -
+        LAUNCH.
+        <ul>
+          {% for page in site.pages %}
+          {% for tag in page.tags %}
+          {% if tag == "marketplaces" %}
+          <li><a href="{{page.url | remove: '/'}}">{{page.title}}</a></li>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+  </div>
 
   <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["launch"]'>
 
