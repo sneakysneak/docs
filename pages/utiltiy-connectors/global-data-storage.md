@@ -11,7 +11,7 @@ If there is the requirement to hold data permanenty in Cyclr account then you ca
 
 ## Usage
 
-Information on [How To Use](./data-storage-usage) Global Data Storage can be found here.
+[How To Use](./data-storage-usage) Global Data Storage.
 
 ## Related Topics
 
