@@ -2,7 +2,7 @@
 title: Marketplace Deployment
 sidebar: cyclr_sidebar
 permalink: marketplace-deployment
-tags: [launch]
+tags: [marketplaces]
 ---
 
 To enable your users to view a Marketplace, simply present a "Connect" button or link within your application’s UI.
