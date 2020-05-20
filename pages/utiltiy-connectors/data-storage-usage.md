@@ -32,4 +32,4 @@ This is remove all the entries in the data set.
 
 ## Related Topics
 
-[Global Data Storage](./global-data-storage) ! [Cycle Data Storage](./cycle-data-storage) 
+[Global Data Storage](./global-data-storage) | [Cycle Data Storage](./cycle-data-storage) 
