@@ -195,10 +195,6 @@ entries:
             url: /custom-connector-methods
             output: web, pdf
 
-          - title: Examples
-            url: /custom-connector-examples
-            output: web, pdf
-
           - title: Fields
             url: /custom-connector-fields
             output: web, pdf
