@@ -229,6 +229,14 @@ entries:
           - title: OpenAPI Importer
             url: /openapi
             output: web, pdf
+            
+      - title: Marketplaces
+        output: web, pdf
+
+        folderitems:
+          - title: Deploying a Marketplace
+            url: /marketplace-deployment
+            output: web, pdf
 
       - title: LAUNCH
         output: web, pdf
@@ -248,10 +256,6 @@ entries:
 
           - title: Deploying LAUNCH
             url: /launch-deployment
-            output: web, pdf
-
-          - title: Deploying Marketplace
-            url: /marketplace-deployment
             output: web, pdf
 
           - title: Handling Callback
@@ -285,7 +289,39 @@ entries:
           - title: Salesforce Plugin
             url: /salesforce-plugin
             output: web, pdf
+  
+      - title: Utility Connectors
+        output: web, pdf
 
+        folderitems:
+          - title: Cross Updating Preventor
+            url: /cross-updating-preventor
+            output: web, pdf
+  
+          - title: Entity Cross Reference
+            url: /entity-cross-reference-connector
+            output: web, pdf
+            
+          - title: Global Data Storage
+            url: /global-data-storage
+            output: web, pdf
+  
+          - title: Cycle Data Storage
+            url: /cycle-data-storage
+            output: web, pdf
+            
+          - title: Generic Form
+            url: /generic-form
+            output: web, pdf
+            
+          - title: Generic Webhook
+            url: /generic-webhook
+            output: web, pdf
+  
+          - title: Cyclr Tools
+            url: /cyclr-tools
+            output: web, pdf
+            
       - title: Connector Guides
         output: web, pdf
 
@@ -312,10 +348,6 @@ entries:
 
           - title: Cyclr IP Whitelisting
             url: /cyclr-ip-whitelisting
-            output: web, pdf
-
-          - title: Entity Cross Reference
-            url: /entity-cross-reference-connector
             output: web, pdf
 
           - title: Facebook Marketing Authentication
