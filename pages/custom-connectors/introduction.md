@@ -12,7 +12,7 @@ A custom connector allows you to integrate apps that aren’t in our [connector
 A connector a standardised definition in a propriatory Cyclr format of the methods and fields of an API. Once created Cyclr takes care of everthing that is needed to work with an API including:
 
 *   **Authentication** – how the connector should connect to the target API (e.g. OAuth, API key, login, etc).
-    **Rate limiting / throttling** - how frequetly it is allowed to make calls to the API. 
+*   **Rate limiting & Throttling** - how frequetly it is allowed to make calls to the API. 
 *   **Properties** - the description, version, icon, etc.
 *   **Methods** – the endpoints for the API.
 *   **Fields** – the fields used in the methods.
