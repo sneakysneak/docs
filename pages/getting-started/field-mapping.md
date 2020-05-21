@@ -40,10 +40,6 @@ Initially, these Mergefields had to appear as the only content in the **Type a V
 ```
 The last run was {% raw %}{{LastSuccessfulRunDate}}{% endraw %}.
 ```
-and even Inline Script:
-```
-=require('moment');moment(`{% raw %}{{LastSuccessfulRunDate}}{% endraw %}`).subtract(1, 'days').toISOString();
-```
 
 
 [How to Test your Cycles](./testing-cycles)
