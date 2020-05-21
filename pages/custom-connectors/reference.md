@@ -5,8 +5,6 @@ permalink: custom-connector-reference
 tags: [connector-creation]
 ---
 
-A connector is a JSON formatted text file made up of the following parts.
-
 *   **Authentication **– how the connector should connect to the target API (e.g. OAuth, API key, login, etc).
 *   **Properties **– the description, version, icon, etc.
 *   **Methods **– the endpoints for the API.
@@ -15,4 +13,4 @@ A connector is a JSON formatted text file made up of the following parts.
 *   **Paging **– if the target API supports paging for large record sets.
 *   **Scripting **– add JavaScript for custom API requirements.
 
-[Learn About Custom Connector Properties](./custom-connector-properties)
+
