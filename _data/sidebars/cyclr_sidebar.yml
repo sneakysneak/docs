@@ -59,10 +59,6 @@ entries:
             url: /cyclr-api-authentication
             output: web, pdf
 
-          - title: Install a Connector
-            url: /install-a-connector
-            output: web, pdf
-
           - title: Install a Template
             url: /install-a-template
             output: web, pdf
@@ -179,6 +175,10 @@ entries:
             url: /custom-connector-introduction
             output: web, pdf
             
+          - title: Install a Connector
+            url: /install-a-connector
+            output: web, pdf
+            
           - title: Connector Standards
             url: /connector-standards
             output: web, pdf
@@ -201,10 +201,6 @@ entries:
 
           - title: Dynamic Custom Fields
             url: /dynamic-custom-fields
-            output: web, pdf
-
-          - title: Reference
-            url: /custom-connector-reference
             output: web, pdf
 
           - title: Properties
