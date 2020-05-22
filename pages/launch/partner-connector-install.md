@@ -1,7 +1,7 @@
 ---
-title: Install a Partner Connector with Launch or Marketplace
+title: Install a Partner Connector with LAUNCH or Marketplace
 sidebar: cyclr_sidebar
-permalink: partner_connector
+permalink: partner-connector
 tags: [launch, marketplace, guide, partner connector]
 ---
 
@@ -15,7 +15,7 @@ Setting up a Partner Connector
 First you will need to make sure that you have a partner connector set up.
 To do this from your console go to `Templates -> Template Connectors`. 
 
-If the connector you wish to set as your partner connector is not in the list of *Installed Application Connectors* you must first install it [Install Connector Documentation].
+If the connector you wish to set as your partner connector is not in the list of *Installed Application Connectors* you must first [install it](installing-connectors).
 
 Once the connector in the list of installed application connectors, toggle the *Standard* button so that it says *Native*.
 
@@ -88,5 +88,5 @@ Once you have fetched the Partner Connector properties you can include them in t
 
 For more details on deploying to Launch or Marketplace:
 
-- [Deploying Launch](launch-deployment.md)
-- [Deploying Marketplace](marketplace-deployment.md)
+- [Deploying Launch](launch-deployment)
+- [Deploying Marketplace](marketplace-deployment)
