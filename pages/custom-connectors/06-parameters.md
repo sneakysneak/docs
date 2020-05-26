@@ -1,7 +1,7 @@
 ---
-title: Custom Connectors Parameters and Triggers
+title: Connectors Parameters
 sidebar: cyclr_sidebar
-permalink: custom-connectors-parameters-triggers
+permalink: connectors-parameters
 tags: [connector-creation]
 ---
 
