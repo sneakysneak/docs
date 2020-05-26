@@ -1,29 +1,9 @@
 ---
-title: Custom Connector Properties
+title: Connector Authentication
 sidebar: cyclr_sidebar
-permalink: custom-connector-properties
+permalink: connector-authentication
 tags: [connector-creation]
 ---
-
-Name
-----
-
-Provides a name for the Connector to be shown in the Cyclr interface.
-
-CreatedOnUtc
-------------
-
-The date and time when the Connector file was created (in UTC timezone). Will be used to identify when a Connector should be updated in Cyclr. Format: “2015-12-14T11:20:00.000Z”. Leave the seconds and milliseconds as zeros (not that precise).
-
-Description
------------
-
-Provides a description for the Connector to be shown in the Cyclr interface. This should describe, in a sentence, what the app does.
-
-Version
--------
-
-This is the version of the product's API which doesn’t necessarily match the version of the product itself.
 
 AuthType
 --------
@@ -46,12 +26,3 @@ This field will only be used if the **AuthType **is **OAuth2**.
 *   **ClientCredentials** – client will get the access token from the authorization server without user challenge.
 *   **PasswordCredentials** – client will get the access token from the authorization server using username & password.
 
-Icon
-----
-
-Your connector needs an icon.
-
-*   Minimum: square @ 256px x 256px
-*   24-bit PNG on a transparent background
-
-[Learn About Custom Connector Parameters & Triggers ](./custom-connectors-parameters-triggers)
