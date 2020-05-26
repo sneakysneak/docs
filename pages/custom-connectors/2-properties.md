@@ -17,4 +17,4 @@ tags: [connector-creation]
 | Inbound Page Size | If inbound paging is supported, provide the default page size. | |
 | Outbound Page Size | | |
 | User Singular Partner Webhook URL? | | |
-| Icon | | |
+| Icon | The logo that will be used to represent the application.| Logo should be 400x400 .png |
