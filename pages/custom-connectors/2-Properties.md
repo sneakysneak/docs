@@ -5,7 +5,7 @@ permalink: connector-properties
 tags: [connector-creation]
 ---
 
-## What is a custom connector?
+## Connector Properties
 
 | Property | Description |
 | --- | --- |
