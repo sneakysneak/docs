@@ -166,63 +166,59 @@ entries:
             url: /wait-all
             output: web, pdf
 
-      - title: Custom Connector Creation
+      - title: Connector Creation
         output: web, pdf
 
         folderitems:
         
           - title: Introduction
-            url: /custom-connector-introduction
+            url: /connector-introduction
             output: web, pdf
             
-          - title: Install a Connector
-            url: /install-a-connector
+          - title: Settings
+            url: /connector-settings
             output: web, pdf
             
-          - title: Connector Standards
-            url: /connector-standards
+          - title: Authentication
+            url: /connector-authentication
             output: web, pdf
 
-          - title: Connector Level Standards
-            url: /connector-level-standards
+          - title: Rate Limits
+            url: /connector-rate-limits
             output: web, pdf
 
-          - title: Method Level Standards
-            url: /method-level-standards
+          - title: Methods
+            url: /connector-methods
             output: web, pdf
 
           - title: Methods
             url: /custom-connector-methods
             output: web, pdf
 
-          - title: Fields
-            url: /custom-connector-fields
+          - title: Parameters
+            url: /connector-parameters
             output: web, pdf
 
-          - title: Dynamic Custom Fields
-            url: /dynamic-custom-fields
-            output: web, pdf
-
-          - title: Properties
-            url: /custom-connector-properties
-            output: web, pdf
-
-          - title: Parameters and Triggers
-            url: /custom-connectors-parameters-triggers
-            output: web, pdf
-
-          - title: Paging
-            url: /custom-connectors-paging
+          - title: Triggers
+            url: /connector-triggers
             output: web, pdf
 
           - title: Scripting
-            url: /custom-connector-scripting
+            url: /connector-scripting
             output: web, pdf
 
-          - title: OpenAPI Importer
-            url: /openapi
+          - title: Paging
+            url: /connector-paging
             output: web, pdf
-            
+
+          - title: Auto Installing Webhooks
+            url: /auto-installing-webhooks
+            output: web, pdf
+
+          - title: Custom Fields
+            url: /dynamic-custom-fields
+            output: web, pdf
+
       - title: Marketplaces
         output: web, pdf
 
