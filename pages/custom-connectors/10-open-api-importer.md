@@ -1,5 +1,5 @@
 ---
-title: OpenAPI
+title: Open API Importer
 sidebar: cyclr_sidebar
 permalink: open-api-importer
 tags: [connector-creation]
