@@ -5,7 +5,7 @@ permalink: connector-scripting
 tags: [connector-creation]
 ---
 
-### Scripting
+## Scripting
 
 Cyclr supports Javascript as its scripting language, allowing you to manipulate data before it's sent as well as after it's been retrieved.  This can be useful when moving data between applications as what's valid in one, may not be valid in another.  Also, sometimes data just doesn't quite "fit".
 
