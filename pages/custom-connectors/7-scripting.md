@@ -1,7 +1,7 @@
 ---
-title: Custom Connector Scripting
+title: Connector Scripting
 sidebar: cyclr_sidebar
-permalink: custom-connector-scripting
+permalink: connector-scripting
 tags: [connector-creation]
 ---
 
