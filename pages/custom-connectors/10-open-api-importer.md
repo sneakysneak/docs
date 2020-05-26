@@ -1,11 +1,11 @@
 ---
 title: OpenAPI
 sidebar: cyclr_sidebar
-permalink: openapi
+permalink: open-api-importer
 tags: [connector-creation]
 ---
 
-## Introduction ##
+## Introduction
 
 In this guide, you will learn how to create your own custom connectors in Cyclr.
 Importing an API
