@@ -5,7 +5,7 @@ permalink: connector-methods
 tags: [connector-creation]
 ---
 
-## Connector Methods
+## Settings
 
 These are descriptions of the API endpoints in a standard format.
 
