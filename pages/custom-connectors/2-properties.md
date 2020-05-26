@@ -9,8 +9,8 @@ tags: [connector-creation]
 
 | Property | Description | Recommended Standards |
 | --- | --- | --- |
-| Status | | |
-| Comments | | |
+| Status | Unknown, Approved, Beta, Planned | |
+| Comments | A description of the Application.| |
 | Post install Property Value Lookup Method | | |
 | Post Install Test Auth Method | | |
 | Inbound Paging? | Does the API support paging when large amounts of data are requested? | |
