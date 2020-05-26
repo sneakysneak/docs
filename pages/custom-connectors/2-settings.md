@@ -1,11 +1,11 @@
 ---
-title: Connector Properties
+title: Connector Settings
 sidebar: cyclr_sidebar
-permalink: connector-properties
+permalink: connector-settings
 tags: [connector-creation]
 ---
 
-## Connector Properties
+## Release Settings
 
 | Property | Description | Recommended Standards |
 | --- | --- | --- |
