@@ -1,7 +1,7 @@
 ---
-title: Connectors Parameters
+title: Connector Parameters
 sidebar: cyclr_sidebar
-permalink: connectors-parameters
+permalink: connector-parameters
 tags: [connector-creation]
 ---
 
