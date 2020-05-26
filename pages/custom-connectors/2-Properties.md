@@ -1,3 +1,12 @@
+---
+title: Connector Properties
+sidebar: cyclr_sidebar
+permalink: connector-properties
+tags: [connector-creation]
+---
+
+## What is a custom connector?
+
 | Property | Description |
 | --- | --- |
 | Status | |
