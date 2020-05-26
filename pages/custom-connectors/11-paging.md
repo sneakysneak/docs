@@ -1,7 +1,7 @@
 ---
-title: Connectors Paging
+title: Connector Paging
 sidebar: cyclr_sidebar
-permalink: connectors-paging
+permalink: connector-paging
 tags: [connector-creation]
 ---
 
