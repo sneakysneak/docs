@@ -1,7 +1,7 @@
 ---
-title: Connectors Triggers
+title: Connector Triggers
 sidebar: cyclr_sidebar
-permalink: connectors-triggers
+permalink: connector-triggers
 tags: [connector-creation]
 ---
 
