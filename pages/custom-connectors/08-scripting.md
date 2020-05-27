@@ -2,6 +2,7 @@
 title: Connector Scripting
 sidebar: cyclr_sidebar
 permalink: connector-scripting
+redirect_from: "/custom-connector-scripting/"
 tags: [connector-creation]
 ---
 
