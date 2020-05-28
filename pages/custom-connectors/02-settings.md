@@ -15,6 +15,6 @@ tags: [connector-creation]
 | Post Install Test Auth Method | | |
 | Inbound Paging? | Does the API support paging when large amounts of data are requested? | |
 | Inbound Page Size | If inbound paging is supported, provide the default page size. | |
-| Outbound Page Size | | |
+| Outbound Page Size | If outbound paging is supported, provide the default page size. | |
 | User Singular Partner Webhook URL? | | |
 | Icon | The logo that will be used to represent the application.| Logo should be 400x400 .png |
