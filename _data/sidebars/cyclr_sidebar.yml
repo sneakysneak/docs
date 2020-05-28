@@ -191,10 +191,6 @@ entries:
             url: /connector-methods
             output: web, pdf
 
-          - title: Methods
-            url: /custom-connector-methods
-            output: web, pdf
-
           - title: Parameters
             url: /connector-parameters
             output: web, pdf
