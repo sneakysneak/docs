@@ -7,14 +7,16 @@ tags: [connector-creation]
 
 ## Authentication Types
 
-Cyclr supports various authentiction types, and with on occation the addition of scripting it is possible to establish a connection with any API.
+Cyclr supports various authentiction types and, with on occation the addition of scripting, it is possible to establish a connection with any API.
 
-*   **ApiKey **– the user should provide an API key as the HTTP header for the connector. Requires: _AuthScheme _(HTTP header field name).
-*   **Basic **– the API uses HTTP basic authentication.
-*   **OAuth1 **– the API uses OAuth 1.0a authentication. Requires: _ClientId _(also known as ConsumerKey), _ClientSecret _(also known as ConsumerSecret), _RequestTokenUrl_, _AuthorizeUrl_, _AccessTokenUrl_.
-*   **OAuth2 **– the API uses OAuth 2 authentication. Requires: _ClientId_, _ClientSecret_, _AuthoriseUrl_, _AccessTokenUrl_.
-*   **None **– no authentication required.
-*   **AuthFields **– the API needs to inject authentication fields into the POST message. Requires: _Name_, _Key_, _Type_.
+| Property | Description |
+| --- | --- |
+| ApiKey | The user should provide an API key as the HTTP header for the connector.|
+| Basic  | The API uses HTTP basic authentication. |
+| OAuth1 | The API uses OAuth 1.0a authentication. Requires: _ClientId _(also known as ConsumerKey), _ClientSecret _(also known as ConsumerSecret), _RequestTokenUrl_, _AuthorizeUrl_, _AccessTokenUrl_.|
+| Auth2 | The API uses OAuth 2 authentication. Requires: _ClientId_, _ClientSecret_, _AuthoriseUrl_, _AccessTokenUrl_. |
+| None | No authentication required.|
+| AuthFields | the API needs to inject authentication fields into the POST message. Requires: _Name_, _Key_, _Type_. |
 
 OAuth2Type
 ----------
