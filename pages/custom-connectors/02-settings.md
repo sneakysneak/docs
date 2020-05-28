@@ -8,7 +8,7 @@ tags: [connector-creation]
 ## Release Settings
 
 | Property | Description | Recommended Standards |
-| ---- | -- | --- |
+| --- | --- | --- |
 | Status | Unknown, Approved, Beta, Planned | |
 | Comments | A description of the Application.| |
 | Post install Property Value Lookup Method | | |
