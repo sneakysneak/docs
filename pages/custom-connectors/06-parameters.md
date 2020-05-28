@@ -43,38 +43,18 @@ Then you can specify **AccountID **as a mergefield parameter:
     ]
 {% endraw %}
 
-Here is a list of fields for parameter definition:
+## Parameter Definition
 
-#### TargetType
-
-There are five target types for Cyclr parameters. This will decide where the parameter locates.
-
-*   HttpHeader: HTTP header
+| Property | Description | Recommended Standards |
+| --- | --- | --- |
+| TargetType |*   HttpHeader: HTTP header
 *   MergeField: Endpoint mergefield
 *   QueryString: Query string parameter
 *   FilterField: Cyclr filter field (can set a date field as FilterField to filter new objects)
-*   ResponseField: Response field
-
-#### TargetName
-
-The name for the parameter.
-
-#### DisplayName
-
-The display name for the parameter.
-
-#### Description
-
-Description for the parameter.
-
-#### TriggerName
-
-Trigger name for the parameter. If you want to dynamically show a list of parameter values for the user to choose from, set `TriggerName` as the trigger you want Cyclr to call. Please see the _Triggers_ section for details.
-
-#### IsOptional
-
-Set the parameter to be optional or required. The default is required (false).
-
-#### Hide
-
-Hide the parameter from the user interface. You can use this to hide internal parameters you want to send to the endpoint.
+*   ResponseField: Response field | | 
+| TargetName | The name for the parameter.| |
+| DisplayName | Display name for the parameter.| |
+| Description | Description for the parameter.| |
+| TriggerName | Trigger name for the parameter. If you want to dynamically show a list of parameter values for the user to choose from, set `TriggerName` as the trigger you want Cyclr to call. Please see the _Triggers_ section for details.| |
+| IsOptional | Set the parameter to be optional or required. The default is required (false).| |
+| Hide | Hide the parameter from the user interface. You can use this to hide internal parameters you want to send to the endpoint.| |
