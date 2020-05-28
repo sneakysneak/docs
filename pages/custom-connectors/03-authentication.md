@@ -18,10 +18,9 @@ Cyclr supports various authentiction types and, with on occation the addition of
 | None | No authentication required.|
 | AuthFields | the API needs to inject authentication fields into the POST message. Requires: _Name_, _Key_, _Type_. |
 
-OAuth2Type
-----------
+## OAuth2Type
 
-This field will only be used if the **AuthType **is **OAuth2**.
+Thess fields will only be used if the AuthType is OAuth2.
 
 *   **AuthorisationCode (Default)** – the client will redirect the user to the authorization server, the user will then be asked to login to the authorization server and approve the client.
 *   **ClientCredentials** – client will get the access token from the authorization server without user challenge.
