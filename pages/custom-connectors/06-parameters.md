@@ -47,11 +47,7 @@ Then you can specify **AccountID **as a mergefield parameter:
 
 | Property | Description | Recommended Standards |
 | --- | --- | --- |
-| TargetType |*   HttpHeader: HTTP header
-*   MergeField: Endpoint mergefield
-*   QueryString: Query string parameter
-*   FilterField: Cyclr filter field (can set a date field as FilterField to filter new objects)
-*   ResponseField: Response field | | 
+| TargetType |*   HttpHeader: HTTP header *   MergeField: Endpoint mergefield *   QueryString: Query string parameter *   FilterField: Cyclr filter field (can set a date field as FilterField to filter new objects) *   ResponseField: Response field | | 
 | TargetName | The name for the parameter.| |
 | DisplayName | Display name for the parameter.| |
 | Description | Description for the parameter.| |
