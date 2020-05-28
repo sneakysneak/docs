@@ -5,10 +5,9 @@ permalink: connector-authentication
 tags: [connector-creation]
 ---
 
-AuthType
---------
+## Authentication Types
 
-This specifies what type of authentication is used by the remote endpoint.
+Cyclr supports various authentiction types, and with on occation the addition of scripting it is possible to establish a connection with any API.
 
 *   **ApiKey **– the user should provide an API key as the HTTP header for the connector. Requires: _AuthScheme _(HTTP header field name).
 *   **Basic **– the API uses HTTP basic authentication.
