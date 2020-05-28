@@ -9,7 +9,7 @@ tags: [connector-creation]
 
 Cyclr supports various authentication types and, sometimes with the addition of scripting, it is possible to establish a connection with any API.
 
-| Property | Description |
+| Method | Description |
 | --- | --- |
 | ApiKey | The user should provide an API key as the HTTP header for the connector.|
 | Basic  | The API uses HTTP basic authentication. |
