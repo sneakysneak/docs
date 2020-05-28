@@ -29,7 +29,7 @@ These are descriptions of the API endpoints in a standard format.
 
 You can specify rate limits that apply to this method alone.
 
-## Request Format / ResponseFormat
+## Request Format / Response Format
 
 Here you specify the request or response message format Fields. 
 
@@ -39,6 +39,19 @@ Here you specify the request or response message format Fields.
 | System Field | The name to use internally within Cyclr. Use the field as capitalised by the API and remove any spaces. Apps that have the same SystemField name can auto match values in the builder, saving time and making life easier.| |
 | Display Name | The name of the field to be displayed in the Cyclr UI to the user. Typically, take the _SystemField _value and add spaces or anything that might help describe it, e.g. in _G_oogle Sheets the _ConnectorField_ _entry.title_ used when working with Rows becomes simply _Row Title_. Think human readable.| |
 | Description | This is the description of the Field to appear in the Cyclr UI for the user to understand how the Field is used. Always include this and keep fairly short (no more than 100 characters).IsOptionalSet to `true` if the Field doesn’t have to be given a value. Leave out if it’s a required Field.| |
+| Data Type | Options are: Text, Integer, Float, Boolean, Datetime, File, Decimal.  If the type is Datetime then a subtype can be entered to specify the standard and precision. | |
+| Default Value | | |
+
+## Parameters
+
+You can specify Parameters specific to this method.
+
+## Script
+
+You can add script specific to this method.
+
+## Identity
+
 
 ## Mergefields
 
