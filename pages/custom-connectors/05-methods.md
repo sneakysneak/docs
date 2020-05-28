@@ -10,7 +10,7 @@ tags: [connector-creation]
 These are descriptions of the API endpoints in a standard format.
 
 | Property | Description | Standards |
-| --- | --- |
+| --- | --- | --- |
 
 | Name | The name of the method to appear in the Cyclr UI for the user to see. | Should be short and snappy and have initial caps for nouns/verbs, lowercase for minor words (like “a” or “to”), e.g. “Delete Emails”, “Get All Contacts”, “Send to List”.|
 
