@@ -63,10 +63,6 @@ entries:
             url: /install-a-template
             output: web, pdf
 
-          - title: Create Custom Connectors
-            url: /create-custom-connectors
-            output: web, pdf
-
           - title: Call a Connector Method
             url: /call-a-connector-method
             output: web, pdf
