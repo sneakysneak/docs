@@ -22,8 +22,8 @@ When a release is pushed live this might be done as a major release which will c
 | Property | Description | Recommended Standards |
 | --- | --- | --- |
 | Name | The name of the connector that will be used in the interface. | This should not include the API Version. |
-| Description | | |
-| API Verion | | |
+| Description | Description of the product. | Take this from the application's website. |
+| API Verion | Version should be same as API version| |
 | Icon | The logo that will be used to represent the application. | Logo should be 400x400 .png |
 
 ## Release Settings
