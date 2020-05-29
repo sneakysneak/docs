@@ -27,13 +27,14 @@ These are descriptions of the API endpoints in a standard format.
 
 Connector naning conventions.
 
-| Action | Usage |
+| Name | Purpose |
 | --- | --- | 
-| Get (ObjectNameSingular) | Used when the method retrieves a single item. |
-| List (ObjectNamePlural)| Used when the method retrieves multiple items. |
-| Create (ObjectNameSingular) | Used when the method creates an item (Do not use add). |
-| Delete (ObjectNameSingular) | Used when the method deletes an item. |
-| Update (ObjectNameSingular) | Used when the method updates an item. |
+| Get (ObjectNameSingular) | Used when the method retrieves a single object. |
+| List (ObjectNamePlural)| Used when the method retrieves multiple object. |
+| Create (ObjectNameSingular) | Used when the method creates an object. |
+| Create  (ObjectNamePlural) | Used when the method creates an multiple objects from a single call. |
+| Delete (ObjectNameSingular) | Used when the method deletes an object. |
+| Update (ObjectNameSingular) | Used when the method updates an object. |
 
 ## Rate Limits
 
