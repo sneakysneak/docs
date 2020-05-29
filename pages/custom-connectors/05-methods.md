@@ -11,7 +11,7 @@ These are descriptions of the API endpoints in a standard format.
 
 | Property | Description | Standards |
 | --- | --- | --- |
-| Name | The name of the method to appear in the Cyclr UI for the user to see. | Should be short and snappy and have initial caps for nouns/verbs, lowercase for minor words (like “a” or “to”), e.g. “Delete Emails”, “Get All Contacts”, “Send to List”.|
+| Name | The name of the method to appear in the Cyclr UI for the user to see. | Should be short and snappy and have initial caps for nouns/verbs, lowercase for minor words (like “a” or “to”), e.g. “Delete Emails”, “Get All Contacts”, “Send to List”.  See below for suggested naming conventions. |
 | Description | This is the description of the method to appear in the Cyclr UI for the user to understand what the method does and be informed of any special/interesting values to pass. | Can be quite lengthy if appropriate. Can also include links to helpful API documentation if useful.|
 | Warning | | |
 | Status | | |
@@ -24,6 +24,16 @@ These are descriptions of the API endpoints in a standard format.
 | Hide | This will hide the method in the Cyclr UI if set to true. |
 | DataType | This is the data type used by the API, either Json, Xml, or Form. For GET, this is the Accept header. For POST, this is the request data. JSON is our recommended data type.| |
 | Xml Root Element | The single root element for the XML document.| |
+
+Connector naning conventions.
+
+| Action | Usage |
+| --- | --- | 
+| Get | Used when the method retrieves a single item. |
+| List | Used when the method retrieves multiple items. |
+| Create | Used when the method creates an item (Do not use add). |
+| Delete | Used when the method deletes an item. |
+| Update | Used when the method updates an item. |
 
 ## Rate Limits
 
