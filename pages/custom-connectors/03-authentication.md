@@ -24,7 +24,6 @@ These fields will only be used if the AuthType is OAuth2.
 
 | Property | Description |
 | ---- | ---- |
-
 | AuthorisationCode | The client will redirect the user to the authorization server, the user will then be asked to login to the authorization server and approve the client.|
 | ClientCredentials | Client will get the access token from the authorization server without user challenge.|
 | PasswordCredentials | Client will get the access token from the authorization server using username and password.|
