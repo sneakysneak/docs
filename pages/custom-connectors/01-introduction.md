@@ -18,5 +18,13 @@ A connector a standardised definition in a propriatory Cyclr format of the metho
 | Rate limiting & Throttling | How frequetly it is allowed to make calls to the API. |
 | Methods / Endpoints | The endpoints for the API. |
 
-
 If available in your console, access to Custom Connectors is available in the Console under 'Connectors'.
+
+## Importing an API
+
+Our powerful OpenAPI discovery tool lets you import an existing API specification into Cyclr. Currently, we support OpenAPI Version 2.0 in JSON and YAML.
+
+If you are using another version, please convert it to an OpenAPI 2.0 file using third-party tools.
+You can choose Create Connector to start with an empty connector if you don’t have an OpenAPI specification.
+
+After importing the connector it is generally required to go through a 'tidy up' excercice to bring it up to standard.
