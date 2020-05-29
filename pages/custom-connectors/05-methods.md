@@ -29,11 +29,11 @@ Connector naning conventions.
 
 | Action | Usage |
 | --- | --- | 
-| Get | Used when the method retrieves a single item. |
-| List | Used when the method retrieves multiple items. |
-| Create | Used when the method creates an item (Do not use add). |
-| Delete | Used when the method deletes an item. |
-| Update | Used when the method updates an item. |
+| Get (ObjectNameSingular) | Used when the method retrieves a single item. |
+| List (ObjectNamePlural)| Used when the method retrieves multiple items. |
+| Create (ObjectNameSingular) | Used when the method creates an item (Do not use add). |
+| Delete (ObjectNameSingular) | Used when the method deletes an item. |
+| Update (ObjectNameSingular) | Used when the method updates an item. |
 
 ## Rate Limits
 
