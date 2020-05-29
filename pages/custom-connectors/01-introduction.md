@@ -13,10 +13,10 @@ A connector a standardised definition in a propriatory Cyclr format of the metho
 
 | Property | Description | 
 | --- | --- |
-| Descrption | Name, description version etc. |
-| Authentication | How the connector should connect to the target API (e.g. OAuth, API key, login, etc). |
+| Description | Name, description version etc. of the Application's API |
+| Authentication Method | How the connector should connect to the target API (e.g. OAuth, API key, login, etc). |
 | Rate limiting & Throttling | How frequetly it is allowed to make calls to the API. |
-| Methods | The endpoints for the API. |
+| Methods / Endpoints | The endpoints for the API. |
 
 
 If available in your console, access to Custom Connectors is available in the Console under 'Connectors'.
