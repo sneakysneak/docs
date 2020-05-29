@@ -5,7 +5,7 @@ permalink: connector-introduction
 tags: [connector-creation]
 ---
 
-## What is a Cyclr Custon Connector?
+## What is a Cyclr Custom Connector?
 
 A custom connector allows you to integrate apps that aren’t in our [connector library](http://cyclr.com/connectors/). You can even add connectors for your own private apps and websites. Our Connector Manager makes this task quicker and easier to maintain than writing a traditional coded integration.  Note that not all price plans include access to the Custom Connector builder or that access is subject to an additional fee
 
