@@ -17,7 +17,7 @@ There may also be a draft release which is a pending update or extension to the 
 
 When a release is pushed live this might be done as a major release which will cause an 'update available' message to appear on all steps on templates and live integartions using the connector.  A major release should generally be used when existing methods need to be updated.  A minor release can be used when there are no changes are being made (or very minor changes are being made) to existing methods but new functionality is being added.
 
-## Connector 
+## Connector Settings
 
 | Property | Description | Recommended Standards |
 | --- | --- | --- |
