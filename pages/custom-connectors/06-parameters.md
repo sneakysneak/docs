@@ -28,19 +28,19 @@ You can define parameters at the connector level or method level. If a parameter
 
 ### HttpHeader
 
-HTTP header
+This will be added to the HTTP header.
 
 ### MergeField
 
-Parameters can be defined in conjunction with URL endpoint mergefields, for example, if your URL looks like:
+The vaue of the parameter will be merged into the HTTP call.  For example, parameters can be merged into URL endpoint to allow for a specific object to be requested.  The merge field is identifed by the double opening and closing curly braces, and might look something like this:
 
-    "Endpoint": "https://example.com/{{{AccountID}}/objects",
+    "Endpoint": "https://ApplicationName/API/2/customer/{{CustomerNo}}"
 
-Then you can specify AccountID as a mergefield parameter:
+'CustomerNo is then specified as a Mergefield Parameter (without the braces) and the value provided will be merged into the URL.
 
 ### QueryString
 
-Query string parameter
+This parameters allows you to add values into the Query String of the HTTP request.  It can, for example. allow for optional filtering criteria to be added to the call.
 
 ### FilterField
 
