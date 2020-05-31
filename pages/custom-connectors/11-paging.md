@@ -5,7 +5,7 @@ permalink: connector-paging
 tags: [connector-creation]
 ---
 
-### Inbound and Outbound Paging
+## Inbound and Outbound Paging
 
 So that Cyclr can retrieve more objects than a remote API may allow in one request (some restrict this to 100 objects, for example), it can take advantage of an API’s paging functionality. This is referred to as **Inbound Paging**. Cyclr will repeatedly request pages of objects until it has retrieved them all.
 
@@ -23,7 +23,7 @@ Note that the default for ourbound paging of 'false' at the Connector level.
  
 These patrameters can be overriden and adjusted at the method level.
 
-### Paging Control Variables
+## Paging Control Variables
 
 It implement inbound paging Cyclr uses the following variables.
 
@@ -80,7 +80,7 @@ If the API requires multiple page tokens, you can use CYCLR_PAGE_TOKEN**_{% raw 
 
 Use this when a Connector-level Parameter exists, but is not valid for a particular Method so should be overridden. You must define the Parameter as normal, but provide the CYCLR_IGNORE_PARAMETER variable as the value to have it ignored.
 
-### Using Paging Variables
+## Using Paging Variables
 
 If required, CYCLR_PAGE_NUMBER, CYCLR_PAGE_OFFSET and CYCLR_PAGE_SIZE can be inserted into a string by using them as Mergefields.
 You may need to do this if an API requires the page number to be prefixed by text such as 'pageNumber=', in which case you would use the following for the parameter:
@@ -224,7 +224,7 @@ API 6 with page token and page number
     ]
 {% endraw %}
 
-### Outbound Paging Variables
+## Outbound Paging Variables
 
 Outbound paging only requires one variable to locate the array in the request body. Cyclr identifies when it has “too much” data to pass in one request by comparing it to the **PageSizeOutbound** property. If it has more, it chops the data into multiple requests automatically.
 
