@@ -40,7 +40,7 @@ The vaue of the parameter will be merged into the HTTP call.  For example, param
 
 | Target Type | Target Name | Disp Name | Desc | Trigger | Optional | Hiden | Value |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| MergeField| CustomerNo | Customer Number | Provide a customer number. | NA | false | false | CYCLR_PAGE_NUMBER |
+| MergeField| CustomerNo | Customer Number | Provide a customer number. | NA | false | false | NAR |
 
 
 
