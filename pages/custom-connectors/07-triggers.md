@@ -11,37 +11,19 @@ Triggers are used for dynamic lookups. For example, if you want to provide a loo
 
 The settings for an Accounts the Account Id lookup would look something like this
 
-{% raw %}
-    "Parameters": [
-        {
-            "TargetType": "MergeField",
-            "TargetName": "AccountId",
-            "DisplayName": "Account ID",
-            "Description": "User account.",
-            "IsOptional": false,
-            "TriggerName": "Lookup Account"
-        }
-    ],
-    "Triggers": [
-    {
-        "Name": "Lookup Account",
-        "MethodName": "Get Accounts",
-        "IdentifierKey": "[accounts].id",
-        "HumanReadableKey": "[accounts].name"
-    }
-    ]
-{% endraw %}
 
-Note that when the user choose **Lookup** for the parameter **AccountId **in Step Setup, Cyclr will use the Lookup Account trigger, call **Get Accounts** and populate a list of accounts.
+| Property | Value | Usage|
+| = | = | = |
+| Name | Select Accounts | Triggers need to be defined at the connector level with a unique Name. |
+| MethodName | List Accounts | The name of the method in the connector. | 
+| IdentifierKey | [accounts].id" |  The ID field that will be used in an HTTP method by Cyclr. |
+| HumanReadableKey | [accounts].name | The field that will allow the user to select the correct account. |
 
-Triggers need to be defined at the connector level with a unique **Name**. **MethodName **is the method that Cyclr will call to populate parameter values.
+If the Trigger were to be used to provide a lookup to merge a value into an endpoint, the specification would look like this.
 
-**IdentifierKey **is the key value Cyclr will use. **HumanReadableKey **is the display value Cyclr will display in Step Setup.
+| Target Type | Target Name | Disp Name | Desc | Trigger | Optional | Hiden | Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| MergeField| AccountId | Account ID | Provide an Account ID. | Select Accounts | false | false | NA |
 
-For example, if a user chooses Account **Example **with ID **1000**, Cyclr will fill the mergefield with **1000**.
 
-The API endpoint becomes:
 
-    "https://example.com/1000/Objects"
-
-[Learn About Custom Connector Scripting ](./scripting)
