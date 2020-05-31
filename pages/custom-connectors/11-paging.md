@@ -11,25 +11,21 @@ So that Cyclr can retrieve more objects than a remote API may allow in one reque
 
 When a remote API has a limit on the amount of data that can be sent in a single request, Cyclr will also be able to split large amounts of data that need to be sent into several small requests. This is referred to as **Outbound Paging**.
 
-To set a Connector as using Paging, you can use the following Connector-level properties (they default to false – no paging – if not supplied):
+To set a Connector as using Paging, you can use the following Connector-level properties (they default to false – no paging – if not supplied).
 
-    "PagedInbound": true,
-    "PagedOutbound": true,
+| Property | Description |
+| --- | --- |
+| Inbound Paging | Set to 'true' to activate by default in all appropriate methods. |
+| Inbound Page Size |Set to the number of records that the API will return with a single call eg 100, |
+| Outbound Page Size |Set to the number of records that the API will allow posted with a single call eg 100, | 
 
-At the Connector level, **PageSizeInbound **and **PageSizeOutbound **are numeric properties can be defined to set the size of the inbound and outbound pages. e.g.
-
-    "PageSizeInbound": 100, 
-    "PageSizeOutbound": 20,
-
-For inbound paging, **Parameters **can then be created to describe how Cyclr should work with the remote API to perform paging. You can use** Inbound Paging Variables **listed below as **Values **for paging **Parameters**.
-
-Note that paging parameters will be shown to users unless the “Hide” property is set to be true for them, i.e.
-
-    "Hide": true
+Note that the default for ourbound paging of 'false' at the Connector level.
+ 
+These patrameters can be overriden and adjusted at the method level.
 
 #### Inbound Paging Variables
 
-The following Cyclr variables are available as part of Inbound Paging:
+It implement inbound paging Cyclr uses the following variables;
 
 #### CYCLR_PAGE_NUMBER
 
