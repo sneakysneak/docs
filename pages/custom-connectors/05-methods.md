@@ -55,11 +55,11 @@ Here you specify the request or response message format Fields.
 
 ## Parameters
 
-You can specify Parameters specific to this method.
+You can specify Parameters specific to this method. Read more about [parameters](./connector-parameters)
 
 ## Script
 
-You can add script specific to this method.
+You can add script to the connector to handle special situations. Read more about [scriptiog](./connector-scripting)
 
 ## Identity
 
