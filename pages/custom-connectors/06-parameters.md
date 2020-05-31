@@ -32,11 +32,11 @@ This will be added to the HTTP header.
 
 ### MergeField
 
-The vaue of the parameter will be merged into the HTTP call.  For example, parameters can be merged into URL endpoint to allow for a specific object to be requested.  The merge field is identifed by the double opening and closing curly braces, and might look something like this:
+The vaue of the parameter will be merged into the HTTP call.  For example, parameters can be merged into URL endpoint to allow for a specific object to be requested.  The merge field is identifed by the double opening and closing curly braces.
 
-"Endpoint": "https://ApplicationName/API/2/customer/&#x7B;&#x7B;CustomerNo&#x7D;&#x7D;"
+"Endpoint": "https://ApplicationName/API/V2/customers/&#x7B;&#x7B;CustomerNo&#x7D;&#x7D;"
 
-'CustomerNo is then specified as a Mergefield Parameter (without the braces) and the value provided will be merged into the URL which might look like this:
+'CustomerNo is then specified as a Mergefield Parameter (without the braces) and the value provided will be merged into the URL.  The specification would look like this:
 
 | Target Type | Target Name | Disp Name | Desc | Trigger | Optional | Hiden | Value |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -44,7 +44,19 @@ The vaue of the parameter will be merged into the HTTP call.  For example, param
 
 ### QueryString
 
-This parameters allows you to add values into the Query String of the HTTP request.  It can, for example. allow for optional filtering criteria to be added to the call.
+This parameters allows you to add values into the Query String of the HTTP request.  It can, for example. allow for optional filtering criteria to be added to the call.  For example, if filtering was required for a specific customer on the 'list orders method.
+
+"Endpoint": "https://ApplicationName/API/V2/orders"
+
+The specification would look like this:
+
+| Target Type | Target Name | Disp Name | Desc | Trigger | Optional | Hiden | Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| QueryString| Customer | Customer Number | Provide a customer number. | NA | false | false | NA |
+
+The resulting call would look like this:
+
+"Endpoint": "https://ApplicationName/API/V2/orders?Customer=8394995
 
 ### FilterField
 
