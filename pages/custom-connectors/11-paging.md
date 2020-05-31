@@ -48,15 +48,6 @@ It implement inbound paging Cyclr use the following variables.
 
 ## Using Paging Variables
 
-If required, CYCLR_PAGE_NUMBER, CYCLR_PAGE_OFFSET and CYCLR_PAGE_SIZE can be inserted into a string by using them as Mergefields.
-You may need to do this if an API requires the page number to be prefixed by text such as 'pageNumber=', in which case you would use the following for the parameter:
-
-{% raw %}
-    pageNumber={{CYCLR_PAGE_NUMBER}}
-{% endraw %}
-
-##### Examples of inbound paging definitions:
-
 ### Example 1 - API using page number and page size
 
 In this example the API requires the query sting to include the parameters 'page' and 'limit'.  Other APIs might use different names for these concepts.
