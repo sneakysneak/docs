@@ -42,5 +42,5 @@ When a release is pushed live this might be done as a major release which will c
 
 ## Related Topics
 
-[Paging](./connector-paging) 
+[Paging](./connector-paging) | [Scripting](./connector-scripting) 
 
