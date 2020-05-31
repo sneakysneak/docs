@@ -59,7 +59,7 @@ You can specify Parameters specific to this method. Read more about [parameters]
 
 ## Script
 
-You can add script to the connector to handle special situations. Read more about [scriptiog](./connector-scripting)
+You can add script to the connector to handle special situations. Read more about [scripting](./connector-scripting)
 
 ## Identity
 
