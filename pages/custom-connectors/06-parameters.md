@@ -34,9 +34,15 @@ This will be added to the HTTP header.
 
 The vaue of the parameter will be merged into the HTTP call.  For example, parameters can be merged into URL endpoint to allow for a specific object to be requested.  The merge field is identifed by the double opening and closing curly braces, and might look something like this:
 
-    "Endpoint": "https://ApplicationName/API/2/customer/{{CustomerNo}}"
+"Endpoint": "https://ApplicationName/API/2/customer/{{CustomerNo}}"
 
-'CustomerNo is then specified as a Mergefield Parameter (without the braces) and the value provided will be merged into the URL.
+'CustomerNo is then specified as a Mergefield Parameter (without the braces) and the value provided will be merged into the URL which might look like this:
+
+| Target Type | Target Name | Disp Name | Desc | Trigger | Optional | Hiden | Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| MergeField| CustomerNo | Customer Number | Provide a customer number. | NA | false | false | CYCLR_PAGE_NUMBER |
+
+
 
 ### QueryString
 
