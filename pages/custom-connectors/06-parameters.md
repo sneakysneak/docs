@@ -40,7 +40,7 @@ The vaue of the parameter will be merged into the HTTP call.  For example, param
 
 | Target Type | Target Name | Disp Name | Desc | Trigger | Optional | Hiden | Value |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| MergeField| CustomerNo | Customer Number | Provide a customer number. | NA | false | false | NA |
+| MergeField| CustomerNo | Customer Number | Provide a customer number. | Optional | false | false | NA |
 
 ### QueryString
 
@@ -52,7 +52,7 @@ The specification would look like this:
 
 | Target Type | Target Name | Disp Name | Desc | Trigger | Optional | Hiden | Value |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| QueryString| Customer | Customer Number | Provide a customer number. | NA | false | false | NA |
+| QueryString| Customer | Customer Number | Provide a customer number. | Optional | false | false | NA |
 
 The resulting call would look like this:
 
