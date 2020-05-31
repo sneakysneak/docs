@@ -12,7 +12,7 @@ Triggers are used for dynamic lookups. For example, if you want to provide a loo
 The settings for an Accounts the Account Id lookup would look something like this
 
 | Property | Value | Usage |
-| == | == | == |
+| === | === | === |
 | Name | Select Accounts | Triggers need to be defined at the connector level with a unique Name. |
 | MethodName | List Accounts | The name of the method in the connector. | 
 | IdentifierKey | [accounts].id" |  The ID field that will be used in an HTTP method by Cyclr. |
