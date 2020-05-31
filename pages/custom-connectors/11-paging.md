@@ -39,7 +39,7 @@ It implement inbound paging Cyclr use the following variables.
 
 | Variable | Description |
 | --- | --- |
-| CYCLR_PAGE_NUMBER | Cyclr will use the current page number it’s requesting here as it iterates through them. Use this with APIs that use page numbers and “number of objects to retrieve” values.|
+| CYCLR_PAGE_NUMBER | Cyclr will use the current page number it’s requesting here as it iterates through them. Use this with APIs that use page numbers and “number of objects to retrieve” values. The initial value will be one. |
 | CYCLR_PAGE_OFFSET | Essentially a “row offset”, starting at 0. Use this with APIs that use offsets and “number of objects to retrieve” values. |
 | CYCLR_PAGE_SIZE | The number of objects to be requested per page. This is set by the 'Inbound Page Size' property at the Connector or method level. |
 | CYCLR_PAGE_NEXT_URL | The field location in the response that contains the next page URL. |
@@ -81,7 +81,14 @@ Cyclr will compute this value using the current page being requested and the **
         CYCLR_PAGE_NUMBER = CYCLR_PAGE_NUMBER + 1 // move to the next page.
     }
 
-API 1 with page number and page size
+### Example - API 1 with page number and page size
+
+In this example the API requires the query sting to include the parameters 'page' and 'limit'.  Other APIs might use different names for these concepts.
+
+| TargetType | TargetName | DisplayName | Description | TriggerName | IsOptional | Hide | Value |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| QueryString| page | NA | NA | NA | NA | true | CYCLR_PAGE_NUMBER |
+| QueryString| limit | NA | NA | NA | NA | true | CYCLR_PAGE_SIZE |
 
 {% raw %}
     "Parameters": [  
