@@ -7,7 +7,9 @@ tags: [connector-creation]
 
 ## Triggers
 
-Triggers are used for dynamic lookups. Let’s use the AccountId parameter as an example:
+Triggers are used for dynamic lookups. For example, if you want to provide a lookup of 'Acount IDs' you must have already defined a method in the connector to 'list accounts'.  The trigger will then use the method once the connector is authenticated to allow a look up and select.
+
+The settings for an Accounts the Account Id lookup would look something like this
 
 {% raw %}
     "Parameters": [
