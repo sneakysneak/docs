@@ -39,3 +39,8 @@ When a release is pushed live this might be done as a major release which will c
 | Outbound Page Size | If outbound paging is supported, provide the default page size. | |
 | User Singular Partner Webhook URL? | | |
 | Icon | The logo that will be used to represent the application. | Logo should be 400x400 .png |
+
+## Related Topics
+
+[Paging](./connector-paging) 
+
