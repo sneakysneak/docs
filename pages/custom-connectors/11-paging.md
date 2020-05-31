@@ -13,7 +13,7 @@ When a remote API has a limit on the amount of data that can be sent in a single
 
 To set a Connector as using Paging, you can use the following Connector-level properties (they default to false – no paging – if not supplied).
 
-| Property | Description |
+| Connector Property | Description |
 | --- | --- |
 | Inbound Paging | Set to 'true' to activate by default in all appropriate methods. |
 | Inbound Page Size |Set to the number of records that the API will return with a single call eg 100, |
@@ -23,22 +23,43 @@ Note that the default for ourbound paging of 'false' at the Connector level.
  
 These patrameters can be overriden and adjusted at the method level.
 
-## Paging Control Variables
+| Method Property | Description |
+| --- | --- |
+| Inbound Paging | Set to 'true' to activate by default in all appropriate methods. |
+| Inbound Page Size |Set to the number of records that the API will return with a single call eg 100, |
+| Outbound Paging | Set to 'true' to activate by default in all appropriate methods. |
+| Outbound Page Size |Set to the number of records that the API will allow posted with a single call eg 100, | 
+
+If values are not set at the method level they are inherited from those specified for the connector. 
+
+
+## Inbound Paging Control Variables
 
 It implement inbound paging Cyclr use the following variables.
 
-#### CYCLR_PAGE_NUMBER
+| Variable | Description |
+| --- | --- |
+| CYCLR_PAGE_NUMBER | Cyclr will use the current page number it’s requesting here as it iterates through them. Use this with APIs that use page numbers and “number of objects to retrieve” values.|
+| CYCLR_PAGE_OFFSET | Essentially a “row offset”, starting at 0. Use this with APIs that use offsets and “number of objects to retrieve” values. |
+| CYCLR_PAGE_SIZE | The number of objects to be requested per page. This is set by the 'Inbound Page Size' property at the Connector or method level. |
+| CYCLR_PAGE_NEXT_URL | The field location in the response that contains the next page URL. |
+| CYCLR_PAGE_TOKEN | Page token in the response that is used in subsequent requests. This is sometimes called cursor pagination.
+| CYCLR_IGNORE_PARAMETER |Use this when a Connector-level Parameter exists, but is not valid for a particular Method so should be overridden. You must define the Parameter as normal, but provide the CYCLR_IGNORE_PARAMETER variable as the value to have it ignored. |
 
-Cyclr will use the current page number it’s requesting here as it iterates through them. Use this with APIs that use page numbers and “number of objects to retrieve” values.
+## Using Paging Variables
 
-In this example from Magento, it would be “page”:
+If required, CYCLR_PAGE_NUMBER, CYCLR_PAGE_OFFSET and CYCLR_PAGE_SIZE can be inserted into a string by using them as Mergefields.
+You may need to do this if an API requires the page number to be prefixed by text such as 'pageNumber=', in which case you would use the following for the parameter:
 
-    You can define the limit of items returned in the response by passing the limit parameter. By default, 10 items are returned and the maximum number is 100 items. You can also define the page number by passing the page parameter. Example:
-    http://magentohost/api/rest/products?page=2&limit=20
+{% raw %}
+    pageNumber={{CYCLR_PAGE_NUMBER}}
+{% endraw %}
 
-#### CYCLR_PAGE_OFFSET
+##### Examples of inbound paging definitions:
 
-Essentially a “row offset”, starting at 0. Use this with APIs that use offsets and “number of objects to retrieve” values .
+PAGE TOKEN In the example of GoCardless, the ID of the last resource returned is in a meta field. This field value needs to be passed in the query string in the next request.
+
+If the API requires multiple page tokens, you can use CYCLR_PAGE_TOKEN**_{% raw %}{NAME}{% endraw %}** to retrieve them.
 
 In the below example from MailChimp it would be “offset”:
 
@@ -59,37 +80,6 @@ Cyclr will compute this value using the current page being requested and the **
         Get CYCLR_PAGE_SIZE number of objects, starting at CYCLR_PAGE_OFFSET  
         CYCLR_PAGE_NUMBER = CYCLR_PAGE_NUMBER + 1 // move to the next page.
     }
-
-#### CYCLR_PAGE_SIZE
-
-The number of objects to be requested per page. This is set by the 'Inbound Page Size' property at the Connector or method level.
-
-#### CYCLR_PAGE_NEXT_URL
-
-The field location in the response that contains the next page URL.
-
-#### CYCLR_PAGE_TOKEN
-
-Page token in the response that is used in subsequent requests. This is sometimes called cursor pagination.
-
-In the example of GoCardless, the ID of the last resource returned is in a meta field. This field value needs to be passed in the query string in the next request.
-
-If the API requires multiple page tokens, you can use CYCLR_PAGE_TOKEN**_{% raw %}{NAME}{% endraw %}** to retrieve them.
-
-#### CYCLR_IGNORE_PARAMETER
-
-Use this when a Connector-level Parameter exists, but is not valid for a particular Method so should be overridden. You must define the Parameter as normal, but provide the CYCLR_IGNORE_PARAMETER variable as the value to have it ignored.
-
-## Using Paging Variables
-
-If required, CYCLR_PAGE_NUMBER, CYCLR_PAGE_OFFSET and CYCLR_PAGE_SIZE can be inserted into a string by using them as Mergefields.
-You may need to do this if an API requires the page number to be prefixed by text such as 'pageNumber=', in which case you would use the following for the parameter:
-
-{% raw %}
-    pageNumber={{CYCLR_PAGE_NUMBER}}
-{% endraw %}
-
-##### Examples of inbound paging definitions:
 
 API 1 with page number and page size
 
