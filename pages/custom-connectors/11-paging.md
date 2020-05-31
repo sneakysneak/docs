@@ -23,11 +23,11 @@ Note that the default for ourbound paging of 'false' at the Connector level.
  
 These patrameters can be overriden and adjusted at the method level.
 
-#### Inbound Paging Variables
+### Paging Control Variables
 
-It implement inbound paging Cyclr uses the following variables;
+It implement inbound paging Cyclr uses the following variables.
 
-#### CYCLR_PAGE_NUMBER
+##### CYCLR_PAGE_NUMBER
 
 Cyclr will use the current page number it’s requesting here as it iterates through them. Use this with APIs that use page numbers and “number of objects to retrieve” values.
 
@@ -36,7 +36,7 @@ In this example from Magento, it would be “page”:
     You can define the limit of items returned in the response by passing the limit parameter. By default, 10 items are returned and the maximum number is 100 items. You can also define the page number by passing the page parameter. Example:
     http://magentohost/api/rest/products?page=2&limit=20
 
-#### CYCLR_PAGE_OFFSET
+##### CYCLR_PAGE_OFFSET
 
 Essentially a “row offset”, starting at 0. Use this with APIs that use offsets and “number of objects to retrieve” values .
 
@@ -60,15 +60,15 @@ Cyclr will compute this value using the current page being requested and the **
         CYCLR_PAGE_NUMBER = CYCLR_PAGE_NUMBER + 1 // move to the next page.
     }
 
-#### CYCLR_PAGE_SIZE
+##### CYCLR_PAGE_SIZE
 
 The number of objects to be requested per page. This is set by the **PageSizeInbound **property at the Connector level.
 
-#### CYCLR_PAGE_NEXT_URL
+##### CYCLR_PAGE_NEXT_URL
 
 The field location in the response that contains the next page URL.
 
-#### CYCLR_PAGE_TOKEN
+##### CYCLR_PAGE_TOKEN
 
 Page token in the response that is used in subsequent requests. This is sometimes called cursor pagination.
 
@@ -76,11 +76,11 @@ In the example of GoCardless, the ID of the last resource returned is in a meta 
 
 If the API requires multiple page tokens, you can use CYCLR_PAGE_TOKEN**_{% raw %}{NAME}{% endraw %}** to retrieve them.
 
-#### CYCLR_IGNORE_PARAMETER
+##### CYCLR_IGNORE_PARAMETER
 
 Use this when a Connector-level Parameter exists, but is not valid for a particular Method so should be overridden. You must define the Parameter as normal, but provide the CYCLR_IGNORE_PARAMETER variable as the value to have it ignored.
 
-#### Formatted Inbound Paging Variables
+### Using Paging Variables
 
 If required, CYCLR_PAGE_NUMBER, CYCLR_PAGE_OFFSET and CYCLR_PAGE_SIZE can be inserted into a string by using them as Mergefields.
 You may need to do this if an API requires the page number to be prefixed by text such as 'pageNumber=', in which case you would use the following for the parameter:
@@ -89,7 +89,7 @@ You may need to do this if an API requires the page number to be prefixed by tex
     pageNumber={{CYCLR_PAGE_NUMBER}}
 {% endraw %}
 
-#### Examples of inbound paging definitions:
+##### Examples of inbound paging definitions:
 
 API 1 with page number and page size
 
@@ -224,14 +224,14 @@ API 6 with page token and page number
     ]
 {% endraw %}
 
-#### Outbound Paging Variables
+### Outbound Paging Variables
 
 Outbound paging only requires one variable to locate the array in the request body. Cyclr identifies when it has “too much” data to pass in one request by comparing it to the **PageSizeOutbound** property. If it has more, it chops the data into multiple requests automatically.
 
-#### Outbound Array Location
+##### Outbound Array Location
 
 Use the same notation as request/response format connector field. Specify the location of the array and not a field in the array.
 
-#### Examples of outbound paging definitions:
+##### Examples of outbound paging definitions:
 
     "PagedOutboundLocation": "data.[records]"
