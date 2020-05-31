@@ -42,12 +42,11 @@ Essentially a “row offset”, starting at 0. Use this with APIs that use offse
 
 In the below example from MailChimp it would be “offset”:
 
-<i>Paginate your API requests to limit response results and make them easier to work with. We use offset and count in the URL query string to paginate because it provides greater control over how you view your data.
+<i>Paginate your API requests to limit response results and make them easier to work with. We use offset and count in the URL query string to paginate because it provides greater control over how you view your data.</i>
     
-Offset defaults to 0, so if you use offset=1, you’ll miss the first element in the dataset. Count defaults to 10. For example, this URL includes query string parameters for pagination:
-    
-https://usX.api.mailchimp.com/3.0/campaigns?offset=0&count=1
-</i>
+<i>Offset defaults to 0, so if you use offset=1, you’ll miss the first element in the dataset. Count defaults to 10. For example, this URL includes query string parameters for pagination:</i>
+
+<i>https://usX.api.mailchimp.com/3.0/campaigns?offset=0&count=1</i>
 
 Cyclr will compute this value using the current page being requested and the **PageSizeInbound ** property, e.g. to get all objects from a system containing 23 objects using a PageSizeInbound of 10, this would be the process in pseudo code:
 
