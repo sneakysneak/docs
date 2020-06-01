@@ -5,11 +5,9 @@ entries:
     product: Cyclr Docs
     version: 1.0
     folders:
-
       - title: Integration Cycles
         output: web, pdf
         folderitems:
-
           - title: Installing Connectors
             url: /installing-connectors
             output: web, pdf
@@ -37,19 +35,17 @@ entries:
           - title: Integration Template Versioning
             url: /integration-template-versioning
             output: web, pdf
-               
-      - title: Managing Cyclr
-      output: web, pdf
-      folderitems:
 
+      - title: Managing Cyclr
+        output: web, pdf
+        folderitems:
           - title: Minimum Requirements
             url: /minimum-requirements
             output: web, pdf
 
       - title: Embedding Cyclr
         output: web, pdf
-        folderitems: 
-        
+        folderitems:
           - title: Cyclr Concepts
             url: /cyclr-concepts
             output: web, pdf
@@ -81,7 +77,6 @@ entries:
       - title: Installing Template Integrations
         output: web, pdf
         folderitems:
-        
           - title: Obtain Authorization Token
             url: /obtain-authorization-token
             output: web, pdf
@@ -149,7 +144,6 @@ entries:
       - title: Integration Builder Tools
         output: web, pdf
         folderitems:
-        
           - title: Decision Steps
             url: /decision-steps
             output: web, pdf
@@ -169,15 +163,14 @@ entries:
       - title: Connector Creation
         output: web, pdf
         folderitems:
-        
           - title: Introduction
             url: /connector-introduction
             output: web, pdf
-            
+
           - title: Settings
             url: /connector-settings
             output: web, pdf
-            
+
           - title: Authentication
             url: /connector-authentication
             output: web, pdf
@@ -217,7 +210,6 @@ entries:
       - title: Marketplaces
         output: web, pdf
         folderitems:
-        
           - title: Deploying a Marketplace
             url: /marketplace-deployment
             output: web, pdf
@@ -225,7 +217,6 @@ entries:
       - title: LAUNCH
         output: web, pdf
         folderitems:
-        
           - title: Overview
             url: /launch-overview
             output: web, pdf
@@ -257,7 +248,6 @@ entries:
       - title: Plugins
         output: web, pdf
         folderitems:
-        
           - title: Contact Form 7 Plugin
             url: /contact-form-7-plugin
             output: web, pdf
@@ -273,43 +263,41 @@ entries:
           - title: Salesforce Plugin
             url: /salesforce-plugin
             output: web, pdf
-  
+
       - title: Utility Connectors
         output: web, pdf
         folderitems:
-        
           - title: Cross Updating Preventor
             url: /cross-updating-preventor
             output: web, pdf
-  
+
           - title: Entity Cross Reference
             url: /entity-cross-reference-connector
             output: web, pdf
-            
+
           - title: Global Data Storage
             url: /global-data-storage
             output: web, pdf
-  
+
           - title: Cycle Data Storage
             url: /cycle-data-storage
             output: web, pdf
-            
+
           - title: Generic Form
             url: /generic-form
             output: web, pdf
-            
+
           - title: Generic Webhook
             url: /generic-webhook
             output: web, pdf
-  
+
           - title: Cyclr Tools
             url: /cyclr-tools
             output: web, pdf
-            
+
       - title: Connector Guides
         output: web, pdf
         folderitems:
-        
           - title: Bronto
             url: /bronto-installation
             output: web, pdf
