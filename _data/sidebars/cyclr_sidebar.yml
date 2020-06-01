@@ -4,9 +4,7 @@ entries:
   - title: sidebar
     product: Cyclr Docs
     version: 1.0
-    
     folders:
-
 
       - title: Integration Cycles
         output: web, pdf
