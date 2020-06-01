@@ -5,13 +5,18 @@ entries:
     product: Cyclr Docs
     version: 1.0
     folders:
-      - title: Getting Started
+  
+        - title: Managing Cycle
         output: web, pdf
         folderitems:
 
           - title: Minimum Requirements
             url: /minimum-requirements
             output: web, pdf
+
+      - title: Building Integration Cycles
+        output: web, pdf
+        folderitems:
 
           - title: Installing Connectors
             url: /installing-connectors
