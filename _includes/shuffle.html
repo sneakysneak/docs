@@ -25,16 +25,16 @@ see the problems this layout poses if you're including it in PDF. {{site.data.al
 <div id="grid" class="row">
 
 
-  <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["getting-started"]'>
+  <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["integration-cycles"]'>
 
     <div class="panel panel-default">
       <div class="panel-heading">Getting started</div>
       <div class="panel-body">
-        Learn about the Cyclr platform including what you can do to provide native integrations
+        Learn about building integration Cycles.
         <ul>
           {% for page in site.pages %}
           {% for tag in page.tags %}
-          {% if tag == "getting-started" %}
+          {% if tag == "integration-cycles" %}
           <li><a href="{{page.url | remove: '/'}}">{{page.title}}</a></li>
           {% endif %}
           {% endfor %}
