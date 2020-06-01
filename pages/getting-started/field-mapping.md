@@ -2,7 +2,7 @@
 title: Field Mapping
 sidebar: cyclr_sidebar
 permalink: field-mapping
-tags: [getting-started]
+tags: [integration-cycles]
 ---
 
 When using a (blue) Action step, you will need to map its fields.
