@@ -6,14 +6,7 @@ entries:
     version: 1.0
     
     folders:
-    
-      - title: Managing Cyclr
-      output: web, pdf
-      folderitems:
 
-          - title: Minimum Requirements
-            url: /minimum-requirements
-            output: web, pdf
 
       - title: Integration Cycles
         output: web, pdf
@@ -45,6 +38,14 @@ entries:
 
           - title: Integration Template Versioning
             url: /integration-template-versioning
+            output: web, pdf
+               
+      - title: Managing Cyclr
+      output: web, pdf
+      folderitems:
+
+          - title: Minimum Requirements
+            url: /minimum-requirements
             output: web, pdf
 
       - title: Embedding Cyclr
