@@ -10,6 +10,7 @@ see the problems this layout poses if you're including it in PDF. {{site.data.al
 <div class="row">
   <div class="filter-options">
     <button class="btn btn-primary" data-group="all">All</button>
+    <button class="btn btn-primary" data-group="mamaging-cyclr">Managing Cyclr</button>
     <button class="btn btn-primary" data-group="integration-cycles">Integration Cycles</button>
     <button class="btn btn-primary" data-group="embedding">Embedding Cyclr</button>
     <button class="btn btn-primary" data-group="installing">Installing Template Integrations</button>
@@ -25,10 +26,30 @@ see the problems this layout poses if you're including it in PDF. {{site.data.al
 <div id="grid" class="row">
 
 
-  <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["integration-cycles"]'>
+  <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["managing-cyclr"]'>
 
     <div class="panel panel-default">
-      <div class="panel-heading">Getting started</div>
+      <div class="panel-heading">Managing Cyclr</div>
+      <div class="panel-body">
+        Learn about building integration Cycles.
+        <ul>
+          {% for page in site.pages %}
+          {% for tag in page.tags %}
+          {% if tag == "managing-cyclr" %}
+          <li><a href="{{page.url | remove: '/'}}">{{page.title}}</a></li>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+    <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["integration-cycles"]'>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">Integration Cycles</div>
       <div class="panel-body">
         Learn about building integration Cycles.
         <ul>
@@ -44,7 +65,6 @@ see the problems this layout poses if you're including it in PDF. {{site.data.al
     </div>
 
   </div>
-
 
   <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["builder-tools"]'>
 
