@@ -6,8 +6,16 @@ entries:
     version: 1.0
     
     folders:
+    
+      - title: Managing Cyclr
+      output: web, pdf
+      folderitems:
 
-      - title: Building Integration Cycles
+          - title: Minimum Requirements
+            url: /minimum-requirements
+            output: web, pdf
+
+      - title: Integration Cycles
         output: web, pdf
         folderitems:
 
