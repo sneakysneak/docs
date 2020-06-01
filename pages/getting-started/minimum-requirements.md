@@ -2,7 +2,7 @@
 title: Minimum Requirements
 sidebar: cyclr_sidebar
 permalink: minimum-requirements
-tags: [getting-started]
+tags: [managing cyclr]
 ---
 
 #### Supported browsers
@@ -21,5 +21,3 @@ In addition, your browser should allow JavaScript and cookies in order to use Cy
 #### Supported operating systems
 
 Cyclr is tested against all recent versions of Windows, Mac OSX, and Linux.
-
-[How to Install Connectors](./installing-connectors)
