@@ -8,9 +8,6 @@ entries:
       - title: Getting Started
         output: web, pdf
         folderitems:
-          - title: Build a Cycle
-            url: /build-a-cycle
-            output: web, pdf
 
           - title: Minimum Requirements
             url: /minimum-requirements
