@@ -6,13 +6,7 @@ entries:
     version: 1.0
     
     folders:
-    - title: Managing Cycle
-        output: web, pdf
-        folderitems:
 
-          - title: Minimum Requirements
-            url: /minimum-requirements
-            output: web, pdf
 
       - title: Building Integration Cycles
         output: web, pdf
