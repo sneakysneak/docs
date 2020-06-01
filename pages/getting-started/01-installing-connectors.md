@@ -2,7 +2,7 @@
 title: Installing Connectors
 sidebar: cyclr_sidebar
 permalink: installing-connectors
-tags: [building-integration-cycles]
+tags: [integration-cycles]
 ---
 
 In order to use Cyclr, you need to install connectors for your apps.
