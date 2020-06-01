@@ -43,7 +43,8 @@ entries:
 
       - title: Embedding Cyclr
         output: web, pdf
-        folderitems:
+        folderitems: 
+        
           - title: Cyclr Concepts
             url: /cyclr-concepts
             output: web, pdf
@@ -75,6 +76,7 @@ entries:
       - title: Installing Template Integrations
         output: web, pdf
         folderitems:
+        
           - title: Obtain Authorization Token
             url: /obtain-authorization-token
             output: web, pdf
@@ -141,8 +143,8 @@ entries:
 
       - title: Integration Builder Tools
         output: web, pdf
-
         folderitems:
+        
           - title: Decision Steps
             url: /decision-steps
             output: web, pdf
@@ -161,7 +163,6 @@ entries:
 
       - title: Connector Creation
         output: web, pdf
-
         folderitems:
         
           - title: Introduction
@@ -210,16 +211,16 @@ entries:
 
       - title: Marketplaces
         output: web, pdf
-
         folderitems:
+        
           - title: Deploying a Marketplace
             url: /marketplace-deployment
             output: web, pdf
 
       - title: LAUNCH
         output: web, pdf
-
         folderitems:
+        
           - title: Overview
             url: /launch-overview
             output: web, pdf
@@ -250,8 +251,8 @@ entries:
 
       - title: Plugins
         output: web, pdf
-
         folderitems:
+        
           - title: Contact Form 7 Plugin
             url: /contact-form-7-plugin
             output: web, pdf
@@ -270,8 +271,8 @@ entries:
   
       - title: Utility Connectors
         output: web, pdf
-
         folderitems:
+        
           - title: Cross Updating Preventor
             url: /cross-updating-preventor
             output: web, pdf
@@ -302,8 +303,8 @@ entries:
             
       - title: Connector Guides
         output: web, pdf
-
         folderitems:
+        
           - title: Bronto
             url: /bronto-installation
             output: web, pdf
