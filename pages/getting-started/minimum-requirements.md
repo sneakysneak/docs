@@ -2,7 +2,7 @@
 title: Minimum Requirements
 sidebar: cyclr_sidebar
 permalink: minimum-requirements
-tags: [building-integration-cycles]
+tags: [managing-cyclr]
 ---
 
 #### Supported browsers
