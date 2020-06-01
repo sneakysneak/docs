@@ -2,7 +2,7 @@
 title: Adding Custom Fields
 sidebar: cyclr_sidebar
 permalink: adding-custom-fields
-tags: [getting-started]
+tags: [integration-cycles]
 ---
 
 By default, connectors will only include the standard fields used by an application. Where you need to work with additional fields in the application you are connecting to, it is possible to add these using custom fields.
