@@ -5,9 +5,9 @@ permalink: building-a-cycle
 tags: [templates]
 ---
 
-Once you have [installed connectors](./installing-connectors) for your apps, you can begin to connect and automate your apps.
+Once you have [installed connectors](./installing-connectors) for your apps, you can begin to build an Integration Cycle which will allow data to flow between the them.
 
-#### Add a trigger
+## Trigger Step
 
 A trigger is the first step in your cycle; the event that causes the process to start.
 
@@ -22,8 +22,6 @@ There are two types of trigger:
 
 Choose a trigger, then click-drag it onto the builder canvas to the right.
 
-#### Setup your trigger
-
 Once you have added a trigger, click on its cog button in order to set it up.
 
 Depending on the type of trigger you have used you will need to setup some of the following:
@@ -32,7 +30,7 @@ Depending on the type of trigger you have used you will need to setup some of th
 *   **Mappings**: for example, a get trigger may allow you to be more specific about what you wish to get (_these contacts_, _this mailing list_, etc)
 *   **Webhook URL**: you may need to paste this back into the app you’re connecting
 
-#### Add an action
+## Adding More Steps
 
 With a trigger now setup, you need to add an action: the step that will be taken after the first step runs.
 
@@ -48,7 +46,7 @@ Click-drag an action step onto the builder’s canvas, dropping it near your tri
 
 Next, click-drag the dot on the right side of the trigger and drop it onto the dot on the left side of your action. The steps should now be joined.
 
-#### Field mapping
+## Field Mapping
 
 With the two steps joined, you should now click the button on your action and perform the setup and field mapping.
 
