@@ -2,8 +2,9 @@
 title: Integration Template Versioning
 sidebar: cyclr_sidebar
 permalink: integration-template-versioning
-tags: [integration-cycles]
+tags: [templates]
 keywords: versioning, locked, template management, deprecated, integration management, template version
+
 ---
 
 To help you and your team organise and iterate your integrations we have introduced integration template versioning to the Cyclr Console.
