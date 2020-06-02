@@ -36,6 +36,10 @@ entries:
             url: /integration-template-versioning
             output: web, pdf
 
+          - title: Logic Tools
+            url: /logic-tools
+            output: web, pdf
+            
       - title: Managing Cyclr
         output: web, pdf
         folderitems:
@@ -139,25 +143,6 @@ entries:
 
           - title: Cycle Activation
             url: /cycle-activation
-            output: web, pdf
-
-      - title: Integration Builder Tools
-        output: web, pdf
-        folderitems:
-          - title: Decision Steps
-            url: /decision-steps
-            output: web, pdf
-
-          - title: Delay Steps
-            url: /delay-steps
-            output: web, pdf
-
-          - title: Wait Until Steps
-            url: /wait-until
-            output: web, pdf
-
-          - title: Wait All Steps
-            url: /wait-all
             output: web, pdf
 
       - title: Connector Creation
