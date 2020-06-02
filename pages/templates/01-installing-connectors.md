@@ -15,7 +15,7 @@ To do this, make sure you are in the builder (click to create a cycle) and then 
 
 When you install a connector, you will need to authenticate it in order to allow Cyclr to connect. If you’re just experimenting, you can skip this step.
 
-### Authenticate a connector
+### Authenticating a Connector
 
 There are different types of authentication. Depending on the connector you wish to use, the application may require any of the following:
 
