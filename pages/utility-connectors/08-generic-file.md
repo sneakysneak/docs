@@ -7,4 +7,4 @@ tags: [utility-connector]
 
 ## Purpose
 
-Allows creation of delimited text content, for example Comma Separated Values (CSV) content.  This can then be saved as a file.
+Allows creation of delimited text content, for example Comma Separated Values (CSV) text.  This might then be sent to a remote FTP server as a new file. 
