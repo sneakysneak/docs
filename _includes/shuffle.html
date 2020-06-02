@@ -14,7 +14,6 @@ see the problems this layout poses if you're including it in PDF. {{site.data.al
     <button class="btn btn-primary" data-group="templates">Templates</button>
     <button class="btn btn-primary" data-group="embedding">Embedding Cyclr</button>
     <button class="btn btn-primary" data-group="installing">Installing Template Integrations</button>
-    <button class="btn btn-primary" data-group="builder-tools">Integration Builder Tools</button>
     <button class="btn btn-primary" data-group="connector-creation">Custom Connector Creation</button>
     <button class="btn btn-primary" data-group="marketplaces">Marketplaces</button>
     <button class="btn btn-primary" data-group="launch">LAUNCH</button>
@@ -65,28 +64,6 @@ see the problems this layout poses if you're including it in PDF. {{site.data.al
     </div>
 
   </div>
-
-  <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["builder-tools"]'>
-
-    <div class="panel panel-default">
-      <div class="panel-heading">Integration Builder Tools</div>
-      <div class="panel-body">
-        Take a look at some of the integration tools you have at your disposal.
-        <ul>
-          {% for page in site.pages %}
-          {% for tag in page.tags %}
-          {% if tag == "builder-tools" %}
-          <li><a href="{{page.url | remove: '/'}}">{{page.title}}</a></li>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-
-  </div>
-
-
 
   <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["embedding"]'>
 
