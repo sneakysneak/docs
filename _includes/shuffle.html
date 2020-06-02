@@ -1,4 +1,4 @@
-{% if site.output == "pdf" %}
+l{% if site.output == "pdf" %}
 {{site.data.alerts.note}} The content on this page doesn't display well on PDF, but I included it anyway so you could
 see the problems this layout poses if you're including it in PDF. {{site.data.alerts.end}}
 {% endif %}
@@ -11,7 +11,7 @@ see the problems this layout poses if you're including it in PDF. {{site.data.al
   <div class="filter-options">
     <button class="btn btn-primary" data-group="all">All</button>
     <button class="btn btn-primary" data-group="managing-cyclr">Managing Cyclr</button>
-    <button class="btn btn-primary" data-group="integration-cycles">Integration Cycles</button>
+    <button class="btn btn-primary" data-group="templates">Templates</button>
     <button class="btn btn-primary" data-group="embedding">Embedding Cyclr</button>
     <button class="btn btn-primary" data-group="installing">Installing Template Integrations</button>
     <button class="btn btn-primary" data-group="builder-tools">Integration Builder Tools</button>
@@ -46,7 +46,7 @@ see the problems this layout poses if you're including it in PDF. {{site.data.al
 
   </div>
 
-    <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["integration-cycles"]'>
+    <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["templates"]'>
 
     <div class="panel panel-default">
       <div class="panel-heading">Integration Cycles</div>
@@ -55,7 +55,7 @@ see the problems this layout poses if you're including it in PDF. {{site.data.al
         <ul>
           {% for page in site.pages %}
           {% for tag in page.tags %}
-          {% if tag == "integration-cycles" %}
+          {% if tag == "templates" %}
           <li><a href="{{page.url | remove: '/'}}">{{page.title}}</a></li>
           {% endif %}
           {% endfor %}
