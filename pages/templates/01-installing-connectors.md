@@ -3,17 +3,19 @@ title: Installing Connectors
 sidebar: cyclr_sidebar
 permalink: installing-connectors
 tags: [templates]
+
 ---
+## Basics
 
 In order to use Cyclr, you need to install connectors for your apps.
 
-To do this, make sure you are in the builder (click to create a cycle) and then click the Add Connector button in the right sidebar of the builder.
+To do this, make sure you are in the builder (click to create a cycle) and then click the Add Application Connector button in the right sidebar of the builder.
 
 ![](./images/add-connector.gif)
 
 When you install a connector, you will need to authenticate it in order to allow Cyclr to connect. If you’re just experimenting, you can skip this step.
 
-#### Authenticate a connector
+### Authenticate a connector
 
 There are different types of authentication. Depending on the connector you wish to use, the application may require any of the following:
 
