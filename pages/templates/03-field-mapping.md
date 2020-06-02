@@ -3,11 +3,12 @@ title: Field Mapping
 sidebar: cyclr_sidebar
 permalink: field-mapping
 tags: [templates]
+
 ---
 
 When using a (blue) Action step, you will need to map its fields.
 
-#### Field mapping example
+## Field mapping example
 
 ![](./images/field-mapping.png)
 
@@ -15,17 +16,20 @@ The left most column is the **Destination** (the app you are connecting to). S
 
 The **Source** for these fields, shown to the right, can be any preceeding step or a combination of steps.
 
-#### Field mapping sources
+## Field mapping sources
 
 Depending the app you’re connecting to and the field you are using, only some of these source types will be available.
 
-*   **Type a Value**: type in text or merge one or more values into the field.
-*   **Previous Step**: select any previous step and then a field from this step.
-*   **Lookup**: connect to the Destination app to retrieve a list of possible mapping values. For example, a mailing lists in an email marketing platform.
-*   **Select a Value**: choose from a pre-configured value.
-*   **Ignore**: do not use the field.
+| Source | Usage |
+| --- | --- |
+| Ignore | The field will be left blank and will not be included in the API call. |
+| Type a Value | You can type in text or merge one or more values into the field. |
+| Previous Step | select any previous step and then a field from this step. |
+| Lookup | Cycler will connect to the Destination app to retrieve a list of possible mapping values. For example, a mailing lists in an email marketing platform. |
+| Select a Value | There many be a pre-configured list of values from which you can choose a mapping. |
 
-#### System mergefields
+
+## System mergefields
 
 You can use Cyclr system mergefields as the **Source** value in Field Mapping.
 
