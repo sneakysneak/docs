@@ -16,6 +16,9 @@ For Cyclr to connect with the Hubspot API you will need to create an "Applicatio
 ![](./images/hubspot_scopes.png)
 4. Copy the `Client ID` and `Client Secret` to use in the connector setup
 
+Permissions
+---------------
+In order to use the Products and Line Items methods, the user must be assigned a [paid Sales Hub seat](https://knowledge.hubspot.com/articles/kcs_article/account/manage-sales-hub-and-service-hub-paid-users) within Hubspot.
 
 Connector Setup
 ---------------
