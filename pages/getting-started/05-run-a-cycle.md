@@ -2,7 +2,8 @@
 title: Run a Cycle
 sidebar: cyclr_sidebar
 permalink: run-a-cycle
-tags: [integration-cycles]
+tags: [templates]
+
 ---
 
 Complete cycle setup
