@@ -1,11 +1,11 @@
-# This is Cyclr sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+la# This is Cyclr sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
 
 entries:
   - title: sidebar
     product: Cyclr Docs
     version: 1.0
     folders:
-      - title: Integration Cycles
+      - title: Templates
         output: web, pdf
         folderitems:
           - title: Installing Connectors
