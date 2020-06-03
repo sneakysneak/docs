@@ -34,7 +34,7 @@ Click and drag a Decision Step into your cycle and connect it where you wish to 
 
 Decisions work by comparing a "Left Operand" to a "Right Operand"; in other words, it looks for a value in your data and compares it - using a condition you specify - to another value.
 
-From within the Decision Step's **Step Setup**:
+From within the Decision Step's Step Setup:
 
 *   Choose a previous step and one of its fields; this is your Left Operand.
 *   Choose a Condition, e.g. _Exists, Not Exists, Equals, Not Equals_.
