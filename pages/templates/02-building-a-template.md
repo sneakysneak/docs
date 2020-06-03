@@ -16,8 +16,6 @@ tags: [templates]
 | Log Step Requests | On (Default), Off | When this is turned on, your Integration will log the requests as well as the responses in step data.|
 | Collection Splitting | None, Trigger Step (Default), All Steps| Allows lists of data to be split into separate Transactions for either the First Step, or All Steps. Webhook data cannot be split. |
 
-Once you have [installed connectors](./installing-connectors) for your apps, you can begin to build a template which will allow data to flow between the them.
-
 ### Variables
 
 ### Data Retention
