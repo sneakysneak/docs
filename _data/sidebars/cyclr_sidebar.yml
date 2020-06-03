@@ -210,10 +210,6 @@ entries:
             url: /launch-user-experience
             output: web, pdf
 
-          - title: Building Integration Templates for LAUNCH
-            url: /building-integration-templates-launch
-            output: web, pdf
-
           - title: Deploying LAUNCH
             url: /launch-deployment
             output: web, pdf
