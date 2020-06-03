@@ -3,6 +3,7 @@ title: Decision Steps
 sidebar: cyclr_sidebar
 permalink: logic-tools
 tags: [templates]
+
 ---
 
 ## Decisions
