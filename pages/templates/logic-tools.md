@@ -47,11 +47,9 @@ To create more advanced logic, you can chain multiple Decision steps together.
 
 Delay steps added to a cycle, will execute without any scheduled delays. Connecting a Delay between two steps will allow you to set a fixed time that Cyclr should wait before it executes the next step.
 
-#### Setting up a Delay
+![](./images/delay.png)
 
 Click-drag a Delay from the logic section of the builder’s right sidebar.
-
-
 
 Once the Delay s on the build canvas, connect it between two steps and click the setup cog in order to set the length of the delay.
 
