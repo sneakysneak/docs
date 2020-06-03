@@ -63,7 +63,7 @@ You can also pause for a period based on a date field in your data. For example,
 
 You can use a Wait Until step in two ways.
 
-#### Wait for a specific date
+### Wait for a specific date
 
 For example, the date of an event or webinar you are running.
 
@@ -71,7 +71,7 @@ For example, the date of an event or webinar you are running.
 
 Select the Type a Value option and choose a date/time using the calendar and dropdown combos.
 
-#### Wait until dynamic date in your data
+### Wait until dynamic date in your data
 
 For example, a contact’s subscription renewal date.
 
