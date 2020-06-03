@@ -1,5 +1,5 @@
 ---
-title: API Authentication
+title: API Authentication (deprecated)
 sidebar: cyclr_sidebar
 permalink: cyclr-api-authentication-password
 tags: [embedding]
