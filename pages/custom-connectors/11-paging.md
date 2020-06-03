@@ -52,7 +52,7 @@ It implement inbound paging Cyclr use the following variables.
 
 In this example the API requires the query sting to include the parameters 'page' and 'limit'.  Other APIs might use different names for these concepts.
 
-| Target Type | Target Name | Disp Name | Desc | Trigger | Optional | Hiden | Value |
+| Target Type | Target Name | Disp Name | Desc | Trigger | Optional | Hidden | Value |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | QueryString| page | NA | NA | NA | NA | true | CYCLR_PAGE_NUMBER |
 | QueryString| limit | NA | NA | NA | NA | true | CYCLR_PAGE_SIZE |
@@ -61,14 +61,14 @@ In this example the API requires the query sting to include the parameters 'page
 
 In this example the API requires the query sting to include the parameters 'offset' and 'limit'.  Other APIs might use different names for these concepts.
 
-| Target Type | Target Name | Disp Name | Desc | Trigger | Optional | Hiden | Value |
+| Target Type | Target Name | Disp Name | Desc | Trigger | Optional | Hidden | Value |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | QueryString| page | NA | NA | NA | NA | true | CYCLR_PAGE_OFFSET |
 | QueryString| limit | NA | NA | NA | NA | true | CYCLR_PAGE_SIZE |
 
 ### Example 3 - API using next page URL
 
-| Target Type | Target Name | Disp Name | Desc | Trigger | Optional | Hiden | Value |
+| Target Type | Target Name | Disp Name | Desc | Trigger | Optional | Hidden | Value |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | ResponseField| result.nextRecordsUrl | NA | NA | NA | NA | true | CYCLR_PAGE_NEXT_URL |
   
@@ -76,14 +76,14 @@ In this example the API requires the query sting to include the parameters 'offs
 
 This is used when the ID of the last resource returned is in a meta field (in the example meta.cursors.after). This field value needs to be passed in the query string in the next request.
 
-| Target Type | Target Name | Disp Name | Desc | Trigger | Optional | Hiden | Value |
+| Target Type | Target Name | Disp Name | Desc | Trigger | Optional | Hidden | Value |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | ResponseField | meta.cursors.after | NA | NA | NA | NA | true | CYCLR_PAGE_TOKEN |
 | QueryString | after | NA | NA | NA | NA | true | CYCLR_PAGE_TOKEN |
   
 ### Example 5 - API using multiple page tokens
 
-| Target Type | Target Name | Disp Name | Desc | Trigger | Optional | Hiden | Value |
+| Target Type | Target Name | Disp Name | Desc | Trigger | Optional | Hidden | Value |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | ResponseField | meta.cursors.after | NA | NA | NA | NA | true | CYCLR_PAGE_TOKEN |
 | QueryString | after | NA | NA | NA | NA | true | CYCLR_PAGE_TOKEN |
@@ -92,7 +92,7 @@ This is used when the ID of the last resource returned is in a meta field (in th
 
 ### Example 5 - API using page token & page number
 
-| Target Type | Target Name | Disp Name | Desc | Trigger | Optional | Hiden | Value |
+| Target Type | Target Name | Disp Name | Desc | Trigger | Optional | Hidden | Value |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | ResponseField | meta.cursors.after | NA | NA | NA | NA | true | CYCLR_PAGE_TOKEN |
 | QueryString | queryId | NA | NA | NA | NA | true | CYCLR_PAGE_TOKEN |
