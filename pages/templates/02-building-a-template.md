@@ -18,7 +18,11 @@ tags: [templates]
 
 ### Variables
 
+Variables can be defined here and, once set, used throughout the template.
+
 ### Data Retention
+
+You can set the period for which transaction and any error information is retained.  The default is the maximum which is 30 days.
 
 ## Trigger Step
 
