@@ -10,7 +10,7 @@ tags: [connector]
 At setup you will be prompted to enter the ID and Name of your BNTouch account. These credentials should be issued by your BNTouch account manager.
 
 You may have been given a URL that contains these credentials: (example)
-https://www.bntouchmortgage.net/<account_name>/xmlpost/?schema=<schema_id>&id=<account_id>
+https://www.bntouchmortgage.net/**account_name**/xmlpost/?schema=**schema_id**&id=**account_id**
 
 If you require any further assistance obtaining these credentials please contact BNTouch:
 
