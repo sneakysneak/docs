@@ -11,6 +11,7 @@ tags: [templates]
 ### Settings Tab
 
 | Property | Option |Description |
+| --- | --- | --- |
 | On Step Error | Ignore (Default), Stop, Retry | The action to take when a step error is encountered. Note: Retry is only possible when the transaction/step is sending a single request.
 1st retry is after 5 minutes, 2nd after 35 minutes, 3rd after 1h35m, 4th after 4h35m, and 5th after 10h35m. |
 | Log Step Requests | On (Default), Off | When this is turned on, your Integration will log the requests as well as the responses in step data.|
