@@ -12,7 +12,7 @@ Cyclr provides 4 logic tools that can be used in Integration Cycles.  These are:
 
 | Tool | Purpose |
 | --- | --- |
-| Decisions | Allows data to be split to follow differnt paths through the integration. |
+| Decisions | Allows data to be split to follow different paths through the integration. |
 | Delays | Allows a pause to be added to the flow. |
 | Wait Until | Allows you to hold processing until a specific data/time has been reached. |
 | Wait All | Allows you to add closing steps to a process when the integraton has been processing an array of transations in parallel. |
