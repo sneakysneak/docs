@@ -12,8 +12,8 @@ entries:
             url: /installing-connectors
             output: web, pdf
 
-          - title: Building a Cycle
-            url: /building-a-cycle
+          - title: Building a Template
+            url: /building-a-template
             output: web, pdf
 
           - title: Field Mapping
