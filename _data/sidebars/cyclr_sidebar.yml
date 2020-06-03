@@ -24,10 +24,6 @@ entries:
             url: /testing-a-template
             output: web, pdf
 
-          - title: Run a Cycle
-            url: /run-a-cycle
-            output: web, pdf
-
           - title: Adding Custom Fields
             url: /adding-custom-fields
             output: web, pdf
