@@ -1,10 +1,21 @@
 ---
-title: Decision Steps
+title: Logic Tools
 sidebar: cyclr_sidebar
 permalink: logic-tools
 tags: [templates]
 
 ---
+
+## Introduction
+
+Cyclr provides 4 logic tools that can be used in Integration Cycles.  These are
+
+| Tool | Purpose |
+| --- | --- |
+| Decisions | Allows data to be split to follow differnt paths through the integration. |
+| Delays | Allows a pause to be added to the flow. |
+| Wait Until | Allows you to hold processing until a specific data/time has been reached. |
+| Wait All | Allows you to add closing steps to a process when the integraton has been processing an array of transations in parallel.
 
 ## Decisions
 
@@ -13,8 +24,7 @@ Decision steps can split the data in your cycle down a true or false branch.
 
 ![](./images/decision-example.png)
 
-Setting up a Decision step
---------------------------
+### Setting up a Decision step
 
 Your cycle must contain at least one Get (green) or Webhook (grey) step so you have some data to work with.
 
