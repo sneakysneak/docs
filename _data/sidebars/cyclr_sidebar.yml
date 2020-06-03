@@ -31,6 +31,10 @@ entries:
           - title: Adding Custom Fields
             url: /adding-custom-fields
             output: web, pdf
+            
+          - title: Logic Tools
+            url: /logic-tools
+            output: web, pdf
 
           - title: Integration Template Versioning
             url: /integration-template-versioning
