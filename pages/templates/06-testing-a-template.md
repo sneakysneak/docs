@@ -1,9 +1,11 @@
 ---
-title: Testing Cycles
+title: Testing a Template
 sidebar: cyclr_sidebar
-permalink: testing-cycles
+permalink: testing-a-template
 tags: [templates]
 ---
+
+## Testing Steps
 
 You can test the steps in your cycle, by clicking their “play” button.
 
