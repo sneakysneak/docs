@@ -45,7 +45,7 @@ To create more advanced logic, you can chain multiple Decision steps together.
 
 ## Delays
 
-teps added to a cycle, will execute without any scheduled delays.
+Delay steps added to a cycle, will execute without any scheduled delays.
 
 Connecting a Delay between two steps will allow you to set a fixed time that Cyclr should wait before it executes the next step.
 
