@@ -20,8 +20,8 @@ entries:
             url: /field-mapping
             output: web, pdf
 
-          - title: Testing Cycles
-            url: /testing-cycles
+          - title: Testing a Template
+            url: /testing-a-template
             output: web, pdf
 
           - title: Run a Cycle
