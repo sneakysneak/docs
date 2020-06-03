@@ -1,11 +1,12 @@
 ---
-title: Building a Cycle
+title: Building a Template
 sidebar: cyclr_sidebar
-permalink: building-a-cycle
+permalink: building-a-template
 tags: [templates]
+
 ---
 
-Once you have [installed connectors](./installing-connectors) for your apps, you can begin to build an Integration Cycle which will allow data to flow between the them.
+Once you have [installed connectors](./installing-connectors) for your apps, you can begin to build a template which will allow data to flow between the them.
 
 ## Trigger Step
 
