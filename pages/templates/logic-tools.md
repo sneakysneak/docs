@@ -51,7 +51,7 @@ Delay steps added to a cycle, will execute without any scheduled delays. Connect
 
 Click-drag a Delay from the logic section of the builder’s right sidebar.
 
-![](./images/delay.png)
+
 
 Once the Delay s on the build canvas, connect it between two steps and click the setup cog in order to set the length of the delay.
 
