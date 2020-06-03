@@ -88,7 +88,7 @@ This is used when the ID of the last resource returned is in a meta field (in th
 | ResponseField | meta.cursors.after | NA | NA | NA | NA | true | CYCLR_PAGE_TOKEN |
 | QueryString | after | NA | NA | NA | NA | true | CYCLR_PAGE_TOKEN |
 | ResponseField | meta.cursors.filter | NA | NA | NA | NA | true | CYCLR_PAGE_FILTER |
-| QueryString | after | NA | NA | NA | NA | true | YCLR_PAGE_FILTER |
+| QueryString | after | NA | NA | NA | NA | true | CYCLR_PAGE_FILTER |
 
 ### Example 5 - API using page token & page number
 
