@@ -2,7 +2,8 @@
 title: Building Integration Templates
 sidebar: cyclr_sidebar
 permalink: building-integration-templates-launch
-tags: [launch]
+tags: [templates]
+
 ---
 
 Integration Templates available in the LAUNCH flow are designed using the Cyclr drag-and-drop builder.
