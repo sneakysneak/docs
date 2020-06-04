@@ -1,5 +1,13 @@
+---
+title: Console General Settings
+sidebar: cyclr_sidebar
+permalink: console-general-settings
+tags: [managing-cyclr]
+
+---
+
 | Option | Documentation |
-| --- | --- _
+| --- | --- |
 | Application Icon | Your application icon. Displayed in the navigation bar if Cyclr is used as a white-label service. |
 | Sign In Logo | Logo to use on the User Login Page. |
 | Fav Icon | Favicon to use in Cyclr. |
