@@ -43,6 +43,14 @@ entries:
             url: /minimum-requirements
             output: web, pdf
             
+          - title: Console General Settings
+            url: /console-general-settings
+            output: web, pdf
+             
+          - title: Console Appearance Settings
+            url: /console-appearance-settings
+            output: web, pdf
+            
           - title: Console Settings
             url: /console-settings
             output: web, pdf
