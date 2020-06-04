@@ -1,8 +1,9 @@
 ---
-title: Appearance Settings
+title: Console Appearance Settings
 sidebar: cyclr_sidebar
-permalink: settings-appearance
-tags: [settings]
+permalink: console-settings-appearance
+tags: [managing-cyclr]
+
 ---
 
 Theses settings allow you to change the appearance of Cyclr when in accounts, using LAUNCH or Marketplace.
