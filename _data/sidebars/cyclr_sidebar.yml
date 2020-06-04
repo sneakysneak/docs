@@ -42,6 +42,10 @@ entries:
           - title: Minimum Requirements
             url: /minimum-requirements
             output: web, pdf
+            
+          - title: Console Settings
+            url: /console-settings
+            output: web, pdf
 
       - title: Embedding Cyclr
         output: web, pdf
