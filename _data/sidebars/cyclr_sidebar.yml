@@ -43,6 +43,10 @@ entries:
             url: /minimum-requirements
             output: web, pdf
             
+          - title: Cyclr Concepts
+            url: /cyclr-concepts
+            output: web, pdf
+            
           - title: Console General Settings
             url: /console-general-settings
             output: web, pdf
@@ -58,10 +62,6 @@ entries:
       - title: Embedding Cyclr
         output: web, pdf
         folderitems:
-          - title: Cyclr Concepts
-            url: /cyclr-concepts
-            output: web, pdf
-
           - title: Quick Overview
             url: /embedding-overview
             output: web, pdf
