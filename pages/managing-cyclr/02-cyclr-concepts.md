@@ -8,15 +8,15 @@ tags: [managing-cyclr]
 
 ### Accounts
 
-Accounts allow the grouping of Account Connectors and the Cycles that use them.
+Each of a Cyclr Parterns Customers will have an account in Cyclr. Templates can be copied to the account or custom integrations can be developed.  This provides segmentation between integrations running for different customers.  Connectors in an account are specifically authenticated for that customer.
 
 ### Connectors
 
-A Connector is a Cyclr implementaion of a third party API.  When installed into an Account it provides connectivity with the third party application.
+A Connector is a Cyclr implementaion of a an application's API. The connector handles all aspects of the protocols and methods which Cyclr uses to pull or push data to the application. 
 
 ### Account Connector
 
-Account Connectors are installed instances of Connectors that hold additional authentication details required for connectivity to the third party application.
+Once a Connectors is installed in an account it is referred to as an Account Connector.  It holds authentication details specific to that account.
 
 ### Users
 
