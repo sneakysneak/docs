@@ -1,3 +1,11 @@
+---
+title: Total Expert Authentication
+sidebar: cyclr_sidebar
+permalink: Total_Expert
+tags: [connector]
+
+---
+
 ## Authentication
 
 Interaction with the Total Expert API is protected with OAuth 2.0. In order to use the API, a client ID/secret pair is required. 
