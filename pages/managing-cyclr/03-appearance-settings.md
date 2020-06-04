@@ -1,7 +1,7 @@
 ---
 title: Console Appearance Settings
 sidebar: cyclr_sidebar
-permalink: console-settings-appearance
+permalink: console-appearance-settings
 tags: [managing-cyclr]
 
 ---
