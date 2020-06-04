@@ -5,7 +5,7 @@ permalink: bntouch-connector
 tags: [connector]
 ---
 
-# Setup
+## Setup
 
 At setup you will be prompted to enter the ID and Name of your BNTouch account. These credentials should be issued by your BNTouch account manager.
 
