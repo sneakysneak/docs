@@ -97,6 +97,8 @@ Called after the webook has been caught.
 
 Called before Cyclr makes a request to an external API.
 
+If a Method uses Paging, this function is called before each page is retrieved.
+
 ###### Global objects
 
 *   **method_request_headers**: HTTP headers for the request
