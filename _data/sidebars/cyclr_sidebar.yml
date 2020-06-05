@@ -55,8 +55,20 @@ entries:
             url: /console-appearance-settings
             output: web, pdf
             
-          - title: Console Settings
-            url: /console-settings
+          - title: Console Data Retention Settings
+            url: /console-data-retention-settings
+            output: web, pdf
+            
+          - title: Console API Settings
+            url: /console-api
+            output: web, pdf
+            
+          - title: Security Settings
+            url: /console-security
+            output: web, pdf
+            
+          - title: Whitelisting Cyclr
+            url: /cyclr-ip-whitelisting
             output: web, pdf
 
       - title: Embedding Cyclr
@@ -305,10 +317,6 @@ entries:
 
           - title: Club Ready Connector
             url: /clubready-connector
-            output: web, pdf
-
-          - title: Cyclr IP Whitelisting
-            url: /cyclr-ip-whitelisting
             output: web, pdf
 
           - title: Facebook Marketing Authentication
