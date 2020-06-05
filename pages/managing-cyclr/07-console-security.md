@@ -1,3 +1,11 @@
+---
+title: Console Security
+sidebar: cyclr_sidebar
+permalink: console-security
+tags: [managing-cyclr]
+
+---
+
 ## Console Administrators
 
 Console Administrators have access to both the Cyclr Console and Cyclr Partner API.
