@@ -19,7 +19,7 @@ To use the Selligent connector, you will need
 
 To be able to use the REST API a dedicated API user has to be created.
 
-[placeholder image 1]
+![connector setup](./images/APIUserCreate.png)
 
 A name and login needs to be entered for the API user. 
 
@@ -27,6 +27,6 @@ The user's password is generated automatically and is used for hashing. The refr
 
 The API user must assign specific rights, indicating what operations can be performed through the API by that user and what operations can't.
 
-[placeholder image 2]
+![connector setup](./images/APIUserRights.png)
 
 Once this is done, the Server, Username and Password(Key) can be entered when installing the connector.
