@@ -8,7 +8,7 @@ tags: [connector]
 
 ## Authentication
 
-No authentication details are required to use the Insellerate connector, however you will need to contact Insellerate to confirm that your IP address has been whitelisted.
+No authentication details are required to use the Insellerate connector, however you will need to contact Insellerate to confirm that the IP address for your Cyclr Partern Console has been whitelisted.  
 
 Depending on where your Cyclr Partner Console is hosted, the IP address will be as follows:
 
