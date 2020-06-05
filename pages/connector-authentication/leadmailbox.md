@@ -1,7 +1,7 @@
 ---
 title: LeadMailbox Authentication
 sidebar: cyclr_sidebar
-permalink: authenticate-leadmailbox
+permalink: leadmailbox
 tags: [connector]
 
 ---
