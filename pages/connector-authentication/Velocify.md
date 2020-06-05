@@ -1,12 +1,16 @@
 ---
-title: Velocify Connector Guide
+title: Velocify Authentication
 sidebar: cyclr_sidebar
-permalink: velocify-connector
+permalink: authenticate-velocify
 tags: [connector]
+
 ---
 
-Creating Leads in Velocify
----------------
+## Authentication ##
+
+Velocify uses basic authentication so all you need to do is to provide a valid username/password combination for your account.
+
+## Creating Leads in Velocify
 
 In order to create leads using the Velocify connector there are a few preliminary steps to be undertaken first:
 
