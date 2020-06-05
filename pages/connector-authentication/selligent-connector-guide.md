@@ -1,7 +1,7 @@
 ---
 title: Selligent Authentication
 sidebar: cyclr_sidebar
-permalink: selligent-connector
+permalink: selligent-connector-guide
 tags: [connector]
 ---
 
