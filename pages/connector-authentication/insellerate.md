@@ -12,4 +12,3 @@ No authentication details are required to use the Insellerate connector, however
 
 [Cyclr IP Addresses](./cyclr-ip-whitelisting)
 
-Depending on where your Cyclr Partner Console is hosted, the IP address will different.
