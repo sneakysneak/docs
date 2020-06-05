@@ -3,17 +3,21 @@ title: LeadMailbox Authentication
 sidebar: cyclr_sidebar
 permalink: authenticate-leadmailbox
 tags: [connector]
+
 ---
 
-## LeadMailbox ##
+## Authentication ##
 
-To use LeadMailbox's connector to create leads, you will need the ``Post URL`` for the associated Campaign.
+Authntication with LeadMailbox is very simple.  When the connector is intalled you will need to provide the name of your account only.
 
-### Finding the Post URL
+## Post Leads Method
+
+When the Post Leads method is called additionally you will need to provide the name of the Campaing to which the lead should be added.  You can check these values by:
+
 From the LeadMailbox dashboard, click 
 1. ``Settings``
 2. ``Campaigns``
 3. [``The Name of your Campaign``]
 4. ``Show Post Url``
 
-You can then copy this address for use in your Lead creation calls.
+This shows the values to be used for both the Account Name and the Compaign Name.
