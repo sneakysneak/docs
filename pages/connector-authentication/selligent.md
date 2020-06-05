@@ -15,7 +15,7 @@ To use the Selligent connector, you will need
 2. Your Username
 3. A Secret Key (aka Password).
 
-# Username
+### Username & Password
 
 To be able to use the REST API a dedicated API user has to be created.
 
