@@ -7,16 +7,12 @@ tags: [connector]
 
 If you are setting up a Connector that requires IP whitelisting, you can find the addresses that Cyclr *sends* API requests from below.
 
-Depending on where your Cyclr Partner Console is hosted, you should use the appropriate IP addresses:
+If your Cyclr Partner Console is hosted on one of our shared stacks, you should use the appropriate IP addresses from this list:
 
-## Partner Console at my.cyclr.com ##
+| Server Location | URL | IP Address |
+| --- | --- | --- 
+| US (West Virginia) | my.cyclr.com | 52.22.119.215 |
+| UK (London) | my.cyclr.uk | 52.56.244.97 |
+| EU (Frankfurt) | eu.cyclr.com | 18.185.231.228 |
 
-52.22.119.215
-
-## Partner Console at my.cyclr.uk ##
-
-52.56.244.97
-
-## Partner Console at eu.cyclr.com ##
-
-18.185.231.228
+If your Cyclr Partner Console is in a private cloud then please contact Cyclr Support.
