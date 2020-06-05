@@ -1,7 +1,7 @@
 ---
 title: Total Expert Authentication
 sidebar: cyclr_sidebar
-permalink: Total_Expert
+permalink: total_expert
 tags: [connector]
 
 ---
