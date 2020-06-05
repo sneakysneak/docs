@@ -59,7 +59,7 @@ entries:
             url: /console-data-retention-settings
             output: web, pdf
             
-          - title: Console API Settings
+          - title: Accessing the Cyclr API
             url: /console-api
             output: web, pdf
             
