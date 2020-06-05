@@ -1,7 +1,7 @@
 ---
-title: Console Settings
+title: Console Data Retention Settings
 sidebar: cyclr_sidebar
-permalink: console-settings
+permalink: console-data-retention-settings
 tags: [managing-cyclr]
 
 ---
