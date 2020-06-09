@@ -1,5 +1,5 @@
 ---
-title: Installing Connectors
+title: Connectors
 sidebar: cyclr_sidebar
 permalink: installing-connectors
 tags: [templates]
@@ -7,13 +7,13 @@ tags: [templates]
 ---
 ## Basics
 
-In order to use Cyclr, you need to install connectors for your apps.
-
-To do this, make sure you are in the builder (click to create a cycle) and then click the Add Application Connector button in the right sidebar of the builder.
+In order to use build a Cyclr template you need to install connectors. You can do this from the template builder.  If this is your first template you will be directed to the connector store in order to get started.
 
 ![](./images/add-connector.gif)
 
-When you install a connector, you will need to authenticate it in order to allow Cyclr to connect. If you’re just experimenting, you can skip this step.
+If you need further connectors these can be added from the the right sidebar of the builder.  There are two types of connector avaiable.  Application connectors work with many popular SaaS applications.  Utility connectors are provided to help in the constructon of your integratons.
+
+If you want to test a template you will need to authenticate it in order to allow Cyclr to connect. If you’re just experimenting, you can skip this step and install with the connector without authentication.
 
 ### Authenticating a Connector
 
