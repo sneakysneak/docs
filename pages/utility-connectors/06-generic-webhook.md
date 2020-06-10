@@ -15,11 +15,11 @@ Each instance of the Generic Webhook uses a unique URL to which the POST should 
 
 The Generic webhook can be used to link Cycles together.  A step in Cyclr 1 can make a POST to a Webhook that has been set up to trigger Cycle 2.
 
-To set this up you will need to add custom fields to the the Generic Webhook connector (see below).  The same fields will been to be added to both the POST in the HTTP Methods section and to the Webhook in the Webhooks section.
+To set this up you will need to add custom fields to the Generic Webhook connector (see below).  Exactly he same fields will need to be added to both the POST in the HTTP Methods section and to the Webhook in the Webhooks section.
 
-You should then build both Cycles or Templates.  Whe you add the Webhook trigger to Cycle 2 you will be given the URL to which the post should be made.  This should be copied to the set up of the POST in Cycle 1 and added as the step setup mappings.
+You should then build both Cycles or Templates before making the linkage.  When you add the Webhook trigger to Cycle 2 you will be given the URL to which the post should be made.  This should be copied to the settings section of the POST in Cycle 1 and added to the field mappings.
 
-In testing of running this kind of structure you must start Cycle 2 before Cycle 1.  If you don't do this there is the danger that the webhok receiver is not active before the POST has been made.
+In testing of running this kind of structure you must start Cycle 2 before Cycle 1.  If you do not do this there is the danger that the webhook receiver is not active before the POST has been made.
 
 In this example 2 Cycles have been used but the same procedure can be set up to chain together a whole series of Integrations.
 
