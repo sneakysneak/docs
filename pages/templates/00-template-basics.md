@@ -1,5 +1,5 @@
 ---
-title: Connectors
+title: Template Basics
 sidebar: cyclr_sidebar
 permalink: template-basics
 tags: [templates]
