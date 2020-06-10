@@ -15,7 +15,7 @@ If you need further connectors these can be added from the right sidebar of the 
 
 If you want to test a Template, you will need to authenticate the connectors that have been used in order to allow Cyclr to connect and transfer data. If you are just experimenting, you can skip the authentication step and install with the connector without authentication.  However, we strongly recommend that you thoroughly test your Templates before they are published.  
 
-### Authenticating a Connector
+## Authenticating a Connector
 
 There are different types of authentication. Depending on the connector you wish to use, the application may require any of the following:
 
