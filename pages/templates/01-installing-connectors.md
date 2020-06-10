@@ -32,4 +32,6 @@ For the other authentication methods, the connector installer will take you thro
 
 Once you have authenticated your connectors, you will be returned to the builder. Your new connectors will be installed in the sidebar ready to use.
 
-[How to Build a Cycle](./building-a-cycle)
+## Related Topics
+
+[How to Build a Template](./building-a-cycle)
