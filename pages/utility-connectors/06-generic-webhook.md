@@ -17,7 +17,7 @@ As will all connectors the Generic Webhook connector can be added multiple times
 
 The Generic Webhook Utility Connector can be used to link Cycles together.  A step in Cyclr 1 can make an HTTP POST to a Webhook that has been set up as a trigger to start Cycle 2.
 
-To set this up you will need to add custom fields to the Generic Webhook connector for the information that will be passed between the Cycles (see below).  Exactly the same fields will need to be added to both the 'POST' in the HTTP Methods section and to the 'Webhook' in the Webhooks section of the Connector setup.
+To set this up you will need to add custom fields to the Generic Webhook connector for the information that will be passed between the Cycles (see below).  Exactly the same fields will need to be added to both the 'POST' in the HTTP Methods section and to the 'Webhook' in the Webhooks section of the Connector settings.
 
 You should then build both Cycles or Templates before making the linkage.  When you add the Webhook trigger to Cycle 2 you will be given the URL to which the post should be made.  This should be copied to the settings section of the POST in Cycle 1 and added to the field mappings.
 
