@@ -25,4 +25,4 @@ In this example 2 Cycles have been used but the same procedure can be set up to 
 
 ## Related Topics
 
-How to add custom fields.
+[How to add custom fields](./adding-custom-fields) 
