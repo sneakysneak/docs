@@ -9,13 +9,15 @@ tags: [utility-connector]
 
 The Generic Webhook allows you to trigger a Cycle using inbound HTTP POST when an application connector does not include a method specific to the requirement.
 
-Each instance of the Generic Webhook uses a unique URL to which the POST should be made.  You will need to define the request body fields as Custom Fields when setting up the connector (see below)/
+Each instance of the Generic Webhook uses a unique URL to which the POST should be made.  You will need to define the request body fields as Custom Fields when setting up the connector (see below).
+
+As will all connectors the Generic Webhook connector can be added multiple times and setup and named appropriatly to each use case.
 
 ## Passing Control between Integration Cycles
 
-The Generic webhook can be used to link Cycles together.  A step in Cyclr 1 can make a POST to a Webhook that has been set up to trigger Cycle 2.
+The Generic Webhook Utility Connector can be used to link Cycles together.  A step in Cyclr 1 can make an HTTP POST to a Webhook that has been set up as a trigger to start Cycle 2.
 
-To set this up you will need to add custom fields to the Generic Webhook connector (see below).  Exactly he same fields will need to be added to both the POST in the HTTP Methods section and to the Webhook in the Webhooks section.
+To set this up you will need to add custom fields to the Generic Webhook connector for the information that will be passed between the Cycles (see below).  Exactly the same fields will need to be added to both the 'POST' in the HTTP Methods section and to the 'Webhook' in the Webhooks section of the Connector setup.
 
 You should then build both Cycles or Templates before making the linkage.  When you add the Webhook trigger to Cycle 2 you will be given the URL to which the post should be made.  This should be copied to the settings section of the POST in Cycle 1 and added to the field mappings.
 
