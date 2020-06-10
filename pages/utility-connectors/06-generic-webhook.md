@@ -21,7 +21,7 @@ To set this up you will need to add custom fields to the Generic Webhook connect
 
 You should then build both Cycles or Templates before making the linkage.  When you add the Webhook trigger to Cycle 2 you will be given the URL to which the post should be made.  This should be copied to the settings section of the POST in Cycle 1 and added to the field mappings.
 
-In testing of running this kind of structure you must start Cycle 2 before Cycle 1.  If you do not do this there is the danger that the webhook receiver is not active before the POST has been made.
+When testing or running this kind of 'linked Cycles' structure you must start Cycle 2 before Cycle 1.  If you do not do this there is the danger that the webhook receiver will not active before the POST has been made.
 
 In this example 2 Cycles have been used but the same procedure can be set up to chain together a whole series of Integrations.
 
