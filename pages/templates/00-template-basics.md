@@ -22,7 +22,7 @@ Once you have at least one Template built or in-progress then you will see these
 
 ## Tagging Templates
 
-You can add Tags to your Templates through the list view.  These Tags are used by LAUNCH to choose which Tempaltes are presented to a specific client.
+You can add Tags to your Templates through the list view.  These Tags are used by LAUNCH to choose which Templates are presented to a specific client.  The LAUNCH API call can request that only Templates tagged in a particular way are presented for installation.
 
 ## Related Topics
 
