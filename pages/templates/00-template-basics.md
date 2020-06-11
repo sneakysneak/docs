@@ -26,4 +26,5 @@ You can add Tags to your Templates through the list view.  These Tags are used b
 
 ## Related Topics
 
-
+[Template Versioning](./integration-template-versioning)
+[LAUNCH}(./launch-overview)
