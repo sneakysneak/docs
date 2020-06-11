@@ -26,7 +26,7 @@ Depending the app you’re connecting to and the field you are using, only some 
 | Type a Value | You can type in text or merge one or more values into the field. |
 | Previous Step | select any previous step and then a field from this step. |
 | Lookup | Cycler will connect to the Destination app to retrieve a list of possible mapping values. For example, a mailing lists in an email marketing platform. |
-| Select a Value | There many be a pre-configured list of values from which you can choose a mapping. |
+| Select a Value | There may be a pre-configured list of values from which you can choose a mapping. |
 
 
 ## System mergefields
