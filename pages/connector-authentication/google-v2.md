@@ -54,15 +54,15 @@ The Google Console will automatically remove any subdomain part as appropriate, 
 
 From the APIs & Services Credentials page:
 
-•	click the Create credentials button and select OAuth client ID:
+*	click the Create credentials button and select OAuth client ID:
 
 ![](./images/google-auth-4.png)
 
-•	choose an Application Type of Web application.
+*	choose an Application Type of Web application.
 
-•	enter a Name for the OAuth client ID that's being created.
+*	enter a Name for the OAuth client ID that's being created.
 
-•	under Authorised redirect URIs add the following:
+*	under Authorised redirect URIs add the following:
 
 o	https://my.cyclr.com/connector/callback
 (change .com to .uk if your Cyclr Console is located at the .uk domain)
@@ -70,7 +70,7 @@ o	https://my.cyclr.com/connector/callback
 o	https://[Your Cyclr Service Domain e.g. app-h.cyclr.com]/connector/callback
 (your Cyclr Partner Service Domain found in your Cyclr Console under Settings > Integration Settings.)
 
-•	click the Create button, you'll then be presented with your Google Project's OAuth client ID and client secret which you should record for later use:
+*	click the Create button, you'll then be presented with your Google Project's OAuth client ID and client secret which you should record for later use:
 
 ![](./images/google-auth-5.png)
 
@@ -82,17 +82,17 @@ Which APIs you enable depends on which Cyclr Connectors you wish to work with, a
 
 For each API you require, follow these steps:
 
-•	from the Google API Console, go to APIs & Services.
+*	from the Google API Console, go to APIs & Services.
 
-•	on the Dashboard click the +ENABLE APIS AND SERVICES button at the top.
+*	on the Dashboard click the +ENABLE APIS AND SERVICES button at the top.
 
-•	either enter part of the name of a Google API, “sheets” for example, or scroll to find it.
+*	either enter part of the name of a Google API, “sheets” for example, or scroll to find it.
 
-•	click the API's large button when shown.
+*	click the API's large button when shown.
 
-•	on the next page click the API’s ENABLE button.
+*	on the next page click the API’s ENABLE button.
 
-•	return to the APIs & Services page.
+*	return to the APIs & Services page.
 
 List of Cyclr Connectors that require multiple Google APIs to be fully functional:
 Google Sheets: Google Sheets API and Google Drive API
@@ -100,30 +100,30 @@ Google Sheets: Google Sheets API and Google Drive API
 Setting Google OAuth values in Cyclr
 Now you have a client ID and client secret, you can set these back in Cyclr.
 
-•	go to your Cyclr Console.
+*	go to your Cyclr Console.
 
-•	click the Connectors menu then Connector Library.
+*	click the Connectors menu then Connector Library.
 
-•	find the Google Connector you wish to use.
+*	find the Google Connector you wish to use.
 
-•	click its Setup button.
+*	click its Setup button.
 
-•	enter your client ID and client secret values.
+*	enter your client ID and client secret values.
 
-•	click Save Changes.
+*	click Save Changes.
 
 Additional Setup for Google AdWords
 The Google AdWords connector requires [additional setup:https://developers.google.com/adwords/api/docs/guides/signup] before you can access its API.
 
-•	Sign in or sign up for a Google AdWords manager account
+*	Sign in or sign up for a Google AdWords manager account
 
-•	Go to SETUP > AdWords API Centre
+*	Go to SETUP > AdWords API Centre
 
-•	Complete the form to create a developer token
+*	Complete the form to create a developer token
 
-•	Once you have created a developer token, go to Access level > Apply for Basic Access
+*	Once you have created a developer token, go to Access level > Apply for Basic Access
 
-•	Submit the Adwords API Token Application
+*	Submit the Adwords API Token Application
 
 Make a note of your developer token, you will need it when you use Google AdWords methods in Cyclr.
 
