@@ -37,18 +37,18 @@ Create your Project in the Google API Console
 
 * choose OAuth consent screen along the top - values you enter here will be shown to your users when they authenticate Cyclr's Google Connectors.
 
-**	set Application Type to Public.
+-	set Application Type to Public.
 
-**	enter a suitable name for your application, e.g. "My Product Integrations", upload a logo, set an appropriate email address for your users to get in touch through, should they need to.
+-	enter a suitable name for your application, e.g. "My Product Integrations", upload a logo, set an appropriate email address for your users to get in touch through, should they need to.
 
-**	leave the default Scopes for Google APIs values.
+-	leave the default Scopes for Google APIs values.
 
-**	under Authorised domains add your Cyclr Partner Service Domain found in your Cyclr Console under Settings > Integration Settings.
+-	under Authorised domains add your Cyclr Partner Service Domain found in your Cyclr Console under Settings > Integration Settings.
 The Google Console will automatically remove any subdomain part as appropriate, leaving just the top private domain part, e.g. "mysubdomain.cyclr.com" will become "cyclr.com".  You may also see a notice saying "Must be a top private domain" which is just notifying you that it's automatically removed the subdomain part.
 
-**	provide values for the 3 "link" options to enable users to find out more about your organisation/product.
+-	provide values for the 3 "link" options to enable users to find out more about your organisation/product.
 
-**	click Save and you'll be returned to the Credentials page. 
+-	click Save and you'll be returned to the Credentials page. 
 
 ## Creating Google Credentials
 
@@ -64,10 +64,10 @@ From the APIs & Services Credentials page:
 
 *	under Authorised redirect URIs add the following:
 
-o	https://my.cyclr.com/connector/callback
+-	https://my.cyclr.com/connector/callback
 (change .com to .uk if your Cyclr Console is located at the .uk domain)
 
-o	https://[Your Cyclr Service Domain e.g. app-h.cyclr.com]/connector/callback
+-	https://[Your Cyclr Service Domain e.g. app-h.cyclr.com]/connector/callback
 (your Cyclr Partner Service Domain found in your Cyclr Console under Settings > Integration Settings.)
 
 *	click the Create button, you'll then be presented with your Google Project's OAuth client ID and client secret which you should record for later use:
