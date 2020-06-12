@@ -9,7 +9,7 @@ tags: [connector]
 ##  Google Partner Setup
 
 Google makes use of OAuth 2.0 for remote API access. You must register Cyclr with Google as your own Project to receive OAuth Client ID and Client Secret values to enable Cyclr to authenticate with Google.
-For your reference, Google’s own documentation for creating a Project and Credentials can be found [here](https://developers.google.com/identity/protocols/OAuth2WebServer).
+For your reference, Google’s own documentation for [creating a Project and Credentials](https://developers.google.com/identity/protocols/OAuth2WebServer).
 
 ## Registering Your Application
 
