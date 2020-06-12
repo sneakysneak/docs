@@ -10,7 +10,7 @@ When using a (blue) Action step, you will need to map its fields.
 
 ## Field mapping example
 
-![](./images/field-mapping.png)
+![](./images/field_mapping_eg.jpg)
 
 The left most column is the **Destination** (the app you are connecting to). Some of these fields may be required.
 
