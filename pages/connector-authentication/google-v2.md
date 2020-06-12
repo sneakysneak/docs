@@ -56,4 +56,22 @@ o	https://[Your Cyclr Service Domain e.g. app-h.cyclr.com]/connector/callback
 (your Cyclr Partner Service Domain found in your Cyclr Console under Settings > Integration Settings.)
 •	click the Create button, you'll then be presented with your Google Project's OAuth client ID and client secret which you should record for later use:
 
+IMAGE 5
+
+## Enable Google APIs
+
+Google’s services (Sheets, Gmail, Calendar, etc) are offered as separate APIs which you must individually enable within your Google API Console for your Project.
+
+Which APIs you enable depends on which Cyclr Connectors you wish to work with, and some Connectors require more than one Google API to be enabled for them to be fully functional.  For example, the Google Sheets Connector requires you to enable the Google Sheets API and the Google Drive API.  If you only enable the Google Sheets API, Cyclr will be able to work with data within a Spreadsheet, but it won’t have access to list the available Spreadsheets to choose from.
+
+For each API you require, follow these steps:
+•	from the Google API Console, go to APIs & Services.
+•	on the Dashboard click the +ENABLE APIS AND SERVICES button at the top.
+•	either enter part of the name of a Google API, “sheets” for example, or scroll to find it.
+•	click the API's large button when shown.
+•	on the next page click the API’s ENABLE button.
+•	return to the APIs & Services page.
+
+List of Cyclr Connectors that require multiple Google APIs to be fully functional:
+Google Sheets: Google Sheets API and Google Drive API
 
