@@ -32,19 +32,28 @@ Create your Project in the Google API Console
 ![](./images/google-auth-3.png)
 
 * you'll be returned to the APIs & Services Dashboard.
+
 * go to Credentials.	(ignore the "Create credentials" button for now as we must first setup the OAuth consent screen)
+
 * choose OAuth consent screen along the top - values you enter here will be shown to your users when they authenticate Cyclr's Google Connectors.
+
 **	set Application Type to Public.
+
 **	enter a suitable name for your application, e.g. "My Product Integrations", upload a logo, set an appropriate email address for your users to get in touch through, should they need to.
+
 **	leave the default Scopes for Google APIs values.
+
 **	under Authorised domains add your Cyclr Partner Service Domain found in your Cyclr Console under Settings > Integration Settings.
 The Google Console will automatically remove any subdomain part as appropriate, leaving just the top private domain part, e.g. "mysubdomain.cyclr.com" will become "cyclr.com".  You may also see a notice saying "Must be a top private domain" which is just notifying you that it's automatically removed the subdomain part.
+
 **	provide values for the 3 "link" options to enable users to find out more about your organisation/product.
+
 **	click Save and you'll be returned to the Credentials page. 
 
 ## Creating Google Credentials
 
 From the APIs & Services Credentials page:
+
 •	click the Create credentials button and select OAuth client ID:
 
 ![](./images/google-auth-4.png)
