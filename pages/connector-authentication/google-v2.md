@@ -16,7 +16,7 @@ For your reference, Google’s own documentation for creating a Project and Cred
 ### Introduction
 
 Sign up for a Google account, or log into your existing account if you have one, then go to the
-[Google API Console:https://console.developers.google.com/] to create your Project and enable the relevant Google APIs.
+[Google API Console](https://console.developers.google.com/) to create your Project and enable the relevant Google APIs.
 Create your Project in the Google API Console
 
 *	click your organisation name at the top to open a popup showing your existing Projects, if any:
