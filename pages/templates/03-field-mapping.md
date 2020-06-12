@@ -6,7 +6,9 @@ tags: [templates]
 
 ---
 
-When using a (blue) Action step, you will need to map its fields.
+## Field Mapping
+
+When using an Action step, you will need to map its fields.  You can do this through the 'cog' icon on the step which gives access to the Step Setup functionality.
 
 ## Field mapping example
 
