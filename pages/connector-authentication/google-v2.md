@@ -21,15 +21,15 @@ Create your Project in the Google API Console
 
 1.	click your organisation name at the top to open a popup showing your existing Projects, if any:
 
-IMAGE 1
+![](./images/google-auth-1.png)
 
 2.	click NEW PROJECT in the top right: 
 
-IMAGE 2
+![](./images/google-auth-2.png)
 
 3.	enter a name for your Project, perhaps the name of your product, and optionally set the Project ID to something other than the suggested value:
 
-IMAGE 3
+![](./images/google-auth-3.png)
 
 4. you'll be returned to the APIs & Services Dashboard.
 5. go to Credentials.	(ignore the "Create credentials" button for now as we must first setup the OAuth consent screen)
@@ -47,7 +47,7 @@ f	click Save and you'll be returned to the Credentials page.
 From the APIs & Services Credentials page:
 •	click the Create credentials button and select OAuth client ID:
 
-IMAGE 4
+![](./images/google-auth-4.png)
 
 •	choose an Application Type of Web application.
 •	enter a Name for the OAuth client ID that's being created.
@@ -58,7 +58,7 @@ o	https://[Your Cyclr Service Domain e.g. app-h.cyclr.com]/connector/callback
 (your Cyclr Partner Service Domain found in your Cyclr Console under Settings > Integration Settings.)
 •	click the Create button, you'll then be presented with your Google Project's OAuth client ID and client secret which you should record for later use:
 
-IMAGE 5
+![](./images/google-auth-5.png)
 
 ## Enable Google APIs
 
