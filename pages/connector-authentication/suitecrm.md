@@ -8,6 +8,8 @@ tags: [connector]
 
 ## Authentication ##
 
+Please Note - Each installation of the connector needs its own dedicated user, or you may see "Invalid Session" errors.  If you need to add further users, you can consult [SuiteCRM's official documentation](https://docs.suitecrm.com/admin/administration-panel/users/#_user_management).
+
 The SuiteCRM Connector requires the following information to install.
 
 1. Domain (Your account's domain - for example **xyz.staging.coursecrm-hosting.com**)
