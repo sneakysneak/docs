@@ -9,11 +9,11 @@ tags: [connector]
 ##  Google Partner Setup
 
 Google makes use of OAuth 2.0 for remote API access. You must register Cyclr with Google as your own Project to receive OAuth Client ID and Client Secret values to enable Cyclr to authenticate with Google.
-For your reference, Google’s own documentation for [Creating a Project and Credentials](https://developers.google.com/identity/protocols/OAuth2WebServer).
+For your reference, Google’s own documentation for [Creating a Project and Credentials](https://https://console.cloud.google.com/).
 
 ## Registering Your Application
 
-### Introduction
+### Create a Project
 
 Sign up for a Google account, or log into your existing account if you have one, then go to the
 [Google API Console](https://console.developers.google.com/) to create your Project and enable the relevant Google APIs.
@@ -30,6 +30,8 @@ Create your Project in the Google API Console
 *	enter a name for your Project, perhaps the name of your product, and optionally set the Project ID to something other than the suggested value:
 
 ![](./images/google-auth-3.png)
+
+### Next Step
 
 * you'll be returned to the APIs & Services Dashboard.
 
