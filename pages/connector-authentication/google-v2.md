@@ -12,6 +12,20 @@ Google makes use of OAuth 2.0 for remote API access. You must register Cyclr wit
 
 For your reference, Google’s own documentation for [Creating a Project and Credentials](https://https://console.cloud.google.com/).
 
+## Before Starting
+
+You will be asked for certain URLs as part of the process of setting up access so best to have that information to hand before starting.
+
+### Service URL
+
+This is specific to your instance of Cyclr and it can be found from the Partner Admin Console under Settings>General Settings>Service URL.
+
+By default your account will have been set up with a Service Domain but this can be changed if you require to remove any reference to Cyclr.
+
+### Cyclr Server Stack
+
+You will be asked to set a 'callback' URL, and this varies according to where your Cyclr Partner Account is hoasted.
+  
 ## Registering Your Application
 
 ### Create a Project
@@ -62,13 +76,12 @@ Step 2 - The Application Type is 'Web application'.
 
 Step 3 - Enter a Name for the OAuth 2.0 client ID that's being created. This name is only used to identify the client in the console and will not be shown to end users.
 
-Step 4 - Under Authorised redirect URIs add the following:
+Step 4 - Under Authorised redirect URIs add the following (these URLs were expalined above under Before Starting.
 
-*	https://my.cyclr.com/connector/callback
-(change .com to .uk if your Cyclr Console is located at the .uk domain)
+*	https://[Your Cyclr Host]/connector/callback
 
-*	https://[Your Cyclr Service Domain e.g. app-h.cyclr.com]/connector/callback
-(your Cyclr Partner Service Domain found in your Cyclr Console under Settings > Integration Settings.)
+*	https://[Your Cyclr Service Domain]/connector/callback
+
 
 Step 5	click the Create button, you'll then be presented with your Google Project's OAuth client ID and client secret which you should record for later use:
 
