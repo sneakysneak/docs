@@ -31,7 +31,7 @@ Sign up for a Google account, or log into your existing account if you have one,
 
 ![](./images/google-auth-3.png)
 
-### Next Step
+### Setting up Application Details
 
 * you'll be returned to the APIs & Services Dashboard.
 
@@ -50,29 +50,27 @@ The Google Console will automatically remove any subdomain part as appropriate, 
 
 -	provide values for the 3 "link" options to enable users to find out more about your organisation/product.
 
--	click Save and you'll be returned to the Credentials page. 
-
-## Creating Google Credentials
+### Creating Google Credentials
 
 From the APIs & Services Credentials page:
 
-*	click the Create credentials button and select OAuth client ID:
+Step 1 - Take the 'Create Credentials' button and the select the option to use 'OAuth client ID'.
 
 ![](./images/google-auth-4.png)
 
-*	choose an Application Type of Web application.
+Step 2 - The Application Type is 'Web application'.
 
-*	enter a Name for the OAuth client ID that's being created.
+Step 3 - Enter a Name for the OAuth 2.0 client ID that's being created. This name is only used to identify the client in the console and will not be shown to end users.
 
-*	under Authorised redirect URIs add the following:
+Step 4 - Under Authorised redirect URIs add the following:
 
--	https://my.cyclr.com/connector/callback
+*	https://my.cyclr.com/connector/callback
 (change .com to .uk if your Cyclr Console is located at the .uk domain)
 
--	https://[Your Cyclr Service Domain e.g. app-h.cyclr.com]/connector/callback
+*	https://[Your Cyclr Service Domain e.g. app-h.cyclr.com]/connector/callback
 (your Cyclr Partner Service Domain found in your Cyclr Console under Settings > Integration Settings.)
 
-*	click the Create button, you'll then be presented with your Google Project's OAuth client ID and client secret which you should record for later use:
+Step 5	click the Create button, you'll then be presented with your Google Project's OAuth client ID and client secret which you should record for later use:
 
 ![](./images/google-auth-5.png)
 
