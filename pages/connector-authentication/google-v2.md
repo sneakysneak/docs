@@ -18,13 +18,14 @@ You will be asked for certain URLs as part of the process of setting up access s
 
 ### Service URL
 
-This is specific to your instance of Cyclr and it can be found from the Partner Admin Console under Settings>General Settings>Service URL.
+This is specific to your instance of Cyclr and it can be found from the Cyclr Partner Admin Console under:
+Settings>General Settings>Service URL.
 
-By default your account will have been set up with a Service Domain but this can be changed if you require to remove any reference to Cyclr.
+Your Partner Accont will have been set up with a default Service Domain but this can be changed if you would prefere to remove any reference to 'Cyclr'.
 
 ### Cyclr Server Stack
 
-You will be asked to set a 'callback' URL, and this varies according to where your Cyclr Partner Account is hoasted.
+You will be asked to set a 'callback' URL, and this varies according to where your Cyclr Partner Account is hoasted. 
   
 ## Registering Your Application
 
@@ -33,11 +34,11 @@ You will be asked to set a 'callback' URL, and this varies according to where yo
 Sign up for a Google account, or log into your existing account if you have one, then go to the
 [Google Cloud Platform](https://console.developers.google.com/) to create your Project, and enable the relevant Google APIs.
 
-*	click your organisation name at the top to open a popup showing your existing Projects, if any:
+Step 1 - Click your organisation name at the top to open a popup showing your existing Projects, if any:
 
 ![](./images/google-auth-1.png)
 
-*	click NEW PROJECT in the top right: 
+Step 2 -	Take the option to create a  NEW PROJECT in the top right: 
 
 ![](./images/google-auth-2.png)
 
@@ -47,22 +48,23 @@ Sign up for a Google account, or log into your existing account if you have one,
 
 ### Setting up Application Details
 
-* you'll be returned to the APIs & Services Dashboard.
+Fron the the APIs & Services Dashboard.
 
-* go to Credentials.	(ignore the "Create credentials" button for now as we must first setup the OAuth consent screen)
+Step 1 - Go to Credentials.	(ignore the "Create credentials" button for now as we must first setup the OAuth consent screen)
 
-* choose OAuth consent screen along the top - values you enter here will be shown to your users when they authenticate Cyclr's Google Connectors.
+Step 2 - Choose OAuth consent screen along the top - values you enter here will be shown to your users when they authenticate Cyclr's Google Connectors.
 
--	set Application Type to Public.
+Step 4 - set Application Type to Public.
 
--	enter a suitable name for your application, e.g. "My Product Integrations", upload a logo, set an appropriate email address for your users to get in touch through, should they need to.
+Step 5 -	Enter a suitable name for your application, e.g. "My Product Integrations", upload a logo, set an appropriate email address for your users to get in touch through, should they need to.
 
--	leave the default Scopes for Google APIs values.
+Step 5 -	Leave the default Scopes for Google APIs values.
 
--	under Authorised domains add your Cyclr Partner Service Domain found in your Cyclr Console under Settings > Integration Settings.
+Step 6 -	under Authorised domains add your Cyclr Partner Service Domain found in your Cyclr Console under Settings > Integration Settings.
+
 The Google Console will automatically remove any subdomain part as appropriate, leaving just the top private domain part, e.g. "mysubdomain.cyclr.com" will become "cyclr.com".  You may also see a notice saying "Must be a top private domain" which is just notifying you that it's automatically removed the subdomain part.
 
--	provide values for the 3 "link" options to enable users to find out more about your organisation/product.
+Step 7 -	Provide values for the 3 "link" options to enable users to find out more about your organisation/product.
 
 ### Creating Google Credentials
 
@@ -95,48 +97,34 @@ Which APIs you enable depends on which Cyclr Connectors you wish to work with, a
 
 For each API you require, follow these steps:
 
-*	from the Google API Console, go to APIs & Services.
+Step 1 -	from the Google API Console, go to APIs & Services.
 
-*	on the Dashboard click the +ENABLE APIS AND SERVICES button at the top.
+Step 2 -	On the Dashboard click the +ENABLE APIS AND SERVICES button at the top.
 
-*	either enter part of the name of a Google API, “sheets” for example, or scroll to find it.
+Step 3-	Either enter part of the name of a Google API, “sheets” for example, or scroll to find it.
 
-*	click the API's large button when shown.
+Step 4 - Click the API's large button when shown.
 
-*	on the next page click the API’s ENABLE button.
+Step 5 - On the next page click the API’s ENABLE button.
 
 *	return to the APIs & Services page.
 
 List of Cyclr Connectors that require multiple Google APIs to be fully functional:
 Google Sheets: Google Sheets API and Google Drive API
 
-Setting Google OAuth values in Cyclr
-Now you have a client ID and client secret, you can set these back in Cyclr.
+## Additional Setup for Google AdWords
 
-*	go to your Cyclr Console.
-
-*	click the Connectors menu then Connector Library.
-
-*	find the Google Connector you wish to use.
-
-*	click its Setup button.
-
-*	enter your client ID and client secret values.
-
-*	click Save Changes.
-
-Additional Setup for Google AdWords
 The Google AdWords connector requires [additional setup:https://developers.google.com/adwords/api/docs/guides/signup] before you can access its API.
 
-*	Sign in or sign up for a Google AdWords manager account
+Step 1-	Sign in or sign up for a Google AdWords manager account
 
-*	Go to SETUP > AdWords API Centre
+Step 2 - Go to SETUP > AdWords API Centre
 
-*	Complete the form to create a developer token
+Step 3 - Complete the form to create a developer token
 
-*	Once you have created a developer token, go to Access level > Apply for Basic Access
+Step 4 -	Once you have created a developer token, go to Access level > Apply for Basic Access
 
-*	Submit the Adwords API Token Application
+Step 5 -	Submit the Adwords API Token Application
 
 Make a note of your developer token, you will need it when you use Google AdWords methods in Cyclr.
 
