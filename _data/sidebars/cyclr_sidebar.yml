@@ -332,7 +332,7 @@ entries:
             output: web, pdf
 
           - title: Google
-            url: /google-connector
+            url: /google-authentication
             output: web, pdf
 
           - title: Hubspot Connector Guide
