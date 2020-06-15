@@ -15,3 +15,7 @@ The SuiteCRM Connector requires the following information to install.
 1. Domain (Your account's domain - for example **xyz.staging.coursecrm-hosting.com**)
 2. Username and Password (The same Username and Password you use to access SuiteCRM)
 3. Application Name (An identifier for the application accessing the API) - this is the name you used when you set up the application within SuiteCRM.
+
+## Note about Contact methods ##
+
+It should be noted that the SuiteCRM API will only return the first two email addresses of a record.  To see any additional email addresses, you will need to access your SuiteCRM portal.
