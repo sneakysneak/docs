@@ -17,7 +17,8 @@ Request:
 
 ````http
     POST  /v1.0/accounts/{Account ID}/signintoken
-    Authorization Bearer 0000000000000000000000000000000000000000000000000000000000000000
+    Content-Type: application/json
+    Authorization: Bearer 0000000000000000000000000000000000000000000000000000000000000000
 
     {
         "Username": "example_user"
