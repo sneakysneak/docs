@@ -48,50 +48,50 @@ Then open the Freshdesk dashboard, and follow these steps:
 13. In the **Write custom API request** text box, paste the following template:
 ```json
 {
-  "ticket": {
-    "id": "{{ticket.id}}",
-    "subject": "{{ticket.subject}}",
-    "ticket_type": "{{ticket.ticket_type}}",
-    "priority": "{{ticket.priority}}",
-    "due_by_time": "{{ticket.due_by_time}}",
-    "helpdesk_name": "{{helpdesk_name}}",
-    "portal_name": "{{ticket.portal_name}}",
-    "product_description": "{{ticket.product_description}}",
-    "source": "{{ticket.source}}",
-    "status": "{{ticket.status}}",
-    "triggered_event": "{{triggered_event}}",
-    "tags": "{{ticket.tags}}",
-    "latest_public_comment": "{{ticket.latest_public_comment}}",
-    "latest_private_comment": "{{ticket.latest_private_comment}}",
-    "portal_url": "{{ticket.portal_url}}",
-    "agent": {
-      "name": "{{ticket.agent.name}}",
-      "email": "{{ticket.agent.email}}"
-    },
-    "company": {
-      "name": "{{ticket.company.name}}",
-      "description": "{{ticket.company.description}}",
-      "note": "{{ticket.company.note}}",
-      "domains": "{{ticket.company.domains}}",
-      "health_score": "{{ticket.company.health_score}}",
-      "account_tier": "{{ticket.company.account_tier}}",
-      "renewal_date": "{{ticket.company.renewal_date}}",
-      "industry": "{{ticket.company.industry}}"
-    },
-    "contact": {
-      "name": "{{ticket.contact.name}}",
-      "firstname": "{{ticket.contact.firstname}}",
-      "lastname": "{{ticket.contact.lastname}}",
-      "mobile": "{{ticket.contact.mobile}}",
-      "email": "{{ticket.contact.email}}",
-      "phone": "{{ticket.contact.phone}}",
-      "address": "{{ticket.contact.address}}",
-      "unique_external_id": "{{ticket.contact.unique_external_id}}"
-    },
-    "group": {
-      "name": "{{ticket.group.name}}"
-    }
-  }
+	"ticket": {
+		"id": " {{ticket.id}} ",
+		"subject": " {{ticket.subject}} ",
+		"ticket_type": " {{ticket.ticket_type}} ",
+		"priority": " {{ticket.priority}} ",
+		"due_by_time": " {{ticket.due_by_time}} ",
+		"helpdesk_name": " {{helpdesk_name}} ",
+		"portal_name": " {{ticket.portal_name}} ",
+		"product_description": " {{ticket.product_description}} ",
+		"source": " {{ticket.source}} ",
+		"status": " {{ticket.status}} ",
+		"triggered_event": " {{triggered_event}} ",
+		"tags": " {{ticket.tags}} ",
+		"latest_public_comment": " {{ticket.latest_public_comment}} ",
+		"latest_private_comment": " {{ticket.latest_private_comment}} ",
+		"portal_url": " {{ticket.portal_url}} ",
+		"agent": {
+			"name": " {{ticket.agent.name}} ",
+			"email": " {{ticket.agent.email}} "
+		},
+		"company": {
+			"name": " {{ticket.company.name}} ",
+			"description": " {{ticket.company.description}} ",
+			"note": " {{ticket.company.note}} ",
+			"domains": " {{ticket.company.domains}} ",
+			"health_score": " {{ticket.company.health_score}} ",
+			"account_tier": " {{ticket.company.account_tier}} ",
+			"renewal_date": " {{ticket.company.renewal_date}} ",
+			"industry": " {{ticket.company.industry}} "
+		},
+		"contact": {
+			"name": " {{ticket.contact.name}} ",
+			"firstname": " {{ticket.contact.firstname}} ",
+			"lastname": " {{ticket.contact.lastname}} ",
+			"mobile": " {{ticket.contact.mobile}} ",
+			"email": " {{ticket.contact.email}} ",
+			"phone": " {{ticket.contact.phone}} ",
+			"address": " {{ticket.contact.address}} ",
+			"unique_external_id": " {{ticket.contact.unique_external_id}} "
+		},
+		"group": {
+			"name": " {{ticket.group.name}} "
+		}
+	}
 }
 ```
 14. Click **Preview and save**.
