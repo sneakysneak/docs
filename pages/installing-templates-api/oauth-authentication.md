@@ -11,15 +11,17 @@ Connectors using OAuth require that the user goes through a webflow where they a
 
 This process is simpler than it sounds.
 
-First of all an Account Sign-In Token needs to be generated for the User see below.
+First of all an Account Sign-In Token needs to be generated for the User to access the account see below.
 
 Request:
 
 ````http
-    POST /v1.0/accounts/tokens{Account Connector ID}
+    POST  /v1.0/accounts/{Account ID}/signintoken
     Authorization Bearer 0000000000000000000000000000000000000000000000000000000000000000
-    X-Cyclr-Account: 00000000-0000-0000-0000-000000000000
 
+    {
+        "Username": "example_user"
+    }
 
 ````
 
