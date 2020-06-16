@@ -28,7 +28,7 @@ Then open the Freshdesk dashboard, and follow these steps:
 
 1. Click the **Admin** cog on the left hand side navigation bar.
     
-    ![Admin cog](cog.png)
+    ![Admin cog](./images/cog.png)
 2. Scroll down to the **Helpdesk Productivity** Section, and select **Automations**.
 
     ![Automations](./images/automations.png)
@@ -100,4 +100,4 @@ Then open the Freshdesk dashboard, and follow these steps:
 
 16. Save and enable.  Your webhook step should now be fully usable.
 
-> NB. If you need to accidentally delete the webhook step, you can simply edit the rule, and update the URL with that of the new step.
+> NB. If you accidentally delete the webhook step and need a new one, you can simply edit the rule and update the URL with that of the new step.
