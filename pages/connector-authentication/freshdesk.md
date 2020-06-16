@@ -31,12 +31,12 @@ Then open the Freshdesk dashboard, and follow these steps:
     ![Admin cog](cog.png)
 2. Scroll down to the **Helpdesk Productivity** Section, and select **Automations**.
 
-    ![Automations](automations.png)
+    ![Automations](./images/automations.png)
 3. Choose **Rules that run on: Ticket Updates**.
 4. Click **New rule**.
 5. Set **Rule name** and **Involves any of these events** as follows:
 
-    ![Rule settings](rule_settings.png)
+    ![Rule settings](./images/rule_settings.png)
 6. You can leave **On tickets with these properties** as it is.
 9. Under Perform these actions, set **Choose Action** to **Trigger Webhook**.
 10. Set Request Type to **POST**.
@@ -44,7 +44,7 @@ Then open the Freshdesk dashboard, and follow these steps:
 12. Leave the other fields as they are, and under Content, select **Advanced**.
 13. The section should now look like this:
 
-    ![Rule settings 2](rule_settings2.png)
+    ![Rule settings 2](./images/rule_settings2.png)
 13. In the **Write custom API request** text box, paste the following template:
 ```json
 {
@@ -96,7 +96,7 @@ Then open the Freshdesk dashboard, and follow these steps:
 ```
 14. Click **Preview and save**.
 15. Check that the summary looks like this:
-    ![Summary](summary.png)
+    ![Summary](./images/summary.png)
 
 16. Save and enable.  Your webhook step should now be fully usable.
 
