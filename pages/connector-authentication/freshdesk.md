@@ -46,7 +46,7 @@ Then open the Freshdesk dashboard, and follow these steps:
 
     ![Rule settings 2](./images/rule_settings2.png)
 13. In the **Write custom API request** text box, paste the following template:
-```json
+```
 {
 	"ticket": {
 		"id": " {{ticket.id}} ",
