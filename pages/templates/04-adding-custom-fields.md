@@ -26,3 +26,9 @@ The following needs to be specified
 | Display Name | This is the “friendly” name as it will be shown in the user interface. |
 | Description | You can optionally describe the field and provide documentation, for example how it is used. |
 | Data Type | You can optionally define a data type for your field.  If it is datetime then add the subtype to allow for type conversions between differnt standards. |
+
+## Adding Fields Using Json Example
+
+As well as being able to add fields manually one-by-one if you have a Json example of the request or response then this can be used to auto-add additional or custom fields.
+
+Simply take the 'spy glass' icon and paste in the Json example.  Any not aleady existing will be added.
