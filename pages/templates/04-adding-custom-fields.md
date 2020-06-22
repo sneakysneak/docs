@@ -31,4 +31,4 @@ The following needs to be specified
 
 As well as being able to add fields manually one-by-one if you have a Json example of the request or response then this can be used to auto-add additional or custom fields.
 
-Simply take the 'spy glass' icon and paste in the Json example.  Any not aleady existing will be added.
+Simply take the 'spy glass' icon and paste in the Json example.  Any fields that do not aleady existing will be added.  You may then need to tidy up the field names and data types that have been automatically generated.
