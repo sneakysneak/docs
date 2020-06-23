@@ -11,7 +11,7 @@ tags: [connector]
 
 To use the Selligent connector, you will need 
 
-1. The name of your server (for example **https://<span></span>yourcompany.slgnt.eu**)
+1. The name of your server (for example **yourcompany.slgnt.eu**)
 2. Your Username
 3. A Secret Key (aka Password).
 
