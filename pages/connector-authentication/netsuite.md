@@ -13,21 +13,21 @@ To enable REST APIs in NetSuite, a RESTlet is required to be deployed in your Ne
 
 You can upload the RESTlet script file to NetSuite from Customization > Scripting > Scripts > New. Make sure you select RESTlet as the Type and enter the GET / POST / DELETE / PUT function names based on your RESTlet script.
 
-IMAGE 1
+![Example1](./images/Netsuite_1.png)
 
-IAMGE 2
+![Example2](./images/Netsuite_2.png)
 
 ### Deploy the RESTlet script
 
 Once your script is uploaded, you need to deploy the script. Make a note of the External URL which will be used when you install the NetSuite connector in Cyclr.
 
-IMAGE 3
+![Example3](./images/Netsuite_3.png)
 
 ### Create an integration in NetSuite
 
 To allow Cyclr to access the RESTlet securely, you need to set up a token-based authentication in NetSuite. You can create an integration under Setup > Integration > Manage Integrations > New. Check the token-based authentication on the setup page.
 
-IMAGE 4
+![Example4](./images/Netsuite_4.png)
 
 Save the integration and copy the consumer key and consumer secret. You will need them when installing the NetSuite connector.
 
@@ -35,7 +35,7 @@ Save the integration and copy the consumer key and consumer secret. You will nee
 
 Create an access token from Setup > Users/Roles > Access Tokens > New. The application name should be the integration you created in the previous step. Select a user who have access to make REST calls and permissions to the objects you would like Cyclr to access.
 
-IMAGE 5
+![Example5](./images/Netsuite_5.png)
 
 Make a note of the token ID and token secret. Cyclr will ask for them when you install the NetSuite connector.
 
