@@ -7,7 +7,7 @@ tags: [connector]
 
 ## Bulk Import/Export
 
-The ability to import and export csv (comma separated values), tsv (tab separated values) or ssv (space separated values) files is supported with methods from the **Bulk Exports** and **Bulk Imports** categories.
+The ability to import and export csv (comma separated values), tsv (tab separated values) or ssv (space separated values) files is supported with methods from the **Bulk Imports** and **Bulk Exports** categories.
 
 ### Import
 
