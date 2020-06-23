@@ -31,6 +31,8 @@ Using the method Create Import Job:
 
 ![create import job configuration](./images/marketo_import_4.png)
 
+3. The status of the created import job can be checked with the method **Get Import Job Status**. Simply pass it the import job's batch ID
+
 ### Export
 
 To export a file (CSV, TSV or SSV) you must:
