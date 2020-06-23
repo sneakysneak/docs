@@ -1,0 +1,64 @@
+---
+title: Marketo Connector Guide
+sidebar: cyclr_sidebar
+permalink: marketo-connector
+tags: [connector]
+---
+
+## Bulk Import/Export
+
+The ability to import and export csv (comma separated values), tsv (tab separated values) or ssv (space separated values) files is supported with methods from the **Bulk Exports** and **Bulk Imports** categories.
+
+### Import
+
+If you haven't done so already, export your data in the chosen format.
+
+For example, if your data is in an excel spreadsheet and you want to save that as a csv file:
+
+![marketo spreadsheet](./images/marketo_import_1.png)
+
+![marketo save as csv](./images/marketo_import_2.png)
+
+Open this file in a text editor such as Notepad, Visual Studio Code etc.
+
+![marketo csv raw](./images/marketo_import_3.png)
+
+Using the method Create Import Job:
+
+1. Select the File Format (CSV, TSV or SSV)
+
+2. Copy and paste the contents of your file into the File parameter (File parameter > Type a Value > paste the contents)
+
+![create import job configuration](./images/marketo_import_4.png)
+
+### Export
+
+To export a file (CSV, TSV or SSV) you must:
+
+1. Select the **Create Export Job** method that suits your requirements (Activities, Leads, New Activities or New Leads)
+
+   ![create import job configuration](./images/marketo_export_1.png)
+
+2. Define the fields the export file should include (eg. firstName, lastName, email)
+
+3. Optionally select the file format (if not selected this will default to CSV)
+
+   ![create import job configuration](./images/marketo_export_2.png)
+
+4. The response from this method will include the status and the Export ID for use in subsequent methods
+
+   ![create import job configuration](./images/marketo_export_3.png)
+
+5. Add the created export job to the processing queue with the method **Enqueue Export Job**. Select the Export Type (leads or activities) and enter the Export ID
+
+   ![create import job configuration](./images/marketo_export_4.png)
+
+6. The export job will now have a status of 'Queued'
+
+7. To check the changing status of the Export Job use the method **Get Export Job Status**, again providing the Export Type and Export ID
+
+8. When the Export Job's status has changed to 'Completed' the file is ready to download using the method **Get Export File**, again providing the Export Type and Export ID
+
+9. **Get Export File**'s response will provide a 'Download' button. Click this to download the file to your system
+
+   ![create import job configuration](./images/marketo_export_5.png)
