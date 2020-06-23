@@ -5,7 +5,41 @@ permalink: netsuite-connector
 tags: [connector]
 ---
 
-# Filtering Objects #
+## RESTlet Installation
+
+To enable REST APIs in NetSuite, a RESTlet is required to be deployed in your NetSuite account. Follow the steps in this documentation to set up a RESTlet.
+
+### Upload the RESTlet script to NetSuite
+
+You can upload the RESTlet script file to NetSuite from Customization > Scripting > Scripts > New. Make sure you select RESTlet as the Type and enter the GET / POST / DELETE / PUT function names based on your RESTlet script.
+
+IMAGE 1
+
+IAMGE 2
+
+### Deploy the RESTlet script
+
+Once your script is uploaded, you need to deploy the script. Make a note of the External URL which will be used when you install the NetSuite connector in Cyclr.
+
+IMAGE 3
+
+### Create an integration in NetSuite
+
+To allow Cyclr to access the RESTlet securely, you need to set up a token-based authentication in NetSuite. You can create an integration under Setup > Integration > Manage Integrations > New. Check the token-based authentication on the setup page.
+
+IMAGE 4
+
+Save the integration and copy the consumer key and consumer secret. You will need them when installing the NetSuite connector.
+
+### Create an access token
+
+Create an access token from Setup > Users/Roles > Access Tokens > New. The application name should be the integration you created in the previous step. Select a user who have access to make REST calls and permissions to the objects you would like Cyclr to access.
+
+IMAGE 5
+
+Make a note of the token ID and token secret. Cyclr will ask for them when you install the NetSuite connector.
+
+## Filtering Objects 
 
 The "List" methods, which return multiple items when run, can be filtered to match specified criteria using the following Fields:
 
@@ -13,7 +47,7 @@ The "List" methods, which return multiple items when run, can be filtered to mat
 - `Operator` \*required: is the operation you wish to run against the field e.g. "is", "greaterthan", "contains". See the table below for an extensive list of operators and field types against which they can be used.
 - `Value` \*optional: is the value against which the fields will be compared using the Operator value.
 
-#### Multiple Filter Conditions ####
+### Multiple Filter Conditions
 
 Sometimes you may need to use more than one filter condition.  To do this you'll need to use some Script in the NetSuite Step to add them in.  In the Builder, click the `Step Setup` button on the NetSuite Step, then choose `Advanced Settings` and enter Script similar to this:
 
@@ -48,7 +82,7 @@ You can add any number of filter conditions using Script as you require.  Just b
 
 
 
-#### Operators and Valid Field Types ####
+### Operators and Valid Field Types
 
 |Search Operator|List/Record|Currency, Decimal Number, Time of Day|Date|Check Box|Document, Image|Email Address, Free-Form Text, Long Text, Password, Percent, Phone Number, Rich Text, Text Area,|Multi Select|
 |--- |--- |--- |--- |--- |--- |--- |--- |
