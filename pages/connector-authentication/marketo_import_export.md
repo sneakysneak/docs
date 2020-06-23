@@ -39,21 +39,21 @@ To export a file (CSV, TSV or SSV) you must:
 
 1. Select the **Create Export Job** method that suits your requirements (Activities, Leads, New Activities or New Leads)
 
-   ![create import job configuration](./images/marketo_export_1.png)
+   ![create export job configuration](./images/marketo_export_1.png)
 
 2. Define the fields the export file should include (eg. firstName, lastName, email)
 
 3. Optionally select the file format (if not selected this will default to CSV)
 
-   ![create import job configuration](./images/marketo_export_2.png)
+   ![create export job configuration](./images/marketo_export_2.png)
 
 4. The response from this method will include the status and the Export ID for use in subsequent methods
 
-   ![create import job configuration](./images/marketo_export_3.png)
+   ![create export job configuration](./images/marketo_export_3.png)
 
 5. Add the created export job to the processing queue with the method **Enqueue Export Job**. Select the Export Type (leads or activities) and enter the Export ID
 
-   ![create import job configuration](./images/marketo_export_4.png)
+   ![create export job configuration](./images/marketo_export_4.png)
 
 6. The export job will now have a status of 'Queued'
 
@@ -63,4 +63,4 @@ To export a file (CSV, TSV or SSV) you must:
 
 9. **Get Export File**'s response will provide a 'Download' button. Click this to download the file to your system
 
-   ![create import job configuration](./images/marketo_export_5.png)
+   ![create export job configuration](./images/marketo_export_5.png)
