@@ -31,7 +31,7 @@ Using the method Create Import Job:
 
 ![create import job configuration](./images/marketo_import_4.png)
 
-3. The status of the created import job can be checked with the method **Get Import Job Status**. Simply pass it the import job's batch ID
+The status of the created import job can be checked with the method **Get Import Job Status**. Simply pass it the import job's batch ID
 
 ### Export
 
@@ -39,7 +39,7 @@ To export a file (CSV, TSV or SSV) you must:
 
 1. Select the **Create Export Job** method that suits your requirements (Activities, Leads, New Activities or New Leads)
 
-   ![create export job configuration](./images/marketo_export_1.png)
+   ![create export job methods](./images/marketo_export_1.png)
 
 2. Define the fields the export file should include (eg. firstName, lastName, email)
 
