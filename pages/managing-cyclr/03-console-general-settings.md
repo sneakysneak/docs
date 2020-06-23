@@ -8,9 +8,9 @@ tags: [managing-cyclr]
 
 | Option | Documentation |
 | --- | --- |
-| Application Icon | Your application icon. Displayed in the navigation bar if Cyclr is used as a white-label service. |
-| Sign In Logo | Logo to use on the User Login Page. |
-| Fav Icon | Favicon to use in Cyclr. |
+| Application Icon | Your application icon. Displayed in the navigation bar if Cyclr is used as a white-labelled service.  40x40 pixel PNG image with a transparent background. |
+| Sign In Logo | Logo to use on the User Login Page.  PNG image, suggested dimensions of 300x100 pixels. |
+| Fav Icon | Web browser "favicon" to use in Cyclr. |
 | Application Display Name | Display name for your application. |
 | Cycle Noun | Noun for calling cycles in the UI. Default to "Cycle". |
 | Cycle Create Verb (Launch) | Verb for creating cycles in LAUNCH and Marketplace. Default to "Create". |
