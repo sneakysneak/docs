@@ -24,7 +24,7 @@ When a release is pushed live this might be done as a Major release which will c
 | Name | The name of the connector that will be used in the interface. | This should not include the API Version. |
 | Description | Description of the product. | Take this from the application's website. |
 | API Verion | Version should be the same as the API's version.| |
-| Icon | The logo that will be used to represent the application. | Best as a 400x400 pixel PNG image with a transparent background. |
+| Icon | The logo that will be used to represent the application. | 400x400 pixel PNG image with a transparent background. |
 
 ## Release Settings
 
@@ -38,7 +38,7 @@ When a release is pushed live this might be done as a Major release which will c
 | Inbound Page Size | If inbound paging is supported, provide the default page size. | |
 | Outbound Page Size | If outbound paging is supported, provide the default page size. | |
 | User Singular Partner Webhook URL? | | |
-| Icon | The logo that will be used to represent the application. | Best as a 400x400 pixel PNG image with a transparent background. |
+| Icon | The logo that will be used to represent the application. | 400x400 pixel PNG image with a transparent background. |
 
 ## Related Topics
 
