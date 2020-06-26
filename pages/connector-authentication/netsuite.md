@@ -15,7 +15,7 @@ You can upload the RESTlet script file to NetSuite from Customization > Scriptin
 
 ![Example1](./images/Netsuite_1.png)
 
-![Example2](./images/Netsuite_2.png)
+![Example2](./images/Netsuite_2_2.png)
 
 ### Deploy the RESTlet script
 
