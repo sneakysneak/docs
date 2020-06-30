@@ -26,7 +26,9 @@ This gives you a kind of "fire and forget" process: you tell Cyclr to do some wo
 
 If you use a **Webhook** Step and a **Synchronous Response** Step in a Cycle, Cyclr is then able to receive a Request through a Webhook Step as normal, but rather than just sending an "ok" Response, it will keep the connection open and run through the rest of the Cycle.  Once a **Synchronous Response** Step is reached, Cyclr will then send back a Response.  You can define what comes back in the Response using the Synchronous Response's Step Setup.
 
-This allows you to tell Cyclr to do some work and for it to say "ok, one moment... here's your result".  We call this **Synchronous Webhooks**.
+This allows you to tell Cyclr to do some work and for it to say "ok, please wait... here's your result".
+
+We refer to this setup as **Synchronous Webhooks**.
 
 
 ## Passing Control between Cycles
