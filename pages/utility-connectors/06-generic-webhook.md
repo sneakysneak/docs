@@ -15,6 +15,20 @@ Each instance of the Webhook Method uses a unique URL to which a POST Request ca
 
 As with all connectors, the **Generic Webhook** Utility Connector can be added multiple times.  This allows the Connector to be setup and named appropriately for each use case.
 
+
+## Webhooks and Synchronous Webhooks
+
+When a Request is sent to a **Webhook** Step in a running Cycle, a Response is sent back straightaway confirming whether the Request was accepted or not.  If it was accepted, Cyclr will go on to run the Cycle using the data it was given, but you won't hear anything more about it.
+
+This gives you a kind of "fire and forget" process: you tell Cyclr to do some work and it says "ok".
+
+<br />
+
+If you use a **Webhook** Step and a **Synchronous Response** Step in a Cycle, Cyclr is then able to receive a Request through a Webhook Step as normal, but rather than just sending an "ok" Response, it will keep the connection open and run through the rest of the Cycle.  When **Synchronous Response** Step is reached, Cyclr will then send back a Response.
+
+This allows you to tell Cyclr to do some work and have it say "ok, one moment... here's your result".  We call this **Synchronous Webhooks**.
+
+
 ## Passing Control between Cycles
 
 The **Generic Webhook** Utility Connector can be used to link Cycles together.  For example, a step in Cycle 1 can make an HTTP POST to a Webhook that has been set up as a trigger to start Cycle 2.
