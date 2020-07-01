@@ -13,7 +13,7 @@ The ability to import and export csv (comma separated values), tsv (tab separate
 
 If you haven't done so already, export your data in the chosen format.
 
-For example, if your data is in an excel spreadsheet and you want to save that as a csv file:
+For example, if your data is in a Google Sheets spreadsheet and you want to save that as a csv file:
 
 ![marketo spreadsheet](./images/marketo_import_1.png)
 
