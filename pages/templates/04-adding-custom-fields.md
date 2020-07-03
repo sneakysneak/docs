@@ -27,8 +27,11 @@ The following needs to be specified
 | Description | You can optionally describe the field and provide documentation, for example how it is used. |
 | Data Type | You can optionally define a data type for your field.  If it is datetime then add the subtype to allow for type conversions between differnt standards. |
 
-## Adding Fields Using Json Example
+## Adding Fields Using JSON Example
 
-As well as being able to add fields manually one-by-one if you have a Json example of the request or response then this can be used to auto-add additional or custom fields.
+As well as being able to add fields manually one-by-one, if you have a JSON example of the request or response then this can be used to auto-add additional or custom fields.
 
-Simply take the 'spy glass' icon and paste in the Json example.  Any fields that do not aleady existing will be added.  You may then need to tidy up the field names and data types that have been automatically generated.
+Simply take the 'spy glass' icon by the Request or Response area - depending on where you wish to add the fields - and paste in the JSON example in the popup that opens.  Any fields that do not already exist will be added.  You may then need to tidy up the field names and data types that have been automatically generated.
+
+*NOTE: Before pasting in a large JSON example, reduce it to only what you wish to work with as a field will be added for each property it contains. Any you don't wish to keep must be deleted one-by-one.*
+
