@@ -7,7 +7,11 @@ tags: [connector]
 
 ## RESTlet Installation
 
-To enable REST APIs in NetSuite, a RESTlet is required to be deployed in your NetSuite account. Follow the steps in this documentation to set up a RESTlet.
+To enable REST APIs in NetSuite, a "RESTlet" file must be deployed in your NetSuite account.
+
+To support the NetSuite Connector, Cyclr has its own RESTlet file.  Please get in touch with your Support Team to request this.
+
+Once you have the Cyclr RESTlet file, follow the steps in this documentation.
 
 ### Upload the RESTlet script to NetSuite
 
