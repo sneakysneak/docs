@@ -7,7 +7,9 @@ tags: [connector]
 
 Briostack Setup
 ---------------
-In order to authenticate the connector, you will simply need your username and password.
+In order to authenticate the connector, you will simply need your username, password and account name.
+
+Your account name can be found in the address of your website, for example if your site is __johnsmithltd.briostack.com__, your account name would be __johnsmithltd__.
 
 Sales Methods
 ---------------
