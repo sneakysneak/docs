@@ -7,13 +7,11 @@ tags: [connector]
 
 ## Partner Setup
 
-#### Introduction
+First, login to your existing Scoro account, or sign-up for a free 14 day trial.
 
-Login to your existing Scoro account, or sign-up for a free 14 day trial.
+A note about methods that need specific authentication:
 
-### API Limited Method Categories
-
-All methods in the following categories will need an API key to function:
+Methods in the following categories will need an API key to function:
 *  Properties
 *  Meters
 *  Readings
@@ -21,9 +19,7 @@ All methods in the following categories will need an API key to function:
 *  Product Groups
 *  Depot
 
-### User Auth Limited Method Categories
-
-All methods in the following categories will need User Auth to function:
+Methods in these categories will need User Auth to function:
 *  Bookmarks
 *  Search
 *  Webhooks
