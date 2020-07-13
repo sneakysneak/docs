@@ -1,5 +1,5 @@
 ---
-title: User(.)com Connector Guide
+title: User.com Connector Guide
 sidebar: cyclr_sidebar
 permalink: userdotcom-connector
 tags: [connector]
