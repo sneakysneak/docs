@@ -1,7 +1,7 @@
 ---
 title: User(.)com Connector Guide
 sidebar: cyclr_sidebar
-permalink: user.com-connector
+permalink: user(.)com-connector
 tags: [connector]
 ---
 
