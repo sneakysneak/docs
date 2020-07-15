@@ -9,7 +9,9 @@ tags: [connector]
 
 To authenticate the FoodTec Solutions connector you will need the name of the chain you wish to interact with, and an API Key.
 
-The chain name, in the proper format for the API, can be found in the URL of your account, for example: https://{ChainName}.foodtecsolutions<span></span>.com
+The chain name, in the proper format for the API, can be found in the URL of your account.
+
+  > Example: https://{ChainName}.foodtecsolutions<span></span>.com
 
 Your API Key (token) should be issued by FoodTec Solutions. Please contact your FoodTec Solutions account manager if you require assistance obtaining this.
 
