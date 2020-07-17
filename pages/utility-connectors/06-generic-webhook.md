@@ -45,6 +45,20 @@ When testing or running this kind of 'linked Cycles' structure you must start Cy
 
 In this example, 2 Cycles have been used but the same procedure can be set up to chain together a whole series of Cycles.
 
+
+## Mid-Cycle Webhooks
+
+Webhook Steps can be used as the *first* Step in a Cycle as a way to receive data for processing, but they can also be used *part-way through* a Cycle - or "Mid-Cycle" - as a way of holding a Transaction until ready to proceed.
+
+A reason why a Transaction might need to be held could be when performing some remote account setup or requesting an intensive data query to be executed; tasks that could take minutes or even hours before they're completed.
+
+A Transaction will run through a Cycle as normal until it reaches a mid-Cycle Webhook Step.  There it will wait until that Webhook Step receives a Request indicating the Transaction can continue.
+
+Mid-Cycle Webhooks have a **Webhook Mapping** section in Step Setup where you define what will trigger a Transaction to continue: you select the field in received Webhook Requests that will contain a value that matches another field found in the existing Transactions, e.g. a Job or Order ID.
+
+Each time the mid-Cycle Webhook receives a Request, it will look for the most recent Transaction that has a matching value for the Webhook Mapping defined, and run that Transaction from there.  This can be done multiple times, causing a Transaction to be run from the mid-Cycle Webhook more than once.  This can be useful when processing data such as Orders where a notification might be received each time its status changes (e.g. from Received, Picked, Packed to Despatched).  In this situation, if you only wanted to continue when the Order's status was "Despatched", you could use a Decision Step after the Webhook Step to check the current status.
+
+
 ## Related Topics
 
 [How to add custom fields](./adding-custom-fields) 
