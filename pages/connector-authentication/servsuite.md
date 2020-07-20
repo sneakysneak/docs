@@ -1,7 +1,7 @@
 ---
 title: ServSuite Authentication
 sidebar: cyclr_sidebar
-permalink: profitwell
+permalink: servsuite
 tags: [connector]
 
 ---
