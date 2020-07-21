@@ -9,7 +9,7 @@ tags: [connector]
 
 To authenticate the monday<span></span>.com connector you will need a Board ID and an API Key.
 
-A new instance of the connector should be installed for each board you want to interface with.
+> A new instance of the connector should be installed for each board you want to interface with.
 
 ### API Key
 
@@ -29,7 +29,7 @@ A new instance of the connector should be installed for each board you want to i
 
 6. Copy your token
 
-> Note: You can regenerate a new token at any time. Doing so will cause the existing one to expire.
+> You can regenerate a new token at any time. Doing so will cause the existing one to expire.
 
 ### Board ID
 
