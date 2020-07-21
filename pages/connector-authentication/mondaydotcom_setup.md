@@ -13,7 +13,7 @@ To authenticate the monday<span></span>.com connector you will need a Board ID a
 
 ### API Key
 
-1. Log into your [monday.com](https://monday.com/) account
+1. Log into your [monday.com](https://auth.monday.com/login) account
 
 2. Click on your avatar (picture icon) in the bottom left corner
 
