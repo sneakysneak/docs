@@ -119,5 +119,15 @@ function before_action() {
     return true;
 }
 ```
-
 [More information](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/headers_autoassign.htm)
+
+### Working with CSV documents
+
+To retrieve the contents of a CSV document, you will need to take the following steps:
+
+1. Find the Document ID.  This can be found in the response you recieved when you made the file, or by running "List Content Documents".
+2. Use this ID in a "Get Content Version" call to get the Content Version ID.
+3. Enter the Content Version ID in a "Get Content Document Data (CSV)" call.
+4. You will need to add the fields within connector settings so that you can map them.  The field location should be identical to the column header.
+
+
