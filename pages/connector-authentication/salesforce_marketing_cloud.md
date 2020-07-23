@@ -49,13 +49,12 @@ Your custom fields will be created. This process should be carried out for both 
 
 1. Your request object must include the property 'keys'. This is assigned an object containing the primary key you will be using to upsert the data
 
-2. Your mappings must start with an array as this API endpoint expects an array of objects, even if that array only contains one item
+2. Your mappings must start with an array. This endpoint expects an array of objects, even if that array only contains one item
 
 For example, if generating fields from sample JSON:
 
-**Invalid** - no keys property
-
 ```json
+Invalid - no keys property
 {
   "values: {
     "FirstName": "John",
@@ -64,9 +63,8 @@ For example, if generating fields from sample JSON:
 }
 ```
 
-**Invalid** - no parent array
-
 ```json
+Invalid - no parent array
 {
   "keys": {
     "EmailAddress": "test@test.com"
@@ -78,9 +76,8 @@ For example, if generating fields from sample JSON:
 }
 ```
 
-**Valid** - keys property and parent array
-
 ```json
+Valid - keys property and parent array
 [
   {
     "keys": {
