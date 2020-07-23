@@ -5,6 +5,10 @@ permalink: salesforce-marketing-cloud-connector
 tags: [connector]
 ---
 
+## Authentication
+
+Please refer to [this document](https://docs.cyclr.com/salesforce-connector) for a guide to authenticating Salesforce connectors.
+
 ## Upsert Custom Data Extension Rows
 
 The Salesforce Marketing Cloud connector gives you have the ability to Upsert (create or update) a batch of data extension rows.
