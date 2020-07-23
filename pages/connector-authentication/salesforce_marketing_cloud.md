@@ -55,6 +55,7 @@ For example, if generating fields from sample JSON:
 
 ```json
 Invalid - no keys property
+
 {
   "values: {
     "FirstName": "John",
@@ -65,6 +66,7 @@ Invalid - no keys property
 
 ```json
 Invalid - no parent array
+
 {
   "keys": {
     "EmailAddress": "test@test.com"
@@ -78,6 +80,7 @@ Invalid - no parent array
 
 ```json
 Valid - keys property and parent array
+
 [
   {
     "keys": {
