@@ -100,6 +100,6 @@ If adding fields manually, for Field Location:
 
 > keys.EmailAddress
 
-**valid** - property has parent array
+**Valid** - property has parent array
 
 > [].keys.EmailAddress
