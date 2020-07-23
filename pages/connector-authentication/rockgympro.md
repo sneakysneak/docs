@@ -16,7 +16,3 @@ To make requests you will need your API username and password.  These are not th
 Visit https://app.rgprocloud.net/admin/api_keys and copy down the Username, and API Key.
 
 You can then use these as Username and Password when authenticating the connector.
-
-### Note about date formats:
-
-When filtering calls by date, all dates must be formatted as follows: 2020-01-01 13:00:00.
