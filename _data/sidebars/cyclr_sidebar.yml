@@ -410,9 +410,9 @@ entries:
           - title: Wordpress Authentication
             url: /wordpress-connector.html
             output: web, pdf
-
-          - title: Xero Private Instance Authentication
-            url: /xero-private-connector
+           
+          - title: Xero (OAuth 2.0)
+            url: /xero-oauth2
             output: web, pdf
 
           - title: Zendesk Webhooks
