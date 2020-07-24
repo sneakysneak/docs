@@ -47,6 +47,8 @@ You should now take your Client ID and Client Secret values and store them in yo
 
 From your Cyclr Console, click the **Connectors** option along the top then **Application Connector Library**, find **Xero (OAuth2.0)** - you may need to use the Search box to locate it - then click the Padlock button and paste and save your values there.
 
+If you are a Xero Partner, you can also provide your **User-Agent** string, othewise leave it blank.
+
 You should now be able to successfully install a **Xero (OAuth2.0)** Connector.
 
 At this point it would be a good idea to install a Connector and run a test against one of the Methods, just to make sure the authentication process has been completed successfully.
