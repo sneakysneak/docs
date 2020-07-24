@@ -21,7 +21,7 @@ Your Cyclr Partner may have been setup with a default Service Domain, but this c
 
 ### Creating a Xero App
 
-Go to https://developer.xero.com/myapps to create a Xero OAuth 2.0 App in Xero.
+Go to [https://developer.xero.com/myapps] to create a Xero OAuth 2.0 App in Xero.
 
 Click the **New app** button in the top right to see a form similar to this:
 
