@@ -34,7 +34,7 @@ Enter the following values:
 
 **Client ID**:  The client ID that we retrieved from the app that we made.
 
-**Company Name**:  The secret that we retrieved from the app that we made.
+**Client Secret**:  The secret that we retrieved from the app that we made.
 
 
 Your Sage 50 Connector is now setup! You can test it by installing it in one of your Cyclr accounts and executing one of the methods to confirm it can return some data.
