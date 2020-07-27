@@ -11,7 +11,7 @@ tags: [connector]
 
 You will need a security token to authenticate with Salesforce. This will have been sent to your email when creating your account. If you no longer have access to this token, you can reset it.
 
-Follow this link to rest your token: https://\<**yoursalesforcehostname**>/_ui/system/security/ResetApiTokenEdit?retURL=%2Fui%2Fsetup%2FSetup%3Fsetupid%3DPersonalInfo&setupid=ResetApiToken
+Follow this link to rest your token: `https://\<**yoursalesforcehostname**>/_ui/system/security/ResetApiTokenEdit?retURL=%2Fui%2Fsetup%2FSetup%3Fsetupid%3DPersonalInfo&setupid=ResetApiToken`
 
 Or through your account:
 
