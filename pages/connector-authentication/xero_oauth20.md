@@ -54,7 +54,5 @@ You should now be able to successfully install a **Xero (OAuth2.0)** Connector.
 At this point it would be a good idea to install a Connector and run a test against one of the Methods, just to make sure the authentication process has been completed successfully.
 
 ### Payroll Sections
-
-Xero has seperate API's for each separate payroll APIs for the Australian, UK and New Zealand markets. We have seperated payroll within the connecotor. You need to ensure that the client only uses the payroll section related to their login, all other sections are common. 
-
-i.e. If the users system payroll is New Zealand they should only use the payroll methods under the Payroll - NZ Section.
+Xero has separate API's for each separate payroll APIs for the Australian, UK and New Zealand markets. We have seperated payroll within the connector. You need to ensure that the client only uses the payroll section related to their login, all other sections are common. 
+i.e. If the users system payroll is Australia they should only use the payroll methods under the Payroll - AU Section.
