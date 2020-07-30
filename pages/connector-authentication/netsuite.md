@@ -43,6 +43,46 @@ Create an access token from Setup > Users/Roles > Access Tokens > New. The appli
 
 Make a note of the token ID and token secret. Cyclr will ask for them when you install the NetSuite connector.
 
+## Setting select and multiselect Fields
+
+When setting `select` and `multiselect` fields in a create or update method, you can either provide its `internalid` (actual value in NetSuite) or `name` (UI display text in NetSuite).
+
+Examples:
+
+```json
+{
+    "company": {
+        "internalid": "300"
+    },
+    "custentity_categories": [
+        {
+            "internalid": "1"
+        },
+        {
+            "internalid": "2"
+        }
+    ]
+}
+```
+
+```json
+{
+    "company": {
+        "name": "Cyclr"
+    },
+    "custentity_categories": [
+        {
+            "name": "Software"
+        },
+        {
+            "name": "API"
+        }
+    ]
+}
+```
+
+If both `internalid` and `name` are provided, only the `internalid` will be used in the RESTlet.
+
 ## Filtering Objects 
 
 The "List" methods, which return multiple items when run, can be filtered to match specified criteria using the following Fields:
@@ -79,12 +119,9 @@ method_request_parameters.filter_op_X
 method_request_parameters.filter_val_X
 ```
 
-
 You can add any number of filter conditions using Script as you require.  Just be sure that the numbers on the end of the properties are consecutive, without any breaks.  If you add properties for "..._2", "..._3", skip 4 and add them for "..._5", your fifth condition will be ignored.
 
 *NOTE:* In the "List" methods you can opt to skip the filters in the connector parameters and simply define all of your filters in script. To do this you will need to start the script parameters from "..._1" e.g. `method_request_parameters.filter_field_1`. However, the "Get New/Updated" methods' script parameters must always be set from "..._2", as the first set are already defined by the step itself.
-
-
 
 ### Operators and Valid Field Types
 
