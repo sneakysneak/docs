@@ -5,7 +5,7 @@ permalink: marketplace-deployment
 tags: [marketplaces]
 ---
 
-To enable your users to view a Marketplace and install teplaces, you will need to have an "Integrations" button or link within your application's UI.
+To enable your users to view a Marketplace and install templates, you will need to have an "Integrations" button or link within your application's UI.
 
 For example:
 
@@ -149,5 +149,5 @@ NJ88GGgv79V79VvYFBBTHUIGu</td>
     </tr>
 </table>
 
-> After deploying Marketplace you will see an API User in your Cyclr console.
-> The API User has access to the account however they cannot signin to the Cyclr interface.
+> After deploying a Marketplace you will see an API User in your Cyclr console.
+> The API User has access to the account, however they cannot signin to the Cyclr interface.
