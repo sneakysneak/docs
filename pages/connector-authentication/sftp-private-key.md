@@ -5,11 +5,11 @@ permalink: sftp-private-key
 tags: [connector]
 ---
 
-To authenticate the SFTP Private Key connector you will need to provide the following values.
+To authenticate the SFTP Private Key, connector you will need to provide the following values:
 
-## HOST Uri ##
+## Host URI ##
 
-You need to provide the URI where the SFTP server is located.
+The URI where the SFTP server is located.
 
 ````
 sftp://example.com
@@ -17,7 +17,7 @@ sftp://example.com
 
 ## User Name ## 
 
-You need to provide the username of the user to authenticate with the SFTP server as.
+The username to authenticate as with the SFTP server.
 
 ````
 sftp_user
@@ -25,7 +25,7 @@ sftp_user
 
 ## Private Key ##
 
-You need to provide the PKCS #1 RSA private key that the SFTP server knows as an _authorized_keys_ for the user.
+The PKCS #1 RSA private key that the SFTP server knows as an _authorized_key_ for the username provided.
 
 ````
 -----BEGIN RSA PRIVATE KEY-----
@@ -57,13 +57,13 @@ U+RfJn9l5kWbZLhVkb9AlVP8MA6VOM2U+LfW7Z/7gOslnoMMosk=
 -----END RSA PRIVATE KEY-----
 ````
 
-## Parsephrase (Optional) ##
+## Passphrase (Optional) ##
 
-If the private key requires a parsephrase you can provide it here, if there isn't a passphrase you should leave this blank.
+If the private key requires a passphrase, provide it here.
 
 ## Server Time Zone ##
 
-You need to provide the timezone used by the SFTP server, if not set correctly the **List Updated Files** method will not function correctly.
+The timezone used by the SFTP server. If not set correctly the **List Updated Files** method will not function as expected.
 
 ````
 Europe/London
@@ -71,5 +71,6 @@ Europe/London
 
 ## IP Whitelisting ##
 
-If the SFTP server is not publicly accessible ensure you allow Cyclr to connect.
+If the SFTP server is not publicly accessible, ensure you allow Cyclr to connect to it.
+
 See [Cyclr IP Whitelisting](https://docs.cyclr.com/cyclr-ip-whitelisting)
