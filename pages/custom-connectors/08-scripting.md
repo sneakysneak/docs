@@ -282,6 +282,18 @@ var signature = cyclr_sign(algorithm, signingKey, valueToSign);
 
 Supported algorithms are: `HMAC-SHA1`, `RSA-SHA1`, `RSA-SHA224`, `RSA-SHA256`, `RSA-SHA384`, `RSA-SHA512`.
 
+#### cyclr_csv_parse
+
+Function to parse a CSV string.
+
+```javascript
+var csv = '1,2,3\na,b,c';
+var delimiter = ',';
+var hasHeader = false;
+
+var csvRecords =  cyclr_csv_parse(csv, delimiter, hasHeader);;
+```
+
 ### Exceptions
 
 #### AuthRefreshException
