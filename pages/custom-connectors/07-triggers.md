@@ -14,7 +14,7 @@ The settings for an Accounts the Account Id lookup would look something like thi
 | Property | Value | Usage |
 | --- | --- | --- |
 | Name | Select Accounts | Triggers need to be defined at the connector level with a unique Name. |
-| MethodName | List Accounts | The name of the method in the connector. | 
+| Method | List Accounts | The method in the connector to call. | 
 | IdentifierKey | [accounts].id" |  The ID field that will be used in an HTTP method by Cyclr. |
 | HumanReadableKey | [accounts].name | The field that will allow the user to select the correct account. |
 
