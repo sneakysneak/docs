@@ -66,7 +66,7 @@ Once you have fetched the Partner Connector properties you can include them in t
         "Username": "user@example.com", 
         "Password": "password",
         "AccountId": "0000000-0000-0000-0000-000000000000",
-        "partnerConnector": {
+        "PartnerConnector": {
             "Name": "Example Partner Connector",
             "AuthValue": "Auth value for the connector.",
             "Properties": [
