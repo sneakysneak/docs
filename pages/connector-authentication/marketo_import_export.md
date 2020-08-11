@@ -51,7 +51,7 @@ Your custom request fields should be created as:
 
 > **Note: the [data]. prefix is required**
 
-The request fields are now configured and ready to be have data mapped to them.
+The request fields are now configured and ready to be mapped.
 
 ### Export
 
