@@ -35,31 +35,23 @@ Your Marketo Connector is now setup! You can test it by installing it in one of 
 
 ## Bulk Import/Export
 
-The ability to import and export csv (comma separated values), tsv (tab separated values) or ssv (space separated values) files is supported with methods from the **Bulk Imports** and **Bulk Exports** categories.
+The ability to import and export CSV , TSV or SSV files is supported with methods from the **Bulk Imports** and **Bulk Exports** categories.
 
 ### Import
 
-If you haven't done so already, export your data in the chosen format.
+To import data as a CSV or TSV file you will first need to add custom fields for the column headers that are to be created to the method **Create Import Job**.
 
-For example, if your data is in a Google Sheets spreadsheet and you want to save that as a csv file:
-
-![marketo spreadsheet](./images/marketo_import_1.png)
-
-![marketo save as csv](./images/marketo_import_2.png)
-
-Open this file in a text editor such as Notepad, Visual Studio Code etc.
+For example, if the desired outcome for the import file was as follows:
 
 ![marketo csv raw](./images/marketo_import_3.png)
 
-Using the method Create Import Job:
+Your custom request fields should be created as:
 
-1. Select the File Format (CSV, TSV or SSV)
+![marketo import custom fields](./images/marketo_import_custom_fields.png)
 
-2. Copy and paste the contents of your file into the File parameter (File parameter > Type a Value > paste the contents)
+> **Note: the [data]. prefix is required**
 
-![create import job configuration](./images/marketo_import_4.png)
-
-The status of the created import job can be checked with the method **Get Import Job Status**. Simply pass it the import job's batch ID
+The request fields are now configured and ready to be have data mapped to them.
 
 ### Export
 
