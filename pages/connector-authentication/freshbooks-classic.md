@@ -1,7 +1,7 @@
 ---
 title: Freshbooks Classic Authentication
 sidebar: cyclr_sidebar
-permalink: authenticate-freshbooks-classic
+permalink: freshbooks-classic
 tags: [connector]
 
 ---
