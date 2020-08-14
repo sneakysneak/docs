@@ -21,7 +21,7 @@ curl -X POST
 -H "Accept: application/json"
 
 -d '{
-    "partnerConnector": {
+    "PartnerConnector": {
         "Name": "Connector Name",
         "Version": "1.0",
         "AuthValue": "00000000000000000000000000000000000000000",
@@ -69,27 +69,27 @@ You should use a non-account restricted OAuth token as the Authorization for thi
     <thead>
         <tr>
             <th colspan="3">Partner Connector<br/>
-            <small>Optional parameter to install a pre-authenticated partner connector into the account</small></th>
+            <small>Optional parameter to install a pre-authenticated partner connector into the account.  Only used if an Account is created.</small></th>
         </tr>
     </thead>
     <tr>
-        <td>partnerConnector</td>
+        <td>PartnerConnector</td>
         <td>Providing your own platform's Cyclr Connector object here means your users will not be expected to authenticate against your platform during the LAUNCH flow.
         </td>
         <td></td>
     </tr>
     <tr>
-        <td>partnerConnector.Name</td>
+        <td>PartnerConnector.Name</td>
         <td>A name you wish to give this instance of your connector installed within this new or existing account.</td>
         <td>Connector Name</td>
     </tr>
     <tr>
-        <td>partnerConnector.Version</td>
+        <td>PartnerConnector.Version</td>
         <td>The version of the partner connector to be installed.</td>
         <td>1.0</td>
     </tr>
     <tr>
-        <td>partnerConnector.AuthValue</td>
+        <td>PartnerConnector.AuthValue</td>
         <td>(Optional) Authentication value for your platform connector.
         If your platform requires a username and password, provide a base64 encoded version of "username:password".  
         Provide API keys as plain text.
@@ -99,7 +99,7 @@ or<br />
 NJ88GGgv79V79VvYFBBTHUIGu</td>
     </tr>
     <tr>
-        <td>partnerConnector.[Properties]</td>
+        <td>PartnerConnector.[Properties]</td>
         <td>An array of properties required by the partner connector for successful installation. This is not relevant to all connectors.</td>
         <td>[ {"Name": "Url", "Value": "http://customDomain.appName.com"} ]</td>
     </tr>
