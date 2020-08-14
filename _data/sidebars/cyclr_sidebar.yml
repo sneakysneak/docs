@@ -272,8 +272,8 @@ entries:
       - title: Utility Connectors
         output: web, pdf
         folderitems:
-          - title: Cross Updating Preventor
-            url: /cross-updating-preventor
+          - title: Cross Updating Preventer
+            url: /cross-updating-preventer
             output: web, pdf
 
           - title: Entity Cross Reference
