@@ -57,7 +57,7 @@ The request fields are now configured and ready to be mapped.
 
 > Note: The following example shows the process for an export of type "leads". The process for activities is identical but with export type changed to "activities".
 
-![create import job configuration](./images/marketo_export_19.png)
+![create export job configuration](./images/marketo_export_19.png)
 
 To create a bulk export from Marketo we must create 2 cycles:
 
@@ -75,11 +75,11 @@ Now Lets look at the export process in more detail.
 
 **Cycle 1**:
 
-![create import job configuration](./images/marketo_export_11.png)
+![create export job configuration](./images/marketo_export_11.png)
 
 1. Select the **Create Export Job** method that suits your requirements (Activities, Leads, New Activities or New Leads)
 
-   ![create import job configuration](./images/marketo_export_1.png)
+   ![create export job configuration](./images/marketo_export_1.png)
 
 2. Define the fields the export file should include (eg. firstName, lastName, email).
 
@@ -87,73 +87,73 @@ Now Lets look at the export process in more detail.
 
 3. Optionally select the file format (if not selected this will default to CSV)
 
-   ![create import job configuration](./images/marketo_export_2.png)
+   ![create export job configuration](./images/marketo_export_2.png)
 
 4. The response from this method will include the status and the Export ID for use in subsequent methods
 
-   ![create import job configuration](./images/marketo_export_6.png)
+   ![create export job configuration](./images/marketo_export_6.png)
 
 5. Add the created export job to the processing queue with the method **Enqueue Export Job**. Select the Export Type ("leads" or "activities") and enter the Export ID
 
-   ![create import job configuration](./images/marketo_export_4.png)
+   ![create export job configuration](./images/marketo_export_4.png)
 
 6. The export job will now have a status of "Queued"
 
 7. From the **Generic Webhook** > **HTTP Methods** drag **POST** onto the cycle builder
 
-   ![create import job configuration](./images/marketo_export_9.png)
+   ![create export job configuration](./images/marketo_export_9.png)
 
 8. The **POST** (and **Webhook**) method needs to be configured. To do so, go into the **Generic Webhook**'s connector settings
 
-   ![create import job configuration](./images/marketo_export_10.png)
+   ![create export job configuration](./images/marketo_export_10.png)
 
 9. Locate the **POST** method and add a custom request field. A guide to adding custom fields can be found [here](https://docs.cyclr.com/adding-custom-fields). The Field Location and Display Name can be whatever you want. In this case we've chosen "ExportId" as that is what will be assigned to the field
 
-   ![create import job configuration](./images/marketo_export_13.png)
+   ![create export job configuration](./images/marketo_export_13.png)
 
 10. Locate the **Webhook** method and add an **identical** custom request field
 
-    ![create import job configuration](./images/marketo_export_17.png)
+    ![create export job configuration](./images/marketo_export_17.png)
 
 11. You can now exit the connector's settings and navigate back to the cycle builder. In the **POST** step's "step setup" (cog icon) you can see we now have a field that we can map the Export ID to
 
-    ![create import job configuration](./images/marketo_export_14.png)
+    ![create export job configuration](./images/marketo_export_14.png)
 
 12. As you can also see, a URL is required. The URL we are posting the Export ID to will be that of the webhook in Cycle 2
 
 **Cycle 2**:
 
-![create import job configuration](./images/marketo_export_12.png)
+![create export job configuration](./images/marketo_export_12.png)
 
 1. Open the "step setup" for the webhook where you will find it's URL. Copy and paste this into the **POST** step's URL field in Cycle 1
 
-   ![create import job configuration](./images/marketo_export_15.png)
+   ![create export job configuration](./images/marketo_export_15.png)
 
-   ![create import job configuration](./images/marketo_export_16.png)
+   ![create export job configuration](./images/marketo_export_16.png)
 
 2. Map the Export ID to **Get Export Job Status** and **Get Export File**. Those methods also require Export Type ("leads" or "activities") to be set
 
 3. Our **Decision** step (from **Logic Tools**), in this case renamed "Completed?" is checking for precisely that; If the status of the export job is "completed" we'll continue down the true branch, if not we'll continue down the false branch
 
-   ![create import job configuration](./images/marketo_export_21.png)
+   ![create export job configuration](./images/marketo_export_21.png)
 
-   ![create import job configuration](./images/marketo_export_18.png)
+   ![create export job configuration](./images/marketo_export_18.png)
 
 4. The true branch will eventually lead to **Read Delimited Text File** from the **Generic File** connector. Make sure to configure this with the **Delimiter** matching that of the export file, **Has Headers** as **true** and **Content** mapped from the **Content** field of **Get Export File**
 
-   ![create import job configuration](./images/marketo_export_20.png)
+   ![create export job configuration](./images/marketo_export_20.png)
 
    > Once the data has been retrieved and converted to JSON by **Read Delimited Text File** it's contents can be mapped to subsequent steps. (eg. MailChimp etc.)
 
-   ![create import job configuration](./images/marketo_export_24.png)
+   ![create export job configuration](./images/marketo_export_24.png)
 
 5. The false branch leads us to eventually repeat the process of Cycle 2. Firstly add a **Delay** step from **Logic Tools**. The value should be greater than 60 seconds
 
-   ![create import job configuration](./images/marketo_export_22.png)
+   ![create export job configuration](./images/marketo_export_22.png)
 
 6. Then add another **POST** method. This should again be mapped the Export ID and the URL of the webhook at the beginning of Cycle 2
 
-   ![create import job configuration](./images/marketo_export_23.png)
+   ![create export job configuration](./images/marketo_export_23.png)
 
 Now that both cycles are configured we can run them:
 
