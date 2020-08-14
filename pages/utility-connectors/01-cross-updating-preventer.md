@@ -1,7 +1,7 @@
 ---
 title: Cross Updating Preventer
 sidebar: cyclr_sidebar
-permalink: cross-updating-preventor
+permalink: cross-updating-preventer
 tags: [utility-connector]
 ---
 
