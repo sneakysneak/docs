@@ -71,7 +71,7 @@ More information on these connectors can be found [here](https://docs.cyclr.com/
 
 ---
 
-Now Lets look at the export process in more detail.
+Now lets look at the export process in more detail.
 
 **Cycle 1**:
 
