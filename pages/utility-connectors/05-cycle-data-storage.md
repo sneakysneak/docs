@@ -7,7 +7,9 @@ tags: [utility-connector]
 
 ## Purpose
 
-If there is the requirement to hold data for the purpose of executing a cycle that this utility can be used.  Data can be written in one part of the Cycle and retrieved at a later stage.  Any data that is written will not be acessible once the Cycle has completed.
+If you need to store some data in a Cycle which you'll need later in that same Cycle, this Utility Connector can be used.  Data can be written in one part of the Cycle and retrieved in another.
+
+Any data that is stored in the Connector will only be accessible by the Cycle that wrote it.
 
 ## Usage
 
