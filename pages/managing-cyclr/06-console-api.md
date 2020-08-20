@@ -16,7 +16,7 @@ For more details on why this is no longer recommended please see https://oauth.n
 ### Client Credentials
 
 The Client ID is used to authenticate calls to the Cyclr API. 
-Here you're abel to generate up to 5 unique pairs of Client IDs and Secrets. Client credentials can also be revoked here.
+Here you're able to generate up to 5 unique pairs of Client IDs and Secrets. Client credentials can also be revoked here.
  
 ### Access Tokens
 
