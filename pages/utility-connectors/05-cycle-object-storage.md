@@ -37,5 +37,6 @@ This Connector builds upon the features of the **Cycle Data Storage** Connector 
 
 ## Related Topics
 
-[Global Data Storage](./global-data-storage) 
+[Global Data Storage](./global-data-storage)
+
 [Cycle Data Storage](./cycle-data-storage)
