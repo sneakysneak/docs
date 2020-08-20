@@ -15,4 +15,6 @@ If there is the requirement to hold data permanenty in Cyclr account then you ca
 
 ## Related Topics
 
-[Cycle Data Storage](./cycle-data-storage) 
+[Cycle Data Storage](./cycle-data-storage)
+
+[Cycle Object Storage](./cycle-object-storage)
