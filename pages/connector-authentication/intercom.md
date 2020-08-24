@@ -37,14 +37,23 @@ As you will see we have connectors for multiple versions of the Intercom API. As
 To find out which version your app is set to:
 
 1. [Login](https://app.intercom.com/admins/sign_in?on_pageview_event=sign_in_nav) to your account
+
 2. Hover over the icon in the bottom left corner and select 'Settings'
+
    ![intercom home](./images/intercom_docs_1.png)
+   
 3. From the settings page, select Developers > Developer Hub
+
    ![intercom settings](./images/intercom_docs_2.png)
+   
 4. Once in the Developer Hub, select the relevant app
+
 5. From the 'Basic Information' page you will see various information about the app, including the version
+
    ![intercom app information](./images/intercom_docs_3.png)
+   
 6. If you want to change the version, click 'Change version' and then select the desired version from the dropdown menu
+
    ![intercom change version](./images/intercom_docs_4.png)
    
 > **Important: Please review the [changelog](https://developers.intercom.com/building-apps/docs/api-changelog) for a detailed description of the differences between each API Version.**
