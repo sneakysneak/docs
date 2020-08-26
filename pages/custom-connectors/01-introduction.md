@@ -31,4 +31,4 @@ Our powerful OpenAPI discovery tool lets you import an existing API specificatio
 If you are using another version, please convert it to an OpenAPI 2.0 file using third-party tools.
 You can choose Create Connector to start with an empty connector if you don’t have an OpenAPI specification.
 
-After importing the connector it is generally required to go through a 'tidy up' excercice to bring it up to standard.
+After importing the connector it is generally required to go through a 'tidy up' exercise to bring it up to standard.
