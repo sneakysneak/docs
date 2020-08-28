@@ -8,6 +8,9 @@ tags: [utility-connector-details]
 
 This Global Data Storage and Cycle Data Storage connectors can be installed multiple times, and each instance will have its own associated data set.  When the connector is installed it is advisable to give it a name that reflects how it will be used.
 
+For the Global Data Storage Connector, a maximum of 1,000,000 items can be stored.<br />
+For a Cycle Storage Connector (e.g. Cycle Data Storage and Cycle Object Storage), a maximum of 1,000,000 items can be stored by each Cycle.
+
 Data is stored as Key/Value pairs.
 
 ### Single Record Operations
