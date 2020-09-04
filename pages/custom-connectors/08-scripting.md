@@ -79,7 +79,6 @@ Called when a webook request has been received and before anything else is done.
 *   **method_request_parameters**: The webhook request parameters
 *   **method_response_headers**: The response headers for the request
 *   **method_response**: The response body for the request
-*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
 *   **return**: true for the webhook to continue normal execution, false to stop execution of the request and send the response body/headers to the caller
 
 #### after_webhook
