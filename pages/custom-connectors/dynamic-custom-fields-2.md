@@ -17,7 +17,7 @@ There are two ways to do this:
 
 <a name="Enhanced">1. Enhanced Dynamic Custom Fields</a>
 ----------------------
-####Setup:
+#### Setup:
 1. Identify the method within the API that will return the metadata for your object.  You will then need to [create this method within the connector](./connector-methods).
 2. The response for this method should be an array, and each item in the array must represent a single field in the object, for example:
 ```json
@@ -54,6 +54,7 @@ There are two ways to do this:
   ]
 }
 ```
+
 ```javascript
 // Example method-level script
 
@@ -99,7 +100,7 @@ function select_dt(item){
 
 8. Cyclr should now automatically map any custom fields for this method once it is installed.
 
-####<a name="systemfields">Table of System Fields</a>
+#### <a name="systemfields">Table of System Fields</a>
 System Field | Description
 --- | ---
 cyclr_field_location | Location of the custom field, e.g. [items].custom_field
@@ -113,7 +114,7 @@ cyclr_is_readonly | Indicates if the custom field is read-only, if it is it won'
 
 <a name="Basic">2. Basic Dynamic Custom Fields</a>
 ----------------------
-####Setup:
+#### Setup:
 1. Select a method which is able to be called without any field or parameter values being set.  This will be your "Source" method.
 2. The response of this method should be in the same structure as your "Target" method (the method for which Cyclr will dynamically map custom fields).
 
