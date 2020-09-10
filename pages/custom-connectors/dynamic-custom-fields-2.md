@@ -1,7 +1,7 @@
 ---
 title: Dynamic Custom Fields
 sidebar: cyclr_sidebar
-permalink: dynamic-custom-fields-2.0
+permalink: dynamic-custom-fields-2
 tags: [connector-creation]
 ---
 
