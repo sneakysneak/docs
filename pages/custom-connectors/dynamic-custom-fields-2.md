@@ -38,7 +38,6 @@ There are two ways to do this:
 3. In the response of the method, set the System Fields to match [the table below](#systemfields), so that Cyclr can access the various parts of each field description.  In the above example, the mappings would look like this:
 
 ![](./images/basic-mappings.png)
-
 4. If you are mapping **data types** from the object description, you will need to add some scripting to the method.  This will vary depending on the structure of your method response, but as an example:
 ```json
 // Example method response
