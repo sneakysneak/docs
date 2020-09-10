@@ -104,7 +104,7 @@ function select_dt(item){
 System Field | Description
 --- | ---
 cyclr_field_location | Location of the custom field, e.g. [items].custom_field
-cyclr_data_type | The data type of the custom field:<br>0=Not Defined. <br>1=Text.<br>2=Integer.<br>3=Float.<br>4=Boolean.<br>5=Date Time.
+cyclr_data_type | The data type of the custom field:<br>0=Not Defined<br>1=Text<br>2=Integer<br>3=Float<br>4=Boolean<br>5=Date Time
 cyclr_data_type_format | Custom data type format for the custom field
 cyclr_default_value | The default value to use for the custom field
 cyclr_description | The description of the custom field
