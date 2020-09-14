@@ -13,6 +13,16 @@ To support the NetSuite Connector, Cyclr has its own RESTlet file.  Please get i
 
 Once you have the Cyclr RESTlet file, follow the steps in this documentation.
 
+### Locating your NetSuite Account ID
+
+Your NetSuite Account ID is required when installing the NetSuite Connector within Cyclr and is found in your NetSuite account.
+
+In NetSuite to go **Setup** > **Company** > **Company Information**
+
+Then look for **ACCOUNT ID**.
+
+It might also be located under **Setup** > **Integration** > **Webservice Preferences**
+
 ### Upload the RESTlet script to NetSuite
 
 You can upload the RESTlet script file to NetSuite from Customization > Scripting > Scripts > New. Make sure you select RESTlet as the Type and enter the GET / POST / DELETE / PUT function names based on your RESTlet script.
