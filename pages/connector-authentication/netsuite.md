@@ -37,6 +37,8 @@ Once your script is uploaded, you need to deploy the script. Make a note of the 
 
 ![Example3](./images/Netsuite_3.png)
 
+To locate the External URL in future, go to **Setup** > **Scripting** > **Script Deployments** and click the **View** option for the appropriate entry.
+
 ### Create an integration in NetSuite
 
 To allow Cyclr to access the RESTlet securely, you need to set up a token-based authentication in NetSuite. You can create an integration under Setup > Integration > Manage Integrations > New. Check the token-based authentication on the setup page.
