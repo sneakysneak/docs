@@ -1,13 +1,13 @@
 ---
-title: Entity Cross Reference
+title: Entity Cross Ref Storage
 sidebar: cyclr_sidebar
 permalink: entity-cross-reference-connector
 tags: [utility-connector]
 ---
 
-## Entity Cross Reference Use Case
+## Entity Cross Ref Storage Use Case
 
-Entity Cross Reference is a built-in Cyclr connector that manages references across two systems for you.
+Entity Cross Ref Storage is a built-in Cyclr connector that manages references across two systems for you.
 
 A common use case for it is to synchronise entities in e.g. a CRM system and an email marketing system by keeping track of the number of entities in them.
 
