@@ -70,6 +70,10 @@ entries:
           - title: Whitelisting Cyclr
             url: /cyclr-ip-whitelisting
             output: web, pdf
+            
+          - title: Connector Authentication Link
+            url: /connector-authentication-link
+            output: web, pdf
 
       - title: Embedding Cyclr
         output: web, pdf
