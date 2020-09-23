@@ -30,3 +30,14 @@ The Connector now can be installed using the credentials obtained in the above s
 **Secret**: `Client Secret`
 
 You will then be prompted to log in, select your Hubspot and authorize access to the connector.
+
+Important note about Account selection
+--------------------------------------
+
+After entering your Client ID and Secret, and signing into hubspot, you will be presented with the **Choose an Account** screen.
+
+It is important to select the main account, rather than the developer account.  You can identify the main account by looking for the one with Products attached.
+
+In the example below, this would be the "Cyclr" account.
+
+![](./images/hubspot-choose-acct.png)
