@@ -246,7 +246,7 @@ entries:
             url: /handling-callback
             output: web, pdf
 
-          - title: Customising the appearence of LAUNCH
+          - title: Customising the appearance of LAUNCH
             url: /customising-launch
             output: web, pdf
 
