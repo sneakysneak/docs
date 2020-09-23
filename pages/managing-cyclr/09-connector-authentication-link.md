@@ -20,3 +20,5 @@ To generate a Connector Authentication Link:
 You'll then be given a URL you can send to someone to authenticate the Account Connector.
 
 *Note: This link will only function **once** so after being clicked the first time, the link will no longer work.*
+
+*If emailing the link, be aware that spam filters may perform the click as part of scanning an email so you may need to split the link into multiple pieces or send the link through other means.*
