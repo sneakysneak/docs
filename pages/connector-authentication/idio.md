@@ -9,6 +9,6 @@ tags: [connector]
 
 If you are using a **demo** account with Idio, enter **demo** when prompted during connector setup.  Otherwise the field should be left blank.
 
-## Using the connector
+## Using the Connector
 
 You will need to provide a **Delivery Key** for each call you make.
