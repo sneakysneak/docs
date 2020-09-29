@@ -29,7 +29,7 @@ How to register your app
 
 9. Enter a unique app name.  
 
-  >A unique SEO name is automatically generated for the app name. The name of the app you create is unique per country, which means you can have an app with the same name across multiple countries.
+   >A unique SEO name is automatically generated for the app name. The name of the app you create is unique per country, which means you can have an app with the same name across multiple countries.
   
 10. For Redirect URI enter: <span>ht</span>tps://{{ServiceDomain}}/connector/callback (ServiceDomain should be substituted for your actual service domain)
     
