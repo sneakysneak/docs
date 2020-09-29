@@ -16,7 +16,7 @@ How to register your app
 
 1. Go to the [Exact Online App Centre](https://apps.exactonline.com/).
 2. From the country menu in the upper right corner of the website, select the preferred language.
-3. Be aware that by selecting a country defines the Exact Online website.
+3. Be aware that selecting a country defines the Exact Online website.
 4. Click **Login**.
 5. Enter your user name and password and click **Login**.
 6. When you are authenticated you will be redirected to the App Centre.
