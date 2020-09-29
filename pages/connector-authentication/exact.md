@@ -27,9 +27,17 @@ How to register your app
   
     **Register a production app**: Your app can be used by external clients. You have the option to publish your app in the App Centre, once it has been approved by your partner manager.
 
-9. Enter a unique app name.  Your redirect URI should be in the following format: "https://yourcyclrdomain/connector/callback".  So if your cyclr domain is johnsmithplc-h.cyclr.com, you should enter https://johnsmithplc-h.cyclr.com/connector/callback. Click **Register** and you should be presented with your **Client ID** and **Client Secret**, which you will use to authenticate the connector.
+9. Enter a unique app name.  
 
-    >A unique SEO name is automatically generated for the app name. The name of the app you create is unique per country, which means you can have an app with the same name across multiple countries.
+  >A unique SEO name is automatically generated for the app name. The name of the app you create is unique per country, which means you can have an app with the same name across multiple countries.
+  
+10. For Redirect URI enter: <span>ht</span>tps://{{ServiceDomain}}/connector/callback (ServiceDomain should be substituted for your actual service domain)
+    
+    >Your Cyclr service domain, e.g. yourcompany.cyclr.com can be found in your Cyclr Console under Settings > Integration Settings > Service Domain.
+
+11. Scroll down to find your Client ID and Client Secret. You can use these to authenticate your Exact connector.
+
+  
 
     [For more information on getting your app set up, visit the official exact docs here](https://support.exactonline.com/community/s/knowledge-base#All-All-DNO-Content-oauth-eol-oauth-devstep1).
 
