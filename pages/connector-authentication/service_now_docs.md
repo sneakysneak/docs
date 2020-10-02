@@ -7,8 +7,8 @@ tags: [connector]
 
 There are currently two ServiceNow connectors available:
 
-- **ServiceNow** - provides access to various ServiceNow API's
-- **ServiceNow Table API** - provides full CRUD functionality for a ServiceNow table via the ServiceNow Table API
+- **ServiceNow** - Provides access to various ServiceNow API's
+- **ServiceNow Table API** - Provides full CRUD functionality for a ServiceNow table via the ServiceNow Table API
 
 ---
 
