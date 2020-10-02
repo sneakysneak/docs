@@ -1,7 +1,7 @@
 ---
 title: ServiceNow Authentication
 sidebar: cyclr_sidebar
-permalink: servicenow--connector
+permalink: servicenow-connector
 tags: [connector]
 ---
 
