@@ -1,5 +1,5 @@
 ---
-title: ServiceNow Connector Guide
+title: ServiceNow Authentication
 sidebar: cyclr_sidebar
 permalink: servicenow--connector
 tags: [connector]
