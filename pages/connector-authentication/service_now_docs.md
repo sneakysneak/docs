@@ -37,6 +37,7 @@ To authenticate the ServiceNow Table API connector you will need the above crede
 1. Locate the ServiceNow or ServiceNow Table API connector
 
    > Cyclr Console > Connectors > Connector Library > ServiceNow
+   
    > Cyclr Console > Connectors > Connector Library > ServiceNow Table API
 
 2. From the Edit Connector interface click 'Setup'
