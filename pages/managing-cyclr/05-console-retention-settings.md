@@ -16,14 +16,20 @@ Retention for Successful Transactions and Errored Transactions can be turned off
  
 ### Changing Data Retention setting
 
+Data Retention settings can be accessed from the console, the template/cycle builder, and from your account.  See the images below for how to access the settings:
+
 #### In the Console
 
 ![How to access Data Retention settings from the console](./images/access_data_retention_from_console.png)
+
+***
 
 #### Within the Template/Cycle Builder
 
 ![How to access Data Retention settings from the Template/Cycle Builder 1](./images/access_data_retention_from_template1.png)
 ![How to access Data Retention settings from the Template/Cycle Builder 2](./images/access_data_retention_from_template2.png)
+
+***
 
 #### From your Account
 
