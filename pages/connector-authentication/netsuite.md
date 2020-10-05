@@ -177,3 +177,11 @@ You can add any number of filter conditions using Script as you require.  Just b
 |onorbefore|||X|||||
 |startswith||||||X||
 |within|||X|||||
+
+## Using Saved Search to return >1000 records
+
+To retrieve more than 1000 records, you will need to create a Saved Search in NetSuite, and then use the appropriate **Run (object) Saved Search** Method in the NetSuite Connector for the type of data you're returning, e.g. **Run Contact Saved Search**.
+
+Your Saved Search should have criteria set for what you wish to retrieve and return only the ID values.  The RESTlet will then retrieve the full objects for them before returning that data when called by Cyclr.
+
+You can find instructions for setting up a Saved Search in the [NetSuite Documentation](https://docs.oracle.com/cloud/latest/netsuitecs_gs/NSSRC/NSSRC.pdf#%5B%7B%22num%22%3A1548%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C90%2C723.6%2Cnull%5D)
