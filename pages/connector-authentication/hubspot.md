@@ -10,6 +10,8 @@ Hubspot Setup
 
 For Cyclr to connect with the Hubspot API you will need to create an "Application" in the Hubspot account, as detailed below:
 
+  > NB. This part is completed once, by a Partner.  The client/customer does not need their own separate application within Hubspot.
+
 1. Login to the Hubspot Developer Portal [here](https://app.hubspot.com/signup-v2/developers)
 2. Follow the Hubspot [documentation](https://developers.hubspot.com/docs/faq/how-do-i-create-an-app-in-hubspot) to create an application
 3. In the `Auth` tab you will see a `Client ID` and `Client Secret`.  Make a note of these to use in the connector setup.
