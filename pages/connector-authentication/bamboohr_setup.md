@@ -7,7 +7,7 @@ tags: [connector]
 
 ## Setup
 
-To authenticate the BambooHR connector you will need:
+To authenticate the BambooHR connector you will need you **Company Subdomain** and an **API Key**.
 
 ### Company Subdomain
 
@@ -18,11 +18,17 @@ To authenticate the BambooHR connector you will need:
 1. Log in to BambooHR
 2. Click your user icon in the upper right-hand corner
 3. Click **API Keys**
+
    ![unifier field](./images/bamboohr_1.png)
+   
 4. Click **Add New Key**
+
    ![unifier field](./images/bamboohr_2.png)
+   
 5. Give your API Key a name and click **Generate Key**
+
    ![unifier field](./images/bamboohr_3.png)
+   
 6. Make sure to keep a note of your API Key as it can only be viewed once
 
 ---
