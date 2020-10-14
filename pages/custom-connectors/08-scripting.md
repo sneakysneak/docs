@@ -66,7 +66,7 @@ All other events (such as after_action):
 
 ### Global Objects
 
-*   **method_response_fields**: Array containing the methods response fields
+*   **method_response_fields**: Array containing a Method's Response Fields.
 
 
 ### Events
