@@ -314,6 +314,33 @@ var hasHeader = false;
 var csvRecords =  cyclr_csv_parse(csv, delimiter, hasHeader);;
 ```
 
+#### Storage Functions
+
+Cyclr provides several storage functions available for use in Script that can be used when developing a Connector, or on a Step in a Template or Cycle.
+
+Data they work against is locked to the Connector they're called on.  i.e. if you write data using `cyclr_storage_set()` on a Step from one Connector, you cannot access that same data using `cyclr_storage_get()` on a Step from a different Connector.
+
+The functions come in 2 flavours:
+
+`cyclr_storage_...()` and `cycle_storage_...()`
+
+The `cyclr_storage_...()` functions access the same data on any Steps in any Cycles for a particular Connector.
+
+The `cycle_storage_...()` functions work in the same way, but their data is further restricted to the context of a particular Cycle.  If you write data in one Cycle, you cannot access it in another;
+
+The storage functions available in their `cyclr_` versions are shown below.
+
+Change `cyclr_` to `cycle_` to use their Cycle-restricted versions.
+
+* cyclr_storage_list_values()
+* cyclr_storage_delete_all()
+* cyclr_storage_delete(key)
+* cyclr_storage_get(key)
+* cyclr_storage_set(key, value)
+* cyclr_storage_append(key, value)
+* cyclr_storage_list_keys()
+
+
 ### Exceptions
 
 #### AuthRefreshException
