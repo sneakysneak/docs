@@ -16,7 +16,7 @@ Please follow Microsoft's official guide to registering an applciation in Azure 
 - Client ID (Application ID) is displayed in the overview of your created app
 - Generate a Client Secret by following [these steps](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app#add-a-client-secret)
 
-Permissions must be set for the application. The following table details the permisions required for each method category in the connector.
+Permissions must be set for the application. The following table details the permissions required for each method category in the connector.
 
 | Method Name  | Permissions                          |
 | :----------- | :----------------------------------- |
