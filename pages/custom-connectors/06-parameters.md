@@ -38,7 +38,7 @@ The vaue of the parameter will be merged into the HTTP call.  For example, param
 
 'CustomerNo is then specified as a Mergefield Parameter (without the braces) and the value provided will be merged into the URL.  The specification would look like this:
 
-| Target Type | Target Name | Disp Name | Desc | Trigger | Optional | Hiden | Value |
+| Target Type | Target Name | Disp Name | Desc | Trigger | Optional | Hidden | Value |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | MergeField| CustomerNo | Customer Number | Provide a customer number. | Optional | false | false | NA |
 
@@ -50,7 +50,7 @@ This parameters allows you to add values into the Query String of the HTTP reque
 
 The specification would look like this:
 
-| Target Type | Target Name | Disp Name | Desc | Trigger | Optional | Hiden | Value |
+| Target Type | Target Name | Disp Name | Desc | Trigger | Optional | Hidden | Value |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | QueryString| Customer | Customer Number | Provide a customer number. | Optional | false | false | NA |
 
