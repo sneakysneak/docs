@@ -16,7 +16,19 @@ Please follow Microsoft's official guide to registering an applciation in Azure 
 - Client ID (Application ID) is displayed in the overview of your created app
 - Generate a Client Secret by following [these steps](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app#add-a-client-secret)
 
-Permissions must be set for the application:
+Permissions must be set for the application. The following table details the permisions required for each method category in the connector.
+
+| Method Name  | Permissions                          |
+| :----------- | :----------------------------------- |
+| Groups       | Group.Read.All, GroupMember.Read.All |
+| Organization | Organization.Read.All                |
+| People       | People.Read.All                      |
+| Places       | Place.Read.All                       |
+| Users        | User.Read.All                        |
+
+In addition to the category specific permissions, you should add permissions for **offline_access** and **Directory.Read.All**.
+
+To add these permissions in Azure Active Directory:
 
 1. From **App registrations** in the Azure portal select your application
 2. Select **API permissions** from the menu on the left
@@ -28,8 +40,7 @@ Permissions must be set for the application:
 5. You will be presented with a series of permissions categories
 6. Select the checkboxes for the appropriate permissions and click **Add permissions**
    ![checked permission](./images/permissions_5.png)
-   > Note: The initial release of the Microsoft Azure Active Directory connector only supports the retrieval of User and Group objects. Therefore the permissions set should be **offline_access**, **Directory.Read.All**, **Group.Read.All**, **GroupMember.Read.All** and **User.Read.All**
-7. You must then **Grant admin consent for _orgnanisation_**
+7. You must then **Grant admin consent for _orgnanization_**
    ![grant admin consent](./images/permissions_3.png)
 
 ### Connector Setup
