@@ -19,7 +19,7 @@ You can generate a Client ID and Secret from the Cyclr Partner Console, Settings
 
 Once you have a Client ID and Secret you need to call the Cyclr API OAuth token endpoint to generate an access token
 
-https://\{you-instance-url\}/oauth/token
+https://\{your-instance-url\}/oauth/token
 
 #### Required parameters
 
