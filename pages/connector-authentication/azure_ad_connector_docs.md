@@ -18,7 +18,7 @@ Please follow Microsoft's official guide to registering an applciation in Azure 
 
 Permissions must be set for the application. The following table details the permissions required for each method category in the connector.
 
-| Method Name  | Permissions                          |
+| Category     | Permissions                          |
 | :----------- | :----------------------------------- |
 | Groups       | Group.Read.All, GroupMember.Read.All |
 | Organization | Organization.Read.All                |
