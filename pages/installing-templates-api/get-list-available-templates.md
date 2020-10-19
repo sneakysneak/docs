@@ -5,20 +5,16 @@ permalink: list-available-templates
 tags: [installing]
 ---
 
-_**Templates are integrations built by you in the Console’s drag-and-drop builder, they can be installed in our end user’s account. Your app would present a list or library of available templates to your end users.**_
+_**Templates are integrations built by you in the Console’s drag-and-drop builder, they can be installed in your end user’s account. Your app would present a list or library of available templates to your end users.**_
 
-Retrieve a list of templates available to the Account you wish to install one for.
+Retrieve a list of all public templates within the Partner console.
 
 Request:
 
 ````http
     GET /v1.0/templates
     Authorization Bearer 0000000000000000000000000000000000000000000000000000000000000000
-    X-Cyclr-Account: 00000000-0000-0000-0000-000000000000
 ````
-
-**X-Cyclr-Account** is the ID of the account we are installing the template into
-
 Response:
 
 ````json
