@@ -15,7 +15,9 @@ Cyclr supports three types of connector authentication:
 
 For each connector requiring authentication, take your user through the appropriate flow.
 
-Check the authentication type that the installed Account Connector requires.
+### Checking the required Authentication Type
+
+To check the authentication type that the installed Account Connector requires, make the following call:
 
 Request:
 
