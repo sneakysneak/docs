@@ -43,6 +43,6 @@ To authenticate the BambooHR connector you will need your **Company Subdomain** 
 
 3. Enter your Company Subdomain and click 'Next'
 
-4. For 'Username' enter your API Key and for 'Password' enter any random string (eg. x), click 'Next'
+4. Enter your API Key and click 'Next'
 
 The connector is now authenticated and ready to use.
