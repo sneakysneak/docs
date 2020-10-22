@@ -45,7 +45,7 @@ You will be presented with your Client ID and Client Secret. Make a note of thes
 
 3. In the **SuiteScript** section check **Client SuiteScript** and **Server SuiteScript**
 
-4. In the **SuiteTalk (Web Services)** section check make sure **REST Web Services**, **RESt Record Service (Beta)** and **REST Query Service (Beta)** are checked
+4. In the **SuiteTalk (Web Services)** section check make sure **REST Web Services**, **REST Record Service (Beta)** and **REST Query Service (Beta)** are checked
 
 5. In the **Manage Authentication** section, check the **OAuth 2.0** box
 
