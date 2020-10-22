@@ -9,7 +9,7 @@ Oracle NetSuite - SuiteTalk REST Web Services connector is authenticated with th
 
 ## NetSuite Setup
 
-Firstly [Log in](https://system.netsuite.com/pages/customerlogin.jsp) to your NetSuite account.
+Firstly [log in](https://system.netsuite.com/pages/customerlogin.jsp) to your NetSuite account.
 
 ### Creating An App
 
