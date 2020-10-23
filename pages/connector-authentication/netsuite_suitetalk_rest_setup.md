@@ -81,7 +81,7 @@ Several Methods have an optional **Query** parameter. Each condition consists of
 
 The following table contains the list of available query operators with their associated field types.
 
-| Field Type                               | Allowed Filters                                                                                                                                                                                |
+| Field Type                               | Allowed Operators                                                                                                                                                                               |
 | :--------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | None                                     | EMPTY, EMPTY_NOT                                                                                                                                                                               |
 | Boolean                                  | IS, IS_NOT                                                                                                                                                                                     |
