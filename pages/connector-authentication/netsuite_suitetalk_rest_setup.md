@@ -97,7 +97,7 @@ Not all operators accept one value. Some operators do not require any value, som
 
 Example:
 
-If you wanted to filter customers by email addresses starting with "barbara" you would enter the query **email START_WITH barbara**, which would result in the following call being made:
+If you wanted to filter customers by email addresses starting with "barbara" you would enter the query **email START_WITH barbara**, which would result in the following request being made:
 
 ```sh
 GET https://demo123.suitetalk.api.netsuite.com/services/rest/record/v1/customer?q=email START_WITH barbara
