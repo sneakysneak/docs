@@ -82,7 +82,7 @@ Several Methods have an optional **Query** parameter. Each condition consists of
 The following table contains the list of available query operators with their associated field types.
 
 | Field Type                               | Allowed Filters                                                                                                                                                                                |
-| ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ---------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | None                                     | EMPTY, EMPTY_NOT                                                                                                                                                                               |
 | Boolean                                  | IS, IS_NOT                                                                                                                                                                                     |
 | Double, Integer, Float, Number, Duration | ANY_OF, ANY_OF_NOT, BETWEEN, BETWEEN_NOT, EQUAL, EQUAL_NOT, GREATER, GREATER_NOT, GREATER_OR_EQUAL, GREATER_OR_EQUAL_NOT, LESS, LESS_NOT, LESS_OR_EQUAL, LESS_OR_EQUAL_NOT, WITHIN, WITHIN_NOT |
