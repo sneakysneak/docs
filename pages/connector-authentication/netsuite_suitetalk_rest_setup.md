@@ -72,3 +72,33 @@ You will be presented with your Client ID and Client Secret. Make a note of thes
 8. Click **Continue**
 
 You should now have been redirected to Cyclr which means that the connector is authenticated and ready to use.
+
+## User Guide
+
+### Query Parameter
+
+Several Methods have an optional **Query** parameter. Each condition consists of a field name, an operator, and a value. You can join several conditions using the AND / OR logical operators, and you can use () to mark precedence.
+
+The following table contains the list of available query operators with their associated field types.
+
+| Field Type                               | Allowed Filters                                                                                                                                                                                |
+| ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| None                                     | EMPTY, EMPTY_NOT                                                                                                                                                                               |
+| Boolean                                  | IS, IS_NOT                                                                                                                                                                                     |
+| Double, Integer, Float, Number, Duration | ANY_OF, ANY_OF_NOT, BETWEEN, BETWEEN_NOT, EQUAL, EQUAL_NOT, GREATER, GREATER_NOT, GREATER_OR_EQUAL, GREATER_OR_EQUAL_NOT, LESS, LESS_NOT, LESS_OR_EQUAL, LESS_OR_EQUAL_NOT, WITHIN, WITHIN_NOT |
+| String                                   | CONTAIN, CONTAIN_NOT, IS, IS_NOT, START_WITH, START_WITH_NOT, END_WITH, END_WITH_NOT                                                                                                           |
+| Date / Time                              | AFTER, AFTER_NOT, BEFORE, BEFORE_NOT, ON, ON_NOT, ON_OR_AFTER, ON_OR_AFTER_NOT, ON_OR_BEFORE, ON_OR_BEFORE_NOT                                                                                 |
+
+Not all operators accept one value. Some operators do not require any value, some operators require two values, and some operators accept any number of values. Consider the following examples:
+
+- Unary operators: The EMPTY and EMPTY_NOT operators do not accept any values. For example: **companyName EMPTY**
+- Ternary operators: The BETWEEN, BETWEEN_NOT, WITHIN, and WITHIN_NOT operators accept two values. For example: **id BETWEEN_NOT [1, 42]**
+- N-ary operators: The ANY_OF and ANY_OF_NOT operators do accept one or any higher number of values. For example: **id ANY_OF [1, 2, 3, 4, 5]**
+
+Example:
+
+If you wanted to filter customers by email addresses starting with "barbara" you would enter the query **email START_WITH barbara**, which would result in the following call being made:
+
+```sh
+GET https://demo123.suitetalk.api.netsuite.com/services/rest/record/v1/customer?q=email START_WITH barbara
+```
