@@ -77,7 +77,7 @@ You should now have been redirected to Cyclr which means that the connector is a
 
 ### Query Parameter
 
-Several Methods have an optional **Query** parameter. Each condition consists of a field name, an operator, and a value. You can join several conditions using the AND / OR logical operators, and you can use () to mark precedence.
+Several methods have an optional **Query** parameter. Each condition consists of a field name, an operator, and a value. You can join several conditions using the AND / OR logical operators, and you can use () to mark precedence.
 
 The following table contains the list of available query operators with their associated field types.
 
