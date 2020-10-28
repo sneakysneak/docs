@@ -45,16 +45,15 @@ To add these permissions in Azure Active Directory:
 
 ### Connector Setup
 
+To allow your clients to access their own data through your Active Directory App, you must save the Client ID and Client Secret values in your Cyclr Console.
+
 1. Locate the Microsoft Azure Active Directory connector
 
    > Cyclr Console > Connectors > Account Connector Library > Microsoft Azure Active Directory
 
 2. From the Edit Connector interface click 'Setup'
 
-3. Enter your Client ID and Client Secret, click 'Next'
+3. Enter your Client ID and Client Secret then click 'Save Changes'
 
-4. Click 'Sign In'
 
-5. A new window will open prompting you to log in, select your Azure account and authorize access to the connector
-
-The connector is now authenticated and ready to use.
+The Microsoft Azure Active Directory Connector can now be installed and the user will only be asked to authenticate your App.
