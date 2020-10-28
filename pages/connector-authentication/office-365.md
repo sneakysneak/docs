@@ -7,9 +7,6 @@ tags: [connector]
 
 # Microsoft Office 365 #
 
-Partner Setup
--------------
-
 Microsoft Office 365 uses OAuth 2. Please sign up for an application on Microsoft first and get an OAuth client ID, client secret and tenant ID.
 
 See here for the [official documentation for creating an Azure Active Directory application](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications).
@@ -31,12 +28,15 @@ We will summarise it in a few points:
 
    **Multi-tenanted**: Yes
 
-3. Go to Cyclr Console (https://yourCyclrInstance/console) > Connectors > Connector Library > Microsoft Office 365 > Setup
+3. Go to Cyclr Console (https://yourCyclrInstance/console) > Connectors > Application Connector Library > Microsoft Office 365 > Setup
 
    **Client ID**: This is the Application ID displayed in the portal
 
    **Client Secret**: Create a Password under Microsoft Azure portal > Azure Active Directory > App Registrations > Your Application > API Access > Keys. Copy and paste the password as the client secret.
    
-   **Directory/Tenant ID**: This is the directory(tenant) ID displayed in the portal.
 
 The Microsoft Office 365 connector is now set up! You can test it by installing it in one of your customer accounts.
+
+
+When installing the Microsoft Office 365 Connector, the user will be asked to provide their **Directory/Tenant ID**. This appears as **Tenant ID** in the client's Azure Active Directory portal.
+
