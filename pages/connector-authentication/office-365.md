@@ -5,8 +5,6 @@ permalink: office-365-connector
 tags: [connector]
 ---
 
-# Microsoft Office 365 #
-
 Microsoft Office 365 uses OAuth 2. Please sign up for an application on Microsoft first and get an OAuth client ID, client secret and tenant ID.
 
 See here for the [official documentation for creating an Azure Active Directory application](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications).
