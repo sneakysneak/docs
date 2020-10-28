@@ -47,7 +47,7 @@ To add these permissions in Azure Active Directory:
 
 1. Locate the Microsoft Azure Active Directory connector
 
-   > Cyclr Console > Connectors > Connector Library > Microsoft Azure Active Directory
+   > Cyclr Console > Connectors > Account Connector Library > Microsoft Azure Active Directory
 
 2. From the Edit Connector interface click 'Setup'
 
