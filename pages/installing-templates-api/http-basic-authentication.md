@@ -5,13 +5,14 @@ permalink: basic-authentication
 tags: [installing]
 ---
 
-_**For connectors that are authenticated HTTP basic authentication.**_
+_**For connectors that use HTTP Basic authentication.**_
 
-Your user’s username and password will need to be collected in your application and sent to Cyclr like below
+Your user’s username and password will need to be collected by your application then passed to Cyclr as follows:
 
-Concat the username and password like “username:password”
+*  Concatenate the username and password as “username:password”.
+*  Base64 encode the concatenated username and password value, giving something this: “dXNlcm5hbWU6cGFzc3dvcmQ=”
 
-Base64 encode the concated username and password “dXNlcm5hbWU6cGFzc3dvcmQ=”, use this as the value to send to Cyclr
+That string should then be set as the **AuthValue** property of the Account Connector:
 
 ```http
     PUT /v1.0/account/connectors/{Account Connector ID}
@@ -30,7 +31,7 @@ Response:
         "Id": 0,
         "Name": "Pipedrive",
         "Description": null,
-        "AuthValue": "dXNlbmFtZTpwYXNzd29yZA==",
+        "AuthValue": "dXNlcm5hbWU6cGFzc3dvcmQ=",
         "Authenticated": true,
         "Connector": {
             "Id": 0,
