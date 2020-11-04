@@ -44,7 +44,7 @@ Response:
             "Version": "1.0",
             "Icon": null,
             "AuthDescription": null,
-            "AuthType": "**ApiKey**",
+            "AuthType": "ApiKey",
             "OAuth2Type": "Unknown",
             "AuthScheme": null
         },
