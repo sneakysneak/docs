@@ -9,15 +9,16 @@ tags: [connector]
 
 ## Partner Setup
 
-To authenticate the Bullhorn connector you will your Client ID and Client Secret.  If you do not already have these, you or a listed Account / Support Contact will need to get in touch with Bullhorn Support to have credentials set up.  If asked for a callback URI during this process, use 
+To authenticate the Bullhorn connector you will your Client ID and Client Secret.  If you do not already have these, you or a listed Account / Support Contact will need to get in touch with Bullhorn Support to have credentials set up.
 
-https://``Your Service Domain``/connector/callback. 
+If asked for a callback URI during this process, give
+
+https://``Your Service Domain``/connector/callback 
 
 Your service domain can be found in your Cyclr console under Settings > General Settings > Service Domain.
 
 Once you have your Client ID and Secret, you will be able to use these details to authenticate the connector.
 
-Call
 ## FAQ
 
 ### Apache Tomcat Error
