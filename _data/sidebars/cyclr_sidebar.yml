@@ -269,10 +269,6 @@ entries:
             url: /magento-2-webhook-extension
             output: web, pdf
 
-          - title: Salesforce Plugin
-            url: /salesforce-plugin
-            output: web, pdf
-
       - title: Utility Connectors
         output: web, pdf
         folderitems:
