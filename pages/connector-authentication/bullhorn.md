@@ -23,7 +23,7 @@ Once you have your Client ID and Secret, you will be able to use these details t
 
 ### Apache Tomcat Error
 
-After you are redirected to Bullhorn during the authentication process, sometimes Bullhorn display an Apache Tomcat error like this:
+After you are redirected to Bullhorn during the authentication process, sometimes Bullhorn displays an Apache Tomcat error like this:
 
 ![Bullhorn Redirect Error](./images/bullhorn-redirect-error.png)
 
