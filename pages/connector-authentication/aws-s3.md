@@ -1,5 +1,5 @@
 ---
-title: AWS s3 Authentication
+title: AWS S3 Authentication
 sidebar: cyclr_sidebar
 permalink: s3-connector
 tags: [connector]
