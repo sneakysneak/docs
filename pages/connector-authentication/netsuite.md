@@ -1,5 +1,5 @@
 ---
-title: NetSuite Connector Guide
+title: Oracle NetSuite Connector Guide
 sidebar: cyclr_sidebar
 permalink: netsuite-connector
 tags: [connector]
