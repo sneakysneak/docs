@@ -9,7 +9,7 @@ Cyclr's interactive API references can be used to try things out, and to help yo
 
 ### API Reference Location
 
-Depending on where your Cyclr Console is hosted, you'll need to use the appropriate reference:
+Depending on where your Cyclr Console is hosted, you'll need to use the appropriate API reference:
 
 Cyclr Console Location | Documentation link
 --- | ---
@@ -23,16 +23,15 @@ Use your Cyclr account details to authenticate and work with all API endpoints d
 
 To authenticate, expand any endpoint and click the "OFF" slider, then enter your details:
 
-![](./images/testing-cyclrs-apis-auth.png)
+![](./images/testing-cyclrs-apis-auth_2020-11.png)
 
 <br/>
 
-| Property | Description | Example |
-| --- | --- | --- |
-| **Username** | The username you use to signin to Cyclr | me@example.com |
-| **Password** | The password for your user | Pa$$word |
-| **Type** | Must be **Request body** | Request body |
-| **ClientID** | The Client ID for your partner, can be found in the console | abc123defg |
-| **Secret** | This should be left blank | |
+Cyclr supports 2 of the OAuth 2.0 authentication flows:
+
+* [Client Credentials](./cyclr-api-authentication)
+* [Password flow](./cyclr-api-authentication-password) [support ends May 2021]
+
+
 
 The Cyclr API is divided into two parts, the Partner Level and the Account Level, you can use the same OAuth token for both but account level methods require that the **X-Cyclr-Account** header is included with the request.
