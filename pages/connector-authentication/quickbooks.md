@@ -15,10 +15,10 @@ To obtain these, you will need to create a QuickBooks Online application.
 
 ### Creating an App
 1. Visit [https://developer.intuit.com/app/developer/myapps](https://developer.intuit.com/app/developer/myapps).
-2. Click the ![Create An App](./images/QuickBooksCreateAnApp.png) button.
+2. Click the ![](./images/QuickBooksCreateAnApp.png) button.
 3. Select `QuickBooks Online and Payments`.
 4. Give your app a name, and select `Accounting` from the scopes.  If you are based in the US, and wish to add the `Payments` scope, you can add this later.
-5. Click ![Create App](./images/QuickBooksCreateApp.png).
+5. Click ![](./images/QuickBooksCreateApp.png).
     > Note that there are sections here for `Development` and `Production` apps.  We will be focussing on the `Development` app in this guide.
 6. `Under Development > Keys & OAuth`, you will find two important sections: the keys (`Client ID` and `Client Secret`) **which you should now note down**, and `Redirect URIs`.
 7. Under `Redirect URIs`, change the existing value to:
@@ -26,7 +26,7 @@ To obtain these, you will need to create a QuickBooks Online application.
 
     > Your Cyclr service domain, e.g. yourcompany-h.cyclr.com can be found in your Cyclr Console under ``Settings > Integration Settings > Service Domain``.
 
-8. Scroll down and click ![Save](./images/QuickBooksSave.png).
+8. Scroll down and click ![](./images/QuickBooksSave.png).
 
 ### Setting up the connector
 
@@ -36,4 +36,4 @@ To obtain these, you will need to create a QuickBooks Online application.
 
     > Later, when you have your production app set up, you will enter quickbooks.api.intuit.com here.
 
-3. You can now ![Sign In](./images/QuickBooksSignIn.png) to Quickbooks and your connector will be installed.
+3. You can now ![](./images/QuickBooksSignIn.png) to Quickbooks and your connector will be installed.
