@@ -16,7 +16,7 @@ This article provides a broad overview of how Cyclr works with your app:
 
 Our connectivity framework makes it very easy to add a platform connector for your app to Cyclr. With your API connected, you have instantly unlocked [100+ other integrations](http://cyclr.com/connectors).
 
-[Importing an API](../custom-connectors/openapi) can be done automatically (if your API docs are hosted by Swagger, Apiary, etc) or semi-manually by using simple JSON to map to your API's methods. Once you have a Cyclr account, you can access tools to import your API.
+Importing an API can be done automatically (if your API docs are hosted by Swagger, Apiary, etc) or semi-manually by using simple JSON to map to your API's methods. Once you have a Cyclr account, you can access tools to import your API.
 
 ### 2. Create integrations
 
