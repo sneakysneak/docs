@@ -175,7 +175,7 @@ Function is called when Cyclr received an error from an external API.
 
 #### action_condition
 
-Function is used to essentially combine a Method with a Decision Step, allowing a test to be performed that directs a Transaction down either the True or False exit points.  Just by adding this function to a Step, Cyclr will add True and False exit points.
+Function is used to essentially combine a Method with a Decision Step, allowing a test to be performed that directs a Transaction down either the True or False exit points.  If this function is included in a method, Cyclr will add True and False exit points.
 
 ###### Global object
 
