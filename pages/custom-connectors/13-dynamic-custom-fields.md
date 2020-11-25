@@ -20,20 +20,19 @@ There are two ways to do this:
 1\. Identify the method within the API that will return the metadata for your object.  You will then need to [create this method within the connector](./connector-methods).
 2\. The response for this method should be an array, and each item in the array must represent a single field in the object, for example:
 ```json
-{
-  [
-    {
-      "field_name": "CustName",
-      "label": "Customer Name",
-      "optional": false
-    },
-    {
-      "field_name": "customfield_bankingid",
-      "label":"Banking ID",
-      "optional": true
-    }
-  ]
-}
+[
+  {
+    "field_name": "CustName",
+    "label": "Customer Name",
+    "optional": false
+  },
+  {
+    "field_name": "customfield_bankingid",
+    "label":"Banking ID",
+    "optional": true
+  }
+]
+
 ```
 3\. In the response of the method, set the System Fields to match [the table below](#systemfields), so that Cyclr can access the various parts of each field description.  In the above example, the mappings would look like this:
 
@@ -42,16 +41,16 @@ There are two ways to do this:
 4\. If you are mapping **data types** from the object description, you will need to add some scripting to the method.  This will vary depending on the structure of your method response, but as an example:
 ```json
 // Example method response
-{
-  [
-    {
-      "field_name": "customfield_bankingid",
-      "label":"Banking ID",
-      "optional": true,
-      "data_type": "string"
-    }
-  ]
-}
+
+[
+  {
+    "field_name": "customfield_bankingid",
+    "label":"Banking ID",
+    "optional": true,
+    "data_type": "string"
+  }
+]
+
 ```
 
 ```javascript
