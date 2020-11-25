@@ -21,7 +21,7 @@ There are two ways to do this:
 2\. The response for this method should be an array, and each item in the array must represent a single field in the object, for example:
 ```json
 {
-  "fields": [
+  [
     {
       "field_name": "CustName",
       "label": "Customer Name",
@@ -43,7 +43,7 @@ There are two ways to do this:
 ```json
 // Example method response
 {
-  "fields": [
+  [
     {
       "field_name": "customfield_bankingid",
       "label":"Banking ID",
@@ -61,12 +61,9 @@ function after_action(){
   // Check for a response
   if(method_response == null)
   return;
-  // Check response contains fields
-  if(method_response.fields == null)
-  return;
   // Remap fields to values that Cyclr will understand
-  for(var i=0;i<method_response.fields.length;i++){
-    method_response.fields[i].data_type = select_dt(method_response.fields[i].data_type);
+  for(var i=0;i<method_response.length;i++){
+    method_response[i].data_type = select_dt(method_response[i].data_type);
   }
   return true;
 }
