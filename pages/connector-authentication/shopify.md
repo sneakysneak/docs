@@ -11,7 +11,7 @@ This document will explain what is needed to setup access to Shopify and install
 
 ### Setup Shopify Credentials ###
 1. Create a Shopify private application and get the credentials. Instructions on how to do this can be seen [here](https://shopify.dev/tutorials/authenticate-a-private-app-with-shopify-admin#generate-public-app-credentials).
-2. Make sure that the correct "Admin API Permisssions" have been set for the webhooks in use. The permissions can be set in the application settings of your Cyclr private appilcation in Shopfiy. 
+2. Make sure that the correct "Admin API Permisssions" have been set for the webhooks in use. The permissions can be set in the application settings of your Cyclr private application in Shopfiy. 
    * "Checkout" webhooks require "read_orders, write_orders" permissions.
    * "Orders" webhooks require "read_orders, write_orders" permissions.
    * "Products" webhooks require "read_orders, write_orders" permissions.
