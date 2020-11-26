@@ -36,7 +36,7 @@ When a release is pushed live this might be done as a Major release which will c
 | Inbound Paging? | Does the API support paging when large amounts of data are requested? | |
 | Inbound Page Size | If inbound paging is supported, provide the default page size. | |
 | Outbound Page Size | If outbound paging is supported, provide the default page size. | |
-| User Singular Partner Webhook URL? | For specific cases where individual webhook URLs are not appropriate. | |
+| User Singular Partner Webhook URL? | For specific cases where individual webhook URLs are not appropriate. | Speak to the support team if you would like more information on this setting. |
 | Icon | The logo that will be used to represent the application. | 400x400 pixel PNG image with a transparent background. |
 
 ## Related Topics
