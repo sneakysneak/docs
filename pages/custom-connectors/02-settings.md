@@ -31,8 +31,8 @@ When a release is pushed live this might be done as a Major release which will c
 | Property | Description | Recommended Standards |
 | --- | --- | --- |
 | Comments | A description of the Application.| |
-| Post install Property Value Lookup Method | | |
-| Post Install Test Auth Method | | |
+| Post install Property Value Lookup Method | Select a method you wish to run immediately after authentication, to get a value. | |
+| Post Install Test Auth Method | Select a method you wish to run immediately after authentication to check that you have successfully authenticated the connector. | |
 | Inbound Paging? | Does the API support paging when large amounts of data are requested? | |
 | Inbound Page Size | If inbound paging is supported, provide the default page size. | |
 | Outbound Page Size | If outbound paging is supported, provide the default page size. | |
