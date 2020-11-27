@@ -46,9 +46,9 @@ Step 1 - Go to Credentials.	(ignore the "Create credentials" button for now as w
 
 Step 2 - Choose **OAuth consent screen** along the top - values you enter here will be shown to your users when they authenticate Cyclr's Google Connectors.
 
-Step 4 - set Application Type to Public.
+Step 3 - set Application Type to Public.
 
-Step 5 -	Enter a suitable name for your application, e.g. "My Product Integrations", upload a logo, set an appropriate email address for your users to get in touch through, should they need to.
+Step 4 -	Enter a suitable name for your application, e.g. "My Product Integrations", upload a logo, set an appropriate email address for your users to get in touch through, should they need to.
 
 Step 5 -	Leave the default Scopes for Google APIs values.
 
