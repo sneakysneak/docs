@@ -14,7 +14,7 @@ Cyclr supports various authentication types and, sometimes with the addition of 
 | ApiKey | The user should provide an API key as the HTTP header for the connector.|
 | Basic  | The API uses HTTP basic authentication. |
 | OAuth1 | The API uses OAuth 1.0a authentication. Requires: _ClientId _(also known as ConsumerKey), _ClientSecret _(also known as ConsumerSecret), _RequestTokenUrl_, _AuthorizeUrl_, _AccessTokenUrl_.|
-| Auth2 | The API uses OAuth 2 authentication. Requires: _ClientId_, _ClientSecret_, _AuthoriseUrl_, _AccessTokenUrl_. |
+| OAuth2 | The API uses OAuth 2 authentication. Requires: _ClientId_, _ClientSecret_, _AuthoriseUrl_, _AccessTokenUrl_. |
 | None | No authentication used.|
 | AuthFields | the API needs to inject authentication fields into the POST message. Requires: _Name_, _Key_, _Type_. |
 
