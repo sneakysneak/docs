@@ -18,7 +18,7 @@ To use the Constant Contact connector, you will first need to setup an applicati
 4. For Website, enter https://cyclr.com
 5. Set the Callback URL to htt<span></span>ps://`ServiceDomain`/connector/callback 
 
-    > ServiceDomain should be substituted for your actual service domain, e.g. yourcompany-h.cyclr.com which can be found in your Cyclr Console under `Settings > Integration Settings > Service Domain`.
+    > `ServiceDomain` should be substituted for your actual service domain, e.g. yourcompany-h.cyclr.com which can be found in your Cyclr Console under `Settings > Integration Settings > Service Domain`.
 6. Leave `Issue a new key for Constant Contact API` selected, and set to `Standard API Access`.
 7. Agree to the terms of service and click `Register Application`.
 8. You will now be presented with details of your app, along with its `Key` and `Secret`.  Take note of these.
