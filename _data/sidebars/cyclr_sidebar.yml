@@ -326,6 +326,10 @@ entries:
           - title: Club Ready Connector
             url: /clubready-connector
             output: web, pdf
+            
+          - title: Constant Contact Connector
+            url: /constant-contact
+            output: web, pdf
 
           - title: Facebook Marketing Authentication
             url: /facebook-connector
