@@ -117,7 +117,7 @@ If a Method uses Paging, this function is called before each page is retrieved.
 *   **cycle_id**: The ID of the cycle the script is running in
 *   **cyclr_account_id**: The internal ID of the account the script is running in
 *   **external_account_id**: The external ID of the account the script is running in
-*   **action_data**: Object that persists between execution of before_action, after_action &amp; after_action_paging allowing custom data to be passed between the events
+*   **action_data**: An object used to persist data between some event handler functions, allowing data to be passed between them.  Accessible in before_action, after_action, after_action_paging, action_condition and after_error.
 *   **return**: true to continue with the request to the third party API, false to abort the request (use throw for a more useful step error message)
 
 #### after_action
@@ -138,7 +138,7 @@ If a Method uses Paging, this function is called after each page is retrieved.
 *   **cycle_id**: The ID of the cycle the script is running in
 *   **cyclr_account_id**: The internal ID of the account the script is running in
 *   **external_account_id**: The external ID of the account the script is running in
-*   **action_data**: Object that persists between execution of before_action, after_action &amp; after_action_paging allowing custom data to be passed between the events
+*   **action_data**: An object used to persist data between some event handler functions, allowing data to be passed between them.  Accessible in before_action, after_action, after_action_paging, action_condition and after_error.
 *   **return**: true
 
 #### after_action_paging
@@ -156,7 +156,7 @@ If this function is provided, it is called once after all pages of data have bee
 *   **cycle_id**: The ID of the cycle the script is running in
 *   **cyclr_account_id**: The internal ID of the account the script is running in
 *   **external_account_id**: The external ID of the account the script is running in
-*   **action_data**: Object that persists between execution of before_action, after_action &amp; after_action_paging allowing custom data to be passed between the events
+*   **action_data**: An object used to persist data between some event handler functions, allowing data to be passed between them.  Accessible in before_action, after_action, after_action_paging, action_condition and after_error.
 *   **return**: true
 
 #### after_error
@@ -171,6 +171,7 @@ Function is called when Cyclr received an error from an external API.
 *   **cycle_id**: The ID of the cycle the script is running in
 *   **cyclr_account_id**: The internal ID of the account the script is running in
 *   **external_account_id**: The external ID of the account the script is running in
+*   **action_data**: An object used to persist data between some event handler functions, allowing data to be passed between them.  Accessible in before_action, after_action, after_action_paging, action_condition and after_error.
 *   **return**: true
 
 #### action_condition
@@ -185,6 +186,7 @@ Function is used to essentially combine a Method with a Decision Step, allowing 
 *   **cycle_id**: The ID of the cycle the script is running in
 *   **cyclr_account_id**: The internal ID of the account the script is running in
 *   **external_account_id**: The external ID of the account the script is running in
+*   **action_data**: An object used to persist data between some event handler functions, allowing data to be passed between them.  Accessible in before_action, after_action, after_action_paging, action_condition and after_error.
 *   **return**: true for the Transaction to exit on the "True Route", false to exit on the "False Route"
 
 #### before_oauth2_authorise
