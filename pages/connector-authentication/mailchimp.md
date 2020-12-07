@@ -15,7 +15,9 @@ To authenticate the Mailchimp connector you will need a `Client ID` and `Client 
 2. Click the [Register An App](https://us19.admin.mailchimp.com/account/oauth2/client/) link.
 3. Fill out the **Register An App** form.
 4. When completing the form, you will be asked for a **Redirect URI**.  You should enter<br/>
-    https://``Your Service Domain``/connector/callback
+    <br/>
+    https://``Your Service Domain``/connector/callback<br/>
+    <br/>
     > Your service domain can be found in your Cyclr console under **Settings** > **General Settings** > **Service Domain**.
 5. Once you have completed the form, click **Create**, and you will be presented with a `Client ID` and `Client Secret`.  You can now use these to authenticate your application.
 
