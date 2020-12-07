@@ -9,7 +9,7 @@ tags: [connector]
 
 ## Partner Setup
 
-To authenticate the Bullhorn connector you will your Client ID and Client Secret.  If you do not already have these, you or a listed Account / Support Contact will need to get in touch with Bullhorn Support to have credentials set up.
+To authenticate the Bullhorn connector you will need a Client ID and Client Secret.  If you do not already have these, you or a listed Account / Support Contact will need to get in touch with Bullhorn Support to have credentials set up.
 
 If asked for a callback URI during this process, give
 
