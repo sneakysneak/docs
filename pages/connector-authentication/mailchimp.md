@@ -23,4 +23,4 @@ https://``Your Service Domain``/connector/callback
 
 For more information you can visit the official documentation here:
 
-https://mailchimp.com/developer/guides/access-user-data-with-oauth-2/#register-your-application
+<a href="https://mailchimp.com/developer/guides/access-user-data-with-oauth-2/#register-your-application">https://mailchimp.com/developer/guides/access-user-data-with-oauth-2/#register-your-application</a>
