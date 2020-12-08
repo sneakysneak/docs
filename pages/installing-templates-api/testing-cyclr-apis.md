@@ -1,5 +1,5 @@
 ---
-title: Testing Cyclr's APIs
+title: Cyclr's APIs
 sidebar: cyclr_sidebar
 permalink: testing-cyclr-api
 tags: [api]
@@ -7,15 +7,15 @@ tags: [api]
 
 Cyclr's interactive API references can be used to try things out, and to help you while testing and creating your own native deployment or working with data on demand.
 
-### API Reference Location
+### API Location
 
-Depending on where your Cyclr Console is hosted, you'll need to use the appropriate API reference:
+Depending on where your Cyclr Console is hosted, you'll need to use the appropriate API Domain when making Requests:
 
-Cyclr Console Location | Documentation link
---- | ---
-my.cyclr.com | [US API Reference](https://api.cyclr.com/docs/index)
-my.cyclr.uk | [UK API Reference](https://api.cyclr.uk/docs/index)
-eu.cyclr.com | [EU API Reference](https://api.eu.cyclr.com/docs/index)
+Cyclr Console Location | API Domain | Documentation link
+--- | --- | ---
+my.cyclr.com | https://api.cyclr.com | [US API Reference](https://api.cyclr.com/docs/index)
+my.cyclr.uk | https://api.cyclr.uk | [UK API Reference](https://api.cyclr.uk/docs/index)
+eu.cyclr.com | https://api.eu.cyclr.com | [EU API Reference](https://api.eu.cyclr.com/docs/index)
 
 ### API Reference Authorization
 
