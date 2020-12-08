@@ -1,11 +1,9 @@
 ---
-title: Overview
+title: Creating a new Account using the Cyclr API
 sidebar: cyclr_sidebar
 permalink: overview-new-account
 tags: 
 ---
-
-## Creating a new Account using the Cyclr API
 
 This article gives an overview on setting up a new Cyclr Account using the Cyclr API.
 
