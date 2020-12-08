@@ -19,7 +19,7 @@ To make calls to the Cyclr API, you'll need to identify your **Cyclr Instance**,
 
 
 
-### Create an Account
+### Creating an Account
 
 Typically, each of your own clients will have their own Cyclr Account to store their data and integrations (Cycles) to keep them separate from your other clients' data.
 
