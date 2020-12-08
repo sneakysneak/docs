@@ -7,7 +7,7 @@ tags: [api]
 
 Cyclr's interactive API references can be used to try things out, and to help you while testing and creating your own native deployment or working with data on demand.
 
-### API Location
+### API Location/Instance
 
 Depending on where your Cyclr Console is hosted, you'll need to use the appropriate API Domain when making Requests:
 
