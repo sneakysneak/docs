@@ -11,7 +11,7 @@ Cyclr's interactive API references can be used to try things out, and to help yo
 
 Depending on where your Cyclr Console is hosted, you'll need to use the appropriate API Domain when making Requests:
 
-Cyclr Console Location | API Domain | Documentation link
+Cyclr Console Location | API Domain | Interactive API Reference
 --- | --- | ---
 my.cyclr.com | https://api.cyclr.com | [US API Reference](https://api.cyclr.com/docs/index)
 my.cyclr.uk | https://api.cyclr.uk | [UK API Reference](https://api.cyclr.uk/docs/index)
