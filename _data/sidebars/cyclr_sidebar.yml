@@ -105,6 +105,10 @@ entries:
       - title: Installing Template Integrations
         output: web, pdf
         folderitems:
+          - title: Overview
+            url: /overview-new-account
+            output: web, pdf
+        
           - title: Obtain Authorization Token
             url: /obtain-authorization-token
             output: web, pdf
