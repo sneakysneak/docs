@@ -1,5 +1,5 @@
 ---
-title: Creating an Account using the Cyclr API
+title: Overview
 sidebar: cyclr_sidebar
 permalink: overview-new-account
 tags: 
