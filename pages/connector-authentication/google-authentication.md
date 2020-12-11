@@ -42,21 +42,19 @@ Step 2 -	Take the option to create a NEW PROJECT in the top right:
 
 From the the **APIs & Services** Dashboard:
 
-Step 1 - Go to Credentials.	(ignore the "Create credentials" button for now as we must first setup the OAuth consent screen)
+Step 1 - Choose **OAuth consent screen** on the left - values you enter here will be shown to your users when they authenticate a Cyclr Google Connectors.
 
-Step 2 - Choose **OAuth consent screen** along the top - values you enter here will be shown to your users when they authenticate Cyclr's Google Connectors.
+Step 2 - set Application Type to External.
 
-Step 3 - set Application Type to Public.
+Step 3 -	Enter a suitable name for your application, e.g. "My Product Integrations", upload a logo, set an appropriate email address for your users to get in touch through, should they need to.
 
-Step 4 -	Enter a suitable name for your application, e.g. "My Product Integrations", upload a logo, set an appropriate email address for your users to get in touch through, should they need to.
+Step 4 -	under Authorised domains add your Cyclr Partner **Service Domain** found in your Cyclr Console under Settings > General Settings, then click `Save and Continue`.
 
-Step 5 -	Leave the default Scopes for Google APIs values.
+If the Google Console shows an error for that, remove the subdomain part to leave only the Top Level Domain, such as `cyclr.com`, e.g. change `mysubdomain.cyclr.com` to just `cyclr.com`.
 
-Step 6 -	under Authorised domains add your Cyclr Partner **Service Domain** found in your Cyclr Console under Settings > General Settings.
+Step 5 -	On the next page, you can leave the default Scopes so click `Save and Continue` again.
 
-The Google Console will automatically remove any subdomain part as appropriate, leaving just the top private domain part, e.g. "mysubdomain.cyclr.com" will become "cyclr.com".  You may also see a notice saying "Must be a top private domain" which is just notifying you that it's automatically removed the subdomain part.
-
-Step 7 -	Provide values for the 3 "link" options to enable users to find out more about your organisation/product.
+Step 6 -	Provide values for the 3 "link" options to enable users to find out more about your organisation/product.
 
 ### Creating Google Credentials
 
