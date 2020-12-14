@@ -58,6 +58,7 @@ When [obtaining a Cyclr API Access Token](./cyclr-api-authentication) for this c
     <tr>
         <td>AccountName</td>
         <td>(Optional) If the <strong>CYCLR_ACCOUNT_API_ID</strong> value provided in the Request's URL doesn't match an existing Cyclr Account, a new Account will be created using this name.  If no AccountName is provided, the CYCLR_ACCOUNT_API_ID value will be used as the new Account's name.</td>
+        <td>New Cyclr Account Name</td>
     </tr>
     <thead>
         <tr>
@@ -164,7 +165,7 @@ NJ88GGgv79V79VvYFBBTHUIGu</td>
     </tr>
     <tr>
         <td>ExpiresAtUtc</td>
-        td>When the Token and LAUNCH URL will expire.</td>
+        <td>When the Token and LAUNCH URL will expire.</td>
         <td>2020-01-01T12:30:00.000Z</td>
     </tr>
     <tr>
