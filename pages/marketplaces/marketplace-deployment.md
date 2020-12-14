@@ -5,9 +5,10 @@ permalink: marketplace-deployment
 tags: [marketplaces]
 ---
 
-When integrating with a Marketplace you can have all users make use of the built in account API User (Account Marketplace) or create & use users in the Cyclr account (User Marketplace).
+When integrating with a Cyclr Marketplace you can decide whether all users access it using the same built-in Account-level "API User" (**Account Marketplace**), or create separate users for each in the Cyclr Account (**User Marketplace**).
 
-To enable your users to view a Marketplace and install templates, you will need to have an "Integrations" button or link within your application's UI.
+
+To enable your users to view a Marketplace and install templates, you will need to have an "Integrations" button or link within your own application's interface.
 
 For example:
 
@@ -15,29 +16,31 @@ For example:
 
 ## Account Marketplace
 
-When a user clicks the **Integrations** button, your application server should make a request towards the Cyclr REST API's _/v1.0/accounts/{AccountId}/marketplace_ endpoint:
+When a user clicks the **Integrations** button, your application server should make a Request towards the Cyclr REST API's `/v1.0/accounts/CYCLR_ACCOUNT_API_ID/marketplace` endpoint to obtain a **Marketplace URL** the user can be directed to in their web browser.
 
 ### Request
 
 ```
 curl -X POST
--H "Authorization: Bearer ${ACCESS_TOKEN}"
+-H "Authorization: Bearer ACCESS_TOKEN"
 -H "Content-Type: application/json"
 -H "Accept: application/json"
 
 -d '{
-    "MarketplaceId": 123,
+    "MarketplaceId": MARKETPLACE_ID,
+    "AccountName": "CYCLR_ACCOUNT_NAME",
     "PartnerConnector": {
-        "Name": "Connector Name",
+        "Name": "Example Connector",
         "Version": "1.0",
-        "AuthValue": "00000000000000000000000000000000000000000",
-        "Properties": [{"Name": "Url", "Value": "https://myapp.something.blah"}]
+        "AuthValue": "XXXXXXXXXX",
+        "Properties": [{"Name": "Url", "Value": "http://customDomain.appName.com"}]
     }
-}' "https://yourCyclrInstance/v1.0/accounts/0000000-0000-0000-0000-000000000000/marketplace"
+}' "https://yourCyclrInstance/v1.0/accounts/CYCLR_ACCOUNT_API_ID/marketplace"
 ```
-In the examples above, replace *yourCyclrInstance* with *api.cyclr.com*, *api.cyclr.uk*, or your own domain if your Cyclr instance is self-hosted.
 
-You should use a non-account restricted OAuth token as the Authorization for this request.
+In the example above, replace *yourCyclrInstance* with your [**API Domain** according to where your Cyclr Console is located](./testing-cyclr-api), or your own domain if your Cyclr instance is self-hosted.
+
+When [obtaining a Cyclr API Access Token](./cyclr-api-authentication) for this call, you should *not* use an Account Restricted Token.
 
 <table>
     <thead>
@@ -48,24 +51,24 @@ You should use a non-account restricted OAuth token as the Authorization for thi
         </tr>
         <tr>
             <th colspan="3">Marketplace &amp; Account<br/>
-            <small>Parameters required to identify the Marketplace to show and account name</small></th>
+            <small>Parameters required to identify the Marketplace to show and Account to work in</small></th>
         </tr>
     </thead>
     <tr>
         <td>MarketplaceId</td>
         <td>The numeric ID of the Marketplace to view.<br />
-            You can find this through your Cyclr Console in your web browser's address bar after pressing **Edit** on your Marketplace, e.g.: https://my.cyclr.uk/console/2/marketplaces/category?categoryId=27</td>
-        <td>123</td>
+            You can find this through your Cyclr Console in your web browser's address bar after pressing <strong>Edit</strong> on your Marketplace, e.g.: https://my.cyclr.uk/console/2/marketplaces/category?categoryId=10</td>
+        <td>10</td>
     </tr>
     <tr>
         <td>AccountName</td>
-        <td>(Optional) If the account ID doesn't exist it will be created, you can include a name for the account otherwise the ID will be used as the name.</td>
+        <td>(Optional) If the <strong>CYCLR_ACCOUNT_API_ID</strong> value provided in the Request's URL doesn't match an existing Cyclr Account, a new Account will be created using this name.  If no AccountName is provided, the CYCLR_ACCOUNT_API_ID value will be used as the new Account's name.</td>
         <td>New Cyclr Account Name</td>
     </tr>
     <thead>
         <tr>
             <th colspan="3">Partner Connector<br/>
-            <small>Optional parameter to install a pre-authenticated partner connector into the account.  Only used if an Account is created.</small></th>
+            <small>Optional parameter to install a pre-authenticated "partner connector" into the Account.  Only used if an Account is created by the call.</small></th>
         </tr>
     </thead>
     <tr>
@@ -95,7 +98,7 @@ NJ88GGgv79V79VvYFBBTHUIGu</td>
     </tr>
     <tr>
         <td style="white-space: nowrap">PartnerConnector.[Properties]</td>
-        <td>An array of properties required by the partner connector for successful installation. This is not relevant to all connectors.</td>
+        <td>An array of properties required by the partner connector for successful installation. Required by some Connectors.</td>
         <td>[ {"Name": "Url", "Value": "http://customDomain.appName.com"} ]</td>
     </tr>
     <thead>
@@ -115,9 +118,9 @@ NJ88GGgv79V79VvYFBBTHUIGu</td>
 
 ```json
 {
-    "AccountId": "0000000-0000-0000-0000-000000000000",
+    "AccountId": "CYCLR_ACCOUNT_API_ID",
     "ExpiresAtUtc": "2020-01-01T12:30:00.000Z",
-    "MarketplaceUrl": "https://hostapp.cyclr.com/account/signinwithtoken?token=lld3UjpZKkuh0I7ObHR0EtxRsPo0No1GqNSyAi8pqXQ%3D&returnUrl=%2Flaunch/marketplace/1",
+    "MarketplaceUrl": "https://hostapp.cyclr.com/account/signinwithtoken?token=lld3UjpZKkuh0I7ObHR0EtxRsPo0No1GqNSyAi8pqXQ%3D&returnUrl=%2Flaunch/marketplace/10",
     "Token": "lld3UjpZKkuh0I7ObHR0EtxRsPo0No1GqNSyAi8pqXQ="
 }
 ```
@@ -132,8 +135,8 @@ NJ88GGgv79V79VvYFBBTHUIGu</td>
     </thead>
     <tr>
         <td>AccountId</td>
-        <td>The ID of the newly created account, or the existing account you provided in your request.</td>
-        <td>0000000-0000-0000-0000-000000000000</td>
+        <td>The ID of the newly created account, or the existing account you provided in your Request.</td>
+        <td>CustomerXYZ</td>
     </tr>
     <tr>
         <td>ExpiresAtUtc</td>
@@ -144,7 +147,7 @@ NJ88GGgv79V79VvYFBBTHUIGu</td>
         <td>MarketplaceUrl</td>
         <td>The URL that your user should be sent to, typically opened in a popup browser window.  
             Once generated by Cyclr, this URL will only be valid for 5 minutes and will expire when first accessed.  You should therefore direct your user to it immediately after receiving it.</td>
-        <td style="word-break: break-all">https://hostapp.cyclr.com/account/signinwithtoken?token=lld3UjpZKkuh0I7ObHR0EtxRsPo0No1GqNSyAi8pqXQ%3D&returnUrl=%2Flaunch/marketplace/1</td>
+        <td style="word-break: break-all">https://hostapp.cyclr.com/account/signinwithtoken?token=lld3UjpZKkuh0I7ObHR0EtxRsPo0No1GqNSyAi8pqXQ%3D&returnUrl=%2Flaunch/marketplace/10</td>
     </tr>
     <tr>
         <td>Token</td>
@@ -153,37 +156,39 @@ NJ88GGgv79V79VvYFBBTHUIGu</td>
     </tr>
 </table>
 
-> After deploying a Marketplace you will see an API User in your Cyclr console.
-> The API User has access to the account, however they cannot signin to the Cyclr interface.
+> After deploying a Marketplace you will see an "API User" in your Cyclr console.
+> The "API User" has access to the Account, however they cannot signin to the Cyclr interface.
 
 ## User Marketplace
 
-When a user clicks the **Integrations** button, your application server should make a request towards the Cyclr REST API's _/v1.0/users/marketplace_ endpoint:
+When a user clicks the **Integrations** button, your application server should make a Request towards the Cyclr REST API's `/v1.0/users/marketplace` endpoint to obtain a **Marketplace URL** the user can be directed to in their web browser.
 
 ### Request
 
 ```
 curl -X POST
--H "Authorization: Bearer ${ACCESS_TOKEN}"
+-H "Authorization: Bearer ACCESS_TOKEN"
 -H "Content-Type: application/json"
 -H "Accept: application/json"
 
 -d '{
-    "MarketplaceId": 123,
-    "AccountId": "0000000-0000-0000-0000-000000000000",
-    "Username": "example",
-    "Password": "P4$$w0rd",
+    "MarketplaceId": MARKETPLACE_ID,
+    "AccountName": "CYCLR_ACCOUNT_NAME",
+    "AccountId": "CYCLR_ACCOUNT_API_ID",
+    "Username": "USERNAME",
+    "Password": "PASSWORD",
     "PartnerConnector": {
-        "Name": "Connector Name",
+        "Name": "Example Connector",
         "Version": "1.0",
-        "AuthValue": "00000000000000000000000000000000000000000",
-        "Properties": [{"Name": "Url", "Value": "https://myapp.something.blah"}]
+        "AuthValue": "XXXXXXXXXX",
+        "Properties": [{"Name": "Url", "Value": "http://customDomain.appName.com"}]
     }
 }' "https://yourCyclrInstance/v1.0/users/marketplace"
 ```
-In the examples above, replace *yourCyclrInstance* with *api.cyclr.com*, *api.cyclr.uk*, or your own domain if your Cyclr instance is self-hosted.
 
-You should use a non-account restricted OAuth token as the Authorization for this request.
+In the example above, replace *yourCyclrInstance* with your [**API Domain** according to where your Cyclr Console is located](./testing-cyclr-api), or your own domain if your Cyclr instance is self-hosted.
+
+When [obtaining a Cyclr API Access Token](./cyclr-api-authentication) for this call, you should *not* use an Account Restricted Token.
 
 <table>
     <thead>
@@ -194,39 +199,39 @@ You should use a non-account restricted OAuth token as the Authorization for thi
         </tr>
         <tr>
             <th colspan="3">Marketplace &amp; Account<br/>
-            <small>Parameters required to identify the Marketplace to show and account name</small></th>
+            <small>Parameters required to identify the Marketplace to show and Account to work in</small></th>
         </tr>
     </thead>
     <tr>
         <td>MarketplaceId</td>
         <td>The numeric ID of the Marketplace to view.<br />
-            You can find this through your Cyclr Console in your web browser's address bar after pressing **Edit** on your Marketplace, e.g.: https://my.cyclr.uk/console/2/marketplaces/category?categoryId=27</td>
-        <td>123</td>
+            You can find this through your Cyclr Console in your web browser's address bar after pressing <strong>Edit</strong> on your Marketplace, e.g.: https://my.cyclr.uk/console/2/marketplaces/category?categoryId=10</td>
+        <td>10</td>
     </tr>
     <tr>
         <td>AccountId</td>
-        <td>ID of the account.</td>
-        <td>0000000-0000-0000-0000-000000000000</td>
-    </tr>
-    <tr>
-        <td>Username</td>
-        <td>Username of the user the Marketplace is for.</td>
-        <td>example</td>
-    </tr>
-    <tr>
-        <td>Password</td>
-        <td>The users password.</td>
-        <td>P4$$w0rd</td>
+        <td>API ID of the Account to work in.</td>
+        <td>CustomerXYZ</td>
     </tr>
     <tr>
         <td>AccountName</td>
-        <td>(Optional) If the account ID doesn't exist it will be created, you can include a name for the account otherwise the ID will be used as the name.</td>
+        <td>(Optional) If the <strong>CYCLR_ACCOUNT_API_ID</strong> provided in the Request doesn't match an existing Cyclr Account, a new Account will be created using this name.  If no AccountName is provided, the CYCLR_ACCOUNT_API_ID value will be used as the new Account's name.</td>
         <td>New Cyclr Account Name</td>
+    </tr>
+    <tr>
+        <td>Username</td>
+        <td>Username of the user accessing the Marketplace.</td>
+        <td>USERNAME</td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td>Password for the user.</td>
+        <td>PASSWORD</td>
     </tr>
     <thead>
         <tr>
             <th colspan="3">Partner Connector<br/>
-            <small>Optional parameter to install a pre-authenticated partner connector into the account.  Only used if an Account is created.</small></th>
+            <small>Optional parameter to install a pre-authenticated "partner connector" into the Account.  Only used if an Account is created by the call.</small></th>
         </tr>
     </thead>
     <tr>
@@ -256,7 +261,7 @@ NJ88GGgv79V79VvYFBBTHUIGu</td>
     </tr>
     <tr>
         <td style="white-space: nowrap">PartnerConnector.[Properties]</td>
-        <td>An array of properties required by the partner connector for successful installation. This is not relevant to all connectors.</td>
+        <td>An array of properties required by the partner connector for successful installation. Required by some Connectors.</td>
         <td>[ {"Name": "Url", "Value": "http://customDomain.appName.com"} ]</td>
     </tr>
     <thead>
@@ -276,9 +281,9 @@ NJ88GGgv79V79VvYFBBTHUIGu</td>
 
 ```json
 {
-    "AccountId": "0000000-0000-0000-0000-000000000000",
+    "AccountId": "CYCLR_ACCOUNT_API_ID",
     "ExpiresAtUtc": "2020-01-01T12:30:00.000Z",
-    "MarketplaceUrl": "https://hostapp.cyclr.com/account/signinwithtoken?token=lld3UjpZKkuh0I7ObHR0EtxRsPo0No1GqNSyAi8pqXQ%3D&returnUrl=%2Flaunch/marketplace/1",
+    "MarketplaceUrl": "https://hostapp.cyclr.com/account/signinwithtoken?token=lld3UjpZKkuh0I7ObHR0EtxRsPo0No1GqNSyAi8pqXQ%3D&returnUrl=%2Flaunch/marketplace/10",
     "Token": "lld3UjpZKkuh0I7ObHR0EtxRsPo0No1GqNSyAi8pqXQ="
 }
 ```
@@ -293,8 +298,8 @@ NJ88GGgv79V79VvYFBBTHUIGu</td>
     </thead>
     <tr>
         <td>AccountId</td>
-        <td>The ID of the newly created account, or the existing account you provided in your request.</td>
-        <td>0000000-0000-0000-0000-000000000000</td>
+        <td>The ID of the newly created account, or the existing account you provided in your Request.</td>
+        <td>CustomerXYZ</td>
     </tr>
     <tr>
         <td>ExpiresAtUtc</td>
@@ -305,7 +310,7 @@ NJ88GGgv79V79VvYFBBTHUIGu</td>
         <td>MarketplaceUrl</td>
         <td>The URL that your user should be sent to, typically opened in a popup browser window.  
             Once generated by Cyclr, this URL will only be valid for 5 minutes and will expire when first accessed.  You should therefore direct your user to it immediately after receiving it.</td>
-        <td style="word-break: break-all">https://hostapp.cyclr.com/account/signinwithtoken?token=lld3UjpZKkuh0I7ObHR0EtxRsPo0No1GqNSyAi8pqXQ%3D&returnUrl=%2Flaunch/marketplace/1</td>
+        <td style="word-break: break-all">https://hostapp.cyclr.com/account/signinwithtoken?token=lld3UjpZKkuh0I7ObHR0EtxRsPo0No1GqNSyAi8pqXQ%3D&returnUrl=%2Flaunch/marketplace/10</td>
     </tr>
     <tr>
         <td>Token</td>
