@@ -16,7 +16,7 @@ For example:
 
 ## Account Marketplace
 
-When a user clicks the **Integrations** button, your application server should make a Request towards the Cyclr REST API's `/v1.0/accounts/CYCLR_ACCOUNT_API_ID/marketplace` endpoint to obtain a **Marketplace URL**.  The user is then directed to this URL in their web browser.
+When a user clicks the **Integrations** button, your application server should make a Request towards the Cyclr REST API's `/v1.0/accounts/CYCLR_ACCOUNT_API_ID/marketplace` endpoint to obtain a **Marketplace URL**.  The user can then be directed to this URL in their web browser.
 
 ### Request
 
@@ -161,7 +161,7 @@ NJ88GGgv79V79VvYFBBTHUIGu</td>
 
 ## User Marketplace
 
-When a user clicks the **Integrations** button, your application server should make a Request towards the Cyclr REST API's `/v1.0/users/marketplace` endpoint to obtain a **Marketplace URL**.  The user is then directed to this URL in their web browser.
+When a user clicks the **Integrations** button, your application server should make a Request towards the Cyclr REST API's `/v1.0/users/marketplace` endpoint to obtain a **Marketplace URL**.  The user can then be directed to this URL in their web browser.
 
 ### Request
 
