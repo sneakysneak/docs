@@ -82,7 +82,7 @@ This screen can be completely customised to include your own HTML and JavaScript
 They will most likely then be returned to your application:
 
   
-![Generic Host Application - Connected](./generic-host-app-connected.png)
+![Generic Host Application - Connected](./images/generic-host-app-connected.png)
 
   
 We provide response values that enable you to update your UI to indicate success, or instigate a backend process to make use of the newly installed Cyclr (for example, start a data export process).
