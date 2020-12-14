@@ -114,7 +114,7 @@ NJ88GGgv79V79VvYFBBTHUIGu</td>
     </tr>
     <thead>
         <tr>
-            <th colspan="3">LAUNCH Options<br/>
+            <th colspan="3">LAUNCH Options</th>
         </tr>
     </thead>
     <tr>
