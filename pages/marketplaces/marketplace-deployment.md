@@ -78,7 +78,7 @@ When [obtaining a Cyclr API Access Token](./cyclr-api-authentication) for this c
     </tr>
     <tr>
         <td>PartnerConnector.Name</td>
-        <td>A name you wish to give this instance of your Connector installed within the new or existing account.</td>
+        <td>The name to give this instance of your Connector in the Account.</td>
         <td>Connector Name</td>
     </tr>
     <tr>
@@ -241,7 +241,7 @@ When [obtaining a Cyclr API Access Token](./cyclr-api-authentication) for this c
     </tr>
     <tr>
         <td>PartnerConnector.Name</td>
-        <td>A name you wish to give this instance of your Connector installed within the new or existing account.</td>
+        <td>The name to give this instance of your Connector in the Account.</td>
         <td>Connector Name</td>
     </tr>
     <tr>
