@@ -11,7 +11,7 @@ Partner Setup
 
 Candidate Hub makes use of OAuth 2.0 for remote API access. 
 
-For your reference, here is a link to the Mautic API documentation.
+For your reference, [here](https://developer.mautic.org/#rest-api) is a link to the Mautic API documentation.
 
 Before Starting
 ---------------
