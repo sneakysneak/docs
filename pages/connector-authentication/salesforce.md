@@ -17,7 +17,7 @@ The official Salesforce documentation for creating a **Connected App** can be fo
 
 #### Introduction
 
-You can register for a free [Salesforce Developer Edition account here (click "Sign Up" at the top of that page)](https://developer.salesforce.com/) or log into your existing Salesforce account if you have one.  You can use any Salesforce account to create a Connected App. It doesn’t have to be a Developer Edition account.
+You can register for a free [Salesforce Developer Edition account here (click "Sign Up" at the top of that page)](https://developer.salesforce.com/) or log into your existing Salesforce account if you have one.  You can use any Salesforce account to create a Connected App, it doesn’t have to be a Developer Edition account, but we would advise against using a Sandbox account as Connected Apps are destroyed when they are refreshed.
 
 #### Create your App within Salesforce
 
