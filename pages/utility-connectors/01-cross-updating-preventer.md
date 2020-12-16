@@ -25,7 +25,7 @@ Once you've decided, data moving *from* that system is considered *Outbound*, an
 If there are multiple "types" of data that you wish work with - such as Contacts and Leads in Salesforce - then you should install a separate Cross Updating Preventer Connector for each type to keep their data separate.
 
 ### Common Key
-You must also identify some data you can use as a "Common Key".  This will be used as a unique value to both store and lookup data in the Cross Updating Preventer for each data object.
+You must identify some data you can use as a "Common Key".  This will be used as a unique value to both store and lookup data in the Cross Updating Preventer for each data object.
 
 The value must be something that's unique to each object and that exists in the data being moved in both the Inbound and Outbound directions.  If you were synchronizing Contacts between 2 systems, you might use Email Address.
 
