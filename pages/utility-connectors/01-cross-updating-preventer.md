@@ -69,3 +69,14 @@ You must map the same fields across the 2 corresponding Steps, but also ensure t
 So **Update OK (*Inbound*)** and **Store Data (*Outbound*)** must have the same fields mapped (and values formatted the same way).
 
 And **Update OK (*Outbound*)** and **Store Data (*Inbound*)** must have the same fields mapped (and values formatted the same way).
+
+
+## Cycle Setup
+
+The screenshot below shows how you might build 2 Cycles that synchronize Contacts between Salesforce and HubSpot.
+
+![](./images/cross-updating-preventer-2-cycles.png)
+
+Here we've arbitrarily decided that Salesforce is the "main" system so changes passing from there to HubSpot are considered "Outbound" with changes coming back from HubSpot to Salesforce as "Inbound".
+
+The colored boxes and joining lines indicate how the Update OK and Store Data Steps work together: the **Update OK (Outbound)** Step checks the data stored by **Store Date (Inbound)**, and the **Update OK (Inbound)** Step checks the data stored by **Store Data (Outbound)**.
