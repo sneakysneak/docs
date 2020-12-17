@@ -21,7 +21,7 @@ Once you have a Client ID and Secret you need to call the Cyclr API OAuth token 
 
 https://\{your-instance-url\}/oauth/token
 
-#### Required parameters
+#### Required Request Body Parameters
 
 | Parameter | Description | Example |
 | --- | --- | --- |
