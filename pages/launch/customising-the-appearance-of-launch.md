@@ -9,7 +9,7 @@ To view an instance of LAUNCH from within the Cyclr Console, go to:
 
 Click **Guide** > Click the **Show** button under Integrate with your App > Click the **Try LAUNCH** button for an instance to appear as a pop up with any integration templates you’ve published.
 
-As standard, the layout and colour scheme are pretty bland, however you can reskin your version of LAUNCH using CSS and HTML.
+As standard, the layout and color scheme are pretty bland, however you can reskin your version of LAUNCH using CSS and HTML.
 
 In the Console, click **Settings** and then **Appearance Settings**.
 
@@ -36,7 +36,7 @@ Here are some of the available elements within LAUNCH you may want to customise.
     <tr>
         <td>LAUNCH Background</td>
         <td>body.launch</td>
-        <td>Using this allows you to edit the background and colour settings of your instance of LAUNCH.</td>
+        <td>Using this allows you to edit the background and color settings of your instance of LAUNCH.</td>
     </tr>
     <tr>
         <td>Application Icons</td>
