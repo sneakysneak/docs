@@ -7,7 +7,7 @@ tags: [connector]
 ---
 
 ## API user ##
-To authenticate the Adestra you will need to setup an API user with the required access rights. Please see the Adestra documentation on setting up a user (here)[https://app.adestra.com/doc/page/current/index/admin/users/users]
+To authenticate the Adestra you will need to setup an API user with the required access rights. Please see the Adestra [documentation](https://app.adestra.com/doc/page/current/index/admin/users/users) on setting up a user.
 
 The account, username and password will be required to authenticate the connector.
 ## Authenticating the connector
