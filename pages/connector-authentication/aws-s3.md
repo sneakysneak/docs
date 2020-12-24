@@ -6,6 +6,10 @@ keywords: s3
 tags: [connector]
 ---
 
+### Important Note about Bucket Names
+
+Due to limitations in the Amazon S3 API, it's not possible to access a bucket's contents if its name contains a period (.)
+
 ## Partner Setup
 
 First, login to your existing AWS account or [sign up for one.](https://aws.amazon.com/)
