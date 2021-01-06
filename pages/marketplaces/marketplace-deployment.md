@@ -5,7 +5,7 @@ permalink: marketplace-deployment
 tags: [marketplaces]
 ---
 
-When integrating with a Cyclr Marketplace you can decide whether all users access it using the same built-in Account-level "API User" (**Account Marketplace**), or create separate users for each in the Cyclr Account (**User Marketplace**).
+When integrating with a Cyclr Marketplace you can decide whether all users access it using the same built-in Account-level "API User" (**Account Marketplace** - this is the typical approach), or create separate users for each in the Cyclr Account (**User Marketplace**).
 
 
 To enable your users to view a Marketplace and install templates, you will need to have an "Integrations" button or link within your own application's interface.
