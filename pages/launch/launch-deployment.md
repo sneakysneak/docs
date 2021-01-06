@@ -7,7 +7,7 @@ tags: [launch]
 
 ## Overview
 
-When integrating with LAUNCH you can decide whether all users access it using the same built-in Account-level "API User" (**Account LAUNCH**), or create separate users for each in the Cyclr Account (**User LAUNCH**).
+When integrating with LAUNCH you can decide whether all users access it using the same built-in Account-level "API User" (**Account LAUNCH** - this is the typical approach), or create separate users for each in the Cyclr Account (**User LAUNCH**).
 
 
 To enable your users to add an integration, present a "Connect" button or link within your application's interface.
