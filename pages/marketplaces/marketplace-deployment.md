@@ -13,7 +13,7 @@ To enable your users to view a Marketplace and install templates, you will need 
 
 For example:
 
-![Generic Host Application](./images/generic-host-app-connected-v2.png)
+![Generic Host Application](/_images/generic-host-app-connected-v2.png)
 
 ## Account Marketplace
 
