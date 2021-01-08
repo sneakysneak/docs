@@ -1,7 +1,7 @@
 ---
 title: Voucherify
 sidebar: cyclr_sidebar
-permalink: Voucherify-connector
+permalink: voucherify-connector
 tags: [connector]
 ---
 
