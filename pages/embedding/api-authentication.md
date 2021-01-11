@@ -17,9 +17,13 @@ You can generate a Client ID and Secret from the Cyclr Partner Console, Settings
 
 ### Get Access Tokens
 
-Once you have a Client ID and Secret you need to call the Cyclr API OAuth token endpoint to generate an access token
+Once you have a Client ID and Secret you need to call the Cyclr API OAuth token endpoint to generate an access token.  This endpoint will be different depending on where your Cyclr Console is hosted:
 
-https://\{your-instance-url\}/oauth/token
+Cyclr Console Location | API Domain
+--- | ---
+my.cyclr.com | https://api.cyclr.com/oauth/token
+my.cyclr.uk | https://api.cyclr.uk/oauth/token
+eu.cyclr.com | https://api.eu.cyclr.com/oauth/token
 
 #### Required Request Body Parameters
 
@@ -32,7 +36,7 @@ https://\{your-instance-url\}/oauth/token
 #### Example Request
 
 ```http
-POST https://yourCyclrInstance/oauth/token
+POST https://{API Domain}/oauth/token
 Content-Type: application/x-www-form-urlencoded
 
 grant_type=client_credentials&client_id=abcdefg&client_secret=abcdefghij123
@@ -81,7 +85,7 @@ If required you can restrict access tokens to only work for a specific account b
 #### Example Request
 
 ```http
-POST https://yourCyclrInstance/oauth/token
+POST https://{API Domain}/oauth/token
 Content-Type: application/x-www-form-urlencoded
 
 grant_type=client_credentials&client_id=abcdefg&client_secret=abcdefghij123&scope=account:{account_id}
