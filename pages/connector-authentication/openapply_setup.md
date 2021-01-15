@@ -17,7 +17,7 @@ To obtain your Client ID and Client Secret, within your OpenApply account:
 
 2. You will find your Client ID, Client Secret, and Redirect URI on this page.
 
-> Redirect URI should be https://{{Your Cyclr service domain e.g. <span>app-h.cyclr.</span>com}}/connector/callback
+> Redirect URI should be {% raw %}https://{{Your Cyclr service domain e.g. app-h.cyclr.com}}/connector/callback{% endraw %}
 
 ### OpenApply Account (name)
 
