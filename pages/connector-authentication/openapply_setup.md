@@ -56,4 +56,4 @@ The "Field Location" format for each of the supported methods is as follows:
 | Search Students By Student Slug | [students].custom_fields.<em>FieldName</em> | [students].custom_fields.eyeColour |
 | Search Students By Tag          | [students].custom_fields.<em>FieldName</em> | [students].custom_fields.eyeColour |
 
-The following is a guide for adding custom fields to a method: https://docs.cyclr.com/adding-custom-fields
+The following is a guide for adding custom fields to a method: [adding custom fields](https://docs.cyclr.com/adding-custom-fields).
