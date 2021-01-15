@@ -12,11 +12,11 @@ API Integration Guide
 
 ### __Before you start__
 
-In order to avoid [login conflicts](https://support.sugarcrm.com/Documentation/Sugar_Developer/Sugar_Developer_Guide_9.0/Integration/Web_Services/REST_API/#Avoiding_Login_Conflicts_), you will need to set up a custom platform name in the portal.  It is best to name it something that describes and identifies your current integration.
+In order to avoid [login conflicts](https://support.sugarcrm.com/Documentation/Sugar_Developer/Sugar_Developer_Guide_9.0/Integration/Web_Services/REST_API/#Avoiding_Login_Conflicts_), you will need to set up a custom "platform" name in the portal.  It is best to name it something that describes and identifies your current integration.
 
-### Registering a New SugarCRM Platform Value throught the UI
+### Registering a New SugarCRM "Platform" Value
 
-1. As an admin on your SugarCRM instance, go to the Administration panel.
+1. As an admin in your SugarCRM instance, go to the Administration panel.
 
 ![Admin Panel](./images/sugarcrm1.png)
 
@@ -29,11 +29,14 @@ In order to avoid [login conflicts](https://support.sugarcrm.com/Documentation/S
 ![Name Platform](./images/sugarcrm3.png)
 
 
-### __Authentication__
+You'll then provide that Platform value when authenticating the SugarCRM Connector in Cyclr.
+
+
+### __Authentication using Cyclr's API__
 
 SugarCRM uses OAuth 2 Password Credentials.
 
-When installing the SugarCRM connector in one of your customer accounts using Cyclr API, we won’t redirect your users to the SugarCRM sign-in screen. Instead, it requires three account connector properties to be set up: **Domain**, **Username** and **Password**.
+If installing the SugarCRM connector using Cyclr's API, we won’t redirect your users to the SugarCRM sign-in screen. Instead, it requires three account connector properties to be provided: **Domain**, **Username** and **Password**.
 
 First provide a SugarCRM Domain:
 
