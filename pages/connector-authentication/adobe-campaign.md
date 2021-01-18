@@ -9,7 +9,7 @@ tags: [connector]
 
 ## Partner Setup
 
-To authenticate the Administrate connector, you will need the following pieces of information:
+To authenticate the Adobe Campaign connector, you will need the following pieces of information:
 
 * Client ID
 * Client Secret
@@ -42,4 +42,4 @@ You can now use the Client ID, Client Secret, API Key (the Private Key obtained 
 
 
 
-For further information, visit https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md
+For further information, visit [](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)
