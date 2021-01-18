@@ -42,4 +42,4 @@ You can now use the Client ID, Client Secret, API Key (the Private Key obtained 
 
 
 
-For further information, visit [](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)
+For further information, visit [the official Adobe Campaign documentation](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
