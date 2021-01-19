@@ -26,7 +26,6 @@ To authenticate the Moodle connector you will need an `API Token`. This is obtai
    2. Scroll to the bottom of the page, and click "Add a new role". The Manager archetype is recommended. 
 
    3.  After the first step you will reach a page that allows customisation of this role; the part we are interested in sits at the bottom of the page (Pictured below).
-
       ![](./images/moodle3.png)
 
    4. You must enable all the capabilities listed in the table below. Copying and pasting is recommended to save time. Once this is done click "Create this role".
@@ -46,12 +45,10 @@ To authenticate the Moodle connector you will need an `API Token`. This is obtai
 | moodle/grade:view |
 
    5. You now need to assign this role to the user. To do this you need to navigate to `Site Administration > Users > Permissions > Assign system roles`
-      6. Click the role you have just created, and then on the next page assign the user.
+   
+   6. Click the role you have just created, and then on the next page assign the user.
 
-
-
-      5. For *Step 6* you will need to enable the following functions to be able to use all Cyclr methods:
-
+5. For *Step 6* you will need to enable the following functions to be able to use all Cyclr methods:
 
 | Service Functions               |
 | ------------------------------- |
@@ -81,7 +78,7 @@ To authenticate the Moodle connector you will need an `API Token`. This is obtai
 
 6. Once the Moodle Web Service application has been created, you need to create a token, selecting the user with the above permissions, and the newly created service (Pictured below).
 
-   ![](./images/moodle1.png)
+![](./images/moodle1.png)
 
 ![](./images/moodle2.png)
 
