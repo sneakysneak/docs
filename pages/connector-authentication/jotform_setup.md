@@ -41,7 +41,7 @@ In order to download files using the connector you must disable one of the priva
 
 2. Scroll down to the 'Privacy' category of checkboxes
 
-3. Make sure 'Require log-in to view uploaded files' checkbox is **not selected**
+3. Make sure the 'Require log-in to view uploaded files' checkbox is **not selected**
 
 ### Connector Setup
 
