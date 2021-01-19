@@ -33,7 +33,7 @@ To find out which server your JotForm account uses:
 
 The Form ID can be found in the URL of the form. For example, if the URL is: **https://<span>www.jotformpro.</span>com/form/30693660548966** the **Form ID is 30693660548966**.
 
-### File access
+### File Access
 
 In order to download files using the connector you must disable one of the privacy settings in JotForm as follows:
 
