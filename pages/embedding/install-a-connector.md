@@ -86,9 +86,10 @@ If the connector requires an OAuth authentication to work with the third party A
     POST https://yourCyclrInstance/v1.0/accounts/{AccountId}/signintoken
     Authorization: Bearer ****************************************************************
     {
-      "Username":"Username of the user the token should sign in.  If said user does not exist, they will be created by this call."
+      "Username":"Username of the user the token should sign in"
     }
 ````
+> NB. If said user does not exist, they will be created by this call.
 
 #### Response
 
