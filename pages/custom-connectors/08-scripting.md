@@ -420,8 +420,10 @@ For example:
 Library Name: moment
 
 Description: Parse, validate, manipulate, and display dates and times in JavaScript.
+Cyclr also supports the Moment Timezone extension, which enables formatting and converting of dates in any timezone.
 
-External Documentation: <https://momentjs.com/>
+External Documentation: <https://momentjs.com/>, <https://momentjs.com/timezone/>
+
 
 #### CryptoJS
 
