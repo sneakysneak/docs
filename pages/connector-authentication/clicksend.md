@@ -13,9 +13,9 @@ This document will explain what is needed to setup access to ClickSend and insta
 
 To retrieve your ClickSend access token you must log in to the ClickSend dashboard and open your *API Credentials* modal. How to do this is pictured below.
 
-![](C:\Users\Jack Taylor\Documents\GitHub\docs\images\clicksend1.png)
+![](./images/clicksend1.png)
 
-![](C:\Users\Jack Taylor\Documents\GitHub\docs\images\clicksend2.png)
+![](./images/clicksend2.png)
 
 Copy the `API Key` field and continue to the next step.
 
