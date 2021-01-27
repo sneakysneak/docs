@@ -46,7 +46,8 @@ Then open the Freshdesk dashboard, and follow these steps:
 
     ![Rule settings 2](./images/rule_settings2.png)
 13. In the **Write custom API request** text box, paste the following template:
-```
+<!-- {% raw %} -->
+```handlebars
 {
 	"ticket": {
 		"id": " {{ticket.id}} ",
@@ -94,6 +95,7 @@ Then open the Freshdesk dashboard, and follow these steps:
 	}
 }
 ```
+<!-- {% endraw %} -->
 14. Click **Preview and save**.
 15. Check that the summary looks like this:
     ![Summary](./images/summary.png)
