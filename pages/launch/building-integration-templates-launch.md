@@ -105,4 +105,4 @@ For example, tagging could be based on the type of application that is integrate
 
 [Deploying LAUNCH in your App](./launch-deployment)
 
-[Link to a original document]({{ site.baseurl }}{{ page.url }})
+[Link to a original {{page.title}} document]({{ site.baseurl }}{{ page.url }})
