@@ -104,9 +104,5 @@ Within the context of the LAUNCH flow, template tags help display to your end us
 For example, tagging could be based on the type of application that is integrated to (e.g. CRM, email marketing, accounting, etc…), or a specific brand of application (e.g. Salesforce, Oracle, Facebook, etc…).
 
 [Deploying LAUNCH in your App](./launch-deployment)
-
-[Link to a original {{page.title}} document](https://doc.cyclr.com{{ page.url }})
-
-[Link to a original {{page.title}} document]({{ site.baseurl }}{{ page.url }})
-
-[<img src="/_images/Original-Doc.png">]({{ site.baseurl }}{{ page.url }})
+<br /><br />
+[<img src="https://cyclr.com/wp-content/uploads/2021/02/Original-Doc.png">]({{ site.baseurl }}{{ page.url }})
