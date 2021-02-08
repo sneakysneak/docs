@@ -7,32 +7,37 @@ tags: [connector]
 
 *This guide applies to Salesforce, Salesforce Service Cloud, and other services that use Salesforce authentication.*
 
-## Partner Setup
+# Partner Setup
 
 Salesforce uses OAuth 2 for remote API access. You must register Cyclr within Salesforce as your own Connected App to receive OAuth Client ID and Client Secret values to enable Cyclr to authenticate with Salesforce.
 
 The official Salesforce documentation for creating a **Connected App** can be found [here](https://help.salesforce.com/articleView?id=connected_app_create.htm).
 
-### Salesforce Setup – Register Your Application
+## Salesforce Setup – Register Your Application
 
-#### Introduction
+### Introduction
 
 You can register for a free [Salesforce Developer Edition account here (click "Sign Up" at the top of that page)](https://developer.salesforce.com/) or log into your existing Salesforce account if you have one.  You can use any Salesforce account to create a Connected App, it doesn’t have to be a Developer Edition account, but we would advise against using a Sandbox account as Connected Apps are destroyed when they are refreshed.
 
-#### Create your App within Salesforce
+### Create your App within Salesforce
 
-The steps below are for Salesforce Classic. Settings are similar for Lightning Experience.
+The process of creating an app in Salesforce varies slightly depending upon whether you are using **Salesforce Classic**, or **Lightning Experience**.
 
-*   Log into the Salesforce account
-*   click **Setup** in the top right
-*   from the side menu down the left, under the **Build** heading click **Create**
-*   choose **Apps**
-*   from the **Connected Apps** table click the **New** button
+> #### Salesforce Classic 
+> 1.   Log into your Salesforce account
+> 2.   Click **Setup** in the top right
+> 3.   From the menu on the left, select **Build** > **Create** > **Apps**
+> 4.   From the **Connected Apps** table click **New**
 
-
-When the **New Connected App** screen is shown, complete the form as follows:
+> #### Lightning Experience
+> 1.   Log into your Salesforce account
+> 2.   click **Setup** in the top right
+> 3.   From the menu on the left, select **Platform Tools** > **Apps** > **App Manager**
+> 4.   Click **New Connected App**
 
 #### Basic Information
+
+Whether you are using **Salesforce Classic** or **Lightning Experience**, when the **New Connected App** screen is shown, complete the form as follows:
 
 **Connected App Name:** enter a name for your application
 
@@ -86,7 +91,7 @@ Your Salesforce Connector is now setup! You can test it by installing it in one 
 
 ## Enduser Salesforce Account Setup
 
-For the best experience when using the Salesforce Connector, and to reduce the frequency that Cyclr must obtain a new Access Token and avoid some connection issues, ensure the following Session Settings have been set:
+For the best experience when using the Salesforce Connector, and to reduce the frequency at which Cyclr must obtain a new Access Token and avoid some connection issues, ensure the following Session Settings have been set:
 
 Log in to the Salesforce organization, go to Setup, then use the Search to find "Session Settings".
 
@@ -129,5 +134,3 @@ To retrieve the contents of a CSV document, you will need to take the following 
 2. Use this ID in a "Get Content Version" call to get the Content Version ID.
 3. Enter the Content Version ID in a "Get Content Document Data (CSV)" call.
 4. You will need to add the fields within connector settings so that you can map them.  The field location will be '[].yourcolumname' without quotes.
-
-
