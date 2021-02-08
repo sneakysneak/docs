@@ -74,6 +74,10 @@ entries:
           - title: Connector Authentication Link
             url: /connector-authentication-link
             output: web, pdf
+            
+          - title: Collection Splitting
+            url: /collection-splitting
+            output: web, pdf
 
       - title: Embedding Cyclr
         output: web, pdf
