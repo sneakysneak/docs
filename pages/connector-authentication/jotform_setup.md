@@ -7,7 +7,7 @@ tags: [connector]
 
 ## Setup
 
-To authenticate the JotForm connector you will need an API Key, and the API Domain.
+To authenticate the JotForm connector you will need an API Key and the API Domain.
 
 ### API Key
 
