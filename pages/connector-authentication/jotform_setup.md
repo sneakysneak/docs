@@ -7,9 +7,7 @@ tags: [connector]
 
 ## Setup
 
-To authenticate the JotForm connector you will need an API Key, the server your account uses, and the ID of the form you wish to work with.
-
-You will need to install a seperate instance of the connector for each form you wish to work with.
+To authenticate the JotForm connector you will need an API Key, and the API Domain.
 
 ### API Key
 
@@ -21,17 +19,15 @@ To obtain your API Key, within JotForm:
 
 3. The permissions should be set to 'Full Access'
 
-### Server
+### API Domain
+
+This is the API Domain you would like to use. For example, "api.jotform.com" for US and "eu-api.jotform.com" for EU. Custom domains are also supported.
 
 To find out which server your JotForm account uses:
 
 1. Navigate to **(icon in top-right corner) > Settings > Data**
 
-2. If the "Europe Datacenter" box is checked, your account uses the EU server
-
-### Form ID
-
-The Form ID can be found in the URL of the form. For example, if the URL is: **https://<span>www.jotformpro.</span>com/form/30693660548966** the **Form ID is 30693660548966**.
+2. If the "Europe Datacenter" box is checked your account uses the EU server. If it's unchecked your account uses the non-EU (US) server.
 
 ### File Access
 
@@ -51,14 +47,12 @@ In order to download files using the connector you must disable one of the priva
 
 2. From the Edit Connector interface click 'Setup'
 
-3. Enter your Form ID
+3. Enter your API Domain (api.jotform.com for US, eu-api.jotform.com for EU or you can enter a custom URL)
 
-4. For the "Server" field, enter either EU or NON-EU depending on which server your JotForm account uses
+4. Click 'Next'
 
-5. Click 'Next'
+5. Enter your API Key
 
-6. Enter your API Key
-
-7. Click 'Next'
+6. Click 'Next'
 
 The connector is now authenticated and ready to use.
