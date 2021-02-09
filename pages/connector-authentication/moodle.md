@@ -71,10 +71,12 @@ For *Step 6* you will need to enable the following functions to be able to use a
 | core_group_update_groupings |
 | core_group_update_groups |
 | enrol_manual_enrol_users |
+| enrol_manual_unenrol_users |
 | core_course_get_courses |
 | core_user_create_users |
 | core_user_get_users |
 | gradereport_overview_get_course_grades |
+| core_auth_request_password_reset |
 
 Once the Moodle Web Service application has been created, you need to create a token, selecting the user with the above permissions, and the newly created service (Pictured below).
 
