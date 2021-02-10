@@ -9,7 +9,7 @@ tags: [connector]
 
 The Microsoft Azure Active Directory connector is authenticated with the OAuth2.0 protocol. You will need to register an application and provide the connector with that application's Client ID (Application ID) and Client Secret.
 
-Please follow Microsoft's official guide to registering an applciation in Azure Active Directory. That documentation can be found [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app).
+Please follow Microsoft's official guide to registering an application in Azure Active Directory. That documentation can be found [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app).
 
 - For "Supported account types" you should select "Accounts in any organizational directory (Any Azure AD directory - Multitenant)"
 - Redirect URI should be {% raw %}https://{{Your Cyclr service domain e.g. app-h.cyclr.com}}/connector/callback{% endraw %}
@@ -49,7 +49,7 @@ To allow your clients to access their own data through your Active Directory App
 
 1. Locate the Microsoft Azure Active Directory connector
 
-   > Cyclr Console > Connectors > Account Connector Library > Microsoft Azure Active Directory
+   > Cyclr Console > Connectors > Application Connector Library > Microsoft Azure Active Directory
 
 2. From the Edit Connector interface click 'Setup'
 
