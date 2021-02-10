@@ -40,7 +40,7 @@ To add these permissions in Azure Active Directory:
 5. You will be presented with a series of permissions categories
 6. Select the checkboxes for the appropriate permissions and click **Add permissions**
    ![checked permission](./images/permissions_5.png)
-7. You must then **Grant admin consent for _orgnanization_**
+7. You must then **Grant admin consent for _organization_**
    ![grant admin consent](./images/permissions_3.png)
 
 ### Connector Setup
