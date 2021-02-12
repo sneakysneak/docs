@@ -25,7 +25,7 @@ To obtain your Client ID and Client Secret, within your PetExec account:
 
 5. Click "Add Application"
 
-You will be presented with your Client ID and Client secret.
+You will be presented with your Client ID and Client Secret.
 
 ### Account Name
 
