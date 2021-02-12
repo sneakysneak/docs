@@ -11,7 +11,7 @@ First, login to your existing Salesloft account or [sign up for one.](https://in
 
 #### Retrieving OAuth2 Details
 
-*   [Login](https://accounts.salesloft.com/sign_in) to your Sage Developer Account.
+*   [Login](https://accounts.salesloft.com/sign_in) to your Salesloft Account.
 *   Click Create App.
     *   More details on how to create an app can be found [here](https://developers.salesloft.com/api.html#!/Topic/oauth).
 *   Enter a name and Callback URL (https://[Your Cyclr Service Domain]/connector/callback) for your app.
