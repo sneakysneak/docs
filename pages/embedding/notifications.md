@@ -45,8 +45,3 @@ The information in the **Detail** property will contain the Response that was re
     "Detail": "404 Item not found\r\n{\"Code\":200,\"Message\":\"Item not found\"}\r\n\r\n\r\nHTTP Request:\r\nGET https://someapi.com/getitems/myID/ HTTP/1.1\r\nAccept: application/json\r\nApiKey:\r\nUser-Agent: Cyclr\r\nUser-Agent: (https://cyclr.com)"
 }
 ```
-
-
-
-
-[Setting Up API Authentication ](./api-authentication)
