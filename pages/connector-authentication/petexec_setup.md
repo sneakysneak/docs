@@ -19,7 +19,7 @@ To obtain your Client ID and Client Secret, within your PetExec account:
 
 2. Give the application a name
 
-3. Enter a callback URL. This should be https://{{Your Cyclr service domain e.g. <span>app-h.cyclr.</span>com}}/connector/callback
+3. Enter a callback URL. This should be https://{Your Cyclr service domain e.g. <span>app-h.cyclr.</span>com}/connector/callback
 
 4. Select the **report_read** and **owner_read** scopes
 
