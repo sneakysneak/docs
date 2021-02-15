@@ -1,5 +1,5 @@
 ---
-title: SportMe Connector Guide
+title: SpotMe Connector Guide
 sidebar: cyclr_sidebar
 permalink: spotme-connector
 tags: [connector]
