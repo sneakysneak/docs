@@ -13,10 +13,6 @@ The official documentation for creating an application can be found [here](https
 
 ## PingOne Setup – Register Your Application
 
-### Introduction
-
-### Create your App within PingOne
-
 Use the PingOne admin portal to configure your oAuth application. To create the application connection select the environment  that you wish to connect to and then:
 
  1. Click Connections.
@@ -30,14 +26,13 @@ Use the PingOne admin portal to configure your oAuth application. To create the 
  11. Select Configuration tab 
  12. Ensure Grant Type is set to "Client Credentials"
  13. TOKEN ENDPOINT AUTHENTICATION METHOD set to Client Secret Post
- 
- * Save the following information:
+ 14. Save the following information:
  * Client ID, Secret
  * From the "AUTHORIZATION URL" e.g. https://auth.pingone.eu/cd91070f-c371-480e-80b2-753c735f8aa1/as/authorize
  * Auth Domain would be "auth.pingone.eu"
  * Environment  ID would be ""cd91070f-c371-480e-80b2-753c735f8aa1"
 
- ### Cyclr Setup
+## Cyclr Setup
 
 Setup your PingOne connector within Cyclr:
 
