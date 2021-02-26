@@ -22,14 +22,14 @@ There are two ways to do this:
 ```json
 [
   {
-    "field_name": "CustName",
-    "label": "Customer Name",
-    "optional": false
+    "cyclr_field_location": "CustName",
+    "cyclr_display_name": "Customer Name",
+    "cyclr_is_readonly": false
   },
   {
-    "field_name": "customfield_bankingid",
-    "label":"Banking ID",
-    "optional": true
+    "cyclr_field_location": "CustomerId",
+    "cyclr_display_name": "Customer ID",
+    "cyclr_is_readonly": true
   }
 ]
 
@@ -44,10 +44,10 @@ There are two ways to do this:
 
 [
   {
-    "field_name": "customfield_bankingid",
-    "label":"Banking ID",
-    "optional": true,
-    "data_type": "string"
+    "cyclr_field_location": "CustName",
+    "cyclr_display_name": "Customer Name",
+    "cyclr_is_readonly": false,
+    "cyclr_data_type": "string"    
   }
 ]
 
@@ -62,7 +62,7 @@ function after_action(){
   return;
   // Remap fields to values that Cyclr will understand
   for(var i=0;i<method_response.length;i++){
-    method_response[i].data_type = select_dt(method_response[i].data_type);
+    method_response[i].cyclr_data_type = select_dt(method_response[i].cyclr_data_type);
   }
   return true;
 }
