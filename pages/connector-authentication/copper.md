@@ -5,7 +5,7 @@ permalink: copper
 tags: [connector]
 ---
 
-## Copper Authentication ##
+## API Key ##
 
 The Copper connectoris authenticaed using an API key.  You can generate an API key after loggin into you Copper account.  You need to go to:
 
