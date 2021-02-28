@@ -1,5 +1,5 @@
 ---
-title: Cpooer Authentication
+title: Copper Authentication
 sidebar: cyclr_sidebar
 permalink: copper
 tags: [connector]
