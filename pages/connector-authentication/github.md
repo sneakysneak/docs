@@ -20,7 +20,7 @@ Select Applications > Developer applications tab.
 Pick an existing application or hit Register new application.
 Set a few parameters for your application and get the Client ID and Client Secret.
 
-The callback URL should look like this:  https://{YOUR_SERVICE_COMAIN}.cyclr.uk/callback
+The callback URL should look like this:  https://{YOUR_SERVICE_DOMAIN}/connector/callback
 
 
 
