@@ -43,12 +43,13 @@ We will summarise it in a few points:
 
 Dynamics CRM Online connector is now set up! You can test it by installing it in one of your customer accounts.
 
-API Integration Guide
+
+Installing the Connector using the Cyclr API
 ---------------------
 
-Dynamics CRM Online uses OAuth 2 Authorisation Code. The only thing to set up before getting an authentication token is to provide the domain of your Dynamics CRM Online instance.
+If you're installing the Microsoft Dynamics CRM Connector using the Cyclr API as part of an automated process, before obtaining an authentication token you should set the domain of the Dynamics CRM Online instance as follows:
 
-To do this, create an account connector property named **Resource**:
+Create an Account Connector Property named **Resource** and provide its value:
 
 ```
 curl -X POST 
@@ -61,7 +62,7 @@ curl -X POST
 'https://yourCyclrInstance/v1.0/account/connectors/DYNAMICS_ACCOUNT_CONNECTOR_ID/properties'
 ```
 
-After successfully creating the account connector property, you can get a one-time sign-in token and call _/UpdateAccountConnectorOAuth_ to complete the user challenge.
+After successfully creating the Account Connector Property, you can get a one-time sign-in token and call _/UpdateAccountConnectorOAuth_ to complete the user challenge.
 
 FAQ
 ---
