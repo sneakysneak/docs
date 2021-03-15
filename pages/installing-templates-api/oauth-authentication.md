@@ -12,9 +12,9 @@ Connectors using OAuth require that the user goes through a webflow where they a
 #### Account Connector Properties
 Before beginning this process you should set the values of any Parameters on the Account Connector that aren't marked as Optional.  If you don't do this, you may see a "Bad Request" message from Cyclr when navigating to the `updateaccountconnectoroauth` URL below.
 
-To identify what the Paramters are, call the `GET /v1.0/connectors/{id}` Cyclr API endpoint and look for Parameters with `IsAccountConnectorProperty`:`true` and `IsOptional`:`false`.
+To identify what the Parameters are, call the `GET /v1.0/connectors/{id}` Cyclr API endpoint and look for Parameters with `IsAccountConnectorProperty`:`true` and `IsOptional`:`false`.
 
-You could provide some interface of your own to obtain the values for these Paramters from the user.
+You could provide some interface of your own to obtain the values for these Parameters from the user.
 
 Call the `POST /v1.0/account/connectors/{accountConnectorId}/properties` endpoint to set each of those values on the Account Connector.
 
