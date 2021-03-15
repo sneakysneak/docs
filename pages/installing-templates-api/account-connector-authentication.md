@@ -58,6 +58,18 @@ In this example, the AuthType for this Account Connector is ApiKey.
 
 The response also confirms that the Account Connector is not yet authenticated (“Authenticated”: false).
 
+### Account Connector Properties
+Before beginning the authentication process, you should set the values of any Parameters on the Account Connector that aren't marked as Optional.
+
+To identify what these Parameters are, look in the `Connector` section you receive when making the Cyclr API call above for Parameters with `IsAccountConnectorProperty`:`true` and `IsOptional`:`false`.
+
+You could provide some interface of your own to obtain the values for these Parameters from the user.
+
+Call the `POST /v1.0/account/connectors/{accountConnectorId}/properties` endpoint to set each of those values on your Account Connector.
+
+The Account Connector should now be ready to authenticate.
+
+
 [API Key Authentication](./api-key-authentication)  
 [HTTP Basic Authentication](./basic-authentication)  
 [OAuth Authentication](./oauth-authentication)
