@@ -14,6 +14,7 @@ The Microsoft Azure DevOps Connector is authenticated using OAuth2.0. You will n
 Register an Application [here](https://app.vsaex.visualstudio.com/app/register)
 
 Authorization callback URL should be 
+
 `https://<Your Cyclr Service Domain e.g. app-h.cyclr.com>/connector/callback`
  
 Authorized Scope should ONLY be "Work items (full)", if other scopes are entered you will not be able connect.
