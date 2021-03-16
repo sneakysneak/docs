@@ -16,7 +16,7 @@ To add a custom field:
 
 *   From the builder’s sidebar, click to expand the app connector and click Settings
 *   In the section named Methods and Fields, click to expand the category and then the method you wish to add fields to
-*   Under Request Fields or Response, click the + button to add a field
+*   Under Request Fields or Response Fields (depending on whether you're sending or receiving the field), click the + button to add a field
 
 The following needs to be specified
 
