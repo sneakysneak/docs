@@ -5,8 +5,6 @@ permalink: netsuite-suitetalk-rest-connector
 tags: [connector]
 ---
 
-The Oracle NetSuite - SuiteTalk REST Web Services connector is authenticated with the OAuth2.0 protocol. You will need to register an application and provide the connector with that application's Client ID, Client Secret and your Account ID.
-
 ## NetSuite Setup
 
 Firstly [log in](https://system.netsuite.com/pages/customerlogin.jsp) to your NetSuite account.
