@@ -9,7 +9,7 @@ tags: [connector]
 
 Firstly [log in](https://system.netsuite.com/pages/customerlogin.jsp) to your NetSuite account.
 
-### Creating An Integration
+### Create An Integration
 
 1. From the top navigation bar go to **Setup** > **Integration** > **Manage Integrations** > **New**
 
