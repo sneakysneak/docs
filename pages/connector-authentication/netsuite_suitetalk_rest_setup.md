@@ -15,13 +15,13 @@ Firstly [log in](https://system.netsuite.com/pages/customerlogin.jsp) to your Ne
 
 2. Enter a name for the integration
 
-3. "State" should be "Enabled"
+3. **State** should be **Enabled**
 
-4. From the Authentication section select **Token-Based Authentication**.
+4. From the **Authentication** section select **Token-Based Authentication**
 
 5. Scroll down and click **Save**
 
-Make a note of the Consumer Key and Consumer Secret.
+Make a note of the **Consumer Key** and **Consumer Secret**.
 
 ### Finding Your Account ID
 
@@ -45,7 +45,7 @@ Make a note of the Consumer Key and Consumer Secret.
 
 ### Create A Role
 
-If you haven't done so already you will need to create a custom role which includes the appropriate permissions to make the desired api calls.
+If you haven't done so already you will need to create a custom role which includes the appropriate permissions to make the desired API calls.
 
 1. From the top navigation bar go to **Setup** > **Users/Roles** > **Manage Roles** > **New**
 
@@ -69,7 +69,7 @@ If you haven't done so already you will need to create a custom role which inclu
 
 2. Select the user who should be assigned the role
 
-3. From the user's profile back navigate to **Access** > **Roles**
+3. From the user's profile page navigate to **Access** > **Roles**
 
 4. Add the role created above
 
@@ -83,7 +83,7 @@ If you haven't done so already you will need to create a custom role which inclu
 
 3. Give the token a name and click **Save**
 
-Make a note of the Token ID and Token Secret.
+Make a note of the **Token ID** and **Token Secret**.
 
 ## Connector Setup
 
