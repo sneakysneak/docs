@@ -5,88 +5,89 @@ permalink: cyclr-api-authentication
 tags: [embedding]
 ---
 
-Cyclr API can be authenticated using the Client Credentials and Password flows. The [Password flow](./cyclr-api-authentication-password) will cease to be supported and stop functioning after May 2021. You should migrate to Client Credentials before then.
+Cyclr API authentication is provided using [OAuth2](https://oauth.net/2/).
 
-This document is for authenticating with the Cyclr API using the [OAuth 2.0](https://oauth.net/2/) Client Credentials flow.
+OAuth access tokens are granted to either manage the partner level, or access and modify a partner account.
 
-### Get Client ID and Secret
+### Get access token
 
-You can generate a Client ID and Secret from the Cyclr Partner Console, Settings > OAuth Client Credentials
+To get an access token from Cyclr you call the "/token" endpoint with different details, depending on where you wish to work.
 
-![Cyclr Console OAuth Client Credentials](./images/cyclr-api-client-credentials.png)
+**To receive a Partner access token**
+Provide the email address and password you use to access your Cyclr Partner Console.
 
-### Get Access Tokens
+**To receive an Account access token**
+Provide the username and password of an account user.
 
-Once you have a Client ID and Secret you need to call the Cyclr API OAuth token endpoint to generate an access token.  This endpoint will be different depending on where your Cyclr Console is hosted:
+#### Request
 
-Cyclr Console Location | API Domain
---- | ---
-my.cyclr.com | https://api.cyclr.com/oauth/token
-my.cyclr.uk | https://api.cyclr.uk/oauth/token
-eu.cyclr.com | https://api.eu.cyclr.com/oauth/token
-
-#### Required Request Body Parameters
-
-| Parameter | Description | Example |
-| --- | --- | --- |
-| grant_type | Identifies the OAuth flow being used. Must be client_credentials | client_credentials |
-| client_id | Identifies the Cyclr Partner the token is for | abcdefg |
-| client_secret | The matching secret for the client ID | abcdefghij123 |
-
-#### Example Request
+**Partner access token**
 
 ```http
-POST https://{API Domain}/oauth/token
+POST https://yourCyclrInstance/oauth/token
 Content-Type: application/x-www-form-urlencoded
 
-grant_type=client_credentials&client_id=abcdefg&client_secret=abcdefghij123
-````
+client_id={ClientID}&grant_type=password&username={username}&password={password}
+```
 
-#### Example Response
+**Account access token**
+
+```http
+POST https://yourCyclrInstance/oauth/token
+Content-Type: application/x-www-form-urlencoded
+
+client_id={ClientID}&client_secret={AccountID}&grant_type=password&username={username}&password={password}
+```
+
+> NB. In both of these calls, the ``client_id`` etc go in the _body_ of the call - they are not added to the endpoint.
+
+- **yourCyclrInstance** – your Cyclr instance URL. This could be one of the following: *api.cyclr.com* if your Cyclr account is hosted on our US instance; *api.cyclr.uk* if it's on our UK instance; your own domain if your Cyclr instance is self-hosted.
+- **client_id** – the client ID of the Partner. This can be found in the Cyclr Console.
+- **client_secret** –  
+    _(Optional)_ the ID of the account this token is for
+- **grant_type** – the Cyclr Partner API only supports the **password** grant\_type
+- **username** – the username of the authenticating user
+- **password** – the password of the user
+
+#### Response
 
 ```json
 {
-    "token_type": "bearer",
     "access_token": "************",
+    "token_type": "bearer",
     "expires_in": 1209599,
-    "clientId": "************"
+    "refresh_token": "************",
+    "userName": "************",
+    "clientId": "************",
+    ".issued": "Thu, 24 Nov 2016 16:32:59 GMT",
+    ".expires": "Thu, 08 Dec 2016 16:32:59 GMT"
 }
 ```
 
-| Parameter | Description |
-| --- | --- |
-| token_type | The type of token, this is always bearer |
-| access_token | Token to use when making requests to the Cyclr API |
-| expires_in | The amount of time in seconds until access_token will expire |
-| clientId | Client ID provided when getting the token |
+- **access_token** – the token to use when making requests to the Cyclr API
+- **expires_in** – the amount of time in seconds until access_token will expire
+- **refresh_token** – the token that can be used to generate a new access token without needing to provide username and  
+    password details.    See *Refresh access token* below.
 
-> Tokens will expire after 14 days, you will need to generate a new token when this occurs.
+### Refresh access token
 
-### Using the Access Token
-
-All calls to the Cyclr must provide the access token in the Authorize HTTP request header.
-
-````http
-Authorization: Bearer {access_token}
-````
-
-#### Accessing Account Methods
-
-For any calls to API methods that relate to an account the ID of the account must be provided as a HTTP header in the request.
-
-````http
-X-Cyclr-Account: {AccountID}
-````
-
-### Account Restricted Tokens
-
-If required you can restrict access tokens to only work for a specific account by including the account ID in the scope when getting the access token.
-
-#### Example Request
+To obtain a new access token - before or after it has expired - you call the OAuth "/token" endpoint with a **grant_type** of **refresh_token** and pass the refresh token that was included with the current access token. Once used, the old access and refresh tokens will no longer be valid.
 
 ```http
-POST https://{API Domain}/oauth/token
+POST https://yourCyclrInstance/oauth/token
 Content-Type: application/x-www-form-urlencoded
 
-grant_type=client_credentials&client_id=abcdefg&client_secret=abcdefghij123&scope=account:{account_id}
-````
+client_id={ClientID}&grant_type=refresh_token&refresh_token={RefreshToken}
+```
+
+Refresh tokens from Cyclr's API don't expire so you can keep them until you need to obtain a new access token.
+
+### Calling an API method
+
+To authenticate your requests you need to include the access token in the Authorization HTTP header.
+
+```http
+Authorization: Bearer {AccessToken}
+```
+
+[View Cyclr’s API Endpoints](./api-endpoints)
