@@ -41,7 +41,7 @@ Content-Type: application/x-www-form-urlencoded
 
 grant_type=client_credentials&client_id=abcdefg&client_secret=abcdefghij123
 ````
-> NB. grant_type, client_id and client_secret go in the body of the call - they are not added to the endpoint.
+> NB. ``grant_type``, ``client_id`` and ``client_secret`` go in the body of the call - they are not added to the endpoint.
 
 #### Example Response
 
