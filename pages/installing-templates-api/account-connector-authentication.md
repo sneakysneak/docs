@@ -22,7 +22,7 @@ To check the authentication type that the installed Account Connector requires, 
 Request:
 
 ````http
-    GET /v1.0/account/connectors/0
+    GET /v1.0/account/connectors/{id}
     Authorization Bearer 0000000000000000000000000000000000000000000000000000000000000000
     X-Cyclr-Account: 00000000-0000-0000-0000-000000000000
 ````
