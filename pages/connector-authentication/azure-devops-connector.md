@@ -35,7 +35,7 @@ If you leave them blank, the user must provide the values when installing the Co
 
 ### Connector Setup
 
-1. When installing the Connector, enter Organization and Project then click 'Next'.
+1. When installing the Connector, enter Organization ID and Project Name then click 'Next'.
 
 2. Click 'Sign In' and a new window will open prompting you to log in.
 
