@@ -409,11 +409,9 @@ function after_error() {
 
 ### Libraries
 
-Before calling any function from a library, please use `require("Library Name");`.
+The following libraries are available within Cyclr's script engine:
 
-For example:
-
-`require("moment");`
+> NB. It is not necessary to load these with a `require` call, they are ready to use in script.
 
 #### Moment.js
 
