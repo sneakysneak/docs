@@ -37,9 +37,13 @@ Enter the following values:
 
 **Client Secret**: Also retrieved from the above steps.
 
+**Scope**: The API scope, outlining what areas this connector has access to. More information can be found here: https://docs.valence.desire2learn.com/http-scopestable.html
+
 **LE API Version**: The specific version you would like to use for all LE-based API calls. You should always use the most recent version unless you would like to use a specific version.
 
 **LP API Version**: Same as above but for LP-based API calls.
+
+**BFP API Version**: Same as above but for BFP-based API calls.
 
 
 Your Brightspace Connector is now setup! You can test it by installing it in one of your Cyclr accounts and executing one of the methods to confirm it can return some data.
