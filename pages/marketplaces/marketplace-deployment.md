@@ -17,6 +17,8 @@ For example:
 
 When a user clicks the **Integrations** button, your application server should make a Request towards the Cyclr REST API's `/v1.0/accounts/CYCLR_ACCOUNT_API_ID/marketplace` endpoint to obtain a **Marketplace URL**.  The user can then be directed to this URL in their web browser.
 
+The **CYCLR_ACCOUNT_API_ID** used in the URL of the call tells Cyclr which Account to work against.  If an Account doesn't already exist with that API ID, then Cyclr will create a *new* Account using that value as the API ID and the **AccountName** value provided in your Request.
+
 ### Request
 
 ```
@@ -37,7 +39,7 @@ curl -X POST
 }' "https://yourCyclrInstance/v1.0/accounts/CYCLR_ACCOUNT_API_ID/marketplace"
 ```
 
-In the example above, replace *yourCyclrInstance* with your [**API Domain** according to where your Cyclr Console is located](./testing-cyclr-api), or your own domain if your Cyclr instance is self-hosted.
+In the example above, replace *yourCyclrInstance* with your [**API Domain** according to where your Cyclr Console is located](./testing-cyclr-api) (e.g. "api.cyclr.com"), or your own domain if your Cyclr instance is self-hosted.
 
 When [obtaining a Cyclr API Access Token](./cyclr-api-authentication) for this call, you should *not* use an Account Restricted Token.
 
