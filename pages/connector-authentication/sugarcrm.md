@@ -87,7 +87,7 @@ The following methods support the use of additional filters to refine your reque
 
 - Get New And Updated Opportunities
 
-To apply an additional filter you should add a custom field to the request with a Field Location in the format of <em>field.operator</em> (example: deleted.$equals). You can then supply a value for that filter when making your requests.
+To apply an additional filter you should add a custom field to the request with a Field Location in the format of <em>field.operator</em> (example: campaign_name.$contains). You can then supply a value for that field when making your requests (example: 'Leads').
 
 The supported filter operators are as follows:
 
