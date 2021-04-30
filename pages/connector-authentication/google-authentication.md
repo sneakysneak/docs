@@ -18,7 +18,7 @@ You will need to provide your Cyclr Partner 'Service Domain' as part of the proc
 Settings > General Settings > Service Domain.
 
 Your Cyclr Partner will have been setup with a default Service Domain, but this can be changed if you would prefer to remove mentions of 'Cyclr' from it.
-  
+
 ## Registering Your Application
 
 ### Create a Project
@@ -101,23 +101,31 @@ Step 5 - On the next page click the API's ENABLE button.
 
 Below are Cyclr Connectors that require multiple Google APIs to be fully functional:
 
-* Google Sheets - Google Sheets API and Google Drive API
+* Google Sheets - Google Sheets API and Google Drive API0
 
 
 ## Additional Setup for Google AdWords
 
 The Google AdWords connector requires [additional setup](https://developers.google.com/adwords/api/docs/guides/signup) before you can access its API.
 
-Step 1 - Sign in or sign up for a Google AdWords manager account
+Step 1 - Sign in or [sign up](https://support.google.com/google-ads/answer/7459399) for a Google AdWords manager account 
 
-Step 2 - Go to SETUP > AdWords API Centre
+Step 2 - On the navigation bar at the top of the AdWords manager page, go to Tools & Settings > SETUP > AdWords API Centre
 
 Step 3 - Complete the form to create a developer token
 
 Step 4 - Once you have created a developer token, go to Access level > Apply for Basic Access
 
-Step 5 - Submit the Adwords API Token Application
+Step 5 - Submit the AdWords API Token Application
 
 Make a note of your developer token, you will need it when you use Google AdWords methods in Cyclr.
 
+Please note you will not be able to use this connector with production accounts until Google has approved your application. This restriction does not apply to test accounts. If you wish to use the connector with test accounts, please follow the steps below:
 
+Step 1 - Navigate to the [Google Ads manager accounts page](https://adwords.google.com/um/Welcome/Home?a=1&sf=mt&authuser=0#ta), and create a **test manager account**.
+
+Step 2 - Use the Google Ads UI to create a **test client account** under the test manager account you created above. While logged in to Google Ads as your test manager account, any client accounts you create will automatically be test accounts.
+
+Step 3 - Create a few test campaigns using the **test client account**.
+
+Step 4 - Make note of the **client customer ID** for the client account, this is what you will enter when setting up the connector for testing.
