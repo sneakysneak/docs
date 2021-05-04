@@ -36,6 +36,7 @@ Connector level Parameters have these additional properties:
 | Partner Connector Property | The Parameter is available in the Cyclr Console's Application Connector Library entry, allowing it to be set once for use across all Account Connectors. |
 | Multiline | The Parameter is displayed as a textbox allowing multiple lines to be entered, rather than a single line textbox. |
 
+> **Warning**: A parameter cannot be both an Account Connector Property and a Partner Connector Property.  If both are selected, your connector may behave unpredictably.
 
 
 
