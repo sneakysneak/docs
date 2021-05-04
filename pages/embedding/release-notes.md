@@ -7,6 +7,9 @@ tags: [embedding]
 
 ## 2021
 
+### 4th May 2021
+- Console: Corporate edition support 
+
 ### 26th April 2021
 - Script Engine: add `method_response_parameters_in_use` parameter for accessing response fields used in descendant cycle steps.
 
