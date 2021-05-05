@@ -108,7 +108,7 @@ Below are Cyclr Connectors that require multiple Google APIs to be fully functio
 
 The Google AdWords connector requires [additional setup](https://developers.google.com/adwords/api/docs/guides/signup) before you can access its API.
 
-Step 1 - Sign in or [sign up](https://support.google.com/google-ads/answer/7459399) for a Google AdWords manager account 
+Step 1 - Sign in or [sign up](https://support.google.com/google-ads/answer/7459399) for a Google AdWords manager account. This must be the top level owner account for your AdWords management. 
 
 Step 2 - On the navigation bar at the top of the AdWords manager page, go to Tools & Settings > SETUP > AdWords API Centre
 
