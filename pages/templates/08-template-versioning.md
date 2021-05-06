@@ -62,6 +62,7 @@ The default destination is the current template, however, you are also able to s
 
 
 Promoting Releases
+---------------
 
 Once you have promoted your release, the previous Live release will be marked as Deprecated and locked for editing.
 
