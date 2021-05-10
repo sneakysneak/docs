@@ -33,7 +33,10 @@ We will summarise it in a few points:
 
    **Multi-tenanted**: Yes
 
-   **Required Permissions**: Dynamics CRM Online and Windows Azure Active Directory
+   **API Permissions**:
+   * **Microsoft Graph** - set by default
+   * **Dynamics CRM** -> Delegated Permission of "user_impersonation"
+   
 
 3. Go to Cyclr Console (https://yourCyclrInstance/console) > Connectors > Connector Library > Dynamics CRM Online > Setup
 
