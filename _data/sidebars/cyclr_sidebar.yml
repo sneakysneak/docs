@@ -78,6 +78,10 @@ entries:
           - title: Collection Splitting
             url: /collection-splitting
             output: web, pdf
+            
+          - title: Transaction Error Handling
+            url: /transaction-error-webhook
+            output: web, pdf
 
       - title: Embedding Cyclr
         output: web, pdf
@@ -96,10 +100,6 @@ entries:
 
           - title: Call a Connector Method
             url: /call-a-connector-method
-            output: web, pdf
-
-          - title: Notifications
-            url: /notifications
             output: web, pdf
 
           - title: API Endpoints
