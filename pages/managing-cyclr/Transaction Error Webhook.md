@@ -22,4 +22,4 @@ Now you can go back to the Cycle/Template where you added the webhook step, and 
 
 In the example below, any errors relating to "Account 12345" will trigger a message in Slack.
 
-![](triggerslackfromerror.png)
+![](/images/triggerslackfromerror.png)
