@@ -36,7 +36,7 @@ If you wish, you can choose to handle errors in particular Cyclr Accounts differ
 
 In your Cyclr Console, go to the Accounts menu then Account Management, click Settings for the Account you wish to set this for and use the **Transaction Error Webhook** options.
 
-**Example Transaction Error Webhook Payload**<br />
+### Example Transaction Error Webhook Payload
 
 The information in the **Detail** property will contain the Response that was received.
 
