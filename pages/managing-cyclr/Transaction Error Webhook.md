@@ -7,7 +7,7 @@ tags: [embedding]
 
 Cyclr can be configured to make an HTTP Request if an error occurs in a running Cycle as a way of alerting you or your support staff.
 
-This is performed as an HTTP POST Request to a URL you specify and contains JSON structured data in its Request Body.  Examples of this data can be found [here](./notifications).
+This is performed as an HTTP POST Request to a URL you specify and contains JSON structured data in its Request Body..
 
 The URL could be for an external system, or for a Webhook Step in a Template or Cycle within your Cyclr Partner, allowing you to process the data using Decision Steps, etc as you would any other data in Cyclr.  You could install a **Slack** or **SendGrid** Connector as a way to alert you and perhaps one of the database Connectors to log the data as well.
 
