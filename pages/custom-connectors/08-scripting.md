@@ -88,7 +88,7 @@ Called when a webook request has been received and before anything else is done.
 
 #### after_webhook
 
-Called after the webook has been caught.
+Called immediately after a Request to a Webook has been received, whether the Cycle is currently running or stopped.
 
 ###### Global object
 
