@@ -17,8 +17,8 @@ Authorization callback URL should be
 
 `https://<Your Cyclr Service Domain e.g. app-h.cyclr.com>/connector/callback`
  
-Authorized Scope should ONLY be "Work items (full)", if other scopes are entered you will not be able connect.
-
+ Enter the appropriate scopes required for your usecase. We suggest at least adding "Work items (full)" as it is required for most methods (apart from Audit Logs and Accounts). A list of scopes can be found here: https://docs.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/oauth?toc=%2Fazure%2Fdevops%2Forganizations%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fbreadcrumb%2Ftoc.json&view=azure-devops#scopes
+ 
 App ID, App Secret and Client Secret are displayed in the overview of your created app. Please keep a copy of these somewhere safe.
 
 Log in to your [DevOps portal](https://aex.dev.azure.com/) to obtain your organization ID and project ID that you wish to connect to.
@@ -35,7 +35,7 @@ If you leave them blank, the user must provide the values when installing the Co
 
 ### Connector Setup
 
-1. When installing the Connector, enter Organization ID and Project Name then click 'Next'.
+1. When installing the Connector, enter Organization ID, Project Name and the list of scopes provided during application creation and then click 'Next'.
 
 2. Click 'Sign In' and a new window will open prompting you to log in.
 
