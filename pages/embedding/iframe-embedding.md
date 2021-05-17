@@ -99,7 +99,7 @@ Your Service Domain can be found in your Cyclr Console under Settings > General 
 Here's how the full URL may look once set in the HTML code of a page in your application:
 
 ```html
-<iframe src="https://myapp-h.cyclr.com/account/signinwithtoken?token=JWxm_cYOq0m6PYWcVPWpuSBP-ppqRwhBk"> 
+<iframe src="https://myapp-h.cyclr.com/account/signinwithtoken?token=JWxm_cYOq0m6PYWcVPWpuSBP-ppqRwhBk"></iframe>
 ```
 
 ### Final Steps
