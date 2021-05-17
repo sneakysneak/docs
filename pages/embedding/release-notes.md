@@ -9,7 +9,7 @@ tags: [embedding]
 
 ### 17th May 2021
 - Folder breadcrumb: added folder breadcrumb in cycle builder
-- Webhook auto update: new Webhook Update Method. Supports webhooks with expiry if created using auto the Webhook Create Method
+- Webhook auto update: new Webhook Update Method. Supports webhooks with expiry if created using auto the Webhook Create Method.
 
 ### 4th May 2021
 - Console: Corporate edition support 
