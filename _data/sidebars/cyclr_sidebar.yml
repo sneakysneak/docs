@@ -319,6 +319,11 @@ entries:
       - title: Connector Guides
         output: web, pdf
         folderitems:
+        
+          - title: Act!
+            url: /act-connector
+            output: web, pdf
+            
           - title: Bronto
             url: /bronto-installation
             output: web, pdf
