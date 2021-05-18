@@ -17,7 +17,9 @@ Authorization callback URL should be
 
 `https://<Your Cyclr Service Domain e.g. app-h.cyclr.com>/connector/callback`
  
- Enter the appropriate scopes required for your usecase. We suggest at least adding "Work items (full)" as it is required for most methods (apart from Audit Logs and Accounts). A list of scopes can be found here: https://docs.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/oauth?toc=%2Fazure%2Fdevops%2Forganizations%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fbreadcrumb%2Ftoc.json&view=azure-devops#scopes
+ Enter the appropriate scopes required for your usecase. We suggest at least adding "Work items (full)" as it is required for most methods (apart from Audit Logs and Accounts).
+ 
+ [A list of available scopes can be found here](https://docs.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/oauth?toc=%2Fazure%2Fdevops%2Forganizations%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fbreadcrumb%2Ftoc.json&view=azure-devops#scopes)
  
 App ID, App Secret and Client Secret are displayed in the overview of your created app. Please keep a copy of these somewhere safe.
 
