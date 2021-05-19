@@ -32,12 +32,13 @@ Response:
 }
 ````
 
-The user should then be sent, in their browser, to:
-_https://{Partner Service Domain}/connectorauth/updateaccountconnectoroauth?id={Account Connector ID}&token={Account Sign-In Token}_
+The user should then be sent here in their browser:
+
+`https://{Partner Service Domain}/connectorauth/updateaccountconnectoroauth?id={Account Connector ID}&token={Account Sign-In Token}&targetOrigin=...`
 
 For example: 
 ```
-https://app-h.cyclr.com/connectorauth/updateaccountconnectoroauth?id=1234&token=ABCD12340000000000000=
+https://app-h.cyclr.com/connectorauth/updateaccountconnectoroauth?id=1234&token=ABCD12340000000000000=&targetOrigin=https://yourapplication.com/complete-page
 ```
 
 The following query string parameters can be included:
@@ -45,8 +46,8 @@ The following query string parameters can be included:
 | Parameter | Description | Example |
 | --- | --- | --- |
 | **token** | The account sign-in token generated above | ABCD12340000000000000= |
-| **targetOrigin** | Either the origin of the other window for the JavaScript callback event to be dispatched or a URL to redirect the user to after the OAuth authentication is completed | <span>https://partner.cyclr.com/connectors</span> |
-| **callbackMessage** | Callback message to be sent by JavaScript postMessage to the parent window. Don’t include if using redirect | done |
+| **targetOrigin** | Required.  Either the origin of another browser window for the JavaScript callback event to be dispatched to, or a URL to redirect the user to. Used after the OAuth authentication is complete. | <span>https://partner.cyclr.com/connectors</span> |
+| **callbackMessage** | Callback message to be sent by JavaScript postMessage to the parent window. Don’t include if using a redirect for `targetOrigin`. | done |
 
 Remember to URL encode all parameter values.
 
