@@ -9,7 +9,7 @@ tags: [connector]
 
 To authenticate the Calendly connector you first need to register an OAuth app.
 
-1. Go to https://calendly.com/integrations/api_webhooks
+1. Go to <https://calendly.com/integrations/api_webhooks>
 
 2. Under OAuth click 'Regist now'
 
@@ -35,6 +35,4 @@ Once you have your OAuth credentials
 
 > Note: If you are already logged into Calendly you might not be prompted to log in at this point. This is due to the session cookie your browser stores
 
-5. You will be redirected to Cyclr
-
-The connector is now authenticated and ready to use.
+You will be redirected to Cyclr where the connector is now authenticated and ready to use.
