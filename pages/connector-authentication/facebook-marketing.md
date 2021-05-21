@@ -31,9 +31,9 @@ Setting up your Partner App
 (_Your service domain can be found in your Cyclr console under Settings > General Settings > Service Domain._) and click ``Save Changes``.
 9. Under **App Review** on the left, select ``Permissions and Features``.
 
-Here you're going to set the permissions you'll be asking your user for when they see the consent screen.  
+    Here you're going to set the permissions you'll be asking your user for when they see the consent screen.  
 
-The permissions you choose will vary depending on your use case, but you will always need advanced access to the user's public profile to allow them to sign in.  
+    The permissions you choose will vary depending on your use case, but you will always need advanced access to the user's public profile to allow them to sign in.  
 
 10. Search for ``public_profile``, click ``Get Advanced Access``, and complete the confirmation screen.
 
