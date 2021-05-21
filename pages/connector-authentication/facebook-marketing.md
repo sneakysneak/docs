@@ -37,7 +37,7 @@ Setting up your Partner App
 
 10. Search for ``public_profile``, click ``Get Advanced Access``, and complete the confirmation screen.
 
-You will notice that Advanced Access to public_profile is granted automatically.  The other permissions will require a bit more admin.
+    You will notice that Advanced Access to public_profile is granted automatically.  The other permissions will require a bit more admin.
 
 11. For this example, we'll add the ``leads_retrieval`` permission, which is required if you are working with Form submissions.
 
