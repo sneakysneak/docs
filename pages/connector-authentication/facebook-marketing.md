@@ -7,47 +7,56 @@ tags: [connector]
 
 # Facebook Marketing API #
 
-Partner Setup
--------------
 
 Facebook Marketing API uses OAuth 2. You should sign up for an application on Facebook first and get an OAuth client ID and client secret.
 
-Here is the official documentation for creating a Facebook app:
+> Note: The process of having your app approved by Facebook may be lengthy (~5 days).
 
-[https://developers.facebook.com/docs/apps/register](https://developers.facebook.com/docs/apps/register)
+Setting up your Partner App
+-------------
+1. Log into your Facebook account.
+2. Create a Facebook Developer account if you don’t already have one: [https://developers.facebook.com](https://developers.facebook.com)
+3. Go to ``My Apps``: [https://developers.facebook.com/apps](https://developers.facebook.com/apps)
+4. Click ``Create App``, and select Business as the app type.
 
-1.  Log into your Facebook account.
-2.  Create a Facebook Developer account if you don’t already have one: [https://developers.facebook.com/](https://developers.facebook.com/)
-3.  Create a new Facebook App: [https://developers.facebook.com/apps/](https://developers.facebook.com/apps/)
+    Complete the following sections:
 
-    Below are the details you should provide:
+    * **App Display Name** This is the name your users will see when they grant consent to access their data.
+    * **App Purpose** (set to ``Clients``.)
 
-    **Name**: your application name
+5. Click ``Create App`` (You will then be asked to enter your password).
+6. You should be faced with a screen entitled **Add Products to Your App**. Under **Facebook Login**, select ``Set Up``.
+7. This should now be added.  In the menu on the left, select ``Facebook Login`` > ``Settings``.
+8. Under Valid OAuth Redirect URIs enter ``https://Your Service Domain/connector/callback``<br>
+(_Your service domain can be found in your Cyclr console under Settings > General Settings > Service Domain._) and click ``Save Changes``.
+9. Under **App Review** on the left, select ``Permissions and Features``.
 
-    **App Domain**: your Cyclr **Service Domain**, e.g. "app-h.cyclr.com". This can be found in your Cyclr Console under Settings > Integration Settings > Service Domain.
+Here you're going to set the permissions you'll be asking your user for when they see the consent screen.  
 
-    **Facebook Login > Settings > Valid OAuth Redirect URIs**: you may need to add Facebook Login as a Product to your App, or Facebook may already have automatically added it for you.
-    Set the **Valid OAuth Redirect URIs** option to your Cyclr **Service Domain** plus "/connector/callback", e.g.:
-    
-    ```https://app-h.cyclr.com/connector/callback```
-    
-    If you miss this step, you'll see the following error message when trying to install the Connector in Cyclr:
-    
-    ```Can't load URL: The domain of this URL isn't included in the app's domains. To be able to load this URL, add all domains and sub-domains of your app to the App Domains field in your app settings.```
+The permissions you choose will vary depending on your use case, but you will always need advanced access to the user's public profile to allow them to sign in.  
 
-4.  Go to Cyclr Console (https://my.cyclr.com/console) > Connectors > Connector Library > Facebook Marketing API > Setup
+10. Search for ``public_profile``, click ``Get Advanced Access``, and complete the confirmation screen.
 
-    **Client ID**: This is the App ID displayed after you create the Facebook app
+You will notice that Advanced Access to public_profile is granted automatically.  The other permissions will require a bit more admin.
 
-    **Client Secret**: This is the App Secret displayed after you create the Facebook app
+11. For this example, we'll add the ``leads_retrieval`` permission, which is required if you are working with Form submissions.
 
-5.  Don’t forget to make your Facebook app public. It’s in Development by default.
+12. Once you have requested Advanced Access on this (and any other permissions), you'll be invited to **Edit App Review Request**. Click this, complete all the required sections, and Submit for Review.
+
+13. Under Settings, Basic on the left menu, you'll be able to complete any missing sections, and copy your App ID and App Secret.  Once your app has been approved by Facebook, you'll be able to use these to authenticate your App in Cyclr.
+
+Authenticating your Facebook Cyclr Connector
+--------------
+
+Go to your Cyclr Console > Connectors > Connector Library > Facebook Marketing API > Setup
+
+**Client ID**: This is the App ID displayed after you create the Facebook app
+
+**Client Secret**: This is the App Secret displayed after you create the Facebook app
+
 
 Your Facebook Marketing API connector is now set up! You can test it by installing it in one of your user accounts.
 
-API Integration Guide
----------------------
-
-Facebook Marketing API uses OAuth 2 Authorisation Code flow. It requires your end users to sign into Facebook and grant Cyclr access to their account.
-
-To do this, call _/UpdateAccountConnectorOAuth_ with a one-time sign-in token.
+Official Facebook Documentation
+---------
+[https://developers.facebook.com/docs/apps/register](https://developers.facebook.com/docs/apps/register)
