@@ -79,6 +79,10 @@ entries:
             url: /collection-splitting
             output: web, pdf
             
+          - title: Script Tester
+            url: /script-tester
+            output: web, pdf
+            
           - title: Transaction Error Handling
             url: /transaction-error-webhook
             output: web, pdf
