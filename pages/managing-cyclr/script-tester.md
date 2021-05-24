@@ -5,9 +5,7 @@ permalink: script-tester
 tags: [connector]
 ---
 
-# Script Tester #
-
-If you need to test some javascript outside of your cycle, you can do so with the Script Tester.
+If you need to test some javascript outside of your cycle, you can do so with the **Script Tester**.
 
 This can be found in your **Console**, under the **Connectors** menu. 
 
