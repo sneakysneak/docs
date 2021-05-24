@@ -592,6 +592,8 @@ function after_error() {
     return true;
 }
 ```    
+### Script Testing
+If you want to test your Javascript functions outside of a cycle, you can use the [Script Tester](https://docs.cyclr.com/script-tester).
 
 ### Limitations
 
