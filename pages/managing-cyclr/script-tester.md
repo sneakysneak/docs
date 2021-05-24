@@ -28,4 +28,4 @@ This might be a request from a method you wish to call, or the response from sai
 4. You can now continue to adjust your script until you're happy with the output, pressing **Run** whenever you wish to update the output.<br>
     ![Example Script Test](./images/example-script-test.png)
 
-For more on scripting, see https://docs.cyclr.com/connector-scripting
+For more on scripting, see [Connector Scripting](https://docs.cyclr.com/connector-scripting)
