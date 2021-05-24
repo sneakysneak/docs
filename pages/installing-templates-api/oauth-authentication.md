@@ -55,6 +55,19 @@ Cyclr redirects the user to the appropriate sign in page of the target applicati
 
 On completion the user will either be redirected to targetOrigin or the JavaScript message specified by the callbackMessage will be posted to the parent window to notify the host app that the authentication flow has completed.
 
+### Providing Client ID and Client Secret Values
+
+Typically, systems using OAuth allow you to create a single App which you can use with Cyclr to access all of your customer's accounts.  Some systems however, require the use of separate Apps for each cutomer.  The correct setup should be described in each Connector's Cyclr Connector Guide.
+
+For systems that allow a single App for all customers, you should set the Client ID and Client Secret values of that App in your Cyclr Console's Application Connector Library entry.
+
+For Connectors that require the Client ID and Client Secret values to be provided separately for each Account Connector, or if you have chosen to provide them for each, add the following (using these exact names) as [Account Connector Properties](./authenticate-account-connector#account-connector-properties):
+
+* `ClientId`
+* `ClientSecret`
+
+
+
 [Step Setup](./step-set-up)  
 [API Key Authentication](./api-key-authentication)  
 [HTTP Basic Authentication](./basic-authentication)
