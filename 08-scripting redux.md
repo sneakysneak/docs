@@ -73,7 +73,7 @@ method_response_fields: Array containing a Method's Response Fields.
 ### Events (click to expand)
 
 <details>
-  <summary><b>before_webhook</b></summary>
+  <summary><b>before_webhook</b> +</summary>
 
 #### Description
 Called when a webook request has been received and before anything else is done. Method is used to decide if the request should be continued or return a custom message to the caller.
