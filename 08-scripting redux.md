@@ -73,7 +73,7 @@ method_response_fields: Array containing a Method's Response Fields.
 ### Events (click to expand)
 
 <details>
-  <summary><b>before_webhook</b> +</summary>
+  <summary><b>+ before_webhook</b></summary>
 
 #### Description
 Called when a webook request has been received and before anything else is done. Method is used to decide if the request should be continued or return a custom message to the caller.
@@ -93,7 +93,7 @@ Called when a webook request has been received and before anything else is done.
 </details>
 
 <details>
-<summary><b>after_webhook</b></summary>
+<summary><b>+ after_webhook</b></summary>
 
 #### Description
 Called immediately after a Request to a Webook has been received, whether the Cycle is currently running or stopped.
@@ -112,7 +112,7 @@ Called immediately after a Request to a Webook has been received, whether the Cy
 </details>
 
 <details>
-<summary><b>before_action</b></summary>
+<summary><b>+ before_action</b></summary>
 
 #### Description
 Called before Cyclr makes a request to an external API.
@@ -138,7 +138,7 @@ If a Method uses Paging, this function is called before each page is retrieved.
 </details>
 
 <details>
-<summary><b>after_action</b></summary>
+<summary><b>+ after_action</b></summary>
 
 #### Description
 Function is called when Cyclr has a response from an external API.
@@ -165,7 +165,7 @@ If a Method uses Paging, this function is called after each page is retrieved.
 </details>
 
 <details>
-<summary><b>after_action_paging</b></summary>
+<summary><b>+ after_action_paging</b></summary>
 
 #### Description
 If this function is provided, it is called once after all pages of data have been retrieved, whether Paging has been implemented or not.
@@ -189,7 +189,7 @@ If this function is provided, it is called once after all pages of data have bee
 </details>
 
 <details>
-<summary><b>after_error</b></summary>
+<summary><b>+ after_error</b></summary>
 
 #### Description
 
@@ -212,7 +212,7 @@ Function is called when Cyclr received an error from an external API.
 
 
 <details>
-<summary><b>action_condition</b></summary>
+<summary><b>+ action_condition</b></summary>
 
 #### Description
 Function is used to essentially combine a Method with a Decision Step, allowing a test to be performed that directs a Transaction down either the True or False exit points.  If this function is included in a method, Cyclr will add True and False exit points.
@@ -234,7 +234,7 @@ Function is used to essentially combine a Method with a Decision Step, allowing 
 
 
 <details>
-<summary><b>before_oauth2_authorise</b></summary>
+<summary><b>+ before_oauth2_authorise</b></summary>
 
 #### Description
 Function is called before Cyclr makes an OAuth 2 authorise request.
@@ -250,7 +250,7 @@ Function is called before Cyclr makes an OAuth 2 authorise request.
 </details>
 
 <details>
-<summary><b>before_oauth2_token</b></summary>
+<summary><b>+ before_oauth2_token</b></summary>
 
 #### Description
 Called before Cyclr makes an OAuth 2 access token request.
@@ -265,7 +265,7 @@ Called before Cyclr makes an OAuth 2 access token request.
 </details>
 
 <details>
-<summary><b>after_oauth2_token</b></summary>
+<summary><b>+ after_oauth2_token</b></summary>
 
 #### Description
 Called after Cyclr makes an OAuth 2 access token request.
@@ -281,7 +281,7 @@ Called after Cyclr makes an OAuth 2 access token request.
 </details>
 
 <details>
-<summary><b>before_oauth2_refresh</b></summary>
+<summary><b>+ before_oauth2_refresh</b></summary>
 
 #### Description
 Called before Cyclr makes an OAuth 2 refresh token request.
@@ -298,7 +298,7 @@ Called before Cyclr makes an OAuth 2 refresh token request.
 </details>
 
 <details>
-<summary><b>after_oauth2_refresh</b></summary>
+<summary><b>+ after_oauth2_refresh</b></summary>
 
 #### Description
 Called after Cyclr makes an OAuth 2 refresh token request.
