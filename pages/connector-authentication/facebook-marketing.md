@@ -1,5 +1,5 @@
 ---
-title: Facebook Marketing Authenticaiton
+title: Facebook Marketing Authentication
 sidebar: cyclr_sidebar
 permalink: facebook-connector
 tags: [connector]
