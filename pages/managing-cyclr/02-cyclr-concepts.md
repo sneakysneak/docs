@@ -8,27 +8,31 @@ tags: [managing-cyclr]
 
 ### Accounts
 
-Each of a Cyclr Parterns Customers will have an account in Cyclr. Templates can be copied to the account or custom integrations can be developed.  This provides segmentation between integrations running for different customers.  Connectors in an account are specifically authenticated for that customer.
+Each of a Cyclr Partner's Customers will have an account in Cyclr.
+
+Into these accounts integrations can be developed, either based on templates or fully customized.  This provides segmentation between integrations running for different customers.  Connectors in an account are specifically authenticated for that customer.
 
 ### Connectors
 
-A Connector is a Cyclr implementaion of a an application's API. The connector handles all aspects of the protocols and methods which Cyclr uses to pull or push data to the application. 
+A Connector is a Cyclr implementaion of an application's API. 
 
-### Account Connector
+Connectors handle all aspects of the protocols and methods needed to pull or push data to the application via Cyclr.
 
-Once a Connectors is installed in an account it is referred to as an Account Connector.  It holds authentication details specific to that account.
+### Account Connectors
+
+Once a Connector is installed into an account it is referred to as an Account Connector - this holds authentication details specific to said account.
 
 ### Users
 
 Users can be given access to Accounts, allowing them to install and modify the Account Connectors and Cycles.
 
-### Integration Templates
+### Templates
 
-Integration Templates are pre-made integrations that can be installed by Users into Accounts as Cycles.
+Templates are pre-made integrations that can be installed by Users into Accounts as Cycles.
 
 ### Cycles
 
-Cycles are integrations in an Account that when activated will perform the integration flow. Cycles can be triggered on a scheduled interval or by a webhook event in a third party application.
+Cycles are integrations in an Account that when activated, will perform all of the actions in the integration flow. Cycles can be triggered on a scheduled interval or by a webhook event in a third party application.
 
 ### Cycle Transaction
 
@@ -36,4 +40,9 @@ A Cycle Transaction is created each time a Cycle is triggered.  It segregates th
 
 ### Cycle Step
 
-A Cycle is made up of a collection of Cycle Steps.  Each Cycle Step may connect with a third party API to send and/or receive data, perform a logic action such as delaying the Cycle Transaction for a period of time, or perform different actions depending on the data received from the third party API.
+A Cycle is made up of a collection of Cycle Steps.  Each Cycle Step may:
+
+* Connect with a third party API to send and/or receive data
+* Perform a logic action such as delaying the Cycle Transaction for a period of time<br> 
+or 
+* Perform different actions depending on the data received from the third party API.
