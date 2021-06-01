@@ -7,7 +7,7 @@ tags: [connector]
 
 ## Partner Setup
 
-#### Retrieving Client ID
+### Retrieving Client ID
 * Navigate to connect settings in the dashboard: https://dashboard.stripe.com/settings/applications.
 * Add your Cyclr redirect URL: https://``Your Service Domain``/connector/callback
 * Tick "OAuth for Standard Accounts".
@@ -15,7 +15,7 @@ tags: [connector]
 
 ## End-user Setup
 
-#### Retrieving API Key
+### Retrieving API Key
 * Navigate to the API settings page in the dashboard: https://dashboard.stripe.com/apikeys.
 * Create a new secret key and note it down.
 
