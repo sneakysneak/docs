@@ -19,7 +19,7 @@ tags: [connector]
 * Navigate to the API settings page in the dashboard: https://dashboard.stripe.com/apikeys.
 * Create a new secret key and note it down.
 
-### Cyclr Setup
+## Cyclr Setup
 
 Setup your ConnectWise Manage App within Cyclr:
 
