@@ -13,6 +13,8 @@ tags: [connector]
 * Tick "OAuth for Standard Accounts".
 * Note down the generated Client ID.
 
+## End-user Setup
+
 #### Retrieving API Key
 * Navigate to the API settings page in the dashboard: https://dashboard.stripe.com/apikeys.
 * Create a new secret key and note it down.
