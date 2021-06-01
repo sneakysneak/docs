@@ -14,7 +14,7 @@ Into these accounts integrations can be developed, either based on templates or 
 
 ### Connectors
 
-A Connector is a Cyclr implementaion of an application's API. 
+A Connector is a Cyclr implementation of an application's API. 
 
 Connectors handle all aspects of the protocols and methods needed to pull or push data to the application via Cyclr.
 
