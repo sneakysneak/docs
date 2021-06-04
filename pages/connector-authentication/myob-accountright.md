@@ -15,7 +15,7 @@ The first thing to do - unless you already have a my.MYOB account - is to [regis
 
 ### Creating an MYOB App ###
 
-One you're in [my.MYOB](https://my.myob.com.au/Pages/Default.aspx), you can create an **App** within the Developer Dashboard to retrieve the neccessary authentication details required to allow Cyclr to access MYOB AccountRight Live's API.
+Once you're in [my.MYOB](https://my.myob.com.au/Pages/Default.aspx), you can create an **App** within the Developer Dashboard to retrieve the neccessary authentication details required to allow Cyclr to access MYOB AccountRight Live's API.
 
 The official MYOB AccountRight Live documentation for creating an **App** can be found [here under the "Access the API via the cloud" heading](https://developer.myob.com/api/accountright/api-overview/getting-started/).
 
