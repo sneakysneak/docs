@@ -326,7 +326,7 @@ Called after Cyclr makes an OAuth 2 refresh token request.
 
 ## Functions
 
-#### General Functions 
+### General Functions 
 
 (click to expand)
 
@@ -463,7 +463,7 @@ var csvRecords =  cyclr_csv_parse(csv, delimiter, hasHeader);
 
 </details>
 
-#### Storage Functions
+### Storage Functions
 
 Cyclr provides several storage functions available for use in Script that can be used when developing a Connector, or on a Step in a Template or Cycle.
 
