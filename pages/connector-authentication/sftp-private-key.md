@@ -5,7 +5,7 @@ permalink: sftp-private-key
 tags: [connector]
 ---
 
-To authenticate the SFTP Private Key, connector you will need to provide the following values:
+To authenticate the **SFTP Private Key** connector you will need to provide the following values:
 
 ## Host URI ##
 
