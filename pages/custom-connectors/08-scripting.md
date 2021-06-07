@@ -74,12 +74,14 @@ method_response_fields: Array containing a Method's Response Fields.
 <details>
   <summary><b>+ before_webhook</b></summary>
 
-<h4>Description</h4>
+<br>
+<b>Description</b><br>
 Called when a webook request has been received and before anything else is done. Method is used to decide if the request should be continued or return a custom message to the caller.
 
 <hr>
 
-<h4>Global objects available to event</h4>
+
+<b>Global objects available to event</b>
 <br>
 <code>method_endpoint</code>: The webhook request URL<br>
 <code>method_request_headers</code>: The webhook request headers<br>
@@ -94,12 +96,14 @@ Called when a webook request has been received and before anything else is done.
 <details>
 <summary><b>+ after_webhook</b></summary>
 
-<h4>Description</h4>
+<br>
+<b>Description</b><br>
 
 Called immediately after a Request to a Webook has been received, whether the Cycle is currently running or stopped.
 <hr>
 
-<h4>Global objects available to event</h4>
+<br>
+<b>Global objects available to event</b>
 
 <code>method_response</code>: object that was POSTed to the Cyclr webhook<br>
 <code>cycle_variables</code>: Allows access to Cycle variables.  Changes are not persisted.<br>
@@ -114,7 +118,8 @@ Called immediately after a Request to a Webook has been received, whether the Cy
 <details>
 <summary><b>+ before_action</b></summary>
 
-<h4>Description</h4>
+<br>
+<b>Description</b><br>
 
 Called before Cyclr makes a request to an external API.
 
@@ -122,7 +127,8 @@ If a Method uses Paging, this function is called before each page is retrieved.
 
 <hr>
 
-<h4>Global objects available to event</h4>
+<br>
+<b>Global objects available to event</b>
 
 <code>method_request_headers</code>: HTTP headers for the request<br>
 <code>method_request_parameters</code>: Querystring parameters for the request<br>
@@ -141,7 +147,8 @@ If a Method uses Paging, this function is called before each page is retrieved.
 <details>
 <summary><b>+ after_action</b></summary>
 
-<h4>Description</h4>
+<br>
+<b>Description</b><br>
 
 Function is called when Cyclr has a response from an external API.
 
@@ -149,7 +156,8 @@ If a Method uses Paging, this function is called after each page is retrieved.
 
 <hr>
 
-<h4>Global objects available to event</h4>
+<br>
+<b>Global objects available to event</b>
 
 <code>method_endpoint</code>: The URL of the original request<br>
 <code>method_request</code>: object that was posted to the third party API<br>
@@ -169,13 +177,15 @@ If a Method uses Paging, this function is called after each page is retrieved.
 <details>
 <summary><b>+ after_action_paging</b></summary>
 
-<h4>Description</h4>
+<br>
+<b>Description</b><br>
 
 If this function is provided, it is called once after all pages of data have been retrieved, whether Paging has been implemented or not.
 
 <hr>
 
-<h4>Global objects available to event</h4>
+<br>
+<b>Global objects available to event</b>
 
 <code>method_request_headers</code>: The response headers for the request<br>
 <code>method_request_parameters</code>: parameters for the request<br>
@@ -194,13 +204,15 @@ If this function is provided, it is called once after all pages of data have bee
 <details>
 <summary><b>+ after_error</b></summary>
 
-<h4>Description</h4>
+<br>
+<b>Description</b><br>
 
 Function is called when Cyclr received an error from an external API.
 
 <hr>
 
-<h4>Global objects available to event</h4>
+<br>
+<b>Global objects available to event</b>
 
 <code>method_error</code> Details of the error, see: **Handle Errors from Third Party APIs** further down for more information on handling errors<br>
 <code>cycle_variables</code>: Allows access to Cycle variables.  Changes are not persisted.<br>
@@ -217,13 +229,15 @@ Function is called when Cyclr received an error from an external API.
 <details>
 <summary><b>+ action_condition</b></summary>
 
-<h4>Description</h4>
+<br>
+<b>Description</b><br>
 
 Function is used to essentially combine a Method with a Decision Step, allowing a test to be performed that directs a Transaction down either the True or False exit points.  If this function is included in a method, Cyclr will add True and False exit points.
 
 <hr>
 
-<h4>Global objects available to event</h4>
+<br>
+<b>Global objects available to event</b>
 
 <code>method_response</code> object that was received from the third party API.<br>
 <code>cycle_variables</code>: Allows access to Cycle variables.  Changes are not persisted.<br>
@@ -240,13 +254,15 @@ Function is used to essentially combine a Method with a Decision Step, allowing 
 <details>
 <summary><b>+ before_oauth2_authorise</b></summary>
 
-<h4>Description</h4>
+<br>
+<b>Description</b><br>
 
 Function is called before Cyclr makes an OAuth 2 authorise request.
 
 <hr>
 
-<h4>Global objects available to event</h4>
+<br>
+<b>Global objects available to event</b>
 
 <code>method_endpoint</code>: URL for the OAuth authorise endpoint<br>
 <code>cycle_variables</code>: Allows access to Cycle variables.  Changes are not persisted.<br>
@@ -257,11 +273,12 @@ Function is called before Cyclr makes an OAuth 2 authorise request.
 <details>
 <summary><b>+ before_oauth2_token</b></summary>
 
-<h4>Description</h4>
+<br>
+<b>Description</b><br>
 
 Called before Cyclr makes an OAuth 2 access token request.
-
-<h4>Global objects available to event</h4>
+<br>
+<b>Global objects available to event</b>
 
 <code>method_request_headers</code>: HTTP headers for the request<br>
 <code>method_request</code>: Object that is going to be sent to the OAuth 2 access token endpoint<br>
@@ -273,13 +290,15 @@ Called before Cyclr makes an OAuth 2 access token request.
 <details>
 <summary><b>+ after_oauth2_token</b></summary>
 
-<h4>Description</h4>
+<br>
+<b>Description</b><br>
 
 Called after Cyclr makes an OAuth 2 access token request.
 
 <hr>
 
-<h4>Global objects available to event</h4>
+<br>
+<b>Global objects available to event</b>
 
 <code>method_response</code>: response object that was received from the OAuth 2 access token request<br>
 <code>cycle_variables</code>: Allows access to Cycle variables.  Changes are not persisted.<br>
@@ -290,13 +309,15 @@ Called after Cyclr makes an OAuth 2 access token request.
 <details>
 <summary><b>+ before_oauth2_refresh</b></summary>
 
-<h4>Description</h4>
+<br>
+<b>Description</b><br>
 
 Called before Cyclr makes an OAuth 2 refresh token request.
 
 <hr>
 
-<h4>Global objects available to event</h4>
+<br>
+<b>Global objects available to event</b>
 
 <code>method_request_headers</code>: HTTP headers for the request<br>
 <code>method_request</code>: request object that is going to be sent to the OAuth 2 refresh token request<br>
@@ -308,13 +329,15 @@ Called before Cyclr makes an OAuth 2 refresh token request.
 <details>
 <summary><b>+ after_oauth2_refresh</b></summary>
 
-<h4>Description</h4>
+<br>
+<b>Description</b><br>
 
 Called after Cyclr makes an OAuth 2 refresh token request.
 
 <hr>
 
-<h4>Global objects available to event</h4>
+<br>
+<b>Global objects available to event</b>
 
 <code>method_response</code>: response object that was received from the OAuth 2 refresh token request.<br>
 <code>cycle_variables</code>: Allows access to Cycle variables.  Changes are not persisted.<br>
@@ -333,7 +356,8 @@ Called after Cyclr makes an OAuth 2 refresh token request.
 <details>
 <summary><b>+ http_request</b></summary>
 
-<h4>Description</h4>
+<br>
+<b>Description</b><br>
 
 Function to make external HTTP requests.
 
@@ -385,7 +409,8 @@ The Response from an `http_request` call is returned as a JSON object with these
 <details>
 <summary><b>+ btoa</b> and <b>atob</b> (Base64 encode/decode)</summary>
 
-<h4>Description</h4>
+<br>
+<b>Description</b><br>
 
 #### btoa
 
@@ -414,7 +439,8 @@ var decoded = atob('YXBwbGUgcGll'); // apple pie
 <details>
 <summary><b>+ cyclr_sign</b></summary>
 
-<h4>Description</h4>
+<br>
+<b>Description</b><br>
 
 Function to sign a string with a key, using the specified algorithm.
 
@@ -439,7 +465,8 @@ Supported algorithms are: `HMAC-SHA1`, `RSA-SHA1`, `RSA-SHA224`, `RSA-SHA256`, `
 <details>
 <summary><b>+ cyclr_csv_parse</b></summary>
 
-<h4>Description</h4>
+<br>
+<b>Description</b><br>
 
 Function to parse a CSV string into JSON.
 
@@ -498,8 +525,8 @@ There are two types (click to expand):
 
 <details>
 <summary><b>+ AuthRefreshException</b></summary>
-
-<h4>Description</h4>
+<br>
+<b>Description</b><br>
 
 Exception to force the OAuth 2 authentication token to be refreshed.
 
@@ -536,7 +563,8 @@ function after_error() {
 <details>
 <summary><b>+ AuthSessionException</b></summary>
 
-<h4>Description</h4>
+<br>
+<b>Description</b><br>
 
 Exception to force the authentication session to be refreshed.
 
@@ -601,7 +629,8 @@ External Documentation: <https://github.com/brix/crypto-js>
 <details>
     <summary><b>+ Making External Requests</b></summary>
 
-<h4>Description</h4>
+<br>
+<b>Description</b><br>
 
 You can write a script to call external API endpoints. This is especially useful if the API returns a URL which contains the real response object.
 
@@ -644,7 +673,8 @@ Return `false` in the `after_webhook` function will stop Cyclr from running 
 <details>
     <summary><b>+ Transforming Key Value Pairs</b></summary>
 
-<h4>Description</h4>
+<br>
+<b>Description</b><br>
 
 Making use of key value pair responses requires the use of scripting, consider an API that returns the below representation of a contact.
 
@@ -715,7 +745,8 @@ function before_action() {
 <details>
     <summary><b>+ Modifying Parameters</b></summary>
 
-<h4>Description</h4>
+<br>
+<b>Description</b><br>
 
 Besides the HTTP request body, you can also use scripting to modify HTTP headers (`method_request_headers`) and query string parameters (`method_request_parameters`).
 
@@ -742,7 +773,8 @@ In this example, we transformed the method request body to a XML string and save
 <details>
     <summary><b>+ Handling Errors from Third Party APIs</b></summary>
 
-<h4>Description</h4>
+<br>
+<b>Description</b><br>
 
 The scripting engine can be used to catch and handle errors returned from third party APIs.
 
