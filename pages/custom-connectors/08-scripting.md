@@ -1,7 +1,7 @@
 ---
 title: Connector Scripting
 sidebar: cyclr_sidebar
-permalink: connector-scripting
+permalink: connector-scripting-redux
 keywords: action_data
 redirect_from: "/custom-connector-scripting/"
 tags: [connector-creation]
@@ -67,7 +67,9 @@ All other events (such as after_action):
 method_response_fields: Array containing a Method's Response Fields.
 
 
-### Events (click to expand)
+### Events
+
+(click to expand)
 
 <details>
   <summary><b>+ before_webhook</b></summary>
@@ -324,7 +326,9 @@ Called after Cyclr makes an OAuth 2 refresh token request.
 
 ## Functions
 
-#### General Functions (click to expand)
+#### General Functions 
+
+(click to expand)
 
 <details>
 <summary><b>+ http_request</b></summary>
@@ -594,7 +598,7 @@ External Documentation: <https://github.com/brix/crypto-js>
 
 ### Connector scripting examples
 
-#### (Click to expand)
+(Click to expand)
 
 <details>
     <summary><b>+ Making External Requests</b></summary>
