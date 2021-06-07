@@ -7,6 +7,8 @@ redirect_from: "/custom-connector-scripting/"
 tags: [connector-creation]
 ---
 
+## Scripting
+
 Cyclr supports Javascript as its scripting language, allowing you to manipulate data before it's sent as well as after it's been retrieved.  This can be useful when moving data between applications as what's valid in one, may not be valid in another.  Also, sometimes data just doesn't quite "fit".
 
 Script can be used when building a Connector and on Steps in a Template or Cycle.
@@ -26,11 +28,10 @@ It's best to use ` characters (backticks) around string values being merged in a
 
 *Note: [Mergefield] above represents fields inserted by Cyclr in **Step Setup** when choosing **Type a Value** and selecting from the dropdowns.*
 
-## Events
-
-Events are triggered at certain points when a Cycle runs, allowing you to modify data using "event handlers" which are simply Javascript functions.
 
 ### Event Handlers
+
+Events are triggered at certain points when a Cycle runs, allowing you to modify data using "event handlers" which are simply Javascript functions.
 
 To add an event handler, put a Javascript function at the Connector or Method level, or in the Advanced Settings area of a Step in the Cycle Builder, using the event name as the name of the function, e.g.:
 
@@ -51,6 +52,8 @@ If an event handler exists at more than one level for the same event, i.e. Conne
 
 This is useful if common processing of the data is required across all Methods using a Connector level **after_action** handler, but some Methods need further processing so an additional Method level **after_action** handler can also be used.
 
+<br />
+
 The order that Cyclr calls handlers for the same event is as follows:
 
 Events beginning with "**before**" (such as before_action):
@@ -63,305 +66,188 @@ All other events (such as after_action):
 
 
 ### Global Objects
-<br>
-method_response_fields: Array containing a Method's Response Fields.
+
+*   **method_response_fields**: Array containing a Method's Response Fields.
 
 
 ### Events
 
-(click to expand)
+#### before_webhook
 
-<details>
-  <summary><b>+ before_webhook</b></summary>
-
-<br>
-<b>Description</b><br>
 Called when a webook request has been received and before anything else is done. Method is used to decide if the request should be continued or return a custom message to the caller.
 
-<hr>
+###### Global objects
 
+*   **method_endpoint**: The webhook request URL
+*   **method_request_headers**: The webhook request headers
+*   **method_request**: The webhook request body
+*   **method_request_parameters**: The webhook request parameters
+*   **method_response_headers**: The response headers for the request
+*   **method_response**: The response body for the request
+*   **return**: true for the webhook to continue normal execution, false to stop execution of the request and send the response body/headers to the caller
 
-<b>Global objects available to event</b>
-<br>
-<code>method_endpoint</code>: The webhook request URL<br>
-<code>method_request_headers</code>: The webhook request headers<br>
-<code>method_request</code>: The webhook request body<br>
-<code>method_request_parameters</code>: The webhook request parameters<br>
-<code>method_response_headers</code>: The response headers for the request<br>
-<code>method_response</code>: The response body for the request<br>
-<code>return</code>: true for the webhook to continue normal execution, false to stop execution of the request and send the response body/headers to the caller
-<hr>
-</details>
-
-<details>
-<summary><b>+ after_webhook</b></summary>
-
-<br>
-<b>Description</b><br>
+#### after_webhook
 
 Called immediately after a Request to a Webook has been received, whether the Cycle is currently running or stopped.
-<hr>
 
-<br>
-<b>Global objects available to event</b>
+###### Global object
 
-<code>method_response</code>: object that was POSTed to the Cyclr webhook<br>
-<code>cycle_variables</code>: Allows access to Cycle variables.  Changes are not persisted.<br>
-<code>cycle_step_id</code>: ID of the step that is executing the script.<br>
-<code>cycle_id</code>: The ID of the cycle the script is running in<br>
-<code>cyclr_account_id</code>: The internal ID of the account the script is running in<br>
-<code>external_account_id</code>: The external ID of the account the script is running in<br>
-<code>return</code>: true for the webhook to continue normal execution, false to ignore the webhook request
-<hr>
-</details>
+*   **method_response**: object that was POSTed to the Cyclr webhook
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
+*   **cycle_step_id**: ID of the step that is executing the script.
+*   **cycle_id**: The ID of the cycle the script is running in
+*   **cyclr_account_id**: The internal ID of the account the script is running in
+*   **external_account_id**: The external ID of the account the script is running in
+*   **return**: true for the webhook to continue normal execution, false to ignore the webhook request
 
-<details>
-<summary><b>+ before_action</b></summary>
-
-<br>
-<b>Description</b><br>
+#### before_action
 
 Called before Cyclr makes a request to an external API.
 
 If a Method uses Paging, this function is called before each page is retrieved.
 
-<hr>
+###### Global objects
 
-<br>
-<b>Global objects available to event</b>
+*   **method_request_headers**: HTTP headers for the request
+*   **method_request_parameters**: Querystring parameters for the request
+*   **method_request**: Object that will be posted to the third party API
+*   **method_request_mergefields**: Mergefields for the request
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
+*   **cycle_step_id**: ID of the step that is executing the script.
+*   **cycle_id**: The ID of the cycle the script is running in
+*   **cyclr_account_id**: The internal ID of the account the script is running in
+*   **external_account_id**: The external ID of the account the script is running in
+*   **action_data**: An object used to persist data between some event handler functions, allowing data to be passed between them.  Accessible in before_action, after_action, after_action_paging, action_condition and after_error.
+*   **return**: true to continue with the request to the third party API, false to abort the request (use throw for a more useful step error message)
 
-<code>method_request_headers</code>: HTTP headers for the request<br>
-<code>method_request_parameters</code>: Querystring parameters for the request<br>
-<code>method_request</code>: Object that will be posted to the third party API<br>
-<code>method_request_mergefields</code>: Mergefields for the request<br>
-<code>cycle_variables</code>: Allows access to Cycle variables.  Changes are not persisted.<br>
-<code>cycle_step_id</code>: ID of the step that is executing the script.<br>
-<code>cycle_id</code>: The ID of the cycle the script is running in<br>
-<code>cyclr_account_id</code>: The internal ID of the account the script is running in<br>
-<code>external_account_id</code>: The external ID of the account the script is running in<br>
-<code>action_data</code>: An object used to persist data between some event handler functions, allowing data to be passed between them.  Accessible in before_action, after_action, after_action_paging, action_condition and after_error.<br>
-<code>return</code>: true to continue with the request to the third party API, false to abort the request (use throw for a more useful step error message)
-<hr>
-</details>
-
-<details>
-<summary><b>+ after_action</b></summary>
-
-<br>
-<b>Description</b><br>
+#### after_action
 
 Function is called when Cyclr has a response from an external API.
 
 If a Method uses Paging, this function is called after each page is retrieved.
 
-<hr>
+###### Global object
 
-<br>
-<b>Global objects available to event</b>
+*   **method_endpoint**: The URL of the original request
+*   **method_request**: object that was posted to the third party API
+*   **method_request_mergefields**: mergefields for the request
+*   **method_response_headers**: The response headers for the request
+*   **method_response**: object that was received from the third party API.  If the Method uses paging, this contains only the current page's Response.
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
+*   **cycle_step_id**: ID of the step that is executing the script.
+*   **cycle_id**: The ID of the cycle the script is running in
+*   **cyclr_account_id**: The internal ID of the account the script is running in
+*   **external_account_id**: The external ID of the account the script is running in
+*   **action_data**: An object used to persist data between some event handler functions, allowing data to be passed between them.  Accessible in before_action, after_action, after_action_paging, action_condition and after_error.
+*   **return**: true
 
-<code>method_endpoint</code>: The URL of the original request<br>
-<code>method_request</code>: object that was posted to the third party API<br>
-<code>method_request_mergefields</code>: mergefields for the request<br>
-<code>method_response_headers</code>: The response headers for the request<br>
-<code>method_response</code> object that was received from the third party API.  If the Method uses paging, this contains only the current page's Response.<br>
-<code>cycle_variables</code>: Allows access to Cycle variables.  Changes are not persisted.<br>
-<code>cycle_step_id</code>: ID of the step that is executing the script.<br>
-<code>cycle_id</code>: The ID of the cycle the script is running in<br>
-<code>cyclr_account_id</code>: The internal ID of the account the script is running in<br>
-<code>external_account_id</code>: The external ID of the account the script is running in<br>
-<code>action_data</code>: An object used to persist data between some event handler functions, allowing data to be passed between them.  Accessible in before_action, after_action, after_action_paging, action_condition and after_error.<br>
-<code>return</code>: true
-<hr>
-</details>
-
-<details>
-<summary><b>+ after_action_paging</b></summary>
-
-<br>
-<b>Description</b><br>
+#### after_action_paging
 
 If this function is provided, it is called once after all pages of data have been retrieved, whether Paging has been implemented or not.
 
-<hr>
+###### Global object
 
-<br>
-<b>Global objects available to event</b>
+*   **method_request_headers**: The response headers for the request
+*   **method_request_parameters**: parameters for the request
+*   **method_request_mergefields**: mergefields for the request
+*   **method_response**: object that contains all of the Response data.
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
+*   **cycle_step_id**: ID of the step that is executing the script.
+*   **cycle_id**: The ID of the cycle the script is running in
+*   **cyclr_account_id**: The internal ID of the account the script is running in
+*   **external_account_id**: The external ID of the account the script is running in
+*   **action_data**: An object used to persist data between some event handler functions, allowing data to be passed between them.  Accessible in before_action, after_action, after_action_paging, action_condition and after_error.
+*   **return**: true
 
-<code>method_request_headers</code>: The response headers for the request<br>
-<code>method_request_parameters</code>: parameters for the request<br>
-<code>method_request_mergefields</code>: mergefields for the request<br>
-<code>method_response</code> object that contains all of the Response data.<br>
-<code>cycle_variables</code>: Allows access to Cycle variables.  Changes are not persisted.<br>
-<code>cycle_step_id</code>: ID of the step that is executing the script.<br>
-<code>cycle_id</code>: The ID of the cycle the script is running in<br>
-<code>cyclr_account_id</code>: The internal ID of the account the script is running in<br>
-<code>external_account_id</code>: The external ID of the account the script is running in<br>
-<code>action_data</code>: An object used to persist data between some event handler functions, allowing data to be passed between them.  Accessible in before_action, after_action, after_action_paging, action_condition and after_error.<br>
-<code>return</code>: true
-<hr>
-</details>
-
-<details>
-<summary><b>+ after_error</b></summary>
-
-<br>
-<b>Description</b><br>
+#### after_error
 
 Function is called when Cyclr received an error from an external API.
 
-<hr>
+###### Global object
 
-<br>
-<b>Global objects available to event</b>
+*   **method_error**: Details of the error, see: **Handle Errors from Third Party APIs** further down for more information on handling errors
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
+*   **cycle_step_id**: ID of the step that is executing the script.
+*   **cycle_id**: The ID of the cycle the script is running in
+*   **cyclr_account_id**: The internal ID of the account the script is running in
+*   **external_account_id**: The external ID of the account the script is running in
+*   **action_data**: An object used to persist data between some event handler functions, allowing data to be passed between them.  Accessible in before_action, after_action, after_action_paging, action_condition and after_error.
+*   **return**: true
 
-<code>method_error</code> Details of the error, see: **Handle Errors from Third Party APIs** further down for more information on handling errors<br>
-<code>cycle_variables</code>: Allows access to Cycle variables.  Changes are not persisted.<br>
-<code>cycle_step_id</code>: ID of the step that is executing the script.<br>
-<code>cycle_id</code>: The ID of the cycle the script is running in<br>
-<code>cyclr_account_id</code>: The internal ID of the account the script is running in<br>
-<code>external_account_id</code>: The external ID of the account the script is running in<br>
-<code>action_data</code>: An object used to persist data between some event handler functions, allowing data to be passed between them.  Accessible in before_action, after_action, after_action_paging, action_condition and after_error.<br>
-<code>return</code>: true
-<hr>
-</details>
-
-
-<details>
-<summary><b>+ action_condition</b></summary>
-
-<br>
-<b>Description</b><br>
+#### action_condition
 
 Function is used to essentially combine a Method with a Decision Step, allowing a test to be performed that directs a Transaction down either the True or False exit points.  If this function is included in a method, Cyclr will add True and False exit points.
 
-<hr>
+###### Global object
 
-<br>
-<b>Global objects available to event</b>
+*   **method_response**: object that was received from the third party API.
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
+*   **cycle_step_id**: ID of the step that is executing the script.
+*   **cycle_id**: The ID of the cycle the script is running in
+*   **cyclr_account_id**: The internal ID of the account the script is running in
+*   **external_account_id**: The external ID of the account the script is running in
+*   **action_data**: An object used to persist data between some event handler functions, allowing data to be passed between them.  Accessible in before_action, after_action, after_action_paging, action_condition and after_error.
+*   **return**: true for the Transaction to exit on the "True Route", false to exit on the "False Route"
 
-<code>method_response</code> object that was received from the third party API.<br>
-<code>cycle_variables</code>: Allows access to Cycle variables.  Changes are not persisted.<br>
-<code>cycle_step_id</code>: ID of the step that is executing the script.<br>
-<code>cycle_id</code>: The ID of the cycle the script is running in<br>
-<code>cyclr_account_id</code>: The internal ID of the account the script is running in<br>
-<code>external_account_id</code>: The external ID of the account the script is running in<br>
-<code>action_data</code>: An object used to persist data between some event handler functions, allowing data to be passed between them.  Accessible in before_action, after_action, after_action_paging, action_condition and after_error.<br>
-<code>return</code>: true for the Transaction to exit on the "True Route", false to exit on the "False Route"
-<hr>
-</details>
-
-
-<details>
-<summary><b>+ before_oauth2_authorise</b></summary>
-
-<br>
-<b>Description</b><br>
+#### before_oauth2_authorise
 
 Function is called before Cyclr makes an OAuth 2 authorise request.
 
-<hr>
+###### Global object
 
-<br>
-<b>Global objects available to event</b>
+*   **method_endpoint**: URL for the OAuth authorise endpoint
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
+*   **return**: true
 
-<code>method_endpoint</code>: URL for the OAuth authorise endpoint<br>
-<code>cycle_variables</code>: Allows access to Cycle variables.  Changes are not persisted.<br>
-<code>return</code>: true
-<hr>
-</details>
-
-<details>
-<summary><b>+ before_oauth2_token</b></summary>
-
-<br>
-<b>Description</b><br>
+#### before_oauth2_token
 
 Called before Cyclr makes an OAuth 2 access token request.
-<br>
-<b>Global objects available to event</b>
 
-<code>method_request_headers</code>: HTTP headers for the request<br>
-<code>method_request</code>: Object that is going to be sent to the OAuth 2 access token endpoint<br>
-<code>cycle_variables</code>: Allows access to Cycle variables.  Changes are not persisted.<br>
-<code>return</code>: true
-<hr>
-</details>
+###### Global object
 
-<details>
-<summary><b>+ after_oauth2_token</b></summary>
+*   **method_request_headers**: HTTP headers for the request
+*   **method_request**: Object that is going to be sent to the OAuth 2 access token endpoint
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
+*   **return**: true
 
-<br>
-<b>Description</b><br>
+#### after_oauth2_token
 
 Called after Cyclr makes an OAuth 2 access token request.
 
-<hr>
+###### Global object
 
-<br>
-<b>Global objects available to event</b>
+*   **method_response**: response object that was received from the OAuth 2 access token request
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
+*   **return**: true
 
-<code>method_response</code>: response object that was received from the OAuth 2 access token request<br>
-<code>cycle_variables</code>: Allows access to Cycle variables.  Changes are not persisted.<br>
-<code>return</code>: true
-<hr>
-</details>
-
-<details>
-<summary><b>+ before_oauth2_refresh</b></summary>
-
-<br>
-<b>Description</b><br>
+#### before_oauth2_refresh
 
 Called before Cyclr makes an OAuth 2 refresh token request.
 
-<hr>
+###### Global object
 
-<br>
-<b>Global objects available to event</b>
+*   **method_request_headers**: HTTP headers for the request
+*   **method_request**: request object that is going to be sent to the OAuth 2 refresh token request
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
+*   **return**: true
 
-<code>method_request_headers</code>: HTTP headers for the request<br>
-<code>method_request</code>: request object that is going to be sent to the OAuth 2 refresh token request<br>
-<code>cycle_variables</code>: Allows access to Cycle variables.  Changes are not persisted.<br>
-<code>return</code>: true
-<hr>
-</details>
-
-<details>
-<summary><b>+ after_oauth2_refresh</b></summary>
-
-<br>
-<b>Description</b><br>
+#### after_oauth2_refresh
 
 Called after Cyclr makes an OAuth 2 refresh token request.
 
-<hr>
+###### Global object
 
-<br>
-<b>Global objects available to event</b>
+*   **method_response**: response object that was received from the OAuth 2 refresh token request.
+*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
+*   **return**: true
 
-<code>method_response</code>: response object that was received from the OAuth 2 refresh token request.<br>
-<code>cycle_variables</code>: Allows access to Cycle variables.  Changes are not persisted.<br>
-<code>return</code>: true
-<hr>
-</details>
+### Functions
 
-> Note: The global object `method_response_fields` is an array containing the Response Fields of the method from which it is accessed.
-
-## Functions
-
-### General Functions 
-
-(click to expand)
-
-<details>
-<summary><b>+ http_request</b></summary>
-
-<br>
-<b>Description</b><br>
+#### http_request
 
 Function to make external HTTP requests.
 
-When calling the `http_request` function, you provide a JSON object with the following properties:
+When calling the `http_request` function, you provide a JSON object with the following properties:
 
 *   method: HTTP method, e.g. GET, POST, DELETE, PUT
 *   url: URL for the HTTP request
@@ -369,9 +255,7 @@ When calling the `http_request` function, you provide a JSON object with the f
 *   headers: HTTP headers
 *   data: HTTP request data.  If sending JSON, you should use JSON.stringify() to serialize it.
 
-<hr>
-
-#### Example Request
+Example:
 
 ```javascript
 function after_action() {
@@ -393,8 +277,6 @@ function after_action() {
 }
 ```
 
-#### Response
-
 The Response from an `http_request` call is returned as a JSON object with these properties:
 
 *  status_code: the HTTP Status code returned
@@ -402,15 +284,6 @@ The Response from an `http_request` call is returned as a JSON object with these
 *  content: the Response body
 *  request: details of the Request that was made
 
-<hr>
-
-</details>
-
-<details>
-<summary><b>+ btoa</b> and <b>atob</b> (Base64 encode/decode)</summary>
-
-<br>
-<b>Description</b><br>
 
 #### btoa
 
@@ -420,34 +293,11 @@ Function to encode a string using Base64.
 
 Function to decode a Base64 encoded string.
 
-<hr>
+#### cyclr_sign
 
-#### Example
+Function to sign a string.
 
-
-```javascript
-var encoded = btoa('apple pie'); // YXBwbGUgcGll
-var decoded = atob('YXBwbGUgcGll'); // apple pie
-
-```
-
-<hr>
-
-</details>
-
-
-<details>
-<summary><b>+ cyclr_sign</b></summary>
-
-<br>
-<b>Description</b><br>
-
-Function to sign a string with a key, using the specified algorithm.
-
-<hr>
-
-#### Example
-
+For example,
 ```javascript
 var algorithm = 'HMAC-SHA1';
 var signingKey = 'This is the signing key.';
@@ -458,39 +308,19 @@ var signature = cyclr_sign(algorithm, signingKey, valueToSign);
 
 Supported algorithms are: `HMAC-SHA1`, `RSA-SHA1`, `RSA-SHA224`, `RSA-SHA256`, `RSA-SHA384`, `RSA-SHA512`.
 
-<hr>
+#### cyclr_csv_parse
 
-</details>
-
-<details>
-<summary><b>+ cyclr_csv_parse</b></summary>
-
-<br>
-<b>Description</b><br>
-
-Function to parse a CSV string into JSON.
-
-<hr>
+Function to parse a CSV string.
 
 ```javascript
 var csv = '1,2,3\na,b,c';
 var delimiter = ',';
 var hasHeader = false;
 
-var csvRecords =  cyclr_csv_parse(csv, delimiter, hasHeader);
-/* Result: 
-[
-    {"Field1":"1","Field2":"2","Field3":"3"},
-    {"Field1":"a","Field2":"b","Field3":"c"}
-]
-*/
+var csvRecords =  cyclr_csv_parse(csv, delimiter, hasHeader);;
 ```
 
-<hr>
-
-</details>
-
-### Storage Functions
+#### Storage Functions
 
 Cyclr provides several storage functions available for use in Script that can be used when developing a Connector, or on a Step in a Template or Cycle.
 
@@ -519,14 +349,7 @@ Change `cyclr_` to `cycle_` to use their Cycle-restricted versions.
 
 ### Exceptions
 
-Exceptions can be thrown from script to force reauthentication.
-
-There are two types (click to expand):
-
-<details>
-<summary><b>+ AuthRefreshException</b></summary>
-<br>
-<b>Description</b><br>
+#### AuthRefreshException
 
 Exception to force the OAuth 2 authentication token to be refreshed.
 
@@ -556,15 +379,7 @@ function after_error() {
 }
 ```
 
-<hr>
-
-</details>
-
-<details>
-<summary><b>+ AuthSessionException</b></summary>
-
-<br>
-<b>Description</b><br>
+#### AuthSessionException
 
 Exception to force the authentication session to be refreshed.
 
@@ -591,10 +406,6 @@ function after_error() {
     return true;
 }
 ```
-
-<hr>
-
-</details>
 
 ### Libraries
 
@@ -624,13 +435,7 @@ External Documentation: <https://github.com/brix/crypto-js>
 
 ### Connector scripting examples
 
-(Click to expand)
-
-<details>
-    <summary><b>+ Making External Requests</b></summary>
-
-<br>
-<b>Description</b><br>
+#### Make External Requests
 
 You can write a script to call external API endpoints. This is especially useful if the API returns a URL which contains the real response object.
 
@@ -643,7 +448,7 @@ For example, a webhook returns the following object to Cyclr:
 }
 ```
 
-Use `http_request` to call `api_url` and replace the webhook response with the updated object:
+Use `http_request` to call `api_url` and replace the webhook response with the updated object:
 
 ```javascript
 function after_webhook() {
@@ -662,19 +467,11 @@ function after_webhook() {
 ```
     
 
-After calling `api_url`, Cyclr will then replace `method_response` with the content of the HTTP call.
+After calling `api_url`, Cyclr will then replace `method_response` with the content of the HTTP call.
 
-Return `false` in the `after_webhook` function will stop Cyclr from running the webhook. You can use this trick to filter webhook events.
+Return `false` in the `after_webhook` function will stop Cyclr from running the webhook. You can use this trick to filter webhook events.
 
-<hr>
-
-</details>
-
-<details>
-    <summary><b>+ Transforming Key Value Pairs</b></summary>
-
-<br>
-<b>Description</b><br>
+#### Transform Key Value Pairs
 
 Making use of key value pair responses requires the use of scripting, consider an API that returns the below representation of a contact.
 
@@ -687,7 +484,7 @@ Making use of key value pair responses requires the use of scripting, consider a
 }
 ```
 
-To access the email field we would add a field in the method response with a connector location of **properties.email**. However this would not work as the cyclr is looking in the response for a properties object with a property named email to get the value from. To solve the issue we would add the below function into the method scripts, this function will transform the properties array into an object with properties for each key value pair.
+To access the email field we would add a field in the method response with a connector location of **properties.email**. However this would not work as the cyclr is looking in the response for a properties object with a property named email to get the value from. To solve the issue we would add the below function into the method scripts, this function will transform the properties array into an object with properties for each key value pair.
 
 ```javascript
 function after_action() {
@@ -711,7 +508,7 @@ function after_action() {
 ```
     
 
-Now when cyclr runs the method if will get the following result back and the **properties.email** field will work as expected.
+Now when cyclr runs the method if will get the following result back and the **properties.email** field will work as expected.
 
 ```json
 {
@@ -737,16 +534,8 @@ function before_action() {
     return true;
 }
 ```
-
-<hr>
-
-</details>
-
-<details>
-    <summary><b>+ Modifying Parameters</b></summary>
-
-<br>
-<b>Description</b><br>
+    
+#### Modify Parameters
 
 Besides the HTTP request body, you can also use scripting to modify HTTP headers (`method_request_headers`) and query string parameters (`method_request_parameters`).
 
@@ -764,28 +553,20 @@ function before_action() {
 }
 ```    
 
-In this example, we transformed the method request body to a XML string and saved the string as a new parameter called `xmlData`.
+In this example, we transformed the method request body to a XML string and saved the string as a new parameter called `xmlData`.
 
-<hr>
-
-</details>
-
-<details>
-    <summary><b>+ Handling Errors from Third Party APIs</b></summary>
-
-<br>
-<b>Description</b><br>
+#### Handle Errors from Third Party APIs
 
 The scripting engine can be used to catch and handle errors returned from third party APIs.
 
 Cyclr exposes a received error response in the `after_error` function through the `method_error` object, which has these properties:
-<br>
-<code>statusCode</code> – the HTTP status code returned by the third party API<br>
-<code>reasonPhrase</code> – the reason phrase returned by the third party API<br>
-<code>content</code> – the body content of the response from the third party API<br>
-<code>isError</code> – indicates that the error is an error. default: true, set to false if using isWarning or isSuccess<br>
-<code>isWarning</code> – set to true for Cyclr to log the error as a warning<br>
-<code>isSuccess</code> – set to true to change the error to success, update content to contain the success step data
+
+*   **statusCode** – the HTTP status code returned by the third party API
+*   **reasonPhrase** – the reason phrase returned by the third party API
+*   **content** – the body content of the response from the third party API
+*   **isError** – indicates that the error is an error. default: true, set to false if using isWarning or isSuccess
+*   **isWarning** – set to true for Cyclr to log the error as a warning
+*   **isSuccess** – set to true to change the error to success, update content to contain the success step data
 
 Example: change an error to a warning
 
@@ -811,13 +592,6 @@ function after_error() {
     return true;
 }
 ```    
-
-<hr>
-
-</details>
-
-### Script Testing
-If you want to test your Javascript functions outside of a cycle, you can use the [Script Tester](https://docs.cyclr.com/script-tester).
 
 ### Limitations
 
