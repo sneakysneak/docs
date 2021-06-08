@@ -415,6 +415,10 @@ entries:
           - title: Saleforce Chatter Authentication
             url: /salesforce-chatter-connector
             output: web, pdf
+            
+          - title: Saleforce Custom Objects
+            url: /salesforce-custom-objects
+            output: web, pdf
 
           - title: Salesforce Upsert Setup
             url: /salesforce-upsert-setup
