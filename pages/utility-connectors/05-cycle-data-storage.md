@@ -21,6 +21,6 @@ If you wish to store more structured data or more than one value (perhaps the fi
 
 ## Related Topics
 
-[Global Data Storage](./global-data-storage)
-
-[Cycle Object Storage](./cycle-object-storage)
+* [Cycle Object Storage](./cycle-object-storage)
+* [Global Data Storage](./global-data-storage)
+* [Global Object Storage](./global-object-storage)
