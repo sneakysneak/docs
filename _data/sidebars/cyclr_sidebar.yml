@@ -296,10 +296,6 @@ entries:
             url: /entity-cross-reference-connector
             output: web, pdf
 
-          - title: Global Data Storage
-            url: /global-data-storage
-            output: web, pdf
-
           - title: Cycle Data Storage
             url: /cycle-data-storage
             output: web, pdf
@@ -308,6 +304,14 @@ entries:
             url: /cycle-object-storage
             output: web, pdf
 
+          - title: Global Data Storage
+            url: /global-data-storage
+            output: web, pdf
+            
+          - title: Global Object Storage
+            url: /global-object-storage
+            output: web, pdf
+            
           - title: Generic Form
             url: /generic-form
             output: web, pdf
