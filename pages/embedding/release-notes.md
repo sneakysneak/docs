@@ -7,6 +7,9 @@ tags: [embedding]
 
 ## 2021
 
+### 14th June 2021
+- Security: Enforce MFA for console administrators
+
 ### 7th June 2021
 - Console: New page to access and update Partner Account details and view price plan information
 - Marketplaces: Added auto-start option for integration packages
