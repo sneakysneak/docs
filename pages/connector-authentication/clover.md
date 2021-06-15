@@ -14,7 +14,7 @@ This guide is for setting up and installing the [Clover](https://cyclr.com/integ
 Go to [clover.com/developers](https://www.clover.com/developers/) and create a new application.  
 In the new application go to Settings and:
 
-*   Update the Web Configuration setting Site URL to be your Cyclr Service Domain. Available from Cyclr Console > Settings > Integration Settings
+*   Update the Web Configuration setting Site URL to be your Cyclr Service Domain. Available from Cyclr Console > Settings > General Settings
 *   Update the permissions setting checking everything other than "Process Credit Cards"
 *   The App ID is the Client ID and the App Secret is the Client Secret.  Copy them as they are needed later.
 

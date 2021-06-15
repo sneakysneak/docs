@@ -33,7 +33,7 @@ How to register your app
   
 10. For Redirect URI enter: <span>ht</span>tps://{{ServiceDomain}}/connector/callback (ServiceDomain should be substituted for your actual service domain)
     
-    >Your Cyclr service domain, e.g. yourcompany.cyclr.com can be found in your Cyclr Console under Settings > Integration Settings > Service Domain.
+    >Your Cyclr service domain, e.g. yourcompany.cyclr.com can be found in your Cyclr Console under Settings > General Settings > Service Domain.
 
 11. Scroll down to find your Client ID and Client Secret. You can use these to authenticate your Exact connector.
 

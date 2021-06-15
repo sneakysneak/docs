@@ -9,7 +9,7 @@ tags: [connector]
 
 Follow the steps outlined in [this guide](https://support.trustpilot.com/hc/en-us/articles/207309867-Getting-started-with-Trustpilot-s-APIs#create-manage-applications-3) to create an application in the Trustpilot console.
 
-> The redirect URI should be https://{service domain}/connector/callback. Your service domain can be found in your Cyclr console under Settings > Integration Settings > Service Domain.
+> The redirect URI should be https://{service domain}/connector/callback. Your service domain can be found in your Cyclr console under Settings > General Settings > Service Domain.
 
 ## Authentication
 

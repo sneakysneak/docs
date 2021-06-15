@@ -23,7 +23,7 @@ Here is the official documentation for creating a Capsule OAuth 2 app:
 
     **Name**: Your Application Name
 
-    **URL**: Your Cyclr service domain, e.g. https://app-h.cyclr.com/. This can be found in your Cyclr Console under Settings > Integration Settings > Service Domain.
+    **URL**: Your Cyclr service domain, e.g. https://app-h.cyclr.com/. This can be found in your Cyclr Console under Settings > General Settings > Service Domain.
 
     **Redirect URL**: you must add a callback URL to allow Capsule to be used in your Cyclr Console and its accounts.
 

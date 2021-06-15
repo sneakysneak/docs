@@ -23,7 +23,7 @@ First setup OAuth2 within Google Developer Console.
    
    __Name:__ Application Name
    
-   __URL:__ Cyclr service domain, e.g. https://app-h.cyclr.com/. This can be found in the Cyclr Partner Console under Settings > Integration Settings > Service Domain.
+   __URL:__ Cyclr service domain, e.g. https://app-h.cyclr.com/. This can be found in the Cyclr Partner Console under Settings > General Settings > Service Domain.
    
    __Redirect URL:__ Add a callback URL.
    

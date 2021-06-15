@@ -21,7 +21,7 @@ The Engagement Multiplier connector is authenticated with OAuth2.0, as a result 
 
 4. Enter your application's **Name** and for **Redirect URL** enter **https://{service domain}/connector/callback**
 
-   > Replace {service domain} with your service domain. That can be located in your Cyclr console under Settings > Integration Settings > Service Domain
+   > Replace {service domain} with your service domain. That can be located in your Cyclr console under Settings > General Settings > Service Domain
 
    ![engagement multiplier interface](./images/engage_multi_3.png)
 

@@ -16,7 +16,7 @@ To generate these values, follow [this link](https://podio.com/settings/api) and
 1. Enter the name of the application you wish to interact with
 2. Enter a return URL (redirect URL)
 
-   > The redirect URL should be https://{service domain}/connector/callback. Your service domain can be found in your Cyclr console under Settings > Integration Settings > Service Domain.
+   > The redirect URL should be https://{service domain}/connector/callback. Your service domain can be found in your Cyclr console under Settings > General Settings > Service Domain.
 
 3. Click 'Generate API Key'
 

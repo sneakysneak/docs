@@ -22,7 +22,7 @@ The URL is:
 
 *   {% raw %}https://{{Your Cyclr service domain e.g. app-h.cyclr.com}}/connector/callback{% endraw %}
 
-Your Cyclr Partner **Service Domain** can be found in your Cyclr Console under Settings > Integration Settings.
+Your Cyclr Partner **Service Domain** can be found in your Cyclr Console under Settings > General Settings.
 
 **Required Permissions**
 * Read one user and one company

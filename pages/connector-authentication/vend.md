@@ -20,7 +20,7 @@ Vend uses OAuth 2.0 for authentication. The following are the steps needed to gi
 * Once logged in go to [My Applications](https://developers.vendhq.com/developer/applications) page. 
 * Create a new application by clicking the 'Add New Application' button and provide the requested information.
   * Redirect URI will be https://{ServiceDomain}/connector/callback. 
-  * Your Service Domain can be found in Settings > Integration Settings > Service Domain in your Cyclr console.
+  * Your Service Domain can be found in Settings > General Settings > Service Domain in your Cyclr console.
 
 > NOTE: Newly created apps are marked as Not Approved. This shouldn't be a problem, you can still use this app. Not Approved just means that you can only connect your application to 30 Vend stores. You only need to get Vend's approval for production ready, public applications.
 

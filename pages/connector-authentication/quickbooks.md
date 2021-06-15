@@ -24,7 +24,7 @@ To obtain these, you will need to create a QuickBooks Online application.
 7. Under `Redirect URIs`, change the existing value to:
  ht<span></span>tps://`ServiceDomain`/connector/callback
 
-    > Your Cyclr service domain, e.g. yourcompany-h.cyclr.com can be found in your Cyclr Console under ``Settings > Integration Settings > Service Domain``.
+    > Your Cyclr service domain, e.g. yourcompany-h.cyclr.com can be found in your Cyclr Console under ``Settings > General Settings > Service Domain``.
 
 8. Scroll down and click ![](./images/QuickBooksSave.png).
 
