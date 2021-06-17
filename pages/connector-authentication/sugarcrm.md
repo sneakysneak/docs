@@ -36,7 +36,7 @@ You'll then provide that Platform value when authenticating the SugarCRM Connect
 
 SugarCRM uses OAuth 2 Password Credentials.
 
-If installing the SugarCRM connector using Cyclr's API, we won’t redirect your users to the SugarCRM sign-in screen. Instead, it requires three account connector properties to be provided: **Domain**, **Username** and **Password**.  Please note that whether authenticating through the API, or through the UI - Client ID and Client Secret are **not** required.
+If installing the SugarCRM connector using Cyclr's API, we won’t redirect your users to the SugarCRM sign-in screen. Instead, it requires three account connector properties to be provided: **Domain**, **Username** and **Password**.
 
 First provide a SugarCRM Domain:
 
