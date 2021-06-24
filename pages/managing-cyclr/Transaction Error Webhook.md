@@ -47,6 +47,7 @@ If there are specific errors you wish to handle, you may need to force them to o
 {
     "Timestamp": "2019-08-08T11:25:34.0412055Z",
     "AccountId": "a2b35322-c966-4a29-95d7-065aaf12b127",
+    "AccountExternalId": "account-id-in-your-application",
     "CycleId": "15643129-a29d-4957-865c-0495099fbbec",
     "StepId": "519713ff-57cf-49ef-9c00-f3a3e1569268",
     "TransactionId": "1564aae4-b82e-4712-a078-30a4e53c40d0",
