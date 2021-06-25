@@ -44,7 +44,7 @@ entries:
             output: web, pdf
             
           - title: Cyclr Glossary
-            url: /cyclr-concepts
+            url: /cyclr-glossary
             output: web, pdf
             
           - title: Console General Settings
