@@ -47,7 +47,7 @@ For example when using Candidate custom fields:
 If we now want to add a custom field to "Get Candidate" the Field Location, depending on the custom field's type, would be as follows:
 
 | Custom Field Type  | Field Location                                | Example                |
-| -------------------| --------------------------------------------- |------------------------|
+| :----------------- | :-------------------------------------------- | :--------------------- |
 | TEXT_BOX           | The custom field's Key                        | 12345678901234567890   |
 | TEXT_AREA          | The custom field's Key                        | 12345678901234567890   |
 | CHECK_BOX          | The custom field's Key within square brackets | [09876543210987654321] |
