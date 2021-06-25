@@ -1,8 +1,8 @@
 ---
-title: Cyclr Concepts
+title: Cyclr Glossary
 sidebar: cyclr_sidebar
 permalink: cyclr-concepts
-tags: [managing-cyclr]
+tags: [managing-cyclr concepts terms]
 
 ---
 
