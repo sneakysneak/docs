@@ -27,7 +27,7 @@ entries:
           - title: Adding Custom Fields
             url: /adding-custom-fields
             output: web, pdf
-            
+
           - title: Logic Tools
             url: /logic-tools
             output: web, pdf
@@ -35,54 +35,54 @@ entries:
           - title: Integration Template Versioning
             url: /integration-template-versioning
             output: web, pdf
-            
+
       - title: Managing Cyclr
         output: web, pdf
         folderitems:
           - title: Minimum Requirements
             url: /minimum-requirements
             output: web, pdf
-            
+
           - title: Cyclr Glossary
             url: /cyclr-glossary
             output: web, pdf
-            
+
           - title: Console General Settings
             url: /console-general-settings
             output: web, pdf
-             
+
           - title: Console Appearance Settings
             url: /console-appearance-settings
             output: web, pdf
-            
+
           - title: Console Data Retention Settings
             url: /console-data-retention-settings
             output: web, pdf
-            
+
           - title: Accessing the Cyclr API
             url: /console-api
             output: web, pdf
-            
+
           - title: Security Settings
             url: /console-security
             output: web, pdf
-            
+
           - title: Whitelisting Cyclr
             url: /cyclr-ip-whitelisting
             output: web, pdf
-            
-          - title: Connector Authentication Link
+
+          - title: Connector Link
             url: /connector-authentication-link
             output: web, pdf
-            
+
           - title: Collection Splitting
             url: /collection-splitting
             output: web, pdf
-            
+
           - title: Script Tester
             url: /script-tester
             output: web, pdf
-            
+
           - title: Transaction Error Handling
             url: /transaction-error-webhook
             output: web, pdf
@@ -94,7 +94,7 @@ entries:
             url: /embedding-overview
             output: web, pdf
 
-          - title: API Authentication
+          - title: API
             url: /cyclr-api-authentication
             output: web, pdf
 
@@ -120,7 +120,7 @@ entries:
           - title: Overview
             url: /overview-new-account
             output: web, pdf
-        
+
           - title: Obtain Authorization Token
             url: /obtain-authorization-token
             output: web, pdf
@@ -141,19 +141,19 @@ entries:
             url: /get-cycle-prerequisites
             output: web, pdf
 
-          - title: Account Connector Authentication
+          - title: Account Connector
             url: /authenticate-account-connector
             output: web, pdf
 
-          - title: API Key Authentication
+          - title: API Key
             url: /api-key-authentication
             output: web, pdf
 
-          - title: HTTP Basic Authentication
+          - title: HTTP Basic
             url: /basic-authentication
             output: web, pdf
 
-          - title: OAuth Authentication
+          - title: OAuth
             url: /oauth-authentication
             output: web, pdf
 
@@ -196,7 +196,7 @@ entries:
             url: /connector-settings
             output: web, pdf
 
-          - title: Authentication
+          - title:
             url: /connector-authentication
             output: web, pdf
 
@@ -307,11 +307,11 @@ entries:
           - title: Global Data Storage
             url: /global-data-storage
             output: web, pdf
-            
+
           - title: Global Object Storage
             url: /global-object-storage
             output: web, pdf
-            
+
           - title: Generic Form
             url: /generic-form
             output: web, pdf
@@ -324,14 +324,97 @@ entries:
             url: /cyclr-tools
             output: web, pdf
 
-      - title: Connector Guides
+      - title:s
         output: web, pdf
         folderitems:
-        
+          - title: Access CRM
+            url: /access-crm-connector
+            output: web, pdf
+
           - title: Act!
             url: /act-connector
             output: web, pdf
-            
+
+          - title: ActiveCampaign
+            url: /activecampaign-connector
+            output: web, pdf
+
+          - title: Adestra
+            url: /authenticate-adestra
+            output: web, pdf
+
+          - title: Administrate
+            url: /administrate-connector
+            output: web, pdf
+
+          - title: Adobe Campaign
+            url: /adobe-campaign-connector
+            output: web, pdf
+
+          - title: ADP
+            url: /adp-connector
+            output: web, pdf
+
+          - title: Aircall
+            url: /aircall-connector
+            output: web, pdf
+
+          - title: App Direct
+            url: /appdirect-connector
+            output: web, pdf
+
+          - title: Asana
+            url: /asana
+            output: web, pdf
+
+          - title: AWS Backup
+            url: /aws-backup-connector
+            output: web, pdf
+
+          - title: AWS EC2
+            url: /ec2-connector
+            output: web, pdf
+
+          - title: AWS S3
+            url: /s3-connector
+            output: web, pdf
+
+          - title: B2B Wave
+            url: /b2bwave-connector
+            output: web, pdf
+
+          - title: BambooHR
+            url: /bamboohr-connector
+            output: web, pdf
+
+          - title: BlackCurve
+            url: /blackcurve-connector
+            output: web, pdf
+
+          - title: BNTouch
+            url: /bntouch-connector
+            output: web, pdf
+
+          - title: Box
+            url: /box-connector
+            output: web, pdf
+
+          - title: BreatheHR
+            url: /breathehr
+            output: web, pdf
+
+          - title: Bridal Live
+            url: /bridal-live-connector
+            output: web, pdf
+
+          - title: Brightspace
+            url: /brightspace-connector
+            output: web, pdf
+
+          - title: Briostack
+            url: /briostack-connector
+            output: web, pdf
+
           - title: Bronto
             url: /bronto-installation
             output: web, pdf
@@ -344,6 +427,38 @@ entries:
             url: /capsule-connector
             output: web, pdf
 
+          - title: Calendly
+            url: /calendly-connector
+            output: web, pdf
+
+          - title: Campus Ivy
+            url: /CampusIvy-connector
+            output: web, pdf
+
+          - title: Candidate Hub
+            url: /candidate-hub
+            output: web, pdf
+
+          - title: Cavelo
+            url: /Cavelo
+            output: web, pdf
+
+          - title: Capsule v2
+            url: /capsule-connector
+            output: web, pdf
+
+          - title: Casavi
+            url: /casavi
+            output: web, pdf
+
+          - title: ClickSend
+            url: /clicksend-connector
+            output: web, pdf
+
+          - title: Chargify
+            url: /chargify-admin-connector
+            output: web, pdf
+
           - title: Clover
             url: /clover-connector
             output: web, pdf
@@ -351,16 +466,60 @@ entries:
           - title: Club Ready Connector
             url: /clubready-connector
             output: web, pdf
-            
-          - title: Constant Contact Connector
+
+          - title: ConnectWise Manage
+            url: /connectwisemanage-connector
+            output: web, pdf
+
+          - title: Constant Contact
             url: /constant-contact
             output: web, pdf
 
-          - title: Facebook Marketing Authentication
+          - title: Copper
+            url: /copper
+            output: web, pdf
+
+          - title: Counterpoint
+            url: /counterpoint
+            output: web, pdf
+
+          - title: Deltek Workbook
+            url: /deltek-workbook-connector
+            output: web, pdf
+
+          - title: Device Pilot
+            url: /devicepilot
+            output: web, pdf
+
+          - title: Disciple Media
+            url: /disciple-media-connector
+            output: web, pdf
+
+          - title: Dixa
+            url: /dixa-connector
+            output: web, pdf
+
+          - title: Drip
+            url: /drip-connector
+            output: web, pdf
+
+          - title: Document360
+            url: /document360-connector
+            output: web, pdf
+
+          - title: Emarsys
+            url: /authenticate-emarsys
+            output: web, pdf
+
+          - title: Engagement Multiplier
+            url: /engagement-multiplier-connector
+            output: web, pdf
+
+          - title: Facebook Marketing
             url: /facebook-connector
             output: web, pdf
 
-          - title: Facebook Offline Conversions Authentication
+          - title: Facebook Offline Conversions
             url: /facebook-offline-conversions-connector
             output: web, pdf
 
@@ -372,15 +531,23 @@ entries:
             url: /google-authentication
             output: web, pdf
 
-          - title: Hubspot Connector Guide
+          - title: Google BigQuery
+            url: /bigquery
+            output: web, pdf
+
+          - title: Hubspot
             url: /hubspot-connector
             output: web, pdf
 
-          - title: Intercom Authentication
+          - title: Instructure Canvas
+            url: /canvas
+            output: web, pdf
+
+          - title: Intercom
             url: /intercom-connector
             output: web, pdf
 
-          - title: MYOB AccountRight Connector
+          - title: MYOB AccountRight
             url: /myob-accountright-connector
             output: web, pdf
 
@@ -396,30 +563,54 @@ entries:
             url: /magento-2-webhooks-connector
             output: web, pdf
 
-          - title: Mindbody Connector Guide
+          - title: MemoQ
+            url: /MemoQ-connector
+            output: web, pdf
+
+          - title: Microsoft Azure Active Directory
+            url: /azure-ad-connector
+            output: web, pdf
+
+          - title: Microsoft Azure DevOps
+            url: /azure-devops-connector
+            output: web, pdf
+
+          - title: Microsoft Dynamics CRM
+            url: /dynamics-connector
+            output: web, pdf
+
+          - title: Microsoft Dynamics CRM Custom Objects
+            url: /dynamics-custom-connector
+            output: web, pdf
+
+          - title: Mindbody
             url: /mindbody-connector
             output: web, pdf
 
-          - title: Netsuite Connector Guide
+          - title: Netsuite
             url: /netsuite-connector
             output: web, pdf
 
-          - title: Optimail Connector Guide
+          - title: Optimail
             url: /optimail-connector
             output: web, pdf
 
-          - title: Pipedrive Connector Guide
+          - title: Pipedrive
             url: /pipedrive-connector.html
             output: web, pdf
 
-          - title: Salesforce Authentication
+          - title: Profitwell
+            url: /profitwell
+            output: web, pdf
+
+          - title: Salesforce
             url: /salesforce-connector
             output: web, pdf
 
-          - title: Saleforce Chatter Authentication
+          - title: Saleforce Chatter
             url: /salesforce-chatter-connector
             output: web, pdf
-            
+
           - title: Saleforce Custom Objects
             url: /salesforce-custom-objects
             output: web, pdf
@@ -428,34 +619,50 @@ entries:
             url: /salesforce-upsert-setup
             output: web, pdf
 
-          - title: SFTP Private Key Authentication
+          - title: Salesloft
+            url: /Salesloft-connector
+            output: web, pdf
+
+          - title: SFTP Private Key
             url: /sftp-private-key
             output: web, pdf
 
-          - title: Slack Authentication
+          - title: Slack
             url: /slack
             output: web, pdf
 
-          - title: Squareup Authentication
+          - title: Squareup
             url: /squareup-connector
+            output: web, pdf
+
+          - title: Sprout Send
+            url: /SproutSend-connector
             output: web, pdf
 
           - title: Sugar CRM
             url: /sugarcrm-connector
             output: web, pdf
 
-          - title: Twilio Connector Guide
+          - title: Twilio
             url: /twilio-connector.html
             output: web, pdf
 
-          - title: Vincere Connector Guide
+          - title: Velocify
+            url: /authenticate-velocify
+            output: web, pdf
+
+          - title: Vincere
             url: /vincere-connector
             output: web, pdf
 
-          - title: Wordpress Authentication
+          - title: Voucherify
+            url: /voucherify-connector
+            output: web, pdf
+
+          - title: Wordpress
             url: /wordpress-connector.html
             output: web, pdf
-           
+
           - title: Xero (OAuth 2.0)
             url: /xero-oauth2
             output: web, pdf
