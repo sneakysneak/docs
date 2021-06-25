@@ -43,7 +43,7 @@ entries:
             url: /minimum-requirements
             output: web, pdf
             
-          - title: Cyclr Concepts
+          - title: Cyclr Glossary
             url: /cyclr-concepts
             output: web, pdf
             
