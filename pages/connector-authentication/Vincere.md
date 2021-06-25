@@ -57,6 +57,6 @@ If we now want to add a custom field to "Get Candidate" the Field Location, depe
 
    ![custom fields for get methods](./images/vincere_custom_fields_1.png)
 
-When using List methods such as "List New Candidate Records", make sure to include the correct parent array. For example **[item]**:
+When using List methods such as "List New Candidate Records", make sure to include the correct parent array. For example **[item]**.
 
    ![custom fields for list methods](./images/vincere_custom_fields_2.png)
