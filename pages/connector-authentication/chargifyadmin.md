@@ -1,13 +1,13 @@
 ---
-title: Cole Chargify Admin
+title: Chargify
 sidebar: cyclr_sidebar
-permalink: cole-chargify-admin-connector
+permalink: chargify-admin-connector
 tags: [connector]
 ---
 
 ## Partner Setup
 
-Obtain your Client ID, Secret and Base URL for the API from your system administator, or Cole Information.
+Obtain your Client ID, Secret and Base URL for the API from your system administator.
 
 #### Connector Setup
 
