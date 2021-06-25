@@ -60,3 +60,5 @@ If we now want to add a custom field to "Get Candidate" the Field Location, depe
 When using List methods such as "List New Candidate Records", make sure to include the correct parent array. For example **[items]**.
 
    ![custom fields for list methods](./images/vincere_custom_fields_2.png)
+   
+A guide for adding custom fields to a method can be found [here](https://docs.cyclr.com/adding-custom-fields).
