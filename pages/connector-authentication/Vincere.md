@@ -32,3 +32,25 @@ The Connector now can be installed using the credentials obtained in the above s
 **Domain**:  _yourdomain_ (see your URL when accessing Vincere, {%raw%}https://{{yourdomain}}.vincere.io{%endraw%})
 
 **API Key**: _Vincere API Key_
+
+
+Using Custom Fields
+-------------------
+
+When using custom fields, the mapping of the Field Location will vary based on the custom field's "type".
+
+For example when using Candidate custom fields:
+
+1. Run the method "Get Candidate Custom Fields" to list the available custom fields
+2. Pay close attantion to the "Key" and "Type" fields in the response
+
+If we now want to add a custom field to "Get Candidate" the Field Location would be as follows:
+
+1. For type of TEXT_BOX or TEXT_AREA the Field Location should simply be the custom field's Key. eg. 12345678901234567890
+2. For type of CHECK_BOX, SELECT_BOX, RADIO, or MULTIPLE_SELECTION the Field Location should be the custom field's Key within array brackets. eg. [09876543210987654321]
+
+   ![custom fields for get methods](./images/vincere_custom_fields_1.png)
+
+When using List methods such as List New Candidate Records, make sure to include the correct parent array. For example:
+
+   ![custom fields for list methods](./images/vincere_custom_fields_2.png)
