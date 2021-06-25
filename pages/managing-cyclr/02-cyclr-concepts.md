@@ -1,7 +1,7 @@
 ---
 title: Cyclr Glossary
 sidebar: cyclr_sidebar
-permalink: cyclr-concepts
+permalink: cyclr-glossary
 tags: [managing-cyclr concepts terms]
 
 ---
