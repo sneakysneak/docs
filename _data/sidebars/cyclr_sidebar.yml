@@ -439,10 +439,6 @@ entries:
             url: /candidate-hub
             output: web, pdf
 
-          - title: Cavelo
-            url: /Cavelo
-            output: web, pdf
-
           - title: Capsule v2
             url: /capsule-connector
             output: web, pdf
@@ -451,12 +447,16 @@ entries:
             url: /casavi
             output: web, pdf
 
-          - title: ClickSend
-            url: /clicksend-connector
+          - title: Cavelo
+            url: /Cavelo
             output: web, pdf
 
           - title: Chargify
             url: /chargify-admin-connector
+            output: web, pdf
+
+          - title: ClickSend
+            url: /clicksend-connector
             output: web, pdf
 
           - title: Clover
@@ -499,12 +499,12 @@ entries:
             url: /dixa-connector
             output: web, pdf
 
-          - title: Drip
-            url: /drip-connector
-            output: web, pdf
-
           - title: Document360
             url: /document360-connector
+            output: web, pdf
+
+          - title: Drip
+            url: /drip-connector
             output: web, pdf
 
           - title: Emarsys
@@ -515,6 +515,14 @@ entries:
             url: /engagement-multiplier-connector
             output: web, pdf
 
+          - title: Envision
+            url: /exact-connector
+            output: web, pdf
+
+          - title: Exact
+            url: /envision
+            output: web, pdf
+
           - title: Facebook Marketing
             url: /facebook-connector
             output: web, pdf
@@ -523,8 +531,32 @@ entries:
             url: /facebook-offline-conversions-connector
             output: web, pdf
 
+          - title: FoodTec Solutions
+            url: /foodtec-solutions-connector
+            output: web, pdf
+
+          - title: FranConnect
+            url: /franconnect
+            output: web, pdf
+
+          - title: Freshbooks Classic
+            url: /freshbooks-classic
+            output: web, pdf
+
+          - title: Freshdesk
+            url: /freshdesk-connector
+            output: web, pdf
+
           - title: FullContact
             url: /fullcontact-connector
+            output: web, pdf
+
+          - title: Gingr
+            url: /gingr-connector
+            output: web, pdf
+
+          - title: GitHub
+            url: /github-authentication
             output: web, pdf
 
           - title: Google
@@ -535,24 +567,68 @@ entries:
             url: /bigquery
             output: web, pdf
 
+          - title: Google Data Studio
+            url: /google-data-studio-connector
+            output: web, pdf
+
+          - title: Gym Sales
+            url: /gym-sales-connector
+            output: web, pdf
+
+          - title: Heartland
+            url: /heartland
+            output: web, pdf
+
           - title: Hubspot
             url: /hubspot-connector
+            output: web, pdf
+
+          - title: Ibexa
+            url: /ibexa-connector
             output: web, pdf
 
           - title: Instructure Canvas
             url: /canvas
             output: web, pdf
 
+          - title: Idio
+            url: /idio-connector
+            output: web, pdf
+
+          - title: Infusionsoft
+            url: /infusionsoft-connector
+            output: web, pdf
+
+          - title: Ingenious Vendor
+            url: /ingenious-vendor-connector
+            output: web, pdf
+
+          - title: Insellerate
+            url: /authenticate-insellerate
+            output: web, pdf
+
+          - title: Insider
+            url: /insider-connector
+            output: web, pdf
+
           - title: Intercom
             url: /intercom-connector
             output: web, pdf
 
-          - title: MYOB AccountRight
-            url: /myob-accountright-connector
+          - title: Invenias
+            url: /invenias-connector
             output: web, pdf
 
-          - title: Microsoft Dynamics
-            url: /dynamics-connector
+          - title: JotForm
+            url: /jotform-connector
+            output: web, pdf
+
+          - title: LeadMailbox
+            url: /authenticate-leadmailbox
+            output: web, pdf
+
+          - title: Less Annoying CRM
+            url: /less-annoying-crm-connector
             output: web, pdf
 
           - title: Magento 2
@@ -585,6 +661,10 @@ entries:
 
           - title: Mindbody
             url: /mindbody-connector
+            output: web, pdf
+
+          - title: MYOB AccountRight
+            url: /myob-accountright-connector
             output: web, pdf
 
           - title: Netsuite
