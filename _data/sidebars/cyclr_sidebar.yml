@@ -324,7 +324,7 @@ entries:
             url: /cyclr-tools
             output: web, pdf
 
-      - title:s
+      - title: Connector Guides
         output: web, pdf
         folderitems:
           - title: Access CRM
