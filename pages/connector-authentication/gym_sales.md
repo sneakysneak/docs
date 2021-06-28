@@ -7,7 +7,7 @@ tags: [connector]
 
 ### Cyclr Setup
 
-Setup your ConnectWise Manage App within Cyclr:
+Setup your Gym Sales App within Cyclr:
 
 *   Go to your **Cyclr Console**
 *   Click the **Connectors** menu along the top
