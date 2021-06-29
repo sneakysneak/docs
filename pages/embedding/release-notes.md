@@ -7,6 +7,9 @@ tags: [embedding]
 
 ## 2021
 
+### 28th June 2021
+- Error Webhooks: Account API (External) ID included in Error Webhooks
+
 ### 21st June 2021
 - Builder: Can view field locations in step setup
 - Corporate Partner: Integration Reports
