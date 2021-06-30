@@ -5,8 +5,6 @@ permalink: zoho
 tags: [connector]
 ---
 
-# Zoho #
-
 ## Partner Setup ##
 
 This document explains how to setup access to Zoho and to install the Zoho CRM Connector.
