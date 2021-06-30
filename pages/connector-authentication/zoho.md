@@ -20,6 +20,8 @@ You'll need to register your Cyclr Partner with Zoho by creating a "Client" in y
 
 ![](./images/Zoho_ClientType.png)
 
+<br/>
+
 * Enter an **Authorized Redirect URI** using this format:
 
 ```https://{{Your Cyclr Service Domain}}/connector/callback```<br />
