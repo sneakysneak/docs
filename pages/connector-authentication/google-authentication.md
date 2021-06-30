@@ -101,7 +101,7 @@ Step 5 - On the next page click the API's ENABLE button.
 
 Below are Cyclr Connectors that require multiple Google APIs to be fully functional:
 
-* Google Sheets - Google Sheets API and Google Drive API0
+* Google Sheets - Google Sheets API and Google Drive API
 
 
 ## Additional Setup for Google AdWords
