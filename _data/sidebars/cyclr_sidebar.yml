@@ -71,7 +71,7 @@ entries:
             url: /cyclr-ip-whitelisting
             output: web, pdf
 
-          - title: Connector Link
+          - title: Connector Authentication Link
             url: /connector-authentication-link
             output: web, pdf
 
