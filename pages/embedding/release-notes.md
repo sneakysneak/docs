@@ -7,6 +7,9 @@ tags: [embedding]
 
 ## 2021
 
+### 5th July 2021
+- Console Reports > New Account UI: Console report links use the new Console Account UI instead of behaving as a Sign In button
+
 ### 28th June 2021
 - Error Webhooks: Account API (External) ID included in Error Webhooks
 
