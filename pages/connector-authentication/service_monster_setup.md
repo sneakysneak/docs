@@ -7,6 +7,8 @@ tags: [connector]
 
 ## Setup
 
+### Authentication Credentials
+
 To authenticate the ServiceMonster connector you will need a username and password. Please note, these are not the same as your ServiceMonster login credentials.
 
 To obtain a username and password for use with the API/connector:
