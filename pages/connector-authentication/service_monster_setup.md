@@ -23,7 +23,7 @@ To obtain a username and password for use with the API/connector:
 
 1. Locate the Service Monster connector
 
-   > Cyclr Console > Connectors > Connector Library > Service Monster
+   > Cyclr Console > Connectors > Connector Library > ServiceMonster
 
 2. From the Edit Connector interface click 'Setup'
 
