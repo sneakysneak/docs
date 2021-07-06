@@ -13,7 +13,7 @@ To authenticate the ServiceMonster connector you will need a username and passwo
 
 To obtain a username and password for use with the API/connector:
 
-1. Login to ServiceMonster at [app.servicemonster.net](app.servicemonster.net) (You will need to use an administrator account)
+1. Login to ServiceMonster at app.servicemonster.net (You will need to use an administrator account)
 2. Navigate to the Company tab and click on "Api Keys" in the Navigator menu on the left side
 3. Click "New" at the bottom of the list of existing API Keys
 4. Select a role, usually Admin and supply a note (optional), click "Submit"
