@@ -17,7 +17,7 @@ For Cyclr to connect with the Hubspot API you will need to create an "Applicatio
 3. In the `Auth` tab you will see a `Client ID` and `Client Secret`.  Make a note of these to use in the connector setup.
 4. The Redirect URL that creates the link between your Cyclr Console and Hubspot is shown page where the Client ID and Client Secret are entered.  It has the form
 https://{{PartnerIdentifier}}/connector/callback.
-5. It is not necessary to set any scopes, as these will be handled automatically by the connector.
+5. Set the desired (minimum) Scopes you require to access. See [here](https://developers.hubspot.com/docs/api/working-with-oauth) for further information 
 
 Permissions
 ---------------
@@ -31,6 +31,8 @@ The Connector now can be installed using the credentials obtained in the above s
 **Client ID**: `Client ID`
 
 **Secret**: `Client Secret`
+
+**Scopes/Optional** You will need to match the Scopes you set when creating the oAuth App above
 
 You will then be prompted to log in, select your Hubspot and authorize access to the connector.
 
