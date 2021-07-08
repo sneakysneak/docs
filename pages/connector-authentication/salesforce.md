@@ -57,7 +57,7 @@ The URLs is:
 
 **Selected OAuth Scopes**: you must add the following 2 Scopes to enable Cyclr to use your App:
 
-*   Full access (full)
+*   Full access (full) or if you know which data you wish to restrict to you can select from this [list](https://help.salesforce.com/articleView?id=sf.remoteaccess_oauth_tokens_scopes.htm&type=5)
 *   Perform requests on your behalf at any time (refresh\_token, offline\_access)
 
 The OAuth settings should look like this:
