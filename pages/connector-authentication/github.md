@@ -6,21 +6,31 @@ tags: [connector]
 
 ---
 
-## Before Starting
+To use the GitHub connector you will need to set up an app within GitHub, to obtain a Client ID and Client Secret.
 
-You will need to provide your Cyclr Partner 'Service Domain' as part of the process of setting up access so best to have that information to hand before starting. This is specific to your instance of Cyclr and it can be found from the Cyclr Partner Console under:
-Settings > General Settings > Service Domain.
+## Setting up your GitHub app
 
-Your Cyclr Partner will have been setup with a default Service Domain, but this can be changed if you would prefer to remove mentions of 'Cyclr' from it.
-  
-## Registering Your Application
+1. Go to https://github.com/settings/developers and click `New Oauth App`
 
-Go to your GitHub settings.
-Select Applications > Developer applications tab.
-Pick an existing application or hit Register new application.
-Set a few parameters for your application and get the Client ID and Client Secret.
+    ![New Oauth App Button](./images/NewOauthAppButton.png)
+2. Provide the following information:
 
-The callback URL should look like this:  https://{YOUR_SERVICE_DOMAIN}/connector/callback
+    * **Application Name**: This name will be presented to your users when they grant your app access to their information.
+    * **Homepage URL**: This should be <https://YourServiceDomain> (for example <https://megacorp-h.cyclr.com>)
+    * **Authorization Callback URL** : This should be your Homepage URL plus /connector/callback, e.g. <https://megacorp-h.cyclr.com/connector/callback>
 
+3. On the next screen note down your Client ID, and generate a Client Secret.
 
+## Authenticating your GitHub Cyclr Connector
 
+1. In your Console, access `Connectors` > `Application Connectors`
+
+    ![Application Connectors](./images/ApplicationConnectors.png)
+
+2. Search for GitHub, and click the `Setup Required` padlock.
+
+    ![GitHub in Console](./images/GitHubInConsole.png)
+
+3. In the next screen, enter your GitHub Client ID and Client Secret and `Save Changes`.
+
+4. Your GitHub connector is now all set up, and you won't need to enter this information again when authenticating the connector.
