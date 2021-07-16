@@ -33,7 +33,7 @@ The Connector now can be installed using the credentials obtained in the above s
 **Client ID**: `Intergtation Key`
 
 **Secret**: `Secret Key`
-
+**Domain**: Sandbox Domain is "account-d.docusign.com" | Production Domain is "account.docusign.com"
 **Scopes** (This is optional) Leave blank or you can reduce the scopes depending on the methods you require for interations. A space-separated list. Full list of scopes are [here](https://developers.docusign.com/platform/auth/reference/scopes/):  
 
 You will then be prompted to log in, select your Hubspot and authorize access to the connector.
