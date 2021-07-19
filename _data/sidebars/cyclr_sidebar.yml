@@ -87,6 +87,10 @@ entries:
             url: /transaction-error-webhook
             output: web, pdf
 
+          - title: Performance Tips
+            url: /performance-tips
+            output: web, pdf
+
       - title: Embedding Cyclr
         output: web, pdf
         folderitems:
