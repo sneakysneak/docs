@@ -2,7 +2,7 @@
 title: Performance Tips
 sidebar: cyclr_sidebar
 permalink: performance-tips
-tags: [connector]
+tags: [splitting,script,delay]
 ---
 
 The following tips may improve the performance of your integrations:
