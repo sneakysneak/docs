@@ -16,7 +16,6 @@ some more text
 </details>
 </details>
 
-<div id="map" style="height: 350px; border: 1px solid #979797; display: none";>tst</div>
 
 
 <a href="#" onClick="(function(){
