@@ -19,6 +19,5 @@ some more text
 
 
 <a href="#" onClick="(function(){
-$("#map").show();
     return false;
 })();return false;">click here</a>
