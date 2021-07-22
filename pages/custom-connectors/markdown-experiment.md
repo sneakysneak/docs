@@ -15,3 +15,9 @@ some more text
 </details>
 </details>
 </details>
+
+
+<a href="#" onClick="(function(){
+    console.log('Hey i am calling');
+    return false;
+})();return false;">click here</a>
