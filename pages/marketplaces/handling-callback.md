@@ -29,7 +29,7 @@ If the Marketplace Integration Package includes an install complete message, you
 
 #### JavaScript postMessage
 
-If the Marketplace was opened in a popup, you can use JavaScript to send the result of the installation back to your application. This example displays a message to the user with a close button.  When the user clicks the button, the result is sent using a JavaScript **postMessage** and the popup window is closed.
+If the Marketplace was opened in a popup, you can use JavaScript to send the "result" of the installation back to your application.  If a popup wasn't used, then the **result** object is available straightaway.  The example below displays a message to the user with a close button.  When the user clicks the button, the **result** object is sent using a JavaScript **postMessage** and the popup window is closed.
 
 ```html
     <h1>Congrats - you're connected!</h1>
@@ -44,7 +44,7 @@ If the Marketplace was opened in a popup, you can use JavaScript to send the res
 
 ### JavaScript result object
 
-A JavaScript **result** object is made available to the window on the final page of the LAUNCH flow.  It has the following properties:
+A JavaScript **result** object is made available to the window on the final page of the Marketplace/LAUNCH flow.  It has the following properties and can be used to perform further processing such as updating newly installed Cycles to complete their setup:
 
 | Property | Description | Example |
 | --- | --- | --- |
