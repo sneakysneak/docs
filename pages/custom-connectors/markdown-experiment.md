@@ -18,6 +18,6 @@ some more text
 
 
 <a href="#" onClick="(function(){
-    console.log('Hey i am calling');
+    alert('Hey i am calling');
     return false;
 })();return false;">click here</a>
