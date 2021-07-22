@@ -68,197 +68,248 @@ All other events (such as after_action):
 
 ### Events
 
-#### before_webhook
-
-Called when a webook request has been received and before anything else is done. Method is used to decide if the request should be continued or return a custom message to the caller.
-
-###### Global objects
-
-*   **method_endpoint**: The webhook request URL
-*   **method_request_headers**: The webhook request headers
-*   **method_request**: The webhook request body
-*   **method_request_parameters**: The webhook request parameters
-*   **method_response_headers**: The response headers for the request
-*   **method_response**: The response body for the request
-*   **return**: true for the webhook to continue normal execution, false to stop execution of the request and send the response body/headers to the caller
-
-#### after_webhook
-
-Called immediately after a Request to a Webook has been received, whether the Cycle is currently running or stopped.
-
-###### Global object
-
-*   **method_response**: object that was POSTed to the Cyclr webhook
-*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
-*   **cycle_step_id**: ID of the step that is executing the script.
-*   **cycle_id**: The ID of the cycle the script is running in
-*   **cyclr_account_id**: The internal ID of the account the script is running in
-*   **external_account_id**: The external ID of the account the script is running in
-*   **return**: true for the webhook to continue normal execution, false to ignore the webhook request
-
-#### before_action
-
-Called before Cyclr makes a request to an external API.
-
-If a Method uses Paging, this function is called before each page is retrieved.
-
-###### Global objects
-
-*   **method_request_headers**: HTTP headers for the request
-*   **method_request_parameters**: Querystring parameters for the request
-*   **method_request**: Object that will be posted to the third party API
-*   **method_request_mergefields**: Mergefields for the request
-*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
-*   **cycle_step_id**: ID of the step that is executing the script.
-*   **cycle_id**: The ID of the cycle the script is running in
-*   **cyclr_account_id**: The internal ID of the account the script is running in
-*   **external_account_id**: The external ID of the account the script is running in
-*   **action_data**: An object used to persist data between some event handler functions, allowing data to be passed between them.  Accessible in before_action, after_action, after_action_paging, action_condition and after_error.
-*   **return**: true to continue with the request to the third party API, false to abort the request (use throw for a more useful step error message)
-
-#### after_action
-
-Function is called when Cyclr has a response from an external API.
-
-If a Method uses Paging, this function is called after each page is retrieved.
-
-###### Global object
-
-*   **method_endpoint**: The URL of the original request
-*   **method_request**: object that was posted to the third party API
-*   **method_request_mergefields**: mergefields for the request
-*   **method_response_headers**: The response headers for the request
-*   **method_response**: object that was received from the third party API.  If the Method uses paging, this contains only the current page's Response.
-*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
-*   **cycle_step_id**: ID of the step that is executing the script.
-*   **cycle_id**: The ID of the cycle the script is running in
-*   **cyclr_account_id**: The internal ID of the account the script is running in
-*   **external_account_id**: The external ID of the account the script is running in
-*   **action_data**: An object used to persist data between some event handler functions, allowing data to be passed between them.  Accessible in before_action, after_action, after_action_paging, action_condition and after_error.
-*   **return**: true
-
-#### after_action_paging
-
-If this function is provided, it is called once after all pages of data have been retrieved, whether Paging has been implemented or not.
-
-###### Global object
-
-*   **method_request_headers**: The response headers for the request
-*   **method_request_parameters**: parameters for the request
-*   **method_request_mergefields**: mergefields for the request
-*   **method_response**: object that contains all of the Response data.
-*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
-*   **cycle_step_id**: ID of the step that is executing the script.
-*   **cycle_id**: The ID of the cycle the script is running in
-*   **cyclr_account_id**: The internal ID of the account the script is running in
-*   **external_account_id**: The external ID of the account the script is running in
-*   **action_data**: An object used to persist data between some event handler functions, allowing data to be passed between them.  Accessible in before_action, after_action, after_action_paging, action_condition and after_error.
-*   **return**: true
-
-#### after_error
-
-Function is called when Cyclr received an error from an external API.
-
-###### Global object
-
-*   **method_error**: Details of the error, see: **Handle Errors from Third Party APIs** further down for more information on handling errors
-*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
-*   **cycle_step_id**: ID of the step that is executing the script.
-*   **cycle_id**: The ID of the cycle the script is running in
-*   **cyclr_account_id**: The internal ID of the account the script is running in
-*   **external_account_id**: The external ID of the account the script is running in
-*   **action_data**: An object used to persist data between some event handler functions, allowing data to be passed between them.  Accessible in before_action, after_action, after_action_paging, action_condition and after_error.
-*   **return**: true
-
-#### action_condition
-
-Function is used to essentially combine a Method with a Decision Step, allowing a test to be performed that directs a Transaction down either the True or False exit points.  If this function is included in a method, Cyclr will add True and False exit points.
-
-###### Global object
-
-*   **method_response**: object that was received from the third party API.
-*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
-*   **cycle_step_id**: ID of the step that is executing the script.
-*   **cycle_id**: The ID of the cycle the script is running in
-*   **cyclr_account_id**: The internal ID of the account the script is running in
-*   **external_account_id**: The external ID of the account the script is running in
-*   **action_data**: An object used to persist data between some event handler functions, allowing data to be passed between them.  Accessible in before_action, after_action, after_action_paging, action_condition and after_error.
-*   **return**: true for the Transaction to exit on the "True Route", false to exit on the "False Route"
-
-
-<p>
-  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Link with href
-  </a>
-  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-    Button with data-target
-  </button>
-</p>
-<div class="collapse" id="collapseExample">
-  <div class="card card-body">
-
-Function is called before Cyclr makes an OAuth 2 authorise request.
-
-###### Global object
-
-*   **method_endpoint**: URL for the OAuth authorise endpoint
-*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
-*   **return**: true
-  </div>
+<div id="accordion">
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    before_webhook
+                </button>
+            </h5>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
+                    after_webhook
+                </button>
+            </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                    aria-expanded="false" aria-controls="collapseThree">
+                    before_action
+                </button>
+            </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    after_action
+                </button>
+            </h5>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
+                    after_action_paging
+                </button>
+            </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                    aria-expanded="false" aria-controls="collapseThree">
+                    after_error
+                </button>
+            </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    action_condition
+                </button>
+            </h5>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
+                    before_oauth2_authorise
+                </button>
+            </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                    aria-expanded="false" aria-controls="collapseThree">
+                    before_oauth2_token
+                </button>
+            </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                    aria-expanded="false" aria-controls="collapseThree">
+                    after_oauth2_token
+                </button>
+            </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                    aria-expanded="false" aria-controls="collapseThree">
+                    before_oauth2_refresh
+                </button>
+            </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                    aria-expanded="false" aria-controls="collapseThree">
+                    after_oauth2_refresh
+                </button>
+            </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+        </div>
+    </div>
 </div>
-
-
-#### before_oauth2_authorise
-
-Function is called before Cyclr makes an OAuth 2 authorise request.
-
-###### Global object
-
-*   **method_endpoint**: URL for the OAuth authorise endpoint
-*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
-*   **return**: true
-
-#### before_oauth2_token
-
-Called before Cyclr makes an OAuth 2 access token request.
-
-###### Global object
-
-*   **method_request_headers**: HTTP headers for the request
-*   **method_request**: Object that is going to be sent to the OAuth 2 access token endpoint
-*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
-*   **return**: true
-
-#### after_oauth2_token
-
-Called after Cyclr makes an OAuth 2 access token request.
-
-###### Global object
-
-*   **method_response**: response object that was received from the OAuth 2 access token request
-*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
-*   **return**: true
-
-#### before_oauth2_refresh
-
-Called before Cyclr makes an OAuth 2 refresh token request.
-
-###### Global object
-
-*   **method_request_headers**: HTTP headers for the request
-*   **method_request**: request object that is going to be sent to the OAuth 2 refresh token request
-*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
-*   **return**: true
-
-#### after_oauth2_refresh
-
-Called after Cyclr makes an OAuth 2 refresh token request.
-
-###### Global object
-
-*   **method_response**: response object that was received from the OAuth 2 refresh token request.
-*   **cycle_variables**: Allows access to Cycle variables.  Changes are not persisted.
-*   **return**: true
 
 ### Functions
 
