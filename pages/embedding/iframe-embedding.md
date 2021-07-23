@@ -68,6 +68,7 @@ Make this call, specifying a user to sign in as.  If they don't already exist, t
 
 ```http
 POST https://{API Domain}/v1.0/accounts/{API ID}/signintoken
+Authorization: Bearer YOURACCESSTOKENHERE
 Content-Type: application/json
 
 {
