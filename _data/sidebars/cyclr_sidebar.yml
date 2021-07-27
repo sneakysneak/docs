@@ -200,7 +200,7 @@ entries:
             url: /connector-settings
             output: web, pdf
 
-          - title:
+          - title: Connector Authentication
             url: /connector-authentication
             output: web, pdf
 
