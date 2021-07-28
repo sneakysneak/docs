@@ -7,11 +7,15 @@ tags: [utility-connector]
 
 ## Purpose
 
-If there is the requirement to hold data permanently in Cyclr account then you can use the Global Data Storage Connector.  Data persists beyond the life of any Integration Cycle in which it is added or ameded, and can be accessed in subscequent runs of a Cycle or other Cycles within the same account.
+To hold data permanently in a Cyclr Account you can use the Global Data Storage Connector.  
+
+Data persists beyond the life of any Cycle into which it is added or amended.
+
+This data can be accessed in subsequent runs of this Cycle, or indeed _any_ Cycles within the same Cyclr Account.
 
 ## Usage
 
-[How To Use](./data-storage-usage) Global Data Storage.
+[How To Use Global Data Storage](./data-storage-usage) 
 
 ## Related Topics
 
