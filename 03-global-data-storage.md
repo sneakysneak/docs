@@ -17,6 +17,8 @@ This data can be accessed in subsequent runs of this Cycle, or indeed _any_ Cycl
 
 [How To Use Global Data Storage](./data-storage-usage) 
 
+> **_PLEASE NOTE:_** Using Utility Connectors counts toward your overall task usage.
+
 ## Related Topics
 
 * [Cycle Data Storage](./cycle-data-storage)
