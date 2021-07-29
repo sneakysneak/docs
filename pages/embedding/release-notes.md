@@ -7,6 +7,10 @@ tags: [embedding]
 
 ## 2021
 
+### 27th July 2021
+- Builder: Display timezone with next run time
+- Builder: new system mergefields (i.e. Account ID, Account External ID, Cycle ID and Transaction ID)
+
 ### 19th July 2021
 - Console Templates: Allow export and import of template releases as JSON objects
 
