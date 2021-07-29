@@ -34,6 +34,8 @@ This Connector builds upon the features of the **Global Data Storage** Connector
 
 [Data Storage Usage](./data-storage-usage)
 
+> **_PLEASE NOTE:_** Using Utility Connectors counts toward your overall task usage.
+
 ## Related Topics
 
 * [Cycle Data Storage](./cycle-data-storage)
