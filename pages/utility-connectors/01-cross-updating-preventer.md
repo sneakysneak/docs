@@ -80,3 +80,6 @@ The screenshot below shows how you might build 2 Cycles that synchronize Contact
 Here we've arbitrarily decided that Salesforce is the "main" system so changes passing from there to HubSpot are considered "Outbound" with changes coming back from HubSpot to Salesforce as "Inbound".
 
 The colored boxes and joining lines indicate how the Update OK and Store Data Steps work together: the **Update OK (Outbound)** Step checks the data stored by **Store Date (Inbound)**, and the **Update OK (Inbound)** Step checks the data stored by **Store Data (Outbound)**.
+
+> **_PLEASE NOTE:_** Using Utility Connectors counts toward your overall task usage.
+
