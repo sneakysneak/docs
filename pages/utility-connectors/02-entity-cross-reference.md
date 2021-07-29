@@ -40,3 +40,5 @@ For example, if you want to update the Entity 1 Record count, you only need to s
 ## Delete Entity Cross Reference
 
 You can delete any entity (Entity 1 and Entity 2) and their shared information by providing the ID of one of the entities.
+
+> **_PLEASE NOTE:_** Using Utility Connectors counts toward your overall task usage.
