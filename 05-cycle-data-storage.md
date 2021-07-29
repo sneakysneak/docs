@@ -17,7 +17,7 @@ The **Cycle Data Storage** Connector works using simple Key and Value pairs.  Th
 
 If you wish to store more structured data or more than one value (perhaps the firstname, lastname, etc of a contact), you should use the **[Cycle *Object* Storage](./cycle-object-storage)** Connector as that allows multiple values to be stored as a single "object" against a Key value.
 
-Please note that using Utility Connectors counts toward your overall task usage.
+> **_PLEASE NOTE:_** Using Utility Connectors counts toward your overall task usage.
 
 ## Usage
 
