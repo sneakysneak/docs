@@ -8,3 +8,5 @@ tags: [utility-connector]
 ## Purpose
 
 This connector sends data as a HTTP POST to an endpoint expecting form data.
+
+> **_PLEASE NOTE:_** Using Utility Connectors counts toward your overall task usage.
