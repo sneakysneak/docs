@@ -27,4 +27,6 @@ Now that you have your Access token go to the `Connector Setup` page in Cyclr.
 2. Paste your `Access Token` into the `API Key` field and click `Next`.
 3. Your connector is now setup and ready to go.
 
+### Bulk Endpoints
 
+To use bulk methods such as Bulk Update Product you must enable/install asynchronous functionality and RabbitMQ on your Magento instance. More information can be found [here](https://devdocs.magento.com/guides/v2.4/rest/bulk-endpoints.html).
