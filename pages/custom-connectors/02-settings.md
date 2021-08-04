@@ -5,7 +5,7 @@ permalink: connector-settings
 tags: [connector-creation]
 ---
 
-## Custom Conectors
+## Custom Connectors
 
 With certain Cyclr price plans, it is possible to create Custom Connectors.  These connectors are private to the Partner Organisation that created them.  
 
