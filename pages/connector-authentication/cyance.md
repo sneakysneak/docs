@@ -25,9 +25,9 @@ Setup your Cyance app within Cyclr:
 
 Enter the following values:
 
-**Password**:  The password for your Cyance Traffic account.
+**Password**:  The password for your Cyance account.
 
-**Username**:  The username for your Cyance Traffic account.
+**Username**:  The username for your Cyance account.
 
 
 Your Cyance Connector is now setup! You can test it by installing it in one of your Cyclr accounts and executing one of the methods to confirm it can return some data.
