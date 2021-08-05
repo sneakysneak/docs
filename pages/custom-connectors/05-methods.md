@@ -42,7 +42,7 @@ You can specify rate limits that apply to this method alone.
 
 ## Request Format / Response Format
 
-Here you specify the request or response message format Fields. 
+Here you specify the request or response message format Fields. Note that if these are generated from a sample payload using the Generate Fields button, you will first need to select a Data Type (JSON, XML etc).
 
 | Property | Description | Standards |
 | --- | --- | ---|
