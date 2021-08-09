@@ -7,6 +7,9 @@ tags: [embedding]
 
 ## 2021
 
+### 9th August 2021
+- Database Connectors: Support SSH tunneling
+
 ### 2nd August 2021
 - API: Get the sub accounts of an account
 - Connectors: Improved support for custom objects in third party APIs
