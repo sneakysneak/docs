@@ -65,6 +65,8 @@ Finally the field needs to be added to a specific layout. Both the Layout Name a
 
 ![add to layout](./images/add_to_layout.png)
 
+![full cycle](./images/full_cycle.png)
+
 ---
 
 You will now be able to see the field from the Page Layouts interface in Salesforce: **Setup** > **Objects and Fields** > **Object Manager** > select the object > **Page Layouts**.
