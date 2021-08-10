@@ -73,6 +73,6 @@ You will now be able to see the field from the Page Layouts interface in Salesfo
 
 ---
 
-An example of a cycle where we are setting the field level security for all profiles might look as follows. Notable we are adding "List Profiles" before "Set Field Level Security" to set the field level security for all profiles.
+An example of a cycle where we are setting the field level security for all profiles might look as follows. Notably, we are adding "List Profiles" before "Set Field Level Security" to set the field level security for all profiles.
 
 ![example cycle](./images/salesforce_meta_1.png)
