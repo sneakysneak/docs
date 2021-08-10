@@ -47,7 +47,7 @@ You can however add custom fields to the Event layout as we will see in step 3.
 
 > The Field Name for a custom field should end with "\_\_c". For example "myCustomField\_\_c".
 
-![Company information](./images/create_field.png)
+![create field](./images/create_field.png)
 
 ## 2 - Set the field level security for the field
 
@@ -57,22 +57,22 @@ If you would like to make the field available to all profiles you should place a
 
 Alternatively to set the field level security for one Profile only, the lookup feature is available to retrieve a list of profile names to choose from.
 
-![Company information](./images/field_level_security.png)
+![field level security](./images/field_level_security.png)
 
 ## 3 - Add the field to a layout
 
 Finally the field needs to be added to a specific layout. Both the Layout Name and Layout Section Label must be specified, however these can both be retrieved using the lookup feature for those fields.
 
-![Company information](./images/add_to_layout.png)
+![add to layout](./images/add_to_layout.png)
 
 ---
 
 You will now be able to see the field from the Page Layouts interface in Salesforce: **Setup** > **Objects and Fields** > **Object Manager** > select the object > **Page Layouts**.
 
-![Company information](./images/event_layout.png)
+![event layout](./images/event_layout.png)
 
 ---
 
-An example of a cycle where we're setting the field level security for all profiles might look as follows.
+An example of a cycle where we are setting the field level security for all profiles might look as follows. Notable we are adding "List Profiles" before "Set Field Level Security" to set the field level security for all profiles.
 
-![Company information](./images/salesforce_meta_1.png)
+![example cycle](./images/salesforce_meta_1.png)
