@@ -55,13 +55,13 @@ Setting the field level security for a custom field defines the permissions each
 
 If you would like to make the field available to all profiles you should place a "List Profiles" step before the "Set Field Level Security" step in your cycle. You can then map the Profile Name from "List Profiles" and bulk update the permissions.
 
-Alternatively to set the field level security for one Profile only, the lookup feature is available to retrieve a list of profile names to choose from.
+Alternatively to set the field level security for one profile only, the lookup feature is available to retrieve a list of profile names to choose from.
 
 ![field level security](./images/field_level_security.png)
 
 ## 3 - Add the field to a layout
 
-Finally the field needs to be added to a specific layout. Both the Layout Name and Layout Section Label must be specified, these can both be retrieved using the lookup feature for those fields.
+Finally the field needs to be added to a specific layout. Both the Layout Name and Layout Section Label must be specified, both can be retrieved using the lookup feature for those fields.
 
 ![add to layout](./images/add_to_layout.png)
 
