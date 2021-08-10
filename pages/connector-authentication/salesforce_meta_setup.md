@@ -61,7 +61,7 @@ Alternatively to set the field level security for one Profile only, the lookup f
 
 ## 3 - Add the field to a layout
 
-Finally the field needs to be added to a specific layout. Both the Layout Name and Layout Section Label must be specified, however these can both be retrieved using the lookup feature for those fields.
+Finally the field needs to be added to a specific layout. Both the Layout Name and Layout Section Label must be specified, these can both be retrieved using the lookup feature for those fields.
 
 ![add to layout](./images/add_to_layout.png)
 
