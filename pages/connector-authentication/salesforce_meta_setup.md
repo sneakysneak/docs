@@ -23,7 +23,7 @@ The connector is now authenticated and ready to use.
 
 # Creating Custom Fields
 
-To create custom fields there are three fundamental steps that must be carried out.
+To create custom fields there are three fundamental steps that must be carried out:
 
 > In this example we will add a Picklist field to the Event Layout, via the Activity object.
 
