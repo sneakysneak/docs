@@ -29,7 +29,7 @@ To create custom fields there are three fundamental steps that must be carried o
 
 ## 1 - Create the custom field
 
-Many of the request fields for the method "Create Custom Field" are optional by default. It is however the case that depending on the Data Type selected some of the optional fields will be required. The following table details these requirements.
+Many of the request fields for the method "Create Custom Field" are optional by default. It is the case, however, that depending on the Data Type selected some of the optional fields will be required. The following table details these requirements.
 
 | Data Type | "Optional" Fields Required |
 | :-------- | :------------------------- |
@@ -41,7 +41,7 @@ Many of the request fields for the method "Create Custom Field" are optional by 
 | Percent   | Precision, Scale           |
 | Location  | Scale                      |
 
-Please note: not all objects allow the addition of custom fields directly. For example to add a field to the Event object you should select Activity as the target object. Custom fields cannot be added directly to the Event object, instead they should be added to the Activity object, from which the Event object inherits it's custom fields.
+Please note: not all objects allow the addition of custom fields directly. For example, to add a field to the Event object you should select Activity as the target object. Custom fields cannot be added directly to the Event object, instead they should be added to the Activity object, from which the Event object inherits it's custom fields.
 
 You can however add custom fields to the Event layout as we will see in step 3.
 
