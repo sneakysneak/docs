@@ -1,0 +1,13 @@
+---
+title: Custom Domains
+sidebar: cyclr_sidebar
+permalink: custom-domains
+tags: [installing]
+---
+
+To use your own domain with Cyclr the following steps are required:
+
+* You must provide us with an SSL certificate for the domain you wish to use with Cyclr, e.g. integration.mydomain.com.
+* You must create a CNAME DNS record pointing integration.mydomain.com to the Cyclr Instance you're hosted on. If you're on the US Instance for example, that will be my.cyclr.com.
+* Contact Cyclr Support once the above tasks have been completed and we'll perform some setup on your Cyclr Console.
+* You will need to provide details of a new SSL certificate before the existing one expires (we plan to make this less manual in future).
