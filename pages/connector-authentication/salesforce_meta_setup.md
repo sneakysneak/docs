@@ -41,7 +41,7 @@ Many of the request fields for the method "Create Custom Field" are optional by 
 | Percent   | Precision, Scale           |
 | Location  | Scale                      |
 
-Please note: not all objects allow the addition of custom fields directly. For example, to add a field to the Event object you should select Activity as the target object. Custom fields cannot be added directly to the Event object, instead they should be added to the Activity object, from which the Event object inherits it's custom fields.
+Please note: To add a field to the Event or Task objects you should select Activity as the target object. Custom fields cannot be added directly to the Event or Task objects, instead they should be added to the Activity object, from which the Event and Task objects inherits their custom fields.
 
 You can however add custom fields to the Event layout as we will see in step 3.
 
