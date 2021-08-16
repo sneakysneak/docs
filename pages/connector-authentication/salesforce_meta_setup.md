@@ -25,7 +25,7 @@ The connector is now authenticated and ready to use.
 
 To create custom fields there are three fundamental steps that must be carried out:
 
-> In this example we will add a Picklist field to the Event Layout, via the Activity object.
+> In this example we will add a Picklist field to the Event Object and Layout.
 
 ## 1 - Create the custom field
 
@@ -41,13 +41,9 @@ Many of the request fields for the method "Create Custom Field" are optional by 
 | Percent   | Precision, Scale           |
 | Location  | Scale                      |
 
-Please note: To add a field to the Event or Task objects you should select Activity as the target object. Custom fields cannot be added directly to the Event or Task objects, instead they should be added to the Activity object, from which the Event and Task objects inherits their custom fields.
-
-You can however add custom fields to the Event (or Task) layout as we will see in step 3.
-
 > The Field Name for a custom field should end with "\_\_c". For example "myCustomField\_\_c".
 
-![create field](./images/create_field.png)
+![create field](./images/create_custom_field_2.png)
 
 ## 2 - Set the field level security for the field
 
