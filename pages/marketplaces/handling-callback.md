@@ -49,16 +49,19 @@ A JavaScript **result** object is made available to the window on the final page
 | Property | Description | Example |
 | --- | --- | --- |
 | accountId | The ID of the Account that the Marketplace Integration Package was installed into | xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx |
+| accountApiId | The API ID of Account that the Marketplace Integration Package was installed into | CYCLR_ACCOUNT_API_ID |
 | installCompleteMessage | The install complete message for the Marketplace Integration Package | Integration is now active |
 | marketplacePackageId | The ID of the Marketplace Integration Package | 1 |
+| userId | The ID of your end user | xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx |
 | cycles | Array of cycles that where installed as part of the Marketplace Integration Package |  |
 | cycles.cycleId | ID of the installed cycle | xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx |
-| cycles.templateId | ID of the template that the cycle was installed from | xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx |
 | cycles.status | Status of the installed cycle | Active or Stopped |
+| cycles.templateId | ID of the template that the cycle was installed from | xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx |
+| cycles.templateReleaseId | ID of the template release that the cycle was installed from | xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx |
 | cycles.webhooks | Array of webhooks that a cycle contains |  |
 | cycles.webhooks.stepName | Name of the step the webhook is for | Webhook |
 | cycles.webhooks.url | URL of the webhook | https://my.cyclr.com/api/webhook/abcdefg123 |
-
+| errors | An array of error messages when Cyclr activates the newly installed Marketplace Integration Package. | ["Please set up all the steps correctly before starting the cycle."] |
 
 ### Cross domain issue in IE10
 
