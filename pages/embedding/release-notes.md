@@ -7,6 +7,9 @@ tags: [embedding]
 
 ## 2021
 
+### 16th August 2021
+- Console: New Account Connector Method Report
+
 ### 9th August 2021
 - Database Connectors: Support SSH tunneling
 
