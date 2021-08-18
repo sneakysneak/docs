@@ -1,5 +1,5 @@
 ---
-title: Google Calendar Workspace Authentication
+title: Google Calendar - Workspace Authentication
 sidebar: cyclr_sidebar
 permalink: google-calendar-workspace-connector
 tags: [connector]
@@ -34,7 +34,7 @@ This action must be completed by a super admin of the Google Workspace account.
 
 ### Cyclr Setup
 
-Setup your Google Workspace - Calendar App within Cyclr:
+Setup your Google Calendar - Workspace App within Cyclr:
 
 *   Go to your **Cyclr Console**
 *   Click the **Connectors** menu along the top
