@@ -34,7 +34,7 @@ This action must be completed by a super admin of the Google Workspace account.
 
 ### Cyclr Setup
 
-Setup your ConnectWise Manage App within Cyclr:
+Setup your Google Workspace - Calendar App within Cyclr:
 
 *   Go to your **Cyclr Console**
 *   Click the **Connectors** menu along the top
