@@ -15,7 +15,7 @@ If you haven't done so already you will need to generate an API Key in the Rybbo
 
 2. From the API ACCESS KEYS section click **Edit**
 
-![lookup feature](./images/api_key_dashboard.png)
+   ![api key dashboard](./images/rybbon_api_key_dashboard.png)
 
 3. On the next page click **Generate New API Key**
 
@@ -23,7 +23,7 @@ If you haven't done so already you will need to generate an API Key in the Rybbo
 
 5. Once created, you can view the API Key by clicking the eye icon to the right of the screen. This API Key will be the Password entered at connector setup
 
-![lookup feature](./images/api_key.png)
+   ![api key](./images/rybbon_api_key.png)
 
 ### Authenticate The Connector
 
