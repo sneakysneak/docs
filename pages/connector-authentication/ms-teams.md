@@ -35,7 +35,9 @@ To Summarize the above documentation:
 
    The URL is:
 
-    * `https://{{Your Cyclr Service Domain e.g. app-h.cyclr.com}}/connector/callback`
+   * https://``Your Service Domain``/connector/callback 
+
+   Your service domain can be found in your Cyclr console under Settings > General Settings > Service Domain.
 
    **Multi-tenanted**: Yes
 
