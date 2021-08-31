@@ -5,13 +5,13 @@ permalink: salesforce-metadata-connector
 tags: [connector]
 ---
 
-# Authentication
+## Authentication
 
 When installing the **Salesforce Metadata** Connector you'll need to provide a Username and Password for the Salesforce account you wish to work with.
 
 You can optionally enter an Account Type.  Possible values are "enterprise" or "partner".
 
-# Creating Custom Fields
+## Creating Custom Fields
 
 To create custom fields within Salesforce, there are three fundamental steps that must be carried out:
 
@@ -21,7 +21,7 @@ To create custom fields within Salesforce, there are three fundamental steps tha
 
 > In this example we will add a Picklist field to the Event Object and Layout using several Methods from the Salesforce Metadata Connector in a Cycle.
 
-## Create the custom field
+### Create the custom field
 
 Many of the request fields for the method "Create Custom Field" are optional by default. It is the case, however, that depending on the Data Type selected some of the optional fields will be required. The following table details these requirements.
 
@@ -39,7 +39,7 @@ Many of the request fields for the method "Create Custom Field" are optional by 
 
 ![create field](./images/create_custom_field_2.png)
 
-## Set the field level security for the field
+### Set the field level security for the field
 
 Setting the field level security for a custom field in Salesforce defines the permissions each profile has in relation to the field. Examples of profiles include "Admin", "Standard", "Customer Community User" etc.
 
@@ -49,7 +49,7 @@ Alternatively to set the field level security for one profile only, the lookup f
 
 ![field level security](./images/field_level_security.png)
 
-## Add the field to a layout
+### Add the field to a layout
 
 Finally the field needs to be added to a specific layout within Salesforce. Both the Layout Name and Layout Section Label must be specified, both can be retrieved using the lookup feature for those fields.
 
