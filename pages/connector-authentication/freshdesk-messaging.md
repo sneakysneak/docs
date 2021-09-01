@@ -7,7 +7,7 @@ tags: [connector]
 
 ## Partner Setup
 
-#### Retrieving API Key
+### Retrieving API Key
 * Navigate to your Freshdesk Messaging inbox.
 * Navigate to **Admin** > **API Tokens**.
 * Either generate a new token and note down the API key, or copy an existing API key.
