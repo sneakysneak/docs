@@ -26,8 +26,6 @@ You'll need to register your Cyclr Partner with Zoho by creating a "Client" in y
 
 {% raw %}`https://{{Your Cyclr Service Domain}}/connector/callback`{% endraw %}
 
-<br />
-
 e.g. ```https://app-h.cyclr.com/connector/callback```
 
 You can find your **Service Domain** within your Cyclr Console from the **Settings** menu then **General Settings**.
