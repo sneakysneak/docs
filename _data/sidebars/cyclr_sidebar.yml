@@ -35,6 +35,10 @@ entries:
           - title: Integration Template Versioning
             url: /integration-template-versioning
             output: web, pdf
+            
+          - title: Template Export Import
+            url: /template-export-import
+            output: web, pdf
 
       - title: Managing Cyclr
         output: web, pdf

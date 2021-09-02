@@ -32,6 +32,9 @@ exclude:
   - .gitignore
 # these are the files and directories that jekyll will exclude from the build
 
+incremental: false
+# incremental build (experimental)
+
 feedback_subject_line: Cyclr documentation
 
 feedback_email: daniel@cyclr.com
