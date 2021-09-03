@@ -29,4 +29,7 @@ Enter the following values:
 **API Key**: The API key we copied above.
 
 
+**Note**: To retrieve an App ID, navigate to **Admin** > **Account Settings** > **Integration Settings**.
+
+
 Your Freshdesk Messaging Connector is now setup! You can test it by installing it in one of your Cyclr accounts and executing one of the methods to confirm it can return some data.
