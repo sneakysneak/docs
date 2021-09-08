@@ -1,8 +1,8 @@
 ---
-title: Custom Domains
+title: Custom Service Domain
 sidebar: cyclr_sidebar
 permalink: custom-domains
-tags: [installing]
+tags: [installing, embedding, service domain]
 ---
 
 ### Using your own domain as a Cyclr Service Domain
