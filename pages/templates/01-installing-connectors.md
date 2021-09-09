@@ -34,4 +34,4 @@ Once you have authenticated your connectors, you will be returned to the builder
 
 ## Related Topics
 
-[How to Build a Template](./building-a-cycle)
+[How to Build a Template](./building-a-template)
