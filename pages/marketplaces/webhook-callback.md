@@ -16,20 +16,20 @@ In the Cyclr Console goto Embedding > Marketplace and select the Settings Cog. S
 ## Installed Payload Example
 ````json
  {
-    Status = "installed",
-    AccountId = "00000000-0000-0000-0000-000000000000",
-    AccountApiId = "ExampleAccount",
-    MarketplaceIntegrationPackageId = 1234
+    "Status": "installed",
+    "AccountId": "00000000-0000-0000-0000-000000000000",
+    "AccountApiId": "ExampleAccount",
+    "MarketplaceIntegrationPackageId": 1234
 }
 ````
 
 ## Uninstalled Payload Example
 ````json
  {
-    Status = "uninstalled",
-    AccountId = "00000000-0000-0000-0000-000000000000",
-    AccountApiId = "ExampleAccount",
-    MarketplaceIntegrationPackageId = 1234
+    "Status": "uninstalled",
+    "AccountId": "00000000-0000-0000-0000-000000000000",
+    "AccountApiId": "ExampleAccount",
+    "MarketplaceIntegrationPackageId": 1234
 }
 ````
 
@@ -37,10 +37,10 @@ In the Cyclr Console goto Embedding > Marketplace and select the Settings Cog. S
 ## Started Payload Example
 ````json
  {
-    Status = "started",
-    AccountId = "00000000-0000-0000-0000-000000000000",
-    AccountApiId = "ExampleAccount",
-    MarketplaceIntegrationPackageId = 1234
+    "Status": "started",
+    "AccountId": "00000000-0000-0000-0000-000000000000",
+    "AccountApiId": "ExampleAccount",
+    "MarketplaceIntegrationPackageId": 1234
 }
 ````
 
@@ -48,9 +48,9 @@ In the Cyclr Console goto Embedding > Marketplace and select the Settings Cog. S
 ## Stopped Payload Example
 ````json
  {
-    Status = "stopped",
-    AccountId = "00000000-0000-0000-0000-000000000000",
-    AccountApiId = "ExampleAccount",
-    MarketplaceIntegrationPackageId = 1234
+    "Status": "stopped",
+    "AccountId": "00000000-0000-0000-0000-000000000000",
+    "AccountApiId": "ExampleAccount",
+    "MarketplaceIntegrationPackageId": 1234
 }
 ````
