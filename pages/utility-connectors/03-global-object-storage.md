@@ -7,9 +7,10 @@ tags: [utility-connector]
 
 ## Purpose
 
-If you need to store some data and make it accessible across all cycles in your account, this Utility Connector can be used.
 
-The **Global *Object* Storage** Connector works using a Key that sets and gets a Value that can contain several separate properties.  These could be several pieces of data about a contact such as their firstname, lastname, etc.
+To store some data in the form of one or more JSON objects and then access that data (in any Cycle in the same Cyclr Account) you can use the **Cycle Object Storage** Connector.
+
+The **Global *Object* Storage** Connector works by using a Key that sets and gets a Value that can contain several separate properties.  These could be several pieces of data about a contact such as their forename, surname etc.
 
 If you only wish to store a single value, you could instead use the **[Global *Data* Storage](./global-data-storage)** Connector which works with simple Key and Value pairs.
 
@@ -29,9 +30,11 @@ If you wish to add additional Fields after you've installed the Connector, you c
 
 **Get All Entries** Method: returns all of the stored values in the connector.
 
-This Connector builds upon the features of the **Global Data Storage** Connector so it supports most of the Methods documented here:
+This Connector builds upon the features of the **Global Data Storage** Connector and therefore supports most of the Methods documented here:
 
 [Data Storage Usage](./data-storage-usage)
+
+> **_PLEASE NOTE:_** Using Utility Connectors counts toward your overall task usage.
 
 ## Related Topics
 
