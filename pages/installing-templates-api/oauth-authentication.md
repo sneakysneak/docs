@@ -9,7 +9,7 @@ tags: [installing]
 
 Connectors using OAuth require that the user goes through a webflow where they are sent to the third party application to sign in and grant access to Cyclr.
 
-You'll need to create an Account Sign-In Token for a User to access the account:
+You'll need to create an Account Sign-In Token for a User to access the account.  The `Token` will be valid for 5 minutes, as indicated by the `ExpiresAtUtc` value in the response.
 
 Request:
 
