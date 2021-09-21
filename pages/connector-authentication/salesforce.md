@@ -69,6 +69,7 @@ After saving your App, make a note of your **Consumer Key** and **Consumer Secre
 ***IMPORTANT** It can take up to 10 minutes for any changes to your Connected App to take effect in Salesforce.*
 
 ![Salesforce Update Error](./images/salesforce_update_error.png)
+
 *If you attempt to use your app before it has had time to update, you may encounter this error.*
 
 
