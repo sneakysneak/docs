@@ -12,10 +12,11 @@ This is a link that can be emailed and will take anyone clicking it through the 
 To generate a Connector Authentication Link:
 
 * go to your Cyclr Console then the **Accounts** menu and **Account Management**.
-* click the **Users** button by the relevant Account.
-* click the **User Settings** button next to an appropriate user.
-* scroll down to the **Accounts** section showing what the user has access to and click the **Connector Authentication Link** button.
-* select the Acount Connector from the dropdown and set a date for the Link Expires After value and click Generate.
+* navigate to the appropriate account and take the **Open Account** button.
+* from the main navigation select **Connectors**.
+* navigate to the appropriate connector and take the **Edit Connector** button.
+* take the **Generate Setup Token" buttom
+* set a date for the Link Expires After value and click Generate.
 
 You'll then be given a URL you can send to someone to authenticate the Account Connector.
 
