@@ -243,6 +243,10 @@ entries:
           - title: Custom Fields
             url: /dynamic-custom-fields
             output: web, pdf
+            
+          - title: Enhanced Objects
+            url: /enhanced-objects
+            output: web, pdf
 
       - title: Marketplaces
         output: web, pdf
