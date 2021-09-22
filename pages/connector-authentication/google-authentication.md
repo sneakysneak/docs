@@ -129,3 +129,19 @@ Step 2 - Use the Google Ads UI to create a **test client account** under the tes
 Step 3 - Create a few test campaigns using the **test client account**.
 
 Step 4 - Make note of the **client customer ID** for the client account, this is what you will enter when setting up the connector for testing.
+
+
+##  Possible Issues with Refresh Tokens
+
+There are a few situations that can cause the following error to occur when Cyclr attempts to refresh its Connector authentication details with Google:
+
+```javascript
+{
+    "error" : "invalid_grant",
+    "error_description" : "Token has been expired or revoked."
+}
+```
+
+This could be caused by the user that authenticated the Connector having changed their password, or your Google Project being in a "Testing" status while Google verify it which results in refresh tokens that are only valid for 7 days.
+
+More causes can be found in [Google's Documentation](https://developers.google.com/identity/protocols/oauth2#expiration).
