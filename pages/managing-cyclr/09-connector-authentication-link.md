@@ -15,7 +15,7 @@ To generate a Connector Authentication Link:
 * navigate to the appropriate account and take the **Open Account** button.
 * from the main navigation select **Connectors**.
 * navigate to the appropriate connector and take the **Edit Connector** button.
-* take the **Generate Setup Token" buttom
+* take the **Generate Setup Token** buttom
 * set a date for the Link Expires After value and click Generate.
 
 You'll then be given a URL you can send to someone to authenticate the Account Connector.
