@@ -7,19 +7,20 @@ tags: [managing-cyclr]
 
 If you require one of your clients to authenticate an Account Connector, but they don't have access to Cyclr and don't wish to share their credentials with you, you can generate a **Connector Authentication Link**.
 
-This is a link that can be emailed and will take anyone clicking it through the authentication screens of a particular Account Connector.
+This is an emailable link that when clicked will go through the authentication and consent screens of a particular Account Connector.
 
 To generate a Connector Authentication Link:
 
-* go to your Cyclr Console then the **Accounts** menu and **Account Management**.
-* navigate to the appropriate account and take the **Open Account** button.
-* from the main navigation select **Connectors**.
-* navigate to the appropriate connector and take the **Edit Connector** button.
-* take the **Generate Setup Token** buttom
-* set a date for the Link Expires After value and click Generate.
+* Go to the Account containing the Connector you wish to authenticate.
+* Open the **Connectors** menu.
+* Click **Edit Connector** next to the Connector to be authenticated.
+* Click **Generate Setup Token**.
+* Tokens generated here will expire after 5 minutes by default.  If you wish, you can set a longer time before expiry here using the date picker.
+* Click Generate.
+* You will be presented with a sign-in token for your user, and a link to a site where they can enter it.
 
-You'll then be given a URL you can send to someone to authenticate the Account Connector.
+![Animated Demo](./images/sign-in-token.gif)
 
-*Note: This link will only function **once** so after being clicked the first time, the link will no longer work.*
+> This is a new way of delivering sign-in tokens, and was developed to address issues some users were having with their spam filters/email systems automatically clicking (_and therefore invalidating_) the links.
 
-*If emailing the link, be aware that spam filters may perform the click as part of scanning an email so you may need to split the link into multiple pieces or send the link through other means.*
+This token can only be used once, so you may need to go through these steps again if your user startsbut doesn't complete the sign-in process.
