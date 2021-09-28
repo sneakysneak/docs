@@ -39,7 +39,7 @@ This linking of Cycles might be done when an integration is large and complex, a
 
 To set this up you will need to add custom fields to the Generic Webhook connector for the information that will be passed between the Cycles (see below).  The same fields will need to be added to both the 'POST' in the HTTP Methods section and to the 'Webhook' in the Webhooks section of the Connector Settings.
 
-You should then build both of the Templetes (or Custom Cycles) before making the linkage.  When you add the Webhook trigger to Cycle 2 you will be given the URL it will use to listen for inbound Requests.  This should be copied and entered as the URL Field in Step Setup of the POST Step in Cycle 1.
+You should then build both of the Templates (or Cycles) before making the linkage.  When you add the Webhook trigger to Cycle 2 you will be given the URL it will use to listen for inbound Requests.  This should be copied and entered as the URL Field in Step Setup of the POST Step in Cycle 1.
 
 When testing or running this kind of 'linked Cycles' structure you must start Cycle 2 before Cycle 1.  If you do not do this there is a danger that the webhook receiver will not be active before the first POST is made.
 
