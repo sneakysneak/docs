@@ -52,13 +52,18 @@ Published templates will always provide the Live version to your users when they
 Copying Templates
 ---------------
 
-As a Live template release is automatically locked for editing, you can quickly create a new identical, editable version by copying it.
+As a Live Template Release is automatically locked for editing, you can quickly create a new identical, editable version by copying it.
 
 ![](./images/live-template-workflow.png)
 
-Clicking the copy button on a release also allows you to select where you want the new release to be copied to.
+Clicking the Copy Release button next to a Release allows you to select where you want the new release to be copied to.
 
-The default destination is the current template, however, you are also able to select other templates to copy your Draft release into as well as a creating a new template. This allows you to quickly create new releases for similar integrations, e.g if you are creating CRM integrations with your application and have created one, you can copy it to a new template, and swap out the CRM steps for the equivalent steps of another CRM connector.
+The default destination is the current Template, however, you are also able to:
+* create a new Template from your Release.
+* copy your Release into another existing Template.
+* create a new Template in another Cyclr Console if you have access to more than one.
+
+This allows you to quickly create new releases for similar integrations, e.g if you are creating CRM integrations with your application and have created one, you can copy it to a new template, and swap out the CRM steps for the equivalent steps of another CRM connector.
 
 
 Promoting Releases
