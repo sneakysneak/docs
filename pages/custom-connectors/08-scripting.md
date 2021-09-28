@@ -117,7 +117,7 @@ If a Method uses Paging, this function is called before each page is retrieved.
 *   **cycle_id**: The ID of the cycle the script is running in
 *   **cyclr_account_id**: The internal ID of the account the script is running in
 *   **external_account_id**: The external ID of the account the script is running in
-*   **last_successful_run_date**: Time stored on the Step when it last ran without error.  Used by List New/Updated Methods to retrieve "new" data.
+*   **last_successful_run_date**: Time value indicating when a Step last ran without error.
 *   **action_data**: An object used to persist data between some event handler functions, allowing data to be passed between them.  Accessible in before_action, after_action, after_action_paging, action_condition and after_error.
 *   **return**: true to continue with the request to the third party API, false to abort the request (use throw for a more useful step error message)
 
