@@ -43,6 +43,16 @@ The result of the screenshot example is that contacts with the last name of “S
 
 To create more advanced logic, you can chain multiple Decision steps together.
 
+### IMPORTANT NOTE:<br> 
+
+**Decision steps only filter records from the steps to which they refer.  Take the example illustrated below:**
+
+![](./images/example-decision.png)
+
+* Step 3 has fields mapped from Step 1 and Step 2.
+* Only Step 2's results are being filtered by a decision step.
+* Any data Step 1 will always be mapped, regardless of the results of Step 2.
+
 ## Delays
 
 Delay steps added to a cycle, will execute without any scheduled delays. Connecting a Delay between two steps will allow you to set a fixed time that Cyclr should wait before it executes the next step.
