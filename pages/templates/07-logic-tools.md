@@ -51,7 +51,7 @@ To create more advanced logic, you can chain multiple Decision steps together.
 
 * Step 3 has fields mapped from Step 1 and Step 2.
 * Only Step 2's results are being filtered by a decision step.
-* Any data Step 1 will always be mapped, regardless of the results of Step 2.
+* Any data from Step 1 will always be mapped, regardless of the results of Step 2.
 
 ## Delays
 
