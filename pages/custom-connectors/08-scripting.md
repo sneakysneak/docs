@@ -146,6 +146,8 @@ If a Method uses Paging, this function is called after each page is retrieved.
 
 If this function is provided, it is called once after all pages of data have been retrieved, whether Paging has been implemented or not.
 
+> The Paging referred to here is **Inbound**.  This function doesn't wait for **Outbound** paging to complete.
+
 ###### Global object
 
 *   **method_request_headers**: The response headers for the request
