@@ -10,7 +10,7 @@ tags: [connector]
 This document will explain what is needed to setup access to FranConnect and install the connector.
 
 ### Authentication Details Setup ###
-Contact FranConnect to get a Client ID, Client Secret and redirect URL. Contact details can be seen [here](https://docs.franconnect.net/#tag/Introduction).
+Contact FranConnect to get a **Client ID** and **Client Secret**. Contact details can be found [here](https://docs.franconnect.net/#tag/Introduction).
 
 ### Connector Setup ###
 In Cyclr's Connector Setup, enter the **Client ID** and **Client Secret** you were given into the appropriate fields.
