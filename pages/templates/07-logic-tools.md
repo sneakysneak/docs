@@ -43,7 +43,7 @@ The result of the screenshot example is that contacts with the last name of “S
 
 To create more advanced logic, you can chain multiple Decision steps together.
 
-### IMPORTANT NOTE:<br> 
+### IMPORTANT NOTE
 
 **Decision steps only filter records from the steps to which they refer.  Take the example illustrated below:**
 
