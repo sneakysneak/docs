@@ -9,16 +9,22 @@ tags: [installing, embedding, service domain]
 
 To use your own domain as Cyclr Service Domain, follow these steps:
 
-* You must provide us with an SSL certificate for the domain you wish to use with Cyclr, e.g. ```integration.mydomain.com```.
-* You must create a CNAME DNS record pointing ```integration.mydomain.com``` to the Cyclr Instance you're hosted on. If you're on the US Instance for example, that will be `my.cyclr.com`.
+* You must provide us with an SSL certificate for the domain you wish to use with Cyclr, e.g. ```integration.mydomain.com```, which we will install on our web servers.
+* You must create a CNAME DNS record pointing ```integration.mydomain.com``` to the Cyclr Instance you're hosted on. If you're on the US Instance for example, that will be `my.cyclr.com`.  Get in touch if you're not sure.
 * Contact Cyclr Support once the above tasks have been completed and we'll perform some setup on your Cyclr Console.
 * You will need to provide details of a new SSL certificate before the existing one expires (we plan to make this less manual in future).
+
+***IMPORTANT: Changing your Service Domain will require you to update any referenced Webhook or App Callback/Redirect URLs.***
 
 
 ### Reasons to do this
 
-Due to how web browsers handle third party cookies, you should setup a custom domain if you are displaying Cyclr through an iframe in your own web application.
+#### Removes "cyclr" from Webhook and Redirect URLs
+The domain set as your Cyclr Console's Service Domain is used for Webhook URLs as well as Redirect URLs for Connectors using OAuth authentication.  It may therefore be seen by your own users.  Because of this you may wish to change it to your own domain to remove mentions of Cyclr.
 
-It should be a subdomain of the domain your web application is hosted at.
+**If you have already created Cycles using Webhooks or setup third party Apps, you will need to update them to use your new Service Domain.**
 
-Without this, your users may experience issues where the page isn't displayed by their web browser such as when using the Safari browser or Chrome Incognito windows.
+#### Avoids issues with how some web browsers handle third party cookies
+The Safari web browser and Chrome Incognito windows restrict access to third party cookies, causing errors when displaying Cyclr in an iframe to your users.
+
+You can avoid these by using a Service Domain which is a subdomain of the domain hosting your web application.
