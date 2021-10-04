@@ -9,7 +9,7 @@ tags: [connector]
 
 First, login to your existing Notion account .
 
-#### Creating OAuth2 Application
+### Creating OAuth2 Application
 
 
 *   Go to [My Integrations](https://www.notion.so/my-integrations) within Notion
