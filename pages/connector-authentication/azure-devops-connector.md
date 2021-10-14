@@ -63,6 +63,7 @@ These details can be found by logging in to the [DevOps portal](https://aex.dev.
 
 <img src="./images/AzureDevOps1.png" style="zoom:75%;" />
 
+<br />
 
 1. Begin installation of the **Microsoft Azure DevOps** Connector and enter the **Organization ID** and **Project Name** values.
 
@@ -70,7 +71,7 @@ These details can be found by logging in to the [DevOps portal](https://aex.dev.
 
 3. Select your Azure account and authorize access.
 
-The connector is now authenticated and ready to use.
+The Connector is now authenticated and ready for use.
 
 
 ## Setting Scopes/InvalidScope Error
