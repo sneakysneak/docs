@@ -45,3 +45,8 @@ If you leave them blank, the user must provide the values when installing the Co
 
 The connector is now authenticated and ready to use.
 
+### Setting Scopes/InvalidScope Error
+
+The list of permissions you set for the **Scopes** Connector parameter must *exactly* match the **Authorized scopes** you set when registering your App at https://app.vsaex.visualstudio.com/app/register.
+
+If they are different you will see an `InvalidScope` error when authenticating the Connector.
