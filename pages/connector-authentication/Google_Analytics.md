@@ -17,11 +17,11 @@ This method uses [UA Query Explorer](https://ga-dev-tools.web.app/query-explorer
 
 There are four required fields:
 
-![Set up request fields](./images/GA_List_Metrics_request_fields)
+![Set up request fields](./images/GA_List_Metrics_request_fields.png)
 
 - Profile ID: Select Look Up option.
 
-![Set up request fields](./images/GA_Profile_lookup)
+![Set up request fields](./images/GA_Profile_lookup.png)
 
 Then select the desired Profile ID.
 
