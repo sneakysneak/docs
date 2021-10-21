@@ -45,9 +45,7 @@ Within the account you wish to install the connector in Locate the **Mailkit** c
 
 *   **Connectors** (top navigation bar) > **+ Install New Application**
 *   Search for **Mailkit** and click **Install**
-
 *   You will be presented with a name and empty description for the installation, change these if preferred and then click 'Next'
-
 *   Enter your **Client ID** and **Client MD5**, then click 'Next'
 
 Your Mailkit connector is now setup at Account level. You can test it by executing one of the methods to confirm it can return some data.
