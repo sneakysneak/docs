@@ -43,7 +43,7 @@ Your Mailkit Connector is now setup at Partner level. You can test it by install
 
 From within the account you wish to install the connector:
 
-*   Click **Connectors** (top navigation bar) and then **+ Install New Application**
+*   Click **Connectors** (top navigation bar) and then **Install New Application**
 *   Search for **Mailkit** and click **Install**
 *   You will be presented with a name and empty description for the installation, change these if preferred and then click 'Next'
 *   Enter your **Client ID** and **Client MD5**, then click 'Next'
