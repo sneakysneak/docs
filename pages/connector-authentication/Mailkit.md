@@ -9,7 +9,7 @@ tags: [connector]
 
 First, login to your existing Mailkit account or [sign up for one.](https://app.mailkit.eu/)
 
-#### Retrieving Authentication Details
+### Retrieving Authentication Details
 
 *   [Login](https://app.mailkit.eu/) to your Mailkit Account.
 *   Click Create App.
@@ -19,7 +19,7 @@ First, login to your existing Mailkit account or [sign up for one.](https://app.
 
 ### Cyclr Setup
 
-You have the choice of authenticating the connector at either Partner level or Account level. Authenticating the connector at Partner level will result in all account installations of the connector sharing the same credentials. If you require each account installation to use seperate credentials you should authenticate the connector at Account level.
+You have the choice of authenticating the connector at either Partner level or Account level. Authenticating the connector at Partner level will result in all account installations of the connector sharing the same credentials. If you require each account installation to use separate credentials you should authenticate the connector at Account level.
 
 Setup your Mailkit App within Cyclr:
 
@@ -27,9 +27,9 @@ Setup your Mailkit App within Cyclr:
 
 *   Go to your **Cyclr Console**
 *   Click the **Connectors** menu along the top
-*   Choose Connector Library
-*   Scroll down to **Mailkit**
-*   Click the **Setup** button
+*   Choose Application Connector Library
+*   Search for **Mailkit**
+*   Click the **padlock** button
 
 Enter the following values:
 
