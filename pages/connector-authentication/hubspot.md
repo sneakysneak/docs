@@ -17,7 +17,19 @@ For Cyclr to connect with the Hubspot API you will need to create an "Applicatio
 3. In the `Auth` tab you will see a `Client ID` and `Client Secret`.  Make a note of these to use in the connector setup.
 4. The Redirect URL that creates the link between your Cyclr Console and Hubspot is shown page where the Client ID and Client Secret are entered.  It has the form
 `https://[Your Cyclr Service Domain]/connector/callback`
-5. Set the desired (minimum) Scopes you require to access. See [here](https://developers.hubspot.com/docs/api/working-with-oauth) for further information 
+5. It's not necessary to set scopes at this point - see next section for details on this.
+
+Scopes
+---------------
+
+As mentioned above - it's not necessary to set scopes at this point. The default scope of `contacts` will be requested by the Cyclr Connector (along with any other scopes you choose to set within your  Cyclr console).
+
+#### IMPORTANT NOTE:
+You may be invited to migrate your OAuth App to use "Granular Scopes", a new feature in Hubspot.  It's important that you do **NOT** use this feature as it is not yet compatible with Cyclr.<br><br>
+There's more on scope migration here, and how to roll-back if you select it accidentally:
+
+https://developers.hubspot.com/docs/api/oauth/contacts-scope-migration
+
 
 Permissions
 ---------------
@@ -32,7 +44,11 @@ The Connector now can be installed using the credentials obtained in the above s
 
 **Secret**: `Client Secret`
 
-**Scopes/Optional** You will need to match the Scopes you set when creating the oAuth App above
+**Scopes/Optional**: This defines what permissions will be requested on the consent screen presented to your users.  
+
+By default, all users will be asked to consent to permissions around ``contacts``, and where appropriate (these are optional scopes, in other words) users will be asked to consent to ``content`` ``reports`` ``e-commerce`` ``forms``.
+
+Should you need to request *alternative* scopes/optional scopes, this is where you would set them.
 
 You will then be prompted to log in, select your Hubspot and authorize access to the connector.
 
