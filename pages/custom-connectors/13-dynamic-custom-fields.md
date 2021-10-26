@@ -72,7 +72,7 @@ If you are mapping **data types** from the object description, you will need to 
 
 This will vary depending on the structure of your method response, but as an example:
 
-```javascript
+```jsonc
 // Example method response
 
 [
@@ -147,7 +147,7 @@ cyclr_is_readonly | Indicates if the custom field is read-only, if it is it won'
 
 2\. The response of this method should be in the same structure as your "Target" method (the method for which Cyclr will dynamically map custom fields).
 
-```json
+```jsonc
 // Example:
 // Source method "List All Orders" response
 {
@@ -173,6 +173,7 @@ cyclr_is_readonly | Indicates if the custom field is read-only, if it is it won'
   ]
 }
 ```
+
 3\. Now all you need to do is go to the method where you want to pick up custom fields, and select this method from the **Custom Fields Lookup Method** dropdown menu.  You can do this for the Request, the Response, or both as required:
 
 ![](./images/dynamic_custom_fields_image_1.png)
