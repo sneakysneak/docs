@@ -72,7 +72,7 @@ If you are mapping **data types** from the object description, you will need to 
 
 This will vary depending on the structure of your method response, but as an example:
 
-```json
+```javascript
 // Example method response
 
 [
