@@ -71,6 +71,7 @@ function after_action_paging() {
 If you are mapping **data types** from the object description, you will need to add some scripting to the method.  
 
 This will vary depending on the structure of your method response, but as an example:
+
 ```json
 // Example method response
 
