@@ -1,7 +1,7 @@
 ---
 title: Ring Central
 sidebar: cyclr_sidebar
-permalink: Cavelo
+permalink: RingCentral
 tags: [connector]
 ---
 
