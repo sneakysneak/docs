@@ -13,7 +13,7 @@ A guide for authenticating Google connectors can be found here: [Google Authenti
 
 This method uses [UA Query Explorer](https://ga-dev-tools.web.app/query-explorer/), which is a tool that lets you interact with the [Core Reporting API](https://developers.google.com/analytics/devguides/reporting/core/v3/), by building queries to get data from your Google Analytics views (profiles). You can use these queries in any of the client libraries to build your own tools.
 
-## Set up request fields
+### Request Fields Setup
 
 There are four required fields:
 
