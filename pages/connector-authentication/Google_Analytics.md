@@ -33,7 +33,7 @@ Then select the desired Profile ID.
 
 ## Custom Method Setup
 
-[UA Query Explorer](https://ga-dev-tools.web.app/query-explorer/) is a tool to produce custom reports, because of this, a method that would fit every type of report would not be feasible to implement. With each method in a connector you have the option of adding custom fields. Please follow the instructions in our guide [Adding Custom Fields](https://docs.cyclr.com/adding-custom-fields) for details on how to implement this functionality.
+[UA Query Explorer](https://ga-dev-tools.web.app/query-explorer/) is a tool to produce custom reports, because of this, a method that would fit every type of report would not be feasible to implement. With each method in a connector you have the option of adding custom fields. Please follow the instructions in our guide [Adding Custom Fields](https://docs.cyclr.com/adding-custom-fields) to implement this functionality.
 
 ## Producing a [UA Query Explorer](https://ga-dev-tools.web.app/query-explorer/) Report
 
