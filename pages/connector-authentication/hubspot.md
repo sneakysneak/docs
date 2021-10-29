@@ -25,10 +25,10 @@ Scopes
 As mentioned above - it's not necessary to set scopes at this point. The default scope of `contacts` will be requested by the Cyclr Connector (along with any other scopes you choose to set within your  Cyclr console).
 
 #### IMPORTANT NOTE:
-You may be invited to migrate your OAuth App to use "Granular Scopes", a new feature in Hubspot.  It's important that you do **NOT** use this feature as it is not yet compatible with Cyclr.<br><br>
+You may be invited to migrate your OAuth App to use "Granular Scopes", a new feature in Hubspot.  It's important that you do **NOT** use this feature as it is not yet compatible with Cyclr.<br>
+<br>
 There's more on scope migration here, and how to roll-back if you select it accidentally:
-
-https://developers.hubspot.com/docs/api/oauth/contacts-scope-migration
+[https://developers.hubspot.com/docs/api/oauth/contacts-scope-migration](https://developers.hubspot.com/docs/api/oauth/contacts-scope-migration)
 
 
 Permissions
