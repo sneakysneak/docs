@@ -62,7 +62,7 @@ function after_action_paging() {
 
 ...you now need to set the **System Fields** appropriately.
 
-> Please note that if you have used the "Generate Fields" functionality to create the fields above, the system field names will be wrong, so you will now need to update them.
+> Please note that if you have used the "Generate Fields" functionality to create the fields above, the system field names will be incorrect - so you will now need to update them.
 
 In the response of the method, set the **System Fields** to match [the table below](#systemfields), so that Cyclr can access the various parts of each field description.  In the above example, the mappings would look like this:
 
