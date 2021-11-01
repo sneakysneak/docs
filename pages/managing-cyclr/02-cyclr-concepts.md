@@ -14,7 +14,7 @@ Into these accounts integrations can be developed, either based on templates or 
 
 #### Sub-accounts
 
-Each account may have a number of sub-accounts.  You may for example want one account for a store, separated into sub-accounts for each location.  These accounts have access to the connectors of their "parent" account.
+Each account may have a number of sub-accounts.  You may for example want one account for a store, separated into sub-accounts for each location.  These accounts have access to the connectors of their "parent" account. <br>[Setting up Sub Accounts](/sub-accounts).
 
 ### Connectors
 
