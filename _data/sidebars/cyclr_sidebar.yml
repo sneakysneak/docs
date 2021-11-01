@@ -94,6 +94,10 @@ entries:
           - title: Custom Domains
             url: /custom-domains
             output: web, pdf
+            
+          - title: Sub Accounts
+            url: /sub-accounts
+            output: web, pdf
 
           - title: Performance Tips
             url: /performance-tips
