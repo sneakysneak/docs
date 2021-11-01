@@ -62,11 +62,13 @@ function after_action_paging() {
 
 ...you now need to set the **System Fields** appropriately.
 
- In the response of the method, set the **System Fields** to match [the table below](#systemfields), so that Cyclr can access the various parts of each field description.  In the above example, the mappings would look like this:
+> Please note that if you have used the "Generate Fields" functionality to create the fields above, the system field names will be wrong, so you will now need to update them.
+
+In the response of the method, set the **System Fields** to match [the table below](#systemfields), so that Cyclr can access the various parts of each field description.  In the above example, the mappings would look like this:
 
 ![](./images/basic-mappings.png)
 
-4\. The only **required** fields are ```cyclr_field_location``` and ```[].cyclr.display_name```.
+4\. The only **required** fields are ```[].cyclr_field_location``` and ```[].cyclr.display_name```.
 
 If you are mapping **data types** from the object description, you will need to add some scripting to the method.  
 
