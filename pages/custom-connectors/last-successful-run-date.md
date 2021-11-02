@@ -16,11 +16,11 @@ Where a particular endpoint accepts a date as a parameter, you can enter the Las
 
 See the example API call below:
 
-* <a>https://www.api.com/contacts?$filter=createdDateTime ge **2021-11-02T14:32:02Z**</a>
+* ht<span/>tps://ww<span/>w.api.com/contacts?$filter=createdDateTime ge **2021-11-02T14:32:02Z**
 
 You can add the **Last Successful Run Date** mergefield directly to the endpoint in your connector like so:
 
-* <a>https://www.api.com/contacts?$filter=createdDateTime ge **\{\{LastSuccessfulRunDate format=yyyy-MM-ddTHH:mm:ssZ\}\}</a>**
+* ht<span/>tps://ww<span/>w.api.com/contacts?$filter=createdDateTime ge **\{\{LastSuccessfulRunDate format=yyyy-MM-ddTHH:mm:ssZ\}\}**
 
 Now every time a step uses this method, it will pull all contacts since *the last time this step successfully ran*.
 
