@@ -37,3 +37,7 @@ If this is left unchanged, a live run of the Cycle will set this value to the cu
 The next full run of the Cycle will pick up any new data since the *first* run, and so on.
 
 Clicking Step Test will use whatever date is in the picker, so 1970-01-01T00:00:00 if the cycle has never been run, and no value has been given.
+
+#### Accessing Last Successful Run Date in script
+
+Last Successful Run Date can be accessed in ``before_action`` functions by making reference to ``last_successful_run_date``.
