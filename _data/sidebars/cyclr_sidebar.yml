@@ -239,6 +239,10 @@ entries:
           - title: Paging
             url: /connector-paging
             output: web, pdf
+            
+          - title: Last Successful Run Date
+            url: /last-successful-run-date
+            output: web, pdf
 
           - title: Auto Installing Webhooks
             url: /auto-installing-webhooks
