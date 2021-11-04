@@ -53,11 +53,11 @@ In the above example, the field locations would be <br>
 and<br>
 ``total_records``
 
-respectively.
+respectively. If you have many fields however, there is another option:
 
 ## Adding Fields Using JSON Example
 
-As well as being able to add fields manually one-by-one, if you have a JSON example of the request or response then this can be used to auto-add additional or custom fields.
+If you have a JSON example of the request or response then this can be used to auto-add additional or custom fields.
 
 Simply take the 'spy glass' icon by the Request or Response area - depending on where you wish to add the fields - and paste in the JSON example in the popup that opens.  Any fields that do not already exist will be added.  You may then need to tidy up the field names and data types that have been automatically generated.
 
