@@ -7,26 +7,12 @@ tags: [connector]
 
 ## Partner Setup
 
-First, login to your existing [Voyado account.](https://magento.voyado.com/customer/account/login)
-
-#### Retrieving Auth Details
-
-*   Set up your application.
-*   Note API Key, keep this safe.
+Contact your Voyado account administrator for an API key.
 
 ### Cyclr Setup
 
 Setup your Voyado App within Cyclr:
 
-*   Go to your **Cyclr Console**
-*   Click the **Connectors** menu along the top
-*   Choose Connector Library
-*   Scroll down to **Voyado**
-*   Click the **Setup** button
-
-Enter the following values:
+When installing the connector enter the following values:
 
 **API Key**: The API Key from Voyado.
-
-
-Your Voyado Connector is now setup! You can test it by installing it in one of your Cyclr accounts and executing one of the methods to confirm it can return some data.
