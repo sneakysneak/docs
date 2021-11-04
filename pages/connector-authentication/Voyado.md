@@ -1,7 +1,7 @@
 ---
 title: Voyado Authentication
 sidebar: cyclr_sidebar
-permalink: Voyado-connector
+permalink: voyado-connector
 tags: [connector]
 ---
 
