@@ -53,7 +53,7 @@ In the above example, the field locations would be <br>
 and<br>
 ``total_records``
 
-respectively. If you have many fields however, there is another option:
+respectively. If you have many fields to add however, there is a more automated option:
 
 ## Adding Fields Using JSON Example
 
