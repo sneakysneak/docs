@@ -25,7 +25,35 @@ The following needs to be specified
 | Field Location | This is the field name as used by the API. Often this is just a case of copying the syntax of the existing fields. |
 | Display Name | This is the “friendly” name as it will be shown in the user interface. |
 | Description | You can optionally describe the field and provide documentation, for example how it is used. |
-| Data Type | You can optionally define a data type for your field.  If it is datetime then add the subtype to allow for type conversions between differnt standards. |
+| Data Type | You can optionally define a data type for your field.  If it is datetime then add the subtype to allow for type conversions between different standards. |
+
+## Example field locations
+
+If you only have a few fields, you may want to add them manually.
+
+```JSON
+{
+    "customfields":[
+        {
+            "first_name":"John",
+            "last_name":"Smith"
+            "address":{
+                "city": "London"
+            }
+        }
+    ],
+    "total_records": 23
+}
+```
+
+In the above example, the field locations would be <br>
+``[customfields].first_name``<br>
+``[customfields].last_name``<br>
+``[customfields].address.city``
+and<br>
+``total_records``
+
+respectively.
 
 ## Adding Fields Using JSON Example
 
@@ -34,4 +62,3 @@ As well as being able to add fields manually one-by-one, if you have a JSON exam
 Simply take the 'spy glass' icon by the Request or Response area - depending on where you wish to add the fields - and paste in the JSON example in the popup that opens.  Any fields that do not already exist will be added.  You may then need to tidy up the field names and data types that have been automatically generated.
 
 *NOTE: Before pasting in a large JSON example, reduce it to only what you wish to work with as a field will be added for each property it contains. Any you don't wish to keep must be deleted one-by-one.*
-
