@@ -27,9 +27,11 @@ The following needs to be specified
 | Description | You can optionally describe the field and provide documentation, for example how it is used. |
 | Data Type | You can optionally define a data type for your field.  If it is datetime then add the subtype to allow for type conversions between different standards. |
 
-## Example field locations
+## Example Field Locations
 
 If you only have a few fields, you may want to add them manually.
+
+Taking the following example Response:
 
 ```JSON
 {
@@ -46,14 +48,13 @@ If you only have a few fields, you may want to add them manually.
 }
 ```
 
-In the above example, the field locations would be <br>
+The Field Locations for those properties would be as follows:<br>
 ``[customfields].first_name``<br>
 ``[customfields].last_name``<br>
-``[customfields].address.city``
-and<br>
+``[customfields].address.city``<br>
 ``total_records``
 
-respectively. If you have many fields to add however, there is a more automated option:
+If you have a large number of fields to add, there is a more automated option as described below.
 
 ## Adding Fields Using JSON Example
 
