@@ -33,6 +33,7 @@ Setting up your Partner App
 10. Complete the required steps, adding the Facebook page you wish to use.
 11. Under Settings, Basic on the left menu, you'll be able to complete any missing sections, and copy your App ID and App Secret.  Once your app has been approved by Facebook, you'll be able to use these to authenticate your App in Cyclr.
 
+
 Authenticating your Facebook Cyclr Connector
 --------------
 
@@ -41,6 +42,8 @@ Go to your Cyclr Console > Connectors > Connector Library > Facebook Messenger A
 **Client ID**: This is the App ID displayed after you create the Facebook app
 
 **Client Secret**: This is the App Secret displayed after you create the Facebook app
+
+**Scopes**: This is a comma separated list of scopes to request from Facebook during authentication.  For detail on the scopes please visit the [official documentation.](https://developers.facebook.com/docs/permissions/reference/)
 
 Your Facebook Messenger API connector is now set up! 
 
@@ -59,6 +62,10 @@ This should only be configured once you have authenticated the connector, and ha
 7) Save these settings, and Facebook will verify the webhook with Cyclr.
 
 You have now configured a webhook. If the Webhook URL changes for any reason, you will need to reconfigure it using the steps above.
+
+Roles & Test Users
+--------------
+If your application has not been approved by Facebook, the only users that will be able to interact with it must be set within the developer console. To create a test user, click the menu on the left, and select ``Roles`` > ``Test Users``.
 
 Official Facebook Documentation
 ---------
