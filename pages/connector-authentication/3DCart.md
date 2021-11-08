@@ -16,7 +16,7 @@ Also login to your existing 3DCart Secure Store account or [sign up for a free t
 *   [Login](https://devportal.3dcart.com/login.asp) to your 3DCart Developer Account.
 *   Click Add New.
 *   Enter a name and hit next. When in your Developer Portal Dashboard, you'll need to enter the callback URL (https://[Your Cyclr Service Domain]/connector/callback) for your app. You will also need to provide the IP Address for the server that you're on in the IP White List.
-    | Server | URL | IP Address |
+*   | Server | URL | IP Address |
     | --- | --- | --- 
     | US (North Virginia) | my.cyclr.com | 52.22.119.215 |
     | UK (London) | my.cyclr.uk | 52.56.244.97 |
