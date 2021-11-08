@@ -71,8 +71,8 @@ entries:
             url: /console-security
             output: web, pdf
 
-          - title: Whitelisting Cyclr
-            url: /cyclr-ip-whitelisting
+          - title: Cyclr IP Allowlist
+            url: /cyclr-ip-allowlist
             output: web, pdf
 
           - title: Connector Authentication Link
