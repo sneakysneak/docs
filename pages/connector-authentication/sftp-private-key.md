@@ -69,8 +69,8 @@ The timezone used by the SFTP server. If not set correctly the **List Updated Fi
 Europe/London
 ````
 
-## IP Whitelisting ##
+## IP Allowlist ##
 
 If the SFTP server is not publicly accessible, ensure you allow Cyclr to connect to it.
 
-See [Cyclr IP Whitelisting](https://docs.cyclr.com/cyclr-ip-whitelisting)
+See [Cyclr IP Allowlist](https://docs.cyclr.com/cyclr-ip-allowlist)
