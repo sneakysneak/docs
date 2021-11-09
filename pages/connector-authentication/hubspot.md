@@ -5,8 +5,7 @@ permalink: hubspot-connector
 tags: [connector]
 ---
 
-Hubspot Setup
----------------
+### Hubspot Setup
 
 For Cyclr to connect with the Hubspot API you will need to create an "Application" in the Hubspot account, as detailed below:
 
@@ -19,16 +18,18 @@ For Cyclr to connect with the Hubspot API you will need to create an "Applicatio
 `https://[Your Cyclr Service Domain]/connector/callback`
 5. It's not necessary to set scopes at this point - see next section for details on this.
 
-Scopes
----------------
+### Scopes
 
-As mentioned above - it's not necessary to set scopes at this point. The default scope of `contacts` will be requested by the Cyclr Connector (along with any other scopes you choose to set within your  Cyclr console).
+As mentioned above - it's not necessary to set scopes at this point. The default scopes of `crm.objects.contacts.read`,`crm.objects.deals.read` and `crm.objects.companies.read` will be requested by the Cyclr Connector (along with any other scopes you choose to set within your Cyclr console).
 
 #### IMPORTANT NOTE:
-You may be invited to migrate your OAuth App to use "Granular Scopes", a new feature in Hubspot.  It's important that you do **NOT** use this feature as it is not yet compatible with Cyclr.<br>
-<br>
-There's more on scope migration here, and how to roll-back if you select it accidentally:
+The way that HubSpot handles contact scopes has recently changed:
+
 [https://developers.hubspot.com/docs/api/oauth/contacts-scope-migration](https://developers.hubspot.com/docs/api/oauth/contacts-scope-migration)
+
+This should not affect you if you have set up a new HubSpot app, but contact Cyclr Support if you have any questions.
+
+If you have an _existing_ HubSpot app this may have been auto-migrated by HubSpot.  This shouldn't affect your integrations, but we'd recommend upgrading your Account Connector to the latest version at your earliest opportunity.
 
 
 Permissions
@@ -46,7 +47,7 @@ The Connector now can be installed using the credentials obtained in the above s
 
 **Scopes/Optional**: This defines what permissions will be requested on the consent screen presented to your users.  
 
-By default, all users will be asked to consent to permissions around ``contacts``, and where appropriate (these are optional scopes, in other words) users will be asked to consent to ``content`` ``reports`` ``e-commerce`` ``forms``.
+By default, all users will be asked to consent to the following permissions/scopes `crm.objects.contacts.read`,`crm.objects.deals.read` and `crm.objects.companies.read`, and where appropriate (these are optional scopes, in other words) users will be asked to consent to ``content`` ``reports`` ``e-commerce`` ``forms``.
 
 Should you need to request *alternative* scopes/optional scopes, this is where you would set them.
 
@@ -68,5 +69,5 @@ In the example below, this would be the "Cyclr" account.
 
 | Property Name   | Description    |
 | ----------- | -----------    |
-| Scopes      | The scopes of the connector. Default value is "contacts". |
+| Scopes      | The scopes of the connector. Default value is `crm.objects.contacts.read`,`crm.objects.deals.read`,`crm.objects.companies.read`. |
 | OptionalScopes   | The optional scopes of the connector. Default value is "content reports e-commerce forms" |
