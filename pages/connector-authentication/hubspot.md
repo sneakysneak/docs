@@ -1,43 +1,42 @@
 ---
-title: Hubspot Connector Guide
+title: HubSpot Connector Guide
 sidebar: cyclr_sidebar
 permalink: hubspot-connector
 tags: [connector]
 ---
 
-### Hubspot Setup
+### HubSpot Setup
 
-For Cyclr to connect with the Hubspot API you will need to create an "Application" in the Hubspot account, as detailed below:
+For Cyclr to connect with the HubSpot API you will need to create an "App" within HubSpot, as detailed below:
 
-  > NB. This part is completed once, by a Partner.  The client/customer does not need their own separate application within Hubspot.
+  > Note: This part can be completed once, by a Cyclr Partner.  The client/customer does not need their own separate App within HubSpot.
 
-1. Login to the Hubspot Developer Portal [here](https://app.hubspot.com/signup-v2/developers)
-2. Follow the Hubspot [documentation](https://developers.hubspot.com/docs/faq/how-do-i-create-an-app-in-hubspot) to create an application
-3. In the `Auth` tab you will see a `Client ID` and `Client Secret`.  Make a note of these to use in the connector setup.
-4. The Redirect URL that creates the link between your Cyclr Console and Hubspot is shown page where the Client ID and Client Secret are entered.  It has the form
+1. Login to the HubSpot Developer Portal [here](https://app.hubspot.com/signup-v2/developers)
+2. Follow the HubSpot [documentation](https://developers.hubspot.com/docs/faq/how-do-i-create-an-app-in-hubspot) to create an application
+3. In the `Auth` tab you will see a `Client ID` and `Client Secret`.  Make a note of these to use in Cyclr's Connector setup.
+4. The Redirect URL that creates the link between your Cyclr Console and HubSpot is shown on the page where the Client ID and Client Secret are entered.  It has the form
 `https://[Your Cyclr Service Domain]/connector/callback`
-5. It's not necessary to set scopes at this point - see next section for details on this.
+5. It's not necessary to set Scopes at this point - see next section for details on this.
 
 ### Scopes
 
-As mentioned above - it's not necessary to set scopes at this point. The default scopes of `crm.objects.contacts.read`,`crm.objects.deals.read` and `crm.objects.companies.read` will be requested by the Cyclr Connector (along with any other scopes you choose to set within your Cyclr console).
+As mentioned above - it's not necessary to set scopes at this point. The default scopes of `crm.objects.contacts.read`,`crm.objects.deals.read` and `crm.objects.companies.read` will be requested by the Cyclr Connector (along with any other scopes you choose to set within your Cyclr Console).
 
-#### IMPORTANT NOTE:
+#### IMPORTANT NOTE (November 2021)
 The way that HubSpot handles contact scopes has recently changed:
 
 [https://developers.hubspot.com/docs/api/oauth/contacts-scope-migration](https://developers.hubspot.com/docs/api/oauth/contacts-scope-migration)
 
-This should not affect you if you have set up a new HubSpot app, but contact Cyclr Support if you have any questions.
+This should not affect you if you have set up a new HubSpot App, but contact Cyclr Support if you have any questions.
 
-If you have an _existing_ HubSpot app this may have been auto-migrated by HubSpot.  This shouldn't affect your integrations, but we'd recommend upgrading your Account Connector to the latest version at your earliest opportunity.
+If you have an _existing_ HubSpot app this is likely to have been auto-migrated by HubSpot in early November 2021.  This shouldn't affect your integrations, but we'd recommend upgrading your Account Connector to the latest version at your earliest opportunity.
 
 
-Permissions
----------------
-In order to use the Products and Line Items methods, the user must be assigned a [paid Sales Hub seat](https://knowledge.hubspot.com/articles/kcs_article/account/manage-sales-hub-and-service-hub-paid-users) within Hubspot.
+### Permissions
 
-Connector Setup
----------------
+In order to use the Products and Line Items methods, the user must be assigned a [paid Sales Hub seat](https://knowledge.hubspot.com/articles/kcs_article/account/manage-sales-hub-and-service-hub-paid-users) within HubSpot.
+
+### Connector Setup
 
 The Connector now can be installed using the credentials obtained in the above steps:
 
@@ -51,21 +50,21 @@ By default, all users will be asked to consent to the following permissions/scop
 
 Should you need to request *alternative* scopes/optional scopes, this is where you would set them.
 
-You will then be prompted to log in, select your Hubspot and authorize access to the connector.
+You will then be prompted to log in, select your HubSpot and authorize access to the connector.
 
-Important note about Account selection
---------------------------------------
+### Important note about Account selection
 
-After entering your Client ID and Secret, and signing into hubspot, you will be presented with the **Choose an Account** screen.
+After entering your Client ID and Secret, and signing into HubSpot, you will be presented with the HubSpot **Choose an Account** screen.
 
-It is important to select the main account, rather than the developer account.  You can identify the main account by looking for the one with Products attached.
+It is important to select the main account, rather than the developer account.  You can identify the main account by looking for the one with items shown under the "PRODUCTS" heading as shown below.
 
-In the example below, this would be the "Cyclr" account.
+In this example, that would be the "Cyclr" account:
 
 ![](./images/hubspot-choose-acct.png)
 
-## Connector Parameters 
-#### (Useful if accessing this Connector via the API.  Property Names given here in the same format as they should be passed to the API.)
+### Connector Parameters 
+
+Useful if accessing this Connector via the API.  Property Names given here are in the same format as they should be passed to the API.
 
 | Property Name   | Description    |
 | ----------- | -----------    |
