@@ -52,11 +52,11 @@ Should you need to request *alternative* scopes/optional scopes, this is where y
 
 You will then be prompted to log in, select your HubSpot and authorize access to the connector.
 
-### Important note about Account selection
+### Account Selection
 
-After entering your Client ID and Secret, and signing into HubSpot, you will be presented with the HubSpot **Choose an Account** screen.
+When authenticating the HubSpot Connector and signing into HubSpot, the user will be presented with the HubSpot **Choose an Account** screen.
 
-It is important to select the main account, rather than the developer account.  You can identify the main account by looking for the one with items shown under the "PRODUCTS" heading as shown below.
+During testing, you should select your main HubSpot account, rather than your developer account.  You can identify the main account by looking for the one with items shown under the "PRODUCTS" heading as shown below.
 
 In this example, that would be the "Cyclr" account:
 
