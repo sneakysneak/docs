@@ -1,23 +1,22 @@
 ---
 title: LiveForce Authentication
 sidebar: cyclr_sidebar
-permalink: LiveForce-connector
+permalink: liveForce-connector
 tags: [connector]
 ---
 
 #### Retrieving OAuth2 Details
 
-*   Set up your application.
-*   To request access to LiveForce e-mail them for **Client ID** and **Client secret**.
+*   To request access to LiveForce you will need to [e-mail](mailto:tech@liveforce.co) and request for **Client ID** and **Client secret**.
 
 ### Cyclr Setup
 
-Setup your LiveForce App within Cyclr:
+Setup your LiveForce Connecector within Cyclr:
 
 *   Go to your **Cyclr Console**
 *   Click the **Connectors** menu along the top
 *   Choose Connector Library
-*   Scroll down to **LiveForce**
+*   Find the **LiveForce** Connector
 *   Click the **Setup** button
 
 Enter the following values:
