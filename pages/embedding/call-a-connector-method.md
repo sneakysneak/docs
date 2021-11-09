@@ -89,9 +89,12 @@ You can now call a connector method and get the raw response from the third-part
 #### Request
 
 ```http
-GET https://yourCyclrInstance/v1.0/account/connectors/{account connector ID}/methods/{method ID}
+POST https://yourCyclrInstance/v1.0/account/connectors/{account connector ID}/methods/{method ID}
 Authorization: Bearer ****************************************************************
+Content-Type: application/json
 X-Cyclr-Account: 00000000-0000-0000-0000-000000000000
+
+{}
 ```
 
 #### Response
@@ -118,7 +121,7 @@ X-Cyclr-Account: 00000000-0000-0000-0000-000000000000
 
 ### Call a Connector Method with Parameters
 
-If the method you are calling requires any values to be passed, they must be included in your request body.
+If the method you are calling requires any values to be passed, they must be included in your Request Body as follows:
 
 #### Request
 
