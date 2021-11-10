@@ -10,7 +10,7 @@ To use the GitHub connector you will need to set up an app within GitHub, to obt
 
 ## Setting up your GitHub app
 
-1. Go to your [GitHub user's **Developer Settings**](https://github.com/settings/developers) then **OAuth Apps** and click `Register a new application`.
+1. Go to your [GitHub user's **Developer Settings**](https://github.com/settings/developers) then **OAuth Apps** and create a new application.
 
 2. Provide the following information:
 
