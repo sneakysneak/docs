@@ -17,7 +17,7 @@ To authenticate the connector you will first have to create an API Key:
 4. Click the API tab and select the Magento resources the integration should be able to access.
 5. Click `Save`.
 6. Click the `Activate` link next to your new integration.
-7. Click `Allow` and copy the value in the `Access Token` field. 
+7. Click `Allow` and copy the value in the `Access Token` field (Be sure to copy the **Access Token** and not the **Consumer Key**). 
 
 ![](./images/integration-tokens.png)
 
