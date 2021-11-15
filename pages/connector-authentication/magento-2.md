@@ -30,3 +30,9 @@ Now that you have your Access token go to the `Connector Setup` page in Cyclr.
 ### Bulk Endpoints
 
 To use bulk methods such as Bulk Update Product you must enable/install asynchronous functionality and RabbitMQ on your Magento instance. More information can be found [here](https://devdocs.magento.com/guides/v2.4/rest/bulk-endpoints.html).
+
+### Webhooks
+
+If you wish to use webhooks with **Magento 2** we have a dedicated **Magento 2 Webhooks** Connector, along with a plugin to install in your Magento instance.
+
+More information can be found here: [https://docs.cyclr.com/magento-2-webhooks-connector](https://docs.cyclr.com/magento-2-webhooks-connector#magento-2-webhooks-setup)
