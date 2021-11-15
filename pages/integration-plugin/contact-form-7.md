@@ -5,7 +5,7 @@ permalink: contact-form-7-plugin
 tags: [plugins]
 ---
 
-![Contact Form 7 Plugin](https://website.cyclr.com/api/connectoricon/873)
+![Contact Form 7 Plugin](https://my.cyclr.com/api/connectoricon/873)
 
 Contact Form 7, a plugin for WordPress, does not include webhook functionality. This makes getting the data from form submissions difficult.
 
