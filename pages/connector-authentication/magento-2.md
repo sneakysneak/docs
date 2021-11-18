@@ -15,7 +15,9 @@ To authenticate the connector you will first have to create an API Key:
 2. Click `Add New Integration`.
 3. Enter a unique name for the integration in the `Name` field, and enter your admin password in the `Your Password` field, leaving all other fields blank.
 4. Click the API tab and set Resource Access to All.
+
     ![](./images/resource-access-all.png)
+
 5. Click `Save`.
 6. Click the `Activate` link next to your new integration.
 7. Click `Allow` and copy the value in the `Access Token` field (Be sure to copy the **Access Token** and not the **Consumer Key**). 
