@@ -15,16 +15,18 @@ It is assumed that you have already installed our [Magento 2 Webhooks plugin](ht
 
 To authenticate the connector you will need to use your existing Magento 2 API Key.
 
-To find your API key, 
+If you have not yet set up an integration within Magento for Cyclr to use (for the main Magento connector) - there are instructions on how to do so here: https://docs.cyclr.com/magento-2-connector#magento-2-setup
+
+To find your API key when this is done, 
 
 1. Log in to the admin portal, and click `System` > `Extensions` > `Integrations`.
 2. Click the `Edit` pencil next to your integration.
 
-![](./images/edit_integration.png)
+    ![](./images/edit_integration.png)
 
 3. Scroll down and copy your access token
 
-![](./images/integration-tokens.png)
+    ![](./images/integration-tokens.png)
 
 Now that you have your Access token go to the `Connector Setup` page in Cyclr.
 
