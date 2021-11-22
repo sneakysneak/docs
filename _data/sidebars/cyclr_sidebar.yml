@@ -587,6 +587,10 @@ entries:
             url: /github-authentication
             output: web, pdf
 
+          - title: GoCardless
+            url: /gocardless-auth
+            output: web, pdf
+            
           - title: Google
             url: /google-authentication
             output: web, pdf
