@@ -481,7 +481,7 @@ Making use of key value pair responses requires the use of scripting, consider a
 
 ```json
 {
-    properties: [{
+    "properties": [{
         "key": "email",
         "value": "example@example.com"
     }]
@@ -516,7 +516,7 @@ Now when cyclr runs the method if will get the following result back and the **p
 
 ```json
 {
-    properties: {
+    "properties": {
         "email": "example@example.com"
     }
 }
