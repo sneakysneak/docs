@@ -10,20 +10,26 @@ tags: [accounts sub-accounts subaccounts sub]
 
 Within your customers' Accounts, it's now possible to set up **Sub Accounts**.
 
-Sub-Accounts are a way of organising multiple related accounts.
+Sub Accounts are a way of organising multiple related accounts.
 
-You may for example want an account for a bookstore chain, and a sub-account for each location.
+You may for example want an account for a bookstore chain, and a sub account for each location.
 
 Each account will have access to any installed connectors in its *parent* account.
 
-#### Setting up a Sub-Account
+#### Setting up a Sub Account
 
-To set up a Sub-Account you would:
+To set up a Sub Account you would:
 
 1. Go to **Console** > **Accounts** > **Account Management**
 
-2. Identify the **Account** within which you wish to make a **Sub-Account**.  In the **Sub Accounts** column for this Account, click the number of **Sub Accounts** (this will likely be 0).
+2. Identify the **Account** within which you wish to make a **Sub Account**.  In the **Sub Accounts** column for this Account, click the number of **Sub Accounts** (this will likely be 0).
 
 3. Click **Add New Sub Account**.
 
 4. You can now set up a **Sub Account** just as you would any **Account**.
+
+#### Task Usage in Sub Accounts
+
+Your Cyclr Console displays Task Usage for each Sub Account in the same wasy as standard Accounts.
+
+Sub Accounts Task Usage is not included within their parent Account's Task Usage.
