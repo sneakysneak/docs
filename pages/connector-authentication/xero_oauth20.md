@@ -27,19 +27,27 @@ Click the **New app** button in the top right to see a form similar to this:
 
 ![](./images/xero_oauth20_newapp.png)
 
-Leave the **grant type** as "Auth code" and complete the rest of the fields.
+Give the App a name (this will be presented to your users when they consent, so you may choose not to mention Cyclr).
 
-For the **OAuth 2.0 redirect URI**, enter your Cyclr Service Domain in this format:
+Leave the **Integration type** as **Web App** and complete the rest of the fields.
+
+Under **Company or application URL**, enter the domain of the site where your integration will be hosted.
+
+For **Redirect URI**, enter your Cyclr Service Domain in this format:
+
 ```
 https://[Your Cyclr Service Domain]/connector/callback
 ```
 
+Read and agree to the Xero Developer Platform Terms and Conditions, and click **Create App**
 
-After successfully submitting the form, you'll see an **OAuth 2.0 credentials** section.
+### Finding your Client ID and Client Secret
 
-Click the **Generate a secret** option to create a new Client Secret:
+You should now be faced with an App details screen - select **Configuration** from the menu on the left.
 
-![](./images/xero_oauth20_credentials.png)
+Make a note of your Client ID.
+
+Generate a Secret, and make a note of that too.
 
 You should now take your Client ID and Client Secret values and store them in your Cyclr Console against the Xero (OAuth2.0) entry.
 
