@@ -576,7 +576,9 @@ Example: change an error to a warning
 
 ```javascript
 function after_error() {
-    if (method_error.statusCode.toString() == 400 && method_error.reasonPhrase == 'Email Address not valid') {
+    if ('statusCode' in method_error &&
+        method_error.statusCode.toString() == 400 &&
+        method_error.reasonPhrase == 'Email Address not valid') {
         method_error.isError = false;
         method_error.isWarning = true;
     }
@@ -588,7 +590,9 @@ Example: change an error to a success
 
 ```javascript
 function after_error() {
-    if (method_error.statusCode.toString() == 400 && method_error.reasonPhrase == 'Email Address not valid') {
+    if ('statusCode' in method_error &&
+        method_error.statusCode.toString() == 400 &&
+        method_error.reasonPhrase == 'Email Address not valid') {
         method_error.isError = false;
         method_error.isSuccess = true;
         method_error.content = '{}';
