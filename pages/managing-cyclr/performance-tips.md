@@ -18,3 +18,7 @@ Avoid using Delay Steps unless you really wish to stop Transactions from progres
 ### Using Step Script instead of Inline Script
 
 Using "Inline Script" on a Field Mapping is a lot slower than using Script in a Step's Advanced Settings area.
+
+### Use decision steps to avoid unnecessary cycle runs
+
+Using a decision step to check whether your _trigger_ step has returned data will prevent the rest of the cycle running unnecessarily, and could reduce your task usage.
