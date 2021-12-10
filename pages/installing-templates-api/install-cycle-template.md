@@ -12,9 +12,9 @@ Install a new Cycle into an Account, based on one of the available Templates.
 Request:
 
 ````http
-    POST /v1.0/templates/{Template ID}/install
-    Authorization Bearer 0000000000000000000000000000000000000000000000000000000000000000
-    X-Cyclr-Account: 00000000-0000-0000-0000-000000000000
+POST /v1.0/templates/{Template ID}/install
+Authorization: Bearer ****************************************************************
+X-Cyclr-Account: 00000000-0000-0000-0000-000000000000
 ````
 
 Response:
