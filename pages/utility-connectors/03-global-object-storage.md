@@ -8,7 +8,7 @@ tags: [utility-connector]
 ## Purpose
 
 
-To store some data in the form of one or more JSON objects and then access that data (in any Cycle in the same Cyclr Account) you can use the **Cycle Object Storage** Connector.
+To store some data in the form of one or more JSON objects and then access that data (in any Cycle in the same Cyclr Account) you can use the **Global Object Storage** Connector.
 
 The **Global *Object* Storage** Connector works by using a Key that sets and gets a Value that can contain several separate properties.  These could be several pieces of data about a contact such as their forename, surname etc.
 
