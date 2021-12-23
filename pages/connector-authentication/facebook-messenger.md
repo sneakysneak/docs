@@ -37,31 +37,53 @@ Setting up your Partner App
 Authenticating your Facebook Cyclr Connector
 --------------
 
-Go to your Cyclr Console > Connectors > Connector Library > Facebook Messenger API > Setup
+Go to your Cyclr Console > Connectors > Application Connector Library > Facebook Messenger API > Setup
 
-**Client ID**: This is the App ID displayed after you create the Facebook app
+**Client ID**: The App ID of your Facebook app.
 
-**Client Secret**: This is the App Secret displayed after you create the Facebook app
+**Client Secret**: The App Secret of your Facebook app.
 
 **Scopes**: This is a comma separated list of scopes to request from Facebook during authentication.  For detail on the scopes please visit the [official documentation.](https://developers.facebook.com/docs/permissions/reference/)
 
+**Verify Token**: This is used for Webhook validation. For more details please see the Webhook section below.
+
 Your Facebook Messenger API connector is now set up! 
 
-Webhook
+Webhook Setup
 --------------
+Facebook Messenger webhooks utilise a single webhook URL, this requires some configuration inside your Facebook application.
 
-NOTE: Facebook Messenger only allows a singular webhook URL per application. 
-This should only be configured once you have authenticated the connector, and have entered the value for the ``Verify Token``.
+1. Navigate to Cyclr Console > Connectors > Application Connector Library > Facebook Messenger > Setup
+2. Set the **Verify Token** to an alphanumeric string of your choice. Make a note of this.
+3. Copy the **Webhook URL** to your clipboard.
+4. Navigate to the [Facebook Developers App Dashboard](https://developers.facebook.com/apps), and select the application you use with Cyclr.
+5. Within this application, navigate to Products > Messenger > Settings.
+6. Scroll down to the Webhook section.
+7. Click the **Edit Callback URL** button, a dialog will open.
+8. Paste the **Webhook URL** from your clipboard, and enter the **Verify Token** you took note of earlier.
+9. Click **Verify and Save**, Facebook will then verify the endpoint.
 
-1) In Cyclr, drag the ``Facebook Messenger`` > ``Message`` step on to the builder.
-2) Add a decision step and connect it to the webhook reciever. Any decision configuration will work. 
-3) Open the settings of the ``Message`` Webhook, and copy the URL.
-4) Run the cycle.
-5) In the Facebook Developer Console, navigate to  ``Facebook Messenger`` > ``Settings``.
-6) Under the Webhook section, set the ``Callback URL`` to the URL you have just copied, and the ``Verify Token``. This can be any alphanumeric value, as long as you enter the same value in Cyclr when authenticating the connector.
-7) Save these settings, and Facebook will verify the webhook with Cyclr.
+Your application is now set up for Webhooks using Cyclr.
 
-You have now configured a webhook. If the Webhook URL changes for any reason, you will need to reconfigure it using the steps above.
+Webhook Usage
+--------------
+1. Drag the Webhook step from the sidebar into the Builder.
+2. Open the Webhook settings, and enter the Page ID.
+3. Connect the Webhook to another step.
+4. Click **Run** to start the Cycle. This will contact Facebook and subscribe this page to message Webhooks.
+
+If you wish to remove the Webhook and cancel the Page subscription, you must stop the Cycle, and **Delete** the Webhook step. 
+The deletion of the Webhook step will trigger Cyclr to contact Facebook and unsubscribe the Page from message Webhooks.
+
+Webhook Field Configuration
+--------------
+The body of the incoming message will vary depending on the message type received; for this reason, only a set of core fields are mapped by default.
+Please use the Edit Connector page to add the fields you wish to use. Documentation for Facebook message events is available [here](https://developers.facebook.com/docs/messenger-platform/reference/webhook-events/messages).
+
+Adding New Facebook Pages
+--------------
+To use a new Facebook page with an already authenticated connector, you will need to reauthenticate with Facebook.
+During the OAuth flow, use the **Edit Settings** button to select the new page, and grant permission.
 
 Roles & Test Users
 --------------
